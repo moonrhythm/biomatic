@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "name": "biomatic",
+  "version": "1.0.0",
+  "description": "Modern CSS Toolkit",
+  "main": "index.js",
+  "repository": "git@github.com:BioMaRu/biomatic.git",
+  "author": "BioMaRu <bio.color.palette@gmail.com>",
+  "license": "MIT"
+}
