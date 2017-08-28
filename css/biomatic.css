@@ -1,7 +1,3 @@
-.bio-button {
-  background: #ff3355;
-}
-
 ._ma-4 {
   margin: 4px;
 }
@@ -260,7 +256,7 @@
   padding: 4px;
 }
 
-._pa-8 {
+._pa-8, .bio-button {
   padding: 8px;
 }
 
@@ -464,4 +460,156 @@
 ._ph-auto {
   padding-left: auto;
   padding-right: auto;
+}
+
+._bgcl-main, .bio-button {
+  background-color: #20A0FF;
+}
+
+._bgcl-accent {
+  background-color: #ff3355;
+}
+
+._bgcl-success {
+  background-color: #13ce66;
+}
+
+._bgcl-warning {
+  background-color: #f7ba2a;
+}
+
+._bgcl-info {
+  background-color: #50bfff;
+}
+
+._bgcl-error {
+  background-color: #ff4949;
+}
+
+._bgcl-neutral-900 {
+  background-color: #1F2D3D;
+}
+
+._bgcl-neutral-800 {
+  background-color: #324057;
+}
+
+._bgcl-neutral-700 {
+  background-color: #8492A6;
+}
+
+._bgcl-neutral-700 {
+  background-color: #8492A6;
+}
+
+._bgcl-neutral-600 {
+  background-color: #99A9BF;
+}
+
+._bgcl-neutral-500 {
+  background-color: #C0CCDA;
+}
+
+._bgcl-neutral-400 {
+  background-color: #D3DCE6;
+}
+
+._bgcl-neutral-300 {
+  background-color: #E5E9F2;
+}
+
+._bgcl-neutral-200 {
+  background-color: #EFF2F7;
+}
+
+._bgcl-neutral-100 {
+  background-color: #F9FAFC;
+}
+
+._cl-main {
+  color: #20A0FF;
+}
+
+._cl-accent {
+  color: #ff3355;
+}
+
+._cl-success {
+  color: #13ce66;
+}
+
+._cl-warning {
+  color: #f7ba2a;
+}
+
+._cl-info {
+  color: #50bfff;
+}
+
+._cl-error {
+  color: #ff4949;
+}
+
+._cl-neutral-900 {
+  color: #1F2D3D;
+}
+
+._cl-neutral-800 {
+  color: #324057;
+}
+
+._cl-neutral-700 {
+  color: #8492A6;
+}
+
+._cl-neutral-700 {
+  color: #8492A6;
+}
+
+._cl-neutral-600 {
+  color: #99A9BF;
+}
+
+._cl-neutral-500 {
+  color: #C0CCDA;
+}
+
+._cl-neutral-400 {
+  color: #D3DCE6;
+}
+
+._cl-neutral-300 {
+  color: #E5E9F2;
+}
+
+._cl-neutral-200 {
+  color: #EFF2F7;
+}
+
+._cl-neutral-100, .bio-button {
+  color: #F9FAFC;
+}
+
+._bdr-1 {
+  border-radius: 1px;
+}
+
+._bdr-2, .bio-button {
+  border-radius: 2px;
+}
+
+._bdr-4 {
+  border-radius: 4px;
+}
+
+._bdr-8 {
+  border-radius: 8px;
+}
+
+._bdr-16 {
+  border-radius: 16px;
+}
+
+._bdr-50pc {
+  border-radius: 50%;
 }

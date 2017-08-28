@@ -1,3 +1,6 @@
 .bio-button {
-  background: $color-accent;
+  @extend ._pa-8;
+  @extend ._bdr-2;
+  @extend ._bgcl-main;
+  @extend ._cl-neutral-100;
 }
