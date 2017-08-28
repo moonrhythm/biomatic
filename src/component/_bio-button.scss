@@ -3,4 +3,21 @@
   @extend ._bdr-2;
   @extend ._bgcl-main;
   @extend ._cl-neutral-100;
+  &.-error {
+    @extend ._bgcl-error;
+    &.-outline {
+      border: 1px solid $color-error;
+      color: $color-error;
+      background-color: white;
+    }
+  }
+  &.-warning {
+    @extend ._bgcl-warning;
+  }
+  &.-info {
+    @extend ._bgcl-info;
+  }
+  &.-success {
+    @extend ._bgcl-success;
+  }
 }
