@@ -1,3 +1,7 @@
+.bio-button {
+  background: #ff3355;
+}
+
 ._ma-4 {
   margin: 4px;
 }
@@ -206,6 +210,50 @@
 ._mh-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+._opa-100 {
+  opacity: 1;
+}
+
+._opa-90 {
+  opacity: .9;
+}
+
+._opa-80 {
+  opacity: .8;
+}
+
+._opa-70 {
+  opacity: .7;
+}
+
+._opa-60 {
+  opacity: .6;
+}
+
+._opa-50 {
+  opacity: .5;
+}
+
+._opa-40 {
+  opacity: .4;
+}
+
+._opa-30 {
+  opacity: .3;
+}
+
+._opa-20 {
+  opacity: .2;
+}
+
+._opa-10 {
+  opacity: .1;
+}
+
+._opa-0 {
+  opacity: 0;
 }
 
 ._pa-4 {
