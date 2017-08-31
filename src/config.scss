@@ -1,21 +1,41 @@
 // Theme Color
-$color-main: #20A0FF;
-$color-accent: #ff3355;
+$color-main:     hsl(206, 100%, 56%);
+$color-main-900: hsl(206, 100%, 18%);
+$color-main-800: hsl(206, 100%, 27%);
+$color-main-700: hsl(206, 100%, 35%);
+$color-main-600: hsl(206, 100%, 45%);
+$color-main-500: hsl(206, 100%, 56%);
+$color-main-500: hsl(206, 100%, 66%);
+$color-main-300: hsl(206, 100%, 79%);
+$color-main-200: hsl(206, 100%, 87%);
+$color-main-100: hsl(206, 100%, 95%);
+
+$color-accent:     hsl(350, 100%, 60%);
+$color-accent-900: hsl(350, 100%, 20%);
+$color-accent-800: hsl(350, 100%, 30%);
+$color-accent-700: hsl(350, 100%, 40%);
+$color-accent-600: hsl(350, 100%, 50%);
+$color-accent-500: hsl(350, 100%, 60%);
+$color-accent-400: hsl(350, 100%, 70%);
+$color-accent-300: hsl(350, 100%, 80%);
+$color-accent-200: hsl(350, 100%, 90%);
+$color-accent-100: hsl(350, 100%, 95%);
 
 // Semantic Color
-$color-success: #13ce66;
-$color-warning: #f7ba2a;
-$color-info: #50bfff;
-$color-error: #ff4949;
+$color-success: hsl(150, 80%, 45%);
+$color-warning: hsl(40, 90%, 60%);
+$color-info:    hsl(200, 100%, 65%);
+$color-error:   hsl(0, 100%, 65%);
 
 // Neutral Color
-$color-neutral-900: #1F2D3D;
-$color-neutral-800: #324057;
-$color-neutral-700: #475669;
-$color-neutral-700: #8492A6;
-$color-neutral-600: #99A9BF;
-$color-neutral-500: #C0CCDA;
-$color-neutral-400: #D3DCE6;
-$color-neutral-300: #E5E9F2;
-$color-neutral-200: #EFF2F7;
-$color-neutral-100: #F9FAFC;
+$color-neutral:     hsl(213, 30%, 80%);
+$color-neutral-900: hsl(213, 30%, 18%);
+$color-neutral-800: hsl(213, 30%, 27%);
+$color-neutral-700: hsl(213, 30%, 35%);
+$color-neutral-700: hsl(213, 30%, 58%);
+$color-neutral-600: hsl(213, 30%, 68%);
+$color-neutral-500: hsl(213, 30%, 80%);
+$color-neutral-400: hsl(213, 30%, 87%);
+$color-neutral-300: hsl(213, 30%, 92%);
+$color-neutral-200: hsl(213, 30%, 95%);
+$color-neutral-100: hsl(213, 30%, 98%);
