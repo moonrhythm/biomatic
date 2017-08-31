@@ -1,5 +1,11 @@
 
-// Margin All
+/*---------------------------
+  Margin All
+----------------------------*/
+._mga {
+  margin: 8px;
+}
+
 ._mga-4 {
   margin: 4px;
 }
@@ -28,7 +34,13 @@
   margin: auto;
 }
 
-// Margin Top
+/*---------------------------
+  Margin Top
+----------------------------*/
+._mgt {
+  margin-top: 8px;
+}
+
 ._mgt-4 {
   margin-top: 4px;
 }
@@ -57,7 +69,13 @@
   margin-top: auto;
 }
 
-// Margin Bottom
+/*---------------------------
+  Margin Bottom
+----------------------------*/
+._mgb {
+  margin-bottom: 8px;
+}
+
 ._mgb-4 {
   margin-bottom: 4px;
 }
@@ -86,7 +104,13 @@
   margin-bottom: auto;
 }
 
-// Margin Left
+/*---------------------------
+  Margin Left
+----------------------------*/
+._mgl {
+  margin-left: 8px;
+}
+
 ._mgl-4 {
   margin-left: 4px;
 }
@@ -115,7 +139,13 @@
   margin-left: auto;
 }
 
-// Margin Right
+/*---------------------------
+  Margin Right
+----------------------------*/
+._mgr {
+  margin-right: 8px;
+}
+
 ._mgr-4 {
   margin-right: 4px;
 }
@@ -144,7 +174,14 @@
   margin-right: auto;
 }
 
-// Margin Vertical
+/*---------------------------
+  Margin Vertical
+----------------------------*/
+._mgv {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 ._mgv-4 {
   margin-top: 4px;
   margin-bottom: 4px;
@@ -180,7 +217,14 @@
   margin-bottom: auto;
 }
 
-// Margin Horizontal
+/*---------------------------
+  Margin Horizontal
+----------------------------*/
+._mgh {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 ._mgh-4 {
   margin-left: 4px;
   margin-right: 4px;

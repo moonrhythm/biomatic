@@ -1,5 +1,11 @@
 
-// padding All
+/*---------------------------
+  Padding All
+----------------------------*/
+._pda {
+  padding: 8px;
+}
+
 ._pda-4 {
   padding: 4px;
 }
@@ -28,7 +34,13 @@
   padding: auto;
 }
 
-// padding Top
+/*---------------------------
+  Padding Top
+----------------------------*/
+._pdt {
+  padding-top: 8px;
+}
+
 ._pdt-4 {
   padding-top: 4px;
 }
@@ -57,7 +69,13 @@
   padding-top: auto;
 }
 
-// padding Bottom
+/*---------------------------
+  Padding Bottom
+----------------------------*/
+._pdb {
+  padding-bottom: 8px;
+}
+
 ._pdb-4 {
   padding-bottom: 4px;
 }
@@ -86,7 +104,13 @@
   padding-bottom: auto;
 }
 
-// padding Left
+/*---------------------------
+  Padding Left
+----------------------------*/
+._pdl {
+  padding-left: 8px;
+}
+
 ._pdl-4 {
   padding-left: 4px;
 }
@@ -115,7 +139,13 @@
   padding-left: auto;
 }
 
-// padding Right
+/*---------------------------
+  Padding Right
+----------------------------*/
+._pdr {
+  padding-right: 8px;
+}
+
 ._pdr-4 {
   padding-right: 4px;
 }
@@ -144,7 +174,14 @@
   padding-right: auto;
 }
 
-// padding Vertical
+/*---------------------------
+  Padding Vertical
+----------------------------*/
+._pdv {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 ._pdv-4 {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -180,7 +217,14 @@
   padding-bottom: auto;
 }
 
-// padding Horizontal
+/*---------------------------
+  Padding Horizontal
+----------------------------*/
+._pdh {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 ._pdh-4 {
   padding-left: 4px;
   padding-right: 4px;
