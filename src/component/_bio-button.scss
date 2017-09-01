@@ -1,5 +1,5 @@
 .bio-button {
-  @extend ._pda-8;
+  @extend ._pd-8;
   @extend ._bdrd-2;
   @extend ._bgcl-primary;
   @extend ._tal-ct;
@@ -12,48 +12,79 @@
 
   &.-primary {
     @extend ._bgcl-primary;
-    &:hover {
+    &.-outline {
+      @extend ._bd-1;
+      @extend ._bdcl-primary;
+      @extend ._cl-primary;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
       background-color: $color-primary-400;
     }
   }
   
   &.-accent {
     @extend ._bgcl-accent;
-    &:hover {
+    &.-outline {
+      @extend ._bd-1;
+      @extend ._bdcl-accent;
+      @extend ._cl-accent;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
       background-color: $color-accent-400;
     }
   }
 
   &.-success {
     @extend ._bgcl-success;
-    &:hover {
+    &.-outline {
+      @extend ._bd-1;
+      @extend ._bdcl-success;
+      @extend ._cl-success;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
       background-color: lighten($color-success, 1.5%);
     }
   }
 
   &.-info {
     @extend ._bgcl-info;
-    &:hover {
+    &.-outline {
+      @extend ._bd-1;
+      @extend ._bdcl-info;
+      @extend ._cl-info;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
       background-color: lighten($color-info, 5%);
     }
   }
   
   &.-warning {
     @extend ._bgcl-warning;
-    &:hover {
+    &.-outline {
+      @extend ._bd-1;
+      @extend ._bdcl-warning;
+      @extend ._cl-warning;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
       background-color: lighten($color-warning, 5.5%);
     }
   }
 
   &.-error {
     @extend ._bgcl-error;
-    &:hover {
-      background-color: lighten($color-error, 4.5%);
-    }
     &.-outline {
-      border: 1px solid $color-error;
-      color: $color-error;
-      background-color: white;
+      @extend ._bd-1;
+      @extend ._bdcl-error;
+      @extend ._cl-error;
+      @extend ._bgcl-tpr;
+    }
+    &:not(.-outline):hover {
+      background-color: lighten($color-error, 4.5%);
     }
   }
 
