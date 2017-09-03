@@ -1,0 +1,18 @@
+.lo-container {
+  display: grid;
+  grid-gap: $container-grid-gap;
+  grid-template-columns: 0px 1fr 0px;
+  grid-template-rows: auto;
+  @include lg-upper {
+    grid-template-columns: 1fr $breakpoint-lg - 20px 1fr;
+  }
+  @include md-upper {
+    grid-template-columns: 1fr $breakpoint-md - 20px 1fr;
+  }
+  @include lg-upper {
+    grid-template-columns: 1fr $breakpoint-lg - 20px 1fr;
+  }
+  >* {
+    grid-column: 2 / 3;
+  }
+}
