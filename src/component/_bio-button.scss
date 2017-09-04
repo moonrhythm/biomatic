@@ -5,6 +5,8 @@
   @extend ._tal-ct;
   @extend ._cl-neutral-100;
   @extend ._cs-pt;
+  @extend ._lh-150pct;
+  user-select: none;
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
