@@ -6,6 +6,7 @@
   @extend ._cl-neutral-100;
   @extend ._cs-pt;
   @extend ._lh-150pct;
+  @extend ._pst-rlt;
   user-select: none;
   transition:
     transform 0.18s ease,
@@ -96,5 +97,45 @@
       @extend ._bsd-2;
       transform: translate(0, -1px);
     }
+  }
+
+  &.-disabled {
+    pointer-events: none;
+    @extend ._opct-40;
+    @extend ._cs-na;
+  }
+  
+  &.-loading {
+    @extend ._cl-tpr;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1em;
+      width: 1em;
+      left: calc(50% - ((1em + 6px) / 2));
+      top: calc(50% - ((1em + 6px) / 2));
+      animation: spinAround 500ms infinite linear;
+      border: 3px solid;
+      border-radius: 290486px;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    &:not(.-outline) {
+      &:after {
+        border-left-color: $color-neutral-100;
+        border-bottom-color: $color-neutral-100;
+      }
+    }
+  }
+}
+
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
