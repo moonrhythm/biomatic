@@ -1,4 +1,25 @@
 
+.lo-sm-1,
+.lo-sm-2,
+.lo-sm-3,
+.lo-sm-4,
+.lo-sm-6,
+.lo-sm-12,
+
+.lo-md-1,
+.lo-md-2,
+.lo-md-3,
+.lo-md-4,
+.lo-md-6,
+.lo-md-12,
+
+.lo-lg-1,
+.lo-lg-2,
+.lo-lg-3,
+.lo-lg-4,
+.lo-lg-6,
+.lo-lg-12,
+
 .lo-sm-1-11,
 .lo-sm-2-10,
 .lo-sm-3-9,
@@ -9,7 +30,31 @@
 .lo-sm-8-4,
 .lo-sm-9-3,
 .lo-sm-10-2,
-.lo-sm-11-1{
+.lo-sm-11-1,
+
+.lo-sm-1-11,
+.lo-sm-2-10,
+.lo-sm-3-9,
+.lo-sm-4-8,
+.lo-sm-5-7,
+.lo-sm-6-6,
+.lo-sm-7-5,
+.lo-sm-8-4,
+.lo-sm-9-3,
+.lo-sm-10-2,
+.lo-sm-11-1,
+
+.lo-lg-1-11,
+.lo-lg-2-10,
+.lo-lg-3-9,
+.lo-lg-4-8,
+.lo-lg-5-7,
+.lo-lg-6-6,
+.lo-lg-7-5,
+.lo-lg-8-4,
+.lo-lg-9-3,
+.lo-lg-10-2,
+.lo-lg-11-1 {
   @extend ._dp-g;
 
   &.-gap     { grid-gap: 8px; }
@@ -61,3 +106,48 @@
 .lo-sm-9-3  { grid-template-columns: 9fr 3fr; }
 .lo-sm-10-2 { grid-template-columns: 10fr 2fr; }
 .lo-sm-11-1 { grid-template-columns: 11fr 1fr; }
+
+.lo-sm-1  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+.lo-sm-2  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+.lo-sm-3  { grid-template-columns: 1fr 1fr 1fr 1fr; }
+.lo-sm-4  { grid-template-columns: 1fr 1fr 1fr; }
+.lo-sm-6  { grid-template-columns: 1fr 1fr; }
+.lo-sm-12 { grid-template-columns: 1fr; }
+
+.lo-md-1  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+.lo-md-2  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
+.lo-md-3  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.lo-md-4  { @include md-upper { grid-template-columns: 1fr 1fr 1fr; } }
+.lo-md-6  { @include md-upper { grid-template-columns: 1fr 1fr; } }
+.lo-md-12 { @include md-upper { grid-template-columns: 1fr; } }
+
+.lo-md-1-11 { @include md-upper { grid-template-columns: 1fr 11fr; } }
+.lo-md-2-10 { @include md-upper { grid-template-columns: 2fr 10fr; } }
+.lo-md-3-9  { @include md-upper { grid-template-columns: 3fr 9fr; } }
+.lo-md-4-8  { @include md-upper { grid-template-columns: 4fr 8fr; } }
+.lo-md-5-7  { @include md-upper { grid-template-columns: 5fr 7fr; } }
+.lo-md-6-6  { @include md-upper { grid-template-columns: 6fr 6fr; } }
+.lo-md-7-5  { @include md-upper { grid-template-columns: 7fr 5fr; } }
+.lo-md-8-4  { @include md-upper { grid-template-columns: 8fr 4fr; } }
+.lo-md-9-3  { @include md-upper { grid-template-columns: 9fr 3fr; } }
+.lo-md-10-2 { @include md-upper { grid-template-columns: 10fr 2fr; } }
+.lo-md-11-1 { @include md-upper { grid-template-columns: 11fr 1fr; } }
+
+.lo-lg-1  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+.lo-lg-2  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
+.lo-lg-3  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr; } }
+.lo-lg-4  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr; } }
+.lo-lg-6  { @include lg-upper { grid-template-columns: 1fr 1fr; } }
+.lo-lg-12 { @include lg-upper { grid-template-columns: 1fr; } }
+
+.lo-lg-1-11 { @include md-upper { grid-template-columns: 1fr 11fr; } }
+.lo-lg-2-10 { @include lg-upper { grid-template-columns: 2fr 10fr; } }
+.lo-lg-3-9  { @include lg-upper { grid-template-columns: 3fr 9fr; } }
+.lo-lg-4-8  { @include lg-upper { grid-template-columns: 4fr 8fr; } }
+.lo-lg-5-7  { @include lg-upper { grid-template-columns: 5fr 7fr; } }
+.lo-lg-6-6  { @include lg-upper { grid-template-columns: 6fr 6fr; } }
+.lo-lg-7-5  { @include lg-upper { grid-template-columns: 7fr 5fr; } }
+.lo-lg-8-4  { @include lg-upper { grid-template-columns: 8fr 4fr; } }
+.lo-lg-9-3  { @include lg-upper { grid-template-columns: 9fr 3fr; } }
+.lo-lg-10-2 { @include lg-upper { grid-template-columns: 10fr 2fr; } }
+.lo-lg-11-1 { @include lg-upper { grid-template-columns: 11fr 1fr; } }
