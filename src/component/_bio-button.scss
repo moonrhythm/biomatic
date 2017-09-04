@@ -20,6 +20,13 @@
       @extend ._bdcl-primary;
       @extend ._cl-primary;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-primary;
+          border-bottom-color: $color-primary;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: $color-primary-400;
@@ -33,6 +40,13 @@
       @extend ._bdcl-accent;
       @extend ._cl-accent;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-accent;
+          border-bottom-color: $color-accent;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: $color-accent-400;
@@ -46,6 +60,13 @@
       @extend ._bdcl-success;
       @extend ._cl-success;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-success;
+          border-bottom-color: $color-success;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: lighten($color-success, 1.5%);
@@ -59,6 +80,13 @@
       @extend ._bdcl-info;
       @extend ._cl-info;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-info;
+          border-bottom-color: $color-info;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: lighten($color-info, 5%);
@@ -72,6 +100,13 @@
       @extend ._bdcl-warning;
       @extend ._cl-warning;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-warning;
+          border-bottom-color: $color-warning;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: lighten($color-warning, 5.5%);
@@ -85,6 +120,13 @@
       @extend ._bdcl-error;
       @extend ._cl-error;
       @extend ._bgcl-tpr;
+      &.-loading {
+        @extend ._cl-tpr;
+        &:after {
+          border-left-color: $color-error;
+          border-bottom-color: $color-error;
+        }
+      }
     }
     &:not(.-outline):hover {
       background-color: lighten($color-error, 4.5%);
