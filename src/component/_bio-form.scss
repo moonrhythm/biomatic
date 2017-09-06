@@ -67,6 +67,13 @@
   }
 }
 
+.bio-input.-disabled > input,
+.bio-input.-disabled > textarea {
+  @extend ._cs-na;
+  background-color: lighten($color-gray, 8%);
+  border-color: $color-gray;
+}
+
 .bio-input > input {
   height: 40px;
 }
