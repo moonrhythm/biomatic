@@ -7,8 +7,14 @@
   color: darken($color-gray, 40%);
 }
 
+select::-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 .bio-input > input,
-.bio-input > textarea {
+.bio-input > textarea,
+.bio-input > select {
   // -webkit-appearance: none;
   // -moz-appearance: none;
   // appearance: none;
@@ -30,11 +36,13 @@
 
   &:focus, :active {
     border-color: $color-primary;
+    box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
   }
 }
 
 .bio-input.-positive > input,
-.bio-input.-positive > textarea { 
+.bio-input.-positive > textarea,
+.bio-input.-positive > select { 
   border-color: $color-positive;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
@@ -42,7 +50,8 @@
 }
 
 .bio-input.-negative > input,
-.bio-input.-negative > textarea { 
+.bio-input.-negative > textarea,
+.bio-input.-negative > select { 
   border-color: $color-negative;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
@@ -51,7 +60,8 @@
   
 
 .bio-input.-info > input,
-.bio-input.-info > textarea { 
+.bio-input.-info > textarea,
+.bio-input.-info > select { 
   border-color: $color-info;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
@@ -60,7 +70,8 @@
   
 
 .bio-input.-warning > input,
-.bio-input.-warning > textarea { 
+.bio-input.-warning > textarea,
+.bio-input.-warning > select { 
   border-color: $color-warning;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
@@ -68,14 +79,28 @@
 }
 
 .bio-input.-disabled > input,
-.bio-input.-disabled > textarea {
+.bio-input.-disabled > textarea,
+.bio-input.-disabled > select {
   @extend ._cs-na;
-  background-color: lighten($color-gray, 8%);
+  background-color: lighten($color-gray, 10%);
   border-color: $color-gray;
 }
 
-.bio-input > input {
-  height: 40px;
+.bio-input > select[multiple] {
+  @extend ._pd-0;
+  > option {
+    @extend ._pdv-8;
+    @extend ._pdh-8;
+    box-shadow: none;
+    &:checked {
+      background: linear-gradient($color-primary-500, $color-primary-500);
+    }
+  }
+}
+
+.bio-input > input,
+.bio-input > select:not([multiple]) {
+  height: 36px;
 }
 
 .bio-input > textarea {
