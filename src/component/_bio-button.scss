@@ -196,12 +196,14 @@
       border-right-color: transparent;
       border-top-color: transparent;
     }
+    
     &:not(.-outline) {
       &:after {
         border-left-color: $color-neutral-100;
         border-bottom-color: $color-neutral-100;
       }
     }
+
     &.-white {
       &:after {
         border-left-color: $color-dark;

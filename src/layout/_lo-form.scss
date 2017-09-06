@@ -1,0 +1,43 @@
+.lo-field {
+  @extend ._dp-g;
+  grid-auto-rows: max-content;
+  grid-template-areas: "label"
+                       "input"
+                       "help";
+
+  &.-inline {
+    grid-column-gap: 8px;
+    grid-auto-columns: auto 1fr;
+    grid-template-areas: "label input"
+                         ". help";
+  }
+
+  >label {
+    @extend ._mgbt-4;
+    @extend ._cl-dark;
+    align-self: center;
+    grid-area: label;
+  }
+
+  >.bio-input,
+  .bio-textarea {
+    grid-area: input;
+    & + * {
+      @extend ._cl-dark;
+      grid-area: help;
+    }
+    &.-negative + * {
+      @extend ._cl-negative;
+    }
+    &.-positive + * {
+      @extend ._cl-positive;
+    }
+    &.-info + * {
+      @extend ._cl-info;
+    }
+    &.-warning + * {
+      @extend ._cl-warning;
+    }
+  }
+
+}
