@@ -81,8 +81,8 @@
   color: $color-accent-900;
 }
 
-._cl-success {
-  color: $color-success;
+._cl-positive {
+  color: $color-positive;
 }
 
 ._cl-warning {
@@ -93,8 +93,8 @@
   color: $color-info;
 }
 
-._cl-error {
-  color: $color-error;
+._cl-negative {
+  color: $color-negative;
 }
 
 ._cl-neutral {
@@ -140,6 +140,23 @@
 ._cl-neutral-100 {
   color: $color-neutral-100;
 }
+
+._cl-white {
+  color: $color-white;
+}
+
+._cl-gray {
+  color: $color-gray;
+}
+
+._cl-dark {
+  color: $color-dark;
+}
+
+._cl-black {
+  color: $color-black;
+}
+
 
 ._cl-tpr {
   color: transparent;

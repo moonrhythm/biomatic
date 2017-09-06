@@ -81,8 +81,8 @@
   background-color: $color-accent-900;
 }
 
-._bgcl-success {
-  background-color: $color-success;
+._bgcl-positive {
+  background-color: $color-positive;
 }
 
 ._bgcl-warning {
@@ -93,8 +93,8 @@
   background-color: $color-info;
 }
 
-._bgcl-error {
-  background-color: $color-error;
+._bgcl-negative {
+  background-color: $color-negative;
 }
 
 ._bgcl-neutral {
@@ -139,6 +139,22 @@
 
 ._bgcl-neutral-100 {
   background-color: $color-neutral-100;
+}
+
+._bgcl-white {
+  background-color: $color-white;
+}
+
+._bgcl-gray {
+  background-color: $color-gray;
+}
+
+._bgcl-dark {
+  background-color: $color-dark;
+}
+
+._bgcl-black {
+  background-color: $color-black;
 }
 
 ._bgcl-tpr {

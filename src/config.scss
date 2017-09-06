@@ -22,10 +22,10 @@ $color-accent-200: hsl(350, 100%, 90%);
 $color-accent-100: hsl(350, 100%, 95%);
 
 // Semantic Color
-$color-success: hsl(150, 80%, 45%);
+$color-positive: hsl(150, 80%, 45%);
 $color-warning: hsl(40, 90%, 60%);
 $color-info:    hsl(200, 100%, 65%);
-$color-error:   hsl(0, 100%, 65%);
+$color-negative:   hsl(0, 100%, 65%);
 
 // Neutral Color
 $color-neutral:     hsl(213, 30%, 80%);
@@ -40,9 +40,11 @@ $color-neutral-300: hsl(213, 30%, 92%);
 $color-neutral-200: hsl(213, 30%, 95%);
 $color-neutral-100: hsl(213, 30%, 98%);
 
-// light dark text
-
-
+// Gray Scale Color
+$color-white: hsl(0, 255%, 100%);
+$color-gray: hsla(0, 0%, 85%, 0.9);
+$color-dark: hsla(0, 0%, 18%, 0.9);
+$color-black: hsl(0, 0%, 0%);
 
 // Break Point
 $breakpoint-sm: 600px;
@@ -51,3 +53,11 @@ $breakpoint-lg: 1200px;
 
 // Grid
 $container-grid-gap: 0px 10px;
+
+// Font family
+$font-primary: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-secondary: '';
+
+html {
+  font-family: $font-primary;
+}

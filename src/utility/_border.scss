@@ -239,8 +239,8 @@ $border-default-color: $color-neutral-600;
   border-color: $color-accent-900;
 }
 
-._bdcl-success {
-  border-color: $color-success;
+._bdcl-positive {
+  border-color: $color-positive;
 }
 
 ._bdcl-warning {
@@ -251,8 +251,8 @@ $border-default-color: $color-neutral-600;
   border-color: $color-info;
 }
 
-._bdcl-error {
-  border-color: $color-error;
+._bdcl-negative {
+  border-color: $color-negative;
 }
 
 ._bdcl-neutral {
@@ -297,4 +297,20 @@ $border-default-color: $color-neutral-600;
 
 ._bdcl-neutral-100 {
   border-color: $color-neutral-100;
+}
+
+._bdcl-white {
+  border-color: $color-white;
+}
+
+._bdcl-gray {
+  border-color: $color-gray;
+}
+
+._bdcl-dark {
+  border-color: $color-dark;
+}
+
+._bdcl-black {
+  border-color: $color-black;
 }

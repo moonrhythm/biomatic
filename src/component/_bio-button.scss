@@ -11,7 +11,8 @@
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
-    background-color 0.18s ease;
+    background-color 0.18s ease,
+    border-color 0.18s ease;
 
   &.-primary {
     @extend ._bgcl-primary;
@@ -53,23 +54,23 @@
     }
   }
 
-  &.-success {
-    @extend ._bgcl-success;
+  &.-positive {
+    @extend ._bgcl-positive;
     &.-outline {
       @extend ._bd-1;
-      @extend ._bdcl-success;
-      @extend ._cl-success;
+      @extend ._bdcl-positive;
+      @extend ._cl-positive;
       @extend ._bgcl-tpr;
       &.-loading {
         @extend ._cl-tpr;
         &:after {
-          border-left-color: $color-success;
-          border-bottom-color: $color-success;
+          border-left-color: $color-positive;
+          border-bottom-color: $color-positive;
         }
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-success, 1.5%);
+      background-color: lighten($color-positive, 1.5%);
     }
   }
 
@@ -113,23 +114,58 @@
     }
   }
 
-  &.-error {
-    @extend ._bgcl-error;
+  &.-negative {
+    @extend ._bgcl-negative;
     &.-outline {
       @extend ._bd-1;
-      @extend ._bdcl-error;
-      @extend ._cl-error;
+      @extend ._bdcl-negative;
+      @extend ._cl-negative;
       @extend ._bgcl-tpr;
       &.-loading {
         @extend ._cl-tpr;
         &:after {
-          border-left-color: $color-error;
-          border-bottom-color: $color-error;
+          border-left-color: $color-negative;
+          border-bottom-color: $color-negative;
         }
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-error, 4.5%);
+      background-color: lighten($color-negative, 4.5%);
+    }
+  }
+
+  &.-dark {
+    @extend ._bgcl-dark;
+    &:hover {
+      background-color: lighten($color-dark, 4.5%);
+    }
+  }
+
+  &.-black {
+    @extend ._bgcl-black;
+    &:hover {
+      background-color: lighten($color-black, 15.5%);
+    }
+  }
+  
+  &.-gray {
+    @extend ._bgcl-gray;
+    @extend ._cl-dark;
+    &:hover {
+      background-color: lighten($color-gray, 4.5%);
+    }
+  }
+
+  &.-white {
+    @extend ._bgcl-white;
+    @extend ._cl-dark;
+    @extend ._bd-1;
+    @extend ._bdcl-gray;
+    &:hover {
+      background-color: lighten($color-gray, 12.5%);
+    }
+    &:hover {
+      @extend ._bdcl-dark;
     }
   }
 
@@ -166,6 +202,12 @@
       &:after {
         border-left-color: $color-neutral-100;
         border-bottom-color: $color-neutral-100;
+      }
+    }
+    &.-white {
+      &:after {
+        border-left-color: $color-dark;
+        border-bottom-color: $color-dark;
       }
     }
   }

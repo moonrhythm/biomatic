@@ -1,6 +1,9 @@
+// Required
 @import 'normalize.scss';
 @import 'config';
 @import 'helper/helper';
 @import 'utility/utility';
+
+// Module
 @import 'layout/layout';
 @import 'component/component';
