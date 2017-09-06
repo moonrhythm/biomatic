@@ -7,8 +7,8 @@
   color: darken($color-gray, 40%);
 }
 
-.bio-input,
-.bio-textarea {
+.bio-input > input,
+.bio-input > textarea {
   // -webkit-appearance: none;
   // -moz-appearance: none;
   // appearance: none;
@@ -23,6 +23,7 @@
   box-shadow: inset 0 1px 1px hsla(0, 0, 64, 0.24);
   outline: none;
   transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+
   &:hover {
     border-color: darken($color-gray, 10%);
   }
@@ -30,41 +31,46 @@
   &:focus, :active {
     border-color: $color-primary;
   }
-
-  &.-positive {
-    border-color: $color-positive;
-    &:focus, :active {
-      box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
-    }
-  }
-
-  &.-negative {
-    border-color: $color-negative;
-    &:focus, :active {
-      box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
-    }
-  }
-
-  &.-info {
-    border-color: $color-info;
-    &:focus, :active {
-      box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
-    }
-  }
-
-  &.-warning {
-    border-color: $color-warning;
-    &:focus, :active {
-      box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
-    }
-  }
-  
 }
 
-.bio-input {
+.bio-input.-positive > input,
+.bio-input.-positive > textarea { 
+  border-color: $color-positive;
+  &:focus, :active {
+    box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
+  }
+}
+
+.bio-input.-negative > input,
+.bio-input.-negative > textarea { 
+  border-color: $color-negative;
+  &:focus, :active {
+    box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
+  }
+}
+  
+
+.bio-input.-info > input,
+.bio-input.-info > textarea { 
+  border-color: $color-info;
+  &:focus, :active {
+    box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
+  }
+}
+  
+
+.bio-input.-warning > input,
+.bio-input.-warning > textarea { 
+  border-color: $color-warning;
+  &:focus, :active {
+    box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
+  }
+}
+
+.bio-input > input {
   height: 40px;
 }
 
-.bio-textarea {
+.bio-input > textarea {
   @extend ._pdv-8;
 }
