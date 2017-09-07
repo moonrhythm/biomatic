@@ -11,13 +11,18 @@ select::-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
+.bio-input,
+.bio-textarea,
+.bio-select {
+  @extend ._pst-rlt;
+}
 
 .bio-input > input,
-.bio-input > textarea,
-.bio-input > select {
-  // -webkit-appearance: none;
-  // -moz-appearance: none;
-  // appearance: none;
+.bio-textarea > textarea,
+.bio-select > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   @extend ._bgcl-white;
   @extend ._bdrd-4;
   @extend ._bd-1;
@@ -41,8 +46,8 @@ select::-moz-focusring {
 }
 
 .bio-input.-positive > input,
-.bio-input.-positive > textarea,
-.bio-input.-positive > select { 
+.bio-textarea.-positive > textarea,
+.bio-select.-positive > select { 
   border-color: $color-positive;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
@@ -50,8 +55,8 @@ select::-moz-focusring {
 }
 
 .bio-input.-negative > input,
-.bio-input.-negative > textarea,
-.bio-input.-negative > select { 
+.bio-textarea.-negative > textarea,
+.bio-select.-negative > select { 
   border-color: $color-negative;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
@@ -60,8 +65,8 @@ select::-moz-focusring {
   
 
 .bio-input.-info > input,
-.bio-input.-info > textarea,
-.bio-input.-info > select { 
+.bio-textarea.-info > textarea,
+.bio-select.-info > select { 
   border-color: $color-info;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
@@ -70,8 +75,8 @@ select::-moz-focusring {
   
 
 .bio-input.-warning > input,
-.bio-input.-warning > textarea,
-.bio-input.-warning > select { 
+.bio-textarea.-warning > textarea,
+.bio-select.-warning > select { 
   border-color: $color-warning;
   &:focus, :active {
     box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
@@ -79,14 +84,14 @@ select::-moz-focusring {
 }
 
 .bio-input.-disabled > input,
-.bio-input.-disabled > textarea,
-.bio-input.-disabled > select {
+.bio-textarea.-disabled > textarea,
+.bio-select.-disabled > select {
   @extend ._cs-na;
   background-color: lighten($color-gray, 10%);
   border-color: $color-gray;
 }
 
-.bio-input > select[multiple] {
+.bio-select.-multiple > select {
   @extend ._pd-0;
   > option {
     @extend ._pdv-8;
@@ -98,12 +103,35 @@ select::-moz-focusring {
   }
 }
 
-.bio-input > input,
-.bio-input > select:not([multiple]) {
+.bio-input,
+.bio-select:not(.-multiple) {
   height: 36px;
+  max-height: 36px;
 }
 
-.bio-input > textarea {
+.bio-input > input,
+.bio-select:not(.-multiple) > select {
+  height: 36px;
+  max-height: 36px;
+}
+
+.bio-select:not(.-multiple)::after {
+    border: 2px solid $color-gray;
+    border-right: 0;
+    border-top: 0;
+    content: " ";
+    display: block;
+    height: 8px;
+    pointer-events: none;
+    position: absolute;
+    transform: rotate(-45deg) translate(0, calc(-50% - 4px));
+    width: 8px;
+    right: 8px;
+    top: 50%;
+    z-index: 4;
+  }
+
+.bio-textarea > textarea {
   @extend ._pdv-8;
 }
 
