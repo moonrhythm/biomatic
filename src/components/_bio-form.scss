@@ -106,3 +106,10 @@ select::-moz-focusring {
 .bio-input > textarea {
   @extend ._pdv-8;
 }
+
+.svg {
+  width: 100px;
+  height: 100px;
+  background-image: 
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='212' height='106' viewBox='0 0 212 106'><polygon fill='%23D8D8D8' fill-rule='evenodd' points='154.79 48.79 181 -75 181 75 31 75' transform='rotate(45 106 0)'/></svg>");
+}
