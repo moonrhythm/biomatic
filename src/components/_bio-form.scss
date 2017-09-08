@@ -1,7 +1,14 @@
 // Cleanup
-input[type="submit"] {
+input[type="submit"],
+input[type="submit"]:focus {
   border: none;
+  outline: none;
 }
+
+input[type="checkbox"] {
+  @extend ._cs-pt;
+}
+
 // Placeholder Color
 ::-webkit-input-placeholder {
   color: darken($color-gray, 16%);
@@ -10,6 +17,45 @@ input[type="submit"] {
 ::-moz-placeholder {
   color: darken($color-gray, 40%);
 }
+
+// Switch
+.bio-switch > input {
+  font-size: 30px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	width: 3.5em;
+	height: 1.5em;
+	background: #ddd;
+	border-radius: 3em;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	-webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  &:checked{
+    background: #0ebeff;
+  }
+  &:after{
+    position: absolute;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+            box-shadow: 0 0 .25em rgba(0,0,0,.3);
+    -webkit-transform: scale(.7);
+            transform: scale(.7);
+    left: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    }
+    &:checked:after{
+    left: calc(100% - 1.5em);
+    }
+}
+
 
 // Input
 .bio-input > input,
@@ -116,8 +162,11 @@ input[type="submit"] {
 }
 
 // Icon Left
-.bio-select:not(.-multiple) > select {
+.bio-select:not(.-multiple) {
   @extend ._pst-rlt;
+}
+
+.bio-select:not(.-multiple) > select {
   @extend ._pdr-32;
 }
 
