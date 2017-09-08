@@ -20,40 +20,36 @@ input[type="checkbox"] {
 
 // Switch
 .bio-switch > input {
-  font-size: 30px;
+  @extend ._pst-rlt;
+  @extend ._bgcl-gray;
+  @extend ._cs-pt;
+  @extend ._bdrd-128;
 	-webkit-appearance: none;
 	   -moz-appearance: none;
 	        appearance: none;
-	width: 3.5em;
-	height: 1.5em;
-	background: #ddd;
-	border-radius: 3em;
-	position: relative;
-	cursor: pointer;
-	outline: none;
-	-webkit-transition: all .2s ease-in-out;
+	width: 56px;
+	height: 26px;
   transition: all .2s ease-in-out;
-  &:checked{
-    background: #0ebeff;
+  outline: none;
+  &:checked {
+    @extend ._bgcl-primary;
   }
-  &:after{
-    position: absolute;
-    content: "";
-    width: 1.5em;
-    height: 1.5em;
-    border-radius: 50%;
-    background: #fff;
-    -webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
-            box-shadow: 0 0 .25em rgba(0,0,0,.3);
-    -webkit-transform: scale(.7);
-            transform: scale(.7);
-    left: 0;
-    -webkit-transition: all .2s ease-in-out;
+  &:after {
+    content: " ";
+    @extend ._pst-asl;
+    @extend ._bdrd-50pct;
+    @extend ._bgcl-white;
+    @extend ._h-32;
+    @extend ._w-32;
+    left: -2px;
+    top: -3px;
+    box-shadow: 0 0 7px rgba(0,0,0,.3);
+    transform: scale(.64);
     transition: all .2s ease-in-out;
-    }
-    &:checked:after{
-    left: calc(100% - 1.5em);
-    }
+  }
+  &:checked:after{
+    left: calc(100% - 30px);
+  }
 }
 
 
