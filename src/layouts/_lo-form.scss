@@ -21,11 +21,17 @@
     grid-area: label;
   }
 
-  >.bio-input {
+  >
+  .bio-input,
+  .bio-select,
+  .bio-textarea {
     grid-area: input;
   }
   
-  >.bio-input {
+  >
+  .bio-input,
+  .bio-select,
+  .bio-textarea {
     + * {
       @extend ._cl-dark;
       grid-area: help;

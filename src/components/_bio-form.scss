@@ -1,4 +1,8 @@
-
+// Cleanup
+input[type="submit"] {
+  border: none;
+}
+// Placeholder Color
 ::-webkit-input-placeholder {
   color: darken($color-gray, 16%);
 }
@@ -7,16 +11,7 @@
   color: darken($color-gray, 40%);
 }
 
-select::-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
-.bio-input,
-.bio-textarea,
-.bio-select {
-  @extend ._pst-rlt;
-}
-
+// Input
 .bio-input > input,
 .bio-textarea > textarea,
 .bio-select > select {
@@ -45,6 +40,7 @@ select::-moz-focusring {
   }
 }
 
+// Positive
 .bio-input.-positive > input,
 .bio-textarea.-positive > textarea,
 .bio-select.-positive > select { 
@@ -54,6 +50,7 @@ select::-moz-focusring {
   }
 }
 
+// Positive
 .bio-input.-negative > input,
 .bio-textarea.-negative > textarea,
 .bio-select.-negative > select { 
@@ -63,7 +60,7 @@ select::-moz-focusring {
   }
 }
   
-
+// Info
 .bio-input.-info > input,
 .bio-textarea.-info > textarea,
 .bio-select.-info > select { 
@@ -73,7 +70,7 @@ select::-moz-focusring {
   }
 }
   
-
+// Warning
 .bio-input.-warning > input,
 .bio-textarea.-warning > textarea,
 .bio-select.-warning > select { 
@@ -83,6 +80,7 @@ select::-moz-focusring {
   }
 }
 
+// Disabled
 .bio-input.-disabled > input,
 .bio-textarea.-disabled > textarea,
 .bio-select.-disabled > select {
@@ -91,6 +89,7 @@ select::-moz-focusring {
   border-color: $color-gray;
 }
 
+// Multiple Select
 .bio-select.-multiple > select {
   @extend ._pd-0;
   > option {
@@ -103,6 +102,7 @@ select::-moz-focusring {
   }
 }
 
+// Input Height
 .bio-input,
 .bio-select:not(.-multiple) {
   height: 36px;
@@ -115,29 +115,35 @@ select::-moz-focusring {
   max-height: 36px;
 }
 
+// Icon Left
+.bio-select:not(.-multiple) > select {
+  @extend ._pst-rlt;
+  @extend ._pdr-32;
+}
+
+// Select Caret
 .bio-select:not(.-multiple)::after {
-    border: 2px solid $color-gray;
-    border-right: 0;
-    border-top: 0;
-    content: " ";
-    display: block;
-    height: 8px;
-    pointer-events: none;
-    position: absolute;
-    transform: rotate(-45deg) translate(0, calc(-50% - 4px));
-    width: 8px;
-    right: 8px;
-    top: 50%;
-    z-index: 4;
-  }
+  content: " ";
+  @extend ._bd-2;
+  @extend ._bdr-0;
+  @extend ._bdt-0;
+  @extend ._bdcl-gray;
+  @extend ._h-8;
+  @extend ._w-8;
+  @extend ._pst-asl;
+  @extend ._r-8;
+  @extend ._t-50pct;
+  transform: rotate(-45deg) translate(0, calc(-50% - 4px));
+  z-index: 4;
+  pointer-events: none;
+}
 
 .bio-textarea > textarea {
   @extend ._pdv-8;
 }
 
-.svg {
-  width: 100px;
-  height: 100px;
-  background-image: 
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='212' height='106' viewBox='0 0 212 106'><polygon fill='%23D8D8D8' fill-rule='evenodd' points='154.79 48.79 181 -75 181 75 31 75' transform='rotate(45 106 0)'/></svg>");
-}
+/* TODO (Consider)
+* - Size
+* - Icon left / right
+* - Loading state
+*/
