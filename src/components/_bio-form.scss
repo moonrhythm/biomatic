@@ -18,37 +18,110 @@ input[type="checkbox"] {
   color: darken($color-gray, 40%);
 }
 
+//Checkbox
+// .bio-checkbox {
+//   @extend ._cs-pt;
+//   > label {
+//     @extend ._cs-pt;
+//   }
+// }
+
+// Checkbox
+.bio-checkbox {
+  > input[type="checkbox"] {
+    @extend ._opct-0;
+    @extend ._cs-pt;
+    pointer-events: none;
+  }
+  > label {
+    @extend ._pst-rlt;
+    @extend ._dp-ilb;
+    padding-left: 22px;
+    margin-left: -22px;
+    @extend ._cs-pt;
+    &:before, &:after {
+      content: "";
+      @extend ._pst-asl;
+      @extend ._dp-ilb;
+    }
+    &:before {
+      @extend ._w-16;
+      @extend ._h-16;
+      @extend ._l-0;
+      @extend ._bd-1;
+      @extend ._bdcl-gray;
+      @extend ._bdrd-2;
+    }
+    &:after {
+      content: none;
+      height: 5px;
+      width: 9px;
+      @extend ._t-4;
+      @extend ._l-4;
+      @extend ._bdl-2;
+      @extend ._bdbt-2;
+      @extend ._bdcl-primary;
+      transform: rotate(-45deg);
+    }
+  }
+  &.-disabled {
+    @extend ._opct-50;
+    > input[type="checkbox"],
+    > label {
+      @extend ._cs-na;
+    }
+  }
+}
+
+.bio-checkbox > input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.bio-checkbox > input[type="checkbox"]:focus + label::before {
+  box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
+}
+
+
 // Switch
-.bio-switch > input {
-  @extend ._pst-rlt;
-  @extend ._bgcl-gray;
-  @extend ._cs-pt;
-  @extend ._bdrd-128;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
-	width: 56px;
-	height: 26px;
-  transition: all .2s ease-in-out;
-  outline: none;
-  &:checked {
-    @extend ._bgcl-primary;
-  }
-  &:after {
-    content: " ";
-    @extend ._pst-asl;
-    @extend ._bdrd-50pct;
-    @extend ._bgcl-white;
-    @extend ._h-32;
-    @extend ._w-32;
-    left: -2px;
-    top: -3px;
-    box-shadow: 0 0 7px rgba(0,0,0,.3);
-    transform: scale(.64);
+.bio-switch {
+  > input[type="checkbox"] {
+    @extend ._pst-rlt;
+    @extend ._bgcl-gray;
+    @extend ._cs-pt;
+    @extend ._bdrd-128;
+    -webkit-appearance: none;
+      -moz-appearance: none;
+            appearance: none;
+    width: 56px;
+    height: 26px;
     transition: all .2s ease-in-out;
+    outline: none;
+    &:checked {
+      @extend ._bgcl-primary;
+    }
+    &:after {
+      content: " ";
+      @extend ._pst-asl;
+      @extend ._bdrd-50pct;
+      @extend ._bgcl-white;
+      @extend ._h-32;
+      @extend ._w-32;
+      left: -2px;
+      top: -3px;
+      box-shadow: 0 0 7px rgba(0,0,0,.3);
+      transform: scale(.64);
+      transition: all .2s ease-in-out;
+    }
+    &:checked:after{
+      left: calc(100% - 30px);
+    }
   }
-  &:checked:after{
-    left: calc(100% - 30px);
+  &.-disabled {
+    @extend ._opct-50;
+    > input[type="checkbox"],
+    > label {
+      @extend ._cs-na;
+    }
   }
 }
 
@@ -82,7 +155,7 @@ input[type="checkbox"] {
   }
 }
 
-// Positive
+// -Positive
 .bio-input.-positive > input,
 .bio-textarea.-positive > textarea,
 .bio-select.-positive > select { 
@@ -92,7 +165,7 @@ input[type="checkbox"] {
   }
 }
 
-// Positive
+// -Negative
 .bio-input.-negative > input,
 .bio-textarea.-negative > textarea,
 .bio-select.-negative > select { 
@@ -102,7 +175,7 @@ input[type="checkbox"] {
   }
 }
   
-// Info
+// -Info
 .bio-input.-info > input,
 .bio-textarea.-info > textarea,
 .bio-select.-info > select { 
@@ -112,7 +185,7 @@ input[type="checkbox"] {
   }
 }
   
-// Warning
+// -Warning
 .bio-input.-warning > input,
 .bio-textarea.-warning > textarea,
 .bio-select.-warning > select { 
@@ -122,7 +195,7 @@ input[type="checkbox"] {
   }
 }
 
-// Disabled
+// -Disabled
 .bio-input.-disabled > input,
 .bio-textarea.-disabled > textarea,
 .bio-select.-disabled > select {
