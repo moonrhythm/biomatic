@@ -24,6 +24,8 @@
 
     >.bio-card-cover {
       width: 120px;
+      @extend ._h-100pct;
+      @extend ._ojf-cv;
     }
   }
 
@@ -36,6 +38,7 @@
 
   >.bio-card-cover {
     grid-area: cover;
+    @extend ._w-100pct;
   }
   >.bio-card-title {
     grid-area: title;
