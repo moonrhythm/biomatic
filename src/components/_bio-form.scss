@@ -190,6 +190,56 @@ input[type="checkbox"] {
   }
 }
 
+// File
+.bio-file {
+  position: relative;
+  @extend ._cs-pt;
+  > input[type="file"] {
+    @extend ._pst-asl;
+    @extend ._dp-b;
+    @extend ._w-100pct;
+    @extend ._h-100pct;
+    @extend ._cs-pt;
+    @extend ._opct-0;
+    pointer-events: none;
+  }
+  > input[type="file"] + * {
+    @extend ._dp-b;
+    @extend ._bd-1;
+    @extend ._bgcl-white;
+    @extend ._cl-dark;
+    @extend ._bdcl-gray;
+    @extend ._bdrd-2;
+    @extend ._cs-pt;
+    padding: 10px 20px;
+    user-select: none;
+    &:before {
+      content: " ";
+      // @extend ._bdcl-gray;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      // @extend ._pst-asl;
+      // @extend ._r-8;
+      // @extend ._t-50pct;
+      background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Upload</title><path fill="#1f9eff" d="M11.25 16.5h-11.25v6h22.5v-6h-11.25zM21 19.5h-3v-1.5h3v1.5zM5.25 7.5l6-6 6 6h-3.75v7.5h-4.5v-7.5z"></path></svg>');
+      background-size: contain;
+      vertical-align: bottom;
+      margin-right: 12px;
+    }
+    &:hover {
+      background-color: lighten($color-gray, 30%);
+      border-color: lighten($color-dark, 50%);
+    }
+  }
+  &.-disabled {
+    @extend ._opct-50;
+    > input[type="file"],
+    > label {
+      @extend ._cs-na;
+    }
+  }
+}
 
 // Input
 .bio-input > input,
@@ -204,6 +254,7 @@ input[type="checkbox"] {
   @extend ._bdcl-gray;
   @extend ._cl-dark;
   @extend ._w-100pct;
+  vertical-align: top;
   padding-left: 12px;
   padding-right: 12px;
   box-shadow: inset 0 1px 1px hsla(0, 0, 64, 0.24);
