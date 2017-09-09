@@ -12,7 +12,7 @@
     ".       .       .";
 
   &.-v2 {
-    grid-template-columns: 100px 16px 1fr 16px;
+    grid-template-columns: min-content 16px 1fr 16px;
     grid-template-rows: 16px max-content max-content 16px max-content 16px;
     grid-template-areas: 
       "cover .     .     ."
@@ -20,7 +20,11 @@
       "cover . subtitle  ."
       "cover .     .     ."
       "cover . content   ."
-      "cover .     .     ."
+      "cover .     .     .";
+
+    >.bio-card-cover {
+      width: 120px;
+    }
   }
 
   border: 1px solid $color-gray;
