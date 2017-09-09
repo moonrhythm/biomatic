@@ -1,6 +1,28 @@
 .bio-card {
   display: grid;
-  grid-auto-columns: 16px 1fr 16px;
+  grid-template-columns: 16px 1fr 16px;
+  grid-template-rows: max-content 16px max-content max-content 16px max-content 16px;
+  grid-template-areas: 
+    "cover cover cover"
+    ".       .       ."
+    ". title         ."
+    ". subtitle      ."
+    ".       .       ."
+    ". content       ."
+    ".       .       .";
+
+  &.-v2 {
+    grid-template-columns: 100px 16px 1fr 16px;
+    grid-template-rows: 16px max-content max-content 16px max-content 16px;
+    grid-template-areas: 
+      "cover .     .     ."
+      "cover . title     ."
+      "cover . subtitle  ."
+      "cover .     .     ."
+      "cover . content   ."
+      "cover .     .     ."
+  }
+
   border: 1px solid $color-gray;
   border-radius: 4px;
   overflow: hidden;
@@ -9,29 +31,22 @@
     0 1px 3px rgba(0,0,0,.08);
 
   >.bio-card-cover {
-    grid-column: 1 / 4;
-    margin-bottom: 16px;
+    grid-area: cover;
   }
   >.bio-card-title {
+    grid-area: title;
     @extend ._fs-4;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    width: 100%;
     @extend ._cl-dark;
   }
   >.bio-card-subtitle {
+    grid-area: subtitle;
     @extend ._fs-7;
     @extend ._opct-60;
-    font-size: 80%;
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    margin-bottom: 16px;
     @extend ._cl-dark;
+    font-size: 80%;
   }
   >.bio-card-content {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    margin-bottom: 16px;
+    grid-area: content;
     @extend ._cl-dark;
   }
 }
