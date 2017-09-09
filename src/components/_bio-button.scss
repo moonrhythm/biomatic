@@ -1,6 +1,6 @@
 .bio-button {
-  @extend ._pd-8;
-  @extend ._bdrd-2;
+  @extend ._pd-8px;
+  @extend ._bdrd-2px;
   @extend ._bgcl-primary;
   @extend ._tal-ct;
   @extend ._cs-pt;
@@ -21,7 +21,7 @@
   &.-primary {
     @extend ._bgcl-primary;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-primary;
       @extend ._cl-primary;
       @extend ._bgcl-tpr;
@@ -41,7 +41,7 @@
   &.-accent {
     @extend ._bgcl-accent;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-accent;
       @extend ._cl-accent;
       @extend ._bgcl-tpr;
@@ -61,7 +61,7 @@
   &.-positive {
     @extend ._bgcl-positive;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-positive;
       @extend ._cl-positive;
       @extend ._bgcl-tpr;
@@ -81,7 +81,7 @@
   &.-info {
     @extend ._bgcl-info;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-info;
       @extend ._cl-info;
       @extend ._bgcl-tpr;
@@ -101,7 +101,7 @@
   &.-warning {
     @extend ._bgcl-warning;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-warning;
       @extend ._cl-warning;
       @extend ._bgcl-tpr;
@@ -121,7 +121,7 @@
   &.-negative {
     @extend ._bgcl-negative;
     &.-outline {
-      @extend ._bd-1;
+      @extend ._bd-1px;
       @extend ._bdcl-negative;
       @extend ._cl-negative;
       @extend ._bgcl-tpr;
@@ -163,7 +163,7 @@
   &.-white {
     @extend ._bgcl-white;
     @extend ._cl-dark;
-    @extend ._bd-1;
+    @extend ._bd-1px;
     @extend ._bdcl-gray;
     &:hover {
       background-color: lighten($color-gray, 30%);
