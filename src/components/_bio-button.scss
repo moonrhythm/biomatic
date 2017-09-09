@@ -3,10 +3,10 @@
   @extend ._bdrd-2;
   @extend ._bgcl-primary;
   @extend ._tal-ct;
-  @extend ._cl-neutral-100;
   @extend ._cs-pt;
   @extend ._lh-150pct;
   @extend ._pst-rlt;
+  @extend ._cl-white;
   user-select: none;
   transition:
     transform 0.18s ease,
@@ -203,8 +203,8 @@
     
     &:not(.-outline) {
       &:after {
-        border-left-color: $color-neutral-100;
-        border-bottom-color: $color-neutral-100;
+        border-left-color: $color-white;
+        border-bottom-color: $color-white;
       }
     }
 

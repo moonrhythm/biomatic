@@ -212,7 +212,7 @@ input[type="checkbox"] {
     @extend ._pdh-8;
     box-shadow: none;
     &:checked {
-      background: linear-gradient($color-primary-500, $color-primary-500);
+      background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
     }
   }
 }
