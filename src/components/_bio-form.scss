@@ -32,6 +32,16 @@ input[type="checkbox"] {
     @extend ._opct-0;
     @extend ._cs-pt;
     pointer-events: none;
+    &:checked {
+      + label::after {
+        content: "";
+      }
+    }
+    &:focus {
+      + label::before {
+        box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
+      }
+    }
   }
   > label {
     @extend ._pst-rlt;
@@ -73,14 +83,69 @@ input[type="checkbox"] {
   }
 }
 
-.bio-checkbox > input[type="checkbox"]:checked + label::after {
+// Radio
+.bio-radio {
+  > input[type="radio"] {
+    @extend ._opct-0;
+    @extend ._cs-pt;
+    pointer-events: none;
+    &:checked {
+      + label::after {
+        content: "";
+      }
+    }
+    &:focus {
+      + label::before {
+        box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
+      }
+    }
+  }
+  > label {
+    @extend ._pst-rlt;
+    @extend ._dp-ilb;
+    padding-left: 22px;
+    margin-left: -22px;
+    @extend ._cs-pt;
+    &:before, &:after {
+      content: "";
+      @extend ._pst-asl;
+      @extend ._dp-ilb;
+    }
+    &:before {
+      @extend ._w-16;
+      @extend ._h-16;
+      @extend ._l-0;
+      @extend ._bd-1;
+      @extend ._bdcl-gray;
+      @extend ._bdrd-50pct;
+    }
+    &:after {
+      content: none;
+      height: 10px;
+      width: 10px;
+      @extend ._t-4;
+      @extend ._l-4;
+      @extend ._bgcl-primary;
+      @extend ._bdcl-primary;
+      @extend ._bdrd-50pct;
+    }
+  }
+  &.-disabled {
+    @extend ._opct-50;
+    > input[type="radio"],
+    > label {
+      @extend ._cs-na;
+    }
+  }
+}
+
+.bio-checkbox > input[type="radio"]:checked + label::after {
   content: "";
 }
 
-.bio-checkbox > input[type="checkbox"]:focus + label::before {
+.bio-checkbox > input[type="radio"]:focus + label::before {
   box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
 }
-
 
 // Switch
 .bio-switch {
