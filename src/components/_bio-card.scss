@@ -1,0 +1,37 @@
+.bio-card {
+  display: grid;
+  grid-auto-columns: 16px 1fr 16px;
+  border: 1px solid $color-gray;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    0 4px 6px rgba(50,50,93,.11),
+    0 1px 3px rgba(0,0,0,.08);
+
+  >.bio-card-cover {
+    grid-column: 1 / 4;
+    margin-bottom: 16px;
+  }
+  >.bio-card-title {
+    @extend ._fs-4;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    @extend ._cl-dark;
+  }
+  >.bio-card-subtitle {
+    @extend ._fs-7;
+    @extend ._opct-60;
+    font-size: 80%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-bottom: 16px;
+    @extend ._cl-dark;
+  }
+  >.bio-card-content {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin-bottom: 16px;
+    @extend ._cl-dark;
+  }
+}
