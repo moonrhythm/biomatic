@@ -1,0 +1,37 @@
+.u-rise {
+  box-shadow:
+    0 2px 20px 0 rgba(0,0,0,0.05);
+}
+
+.u-rise {
+  transition:
+    box-shadow .3s ease-out,
+    transform .3s ease-out,
+    opacity .2s ease-out;
+}
+
+.u-rise:hover {
+  box-shadow: 
+    rgba(45,45,45,0.05) 0px 2px 2px, 
+    rgba(49,49,49,0.05) 0px 4px 4px, 
+    rgba(42,42,42,0.05) 0px 8px 8px, 
+    rgba(32,32,32,0.05) 0px 16px 16px, 
+    rgba(49,49,49,0.05) 0px 32px 32px, 
+    rgba(35,35,35,0.05) 0px 64px 64px;
+}
+
+.u-rise-2 {
+  box-shadow:
+    0 4px 6px rgba(50,50,93,.11),
+    0 1px 3px rgba(0,0,0,.08);
+  transition:
+    box-shadow .2s ease-out,
+    transform .2s ease-out;
+}
+
+.u-rise-2:hover {
+  transform: translate(0, -1px);
+  box-shadow:
+    0 7px 14px rgba(50,50,93,.1),
+    0 3px 6px rgba(0,0,0,.08);
+}

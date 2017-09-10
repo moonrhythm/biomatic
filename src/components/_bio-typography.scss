@@ -69,7 +69,7 @@ a.bio-link {
   &.-negative {
     color: $color-negative;
     &:hover, &:focus {
-      color: darken($color-negative, 5%);
+      color: darken($color-negative, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-negative;
@@ -83,7 +83,7 @@ a.bio-link {
   &.-warning {
     color: $color-warning;
     &:hover, &:focus {
-      color: darken($color-warning, 5%);
+      color: darken($color-warning, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-warning;
@@ -97,7 +97,7 @@ a.bio-link {
   &.-info {
     color: $color-info;
     &:hover, &:focus {
-      color: darken($color-info, 5%);
+      color: darken($color-info, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-info;

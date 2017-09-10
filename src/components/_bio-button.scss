@@ -171,13 +171,13 @@
     }
   }
 
-  &.-rise {
-    @extend ._bsd-1;
-    &:hover {
-      @extend ._bsd-2;
-      transform: translate(0, -1px);
-    }
-  }
+  // &.-rise {
+  //   @extend ._bsd-1;
+  //   &:hover {
+  //     @extend ._bsd-2;
+  //     transform: translate(0, -1px);
+  //   }
+  // }
 
   &.-disabled {
     @extend ._cs-na;

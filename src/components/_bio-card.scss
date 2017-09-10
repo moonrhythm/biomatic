@@ -52,11 +52,8 @@
       @extend ._bdrd-2px;
     }
   }
-  @extend ._bd-1px;
-  @extend ._bdcl-gray;
   @extend ._bdrd-4px;
-  @extend ._bdrd-4px;
-  @extend ._bsd-3;
+  // border: 1px solid transparentize($color-gray, .4);
 
   >.bio-card-cover {
     grid-area: cover;
@@ -97,16 +94,14 @@
       grid-area: at;
       justify-content: justify;
       @extend ._mgt-0px;
-      @extend ._bdt-1px;
-      @extend ._bdcl-gray;
+      border-top: 1px solid transparentize($color-gray, .4);
       > * {
         flex: 1;
         padding: 12px;
         @extend ._mgr-0px;
         @extend ._tal-ct;
         &:not(:last-child) {
-          @extend ._bdr-1px;
-          @extend ._bdcl-gray;
+          border-right: 1px solid transparentize($color-gray, .4);
         }
       }
     }
