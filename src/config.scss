@@ -60,6 +60,7 @@ $font-primary: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen"
 $font-secondary: '';
 
 html {
+  color: $color-dark;
   font-family: $font-primary;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

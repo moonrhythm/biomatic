@@ -9,7 +9,8 @@
     16px
     max-content
     max-content
-    16px;
+    16px
+    max-content;
 
   grid-template-areas: 
     "cover cover cover"
@@ -19,19 +20,29 @@
     ".       .       ."
     ". content       ."
     ". actions       ."
-    ".       .       .";
+    ".       .       ."
+    "at      at     at";
 
-  &.-v2 {
-    grid-template-columns: 16px min-content 16px 1fr max-content 16px;
-    grid-template-rows: 16px max-content max-content 12px max-content max-content 16px;
+  &.-horizontal {
+    grid-template-columns: 16px min-content 16px 1fr 16px;
+    grid-template-rows: 
+      16px
+      max-content
+      max-content
+      12px max-content
+      max-content
+      16px
+      max-content;
+
     grid-template-areas: 
-      ".   .   .    .      ."
-      ". cover . title     ."
-      ". cover . subtitle  ."
-      ". cover .     .     ."
-      ". cover . content   ."
-      ". cover . actions   ."
-      ".   .   .     .     .";
+      ".   .   .     .    ."
+      ". cover . title    ."
+      ". cover . subtitle ."
+      ". cover .     .    ."
+      ". cover . content  ."
+      ". cover . actions  ."
+      ".   .   .     .    ."
+      "at  at  at   at   at";
 
     >.bio-card-cover {
       width: 112px;
@@ -63,30 +74,40 @@
   >.bio-card-content {
     grid-area: content;
     @extend ._cl-dark;
-    @extend ._lh-150pct;
+    @extend ._lh-125pct;
   }
   >.bio-card-actions {
+    grid-area: actions;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: 16px;
+    @extend ._cl-dark;
+    > * {
+      &:not(:last-child) {
+        @extend ._mgr-16px;
+      }
+    }
     &.-push-left {
       justify-content: flex-start;
     }
-    > * {
-      &:not(:last-child) {
-        margin-right: 12px;
+    &.-attached {
+      grid-area: at;
+      justify-content: justify;
+      @extend ._mgt-0px;
+      @extend ._bdt-1px;
+      @extend ._bdcl-gray;
+      > * {
+        flex: 1;
+        padding: 12px;
+        @extend ._mgr-0px;
+        @extend ._tal-ct;
+        &:not(:last-child) {
+          @extend ._bdr-1px;
+          @extend ._bdcl-gray;
+        }
       }
     }
-    grid-area: actions;
-    // display: grid;
-    // justify-content: end;
-    // justify-items: end;
-    // grid-gap: 6px 16px;
-    // grid-template-columns: repeat(auto-fit, minmax(50px, auto));
-    // // grid-auto-rows: 1fr;
-    // grid-auto-flow: dense;
-    margin-top: 16px;
-    @extend ._cl-dark;
   }
 }
 // TODO
