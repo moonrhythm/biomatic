@@ -4,6 +4,7 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/biomatic.css" rel="stylesheet">
   </head>
   <body>
@@ -354,11 +355,41 @@
     </div>
 
     <div class="lo-container _pdt-16px _mgbt-32px">
-      <h2>Card</h2>
-      <div class="lo-xs-12 lo-sm-6 lo-md-4 -gap-8px _alit-s _mgbt-8px">
+      <h2>Typography. (anchor link)</h2>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link" href="#">This is a normal/primary link</a></div>
+        <div>Hello <a class="bio-link -fancy" href="#">This is a normal/primary fancy link</a></div>
+      </div>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link -accent" href="#">This is a accent link</a></div>
+        <div>Hello <a class="bio-link -accent -fancy" href="#">This is a accent fancy link</a></div>
+      </div>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link -positive" href="#">This is a positive link</a></div>
+        <div>Hello <a class="bio-link -positive -fancy" href="#">This is a positive fancy link</a></div>
+      </div>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link -negative" href="#">This is a negative link</a></div>
+        <div>Hello <a class="bio-link -negative -fancy" href="#">This is a negative fancy link</a></div>
+      </div>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link -warning" href="#">This is a warning link</a></div>
+        <div>Hello <a class="bio-link -warning -fancy" href="#">This is a warning fancy link</a></div>
+      </div>
+      <div class="lo-sm-6 lo-md-6 lo-lg-3 -gap-8px _mgbt-8px">
+        <div>Hello <a class="bio-link -info" href="#">This is a info link</a></div>
+        <div>Hello <a class="bio-link -info -fancy" href="#">This is a info fancy link</a></div>
+      </div>
 
-        <div class="bio-card">
-          <img class="bio-card-cover _ojf-cv" height="120" src="https://placeimg.com/640/480/animals" alt="image">
+      </div>
+    </div>
+    
+    <div class="lo-container _pdt-16px _mgbt-32px">
+      <h2>Card</h2>
+      <div class="lo-xs-12 lo-sm-12 lo-md-6 -gap-8px _alit-s _mgbt-16px">
+
+        <div class="bio-card _mxw-256px _mgbt-32px">
+          <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
           <div class="bio-card-title"><strong>Hello Kitty</strong></div>
           <div class="bio-card-subtitle">@BioMaRu</div>
           <div class="bio-card-content">
@@ -366,18 +397,47 @@
             Aenean efficitur sit amet massa fringilla egestas.
             Nullam condimentum luctus turpis.
           </div>
-        </div>
-
-        <div class="bio-card -v2">
-          <img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image">
-          <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-          <div class="bio-card-subtitle">@BioMaRu</div>
-          <div class="bio-card-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenean efficitur sit amet massa fringilla egestas.
+          <div class="bio-card-actions">
+              <div>Action 4</div>  
+              <div>Action 3</div>  
+              <div>Action 2</div>  
+              <div>Action 1</div>  
+              <div>Cancel</div>  
+              <div>OK</div>  
           </div>
         </div>
 
+        <div class="bio-card -v2">
+          <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
+          <div class="bio-card-title"><strong>Hello Kitty</strong></div>
+          <div class="bio-card-subtitle">@BioMaRu</div>
+          <div class="bio-card-content">
+              Lorem ipsum dolor sit amet, <a class="bio-link -primary" href="#">link here</a> consectetur adipiscing elit.
+              Aenean efficitur <a class="bio-link -primary -fancy" href="#">fancy link here</a> sit amet massa fringilla egestas.
+          </div>
+          <div class="bio-card-actions">
+            <a class="bio-link -primary" href="#">Cancel</a>
+            <a class="bio-link" href="#">OK</a>
+          </div>
+        </div>
+        
+        <div class="bio-card -v2">
+          <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
+          <div class="bio-card-title"><strong>Hello Kitty</strong></div>
+          <div class="bio-card-subtitle">@BioMaRu</div>
+          <div class="bio-card-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean efficitur sit amet massa fringilla egestas.
+          </div>
+          <div class="bio-card-actions -push-left">
+            <div><i class="material-icons _cl-primary _fs-5">satellite</i></div>
+            <div><i class="material-icons _cl-primary _fs-5">whatshot</i></div>
+            <div><i class="material-icons _cl-primary _fs-5">restaurant_menu</i></div>
+            <div><i class="material-icons _cl-primary _fs-5">wb_sunny</i></div>
+            <div><i class="material-icons _cl-primary _fs-5">tag_faces</i></div>
+          </div>
+        </div>
+        
       </div>
     </div>
     

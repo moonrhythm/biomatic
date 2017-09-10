@@ -1,7 +1,16 @@
 .bio-card {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
-  grid-template-rows: max-content 16px max-content max-content 16px max-content 16px;
+  grid-template-rows: 
+    max-content
+    12px
+    max-content
+    max-content
+    16px
+    max-content
+    max-content
+    16px;
+
   grid-template-areas: 
     "cover cover cover"
     ".       .       ."
@@ -9,32 +18,32 @@
     ". subtitle      ."
     ".       .       ."
     ". content       ."
+    ". actions       ."
     ".       .       .";
 
   &.-v2 {
-    grid-template-columns: min-content 16px 1fr 16px;
-    grid-template-rows: 16px max-content max-content 16px max-content 16px;
+    grid-template-columns: 16px min-content 16px 1fr max-content 16px;
+    grid-template-rows: 16px max-content max-content 12px max-content max-content 16px;
     grid-template-areas: 
-      "cover .     .     ."
-      "cover . title     ."
-      "cover . subtitle  ."
-      "cover .     .     ."
-      "cover . content   ."
-      "cover .     .     .";
+      ".   .   .    .      ."
+      ". cover . title     ."
+      ". cover . subtitle  ."
+      ". cover .     .     ."
+      ". cover . content   ."
+      ". cover . actions   ."
+      ".   .   .     .     .";
 
     >.bio-card-cover {
-      width: 120px;
-      @extend ._h-100pct;
-      @extend ._ojf-cv;
+      width: 112px;
+      height: 112px;
+      @extend ._bdrd-2px;
     }
   }
-
-  border: 1px solid $color-gray;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow:
-    0 4px 6px rgba(50,50,93,.11),
-    0 1px 3px rgba(0,0,0,.08);
+  @extend ._bd-1px;
+  @extend ._bdcl-gray;
+  @extend ._bdrd-4px;
+  @extend ._bdrd-4px;
+  @extend ._bsd-1;
 
   >.bio-card-cover {
     grid-area: cover;
@@ -50,10 +59,35 @@
     @extend ._fs-7;
     @extend ._opct-60;
     @extend ._cl-dark;
-    font-size: 80%;
   }
   >.bio-card-content {
     grid-area: content;
     @extend ._cl-dark;
+    @extend ._lh-150pct;
+  }
+  >.bio-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    &.-push-left {
+      justify-content: flex-start;
+    }
+    > * {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+    grid-area: actions;
+    // display: grid;
+    // justify-content: end;
+    // justify-items: end;
+    // grid-gap: 6px 16px;
+    // grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    // // grid-auto-rows: 1fr;
+    // grid-auto-flow: dense;
+    margin-top: 16px;
+    @extend ._cl-dark;
   }
 }
+// TODO
+// - card action ?
