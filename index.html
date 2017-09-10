@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/biomatic.css" rel="stylesheet">
   </head>
-  <body>
+  <body style="background-color: #f0f3f6">
 
     <div class="lo-container _pdt-16px _mgbt-32px">
 
@@ -410,36 +410,37 @@
             Nullam condimentum luctus turpis.
           </div>
           <div class="bio-card-actions">
-            <a class="bio-link -primary" href="#">Cancel</a>
-            <a class="bio-link -primary" href="#">OK</a>
+            <a class="bio-link _pdh-8px" href="#">Cancel</a>
+            <a class="bio-link _pdh-8px" href="#">OK</a>
           </div>
         </div>
+
         <div class="bio-card _mxw-256px _mgbt-32px">
-            <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-            <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-            <div class="bio-card-subtitle">@BioMaRu</div>
-            <div class="bio-card-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenean efficitur sit amet massa fringilla egestas.
-              Nullam condimentum luctus turpis.
-            </div>
-            <div class="bio-card-actions -attached">
-              <a class="bio-link -primary" href="#">Cancel</a>
-              <a class="bio-link -primary" href="#">OK</a>
-            </div>
+          <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
+          <div class="bio-card-title"><strong>Hello Kitty</strong></div>
+          <div class="bio-card-subtitle">@BioMaRu</div>
+          <div class="bio-card-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean efficitur sit amet massa fringilla egestas.
+            Nullam condimentum luctus turpis.
           </div>
+          <div class="bio-card-actions -attached">
+            <a class="bio-link" href="#">Cancel</a>
+            <a class="bio-link" href="#">OK</a>
+          </div>
+        </div>
 
         <div class="bio-card -horizontal">
           <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
           <div class="bio-card-title"><strong>Hello Kitty</strong></div>
           <div class="bio-card-subtitle">@BioMaRu</div>
           <div class="bio-card-content">
-              Lorem ipsum dolor sit amet, <a class="bio-link -primary" href="#">link here</a> consectetur adipiscing elit.
-              Aenean efficitur <a class="bio-link -primary -fancy" href="#">fancy link here</a> sit amet massa fringilla egestas.
+            Lorem ipsum dolor sit amet, <a class="bio-link -primary" href="#">link here</a> consectetur adipiscing elit.
+            Aenean efficitur <a class="bio-link -primary -fancy" href="#">fancy link here</a> sit amet massa fringilla egestas.
           </div>
           <div class="bio-card-actions">
-            <a class="bio-link -primary" href="#">Cancel</a>
-            <a class="bio-link" href="#">OK</a>
+            <a class="bio-link _pdh-8px" href="#">Cancel</a>
+            <a class="bio-link _pdh-8px" href="#">OK</a>
           </div>
         </div>
         
@@ -448,8 +449,8 @@
           <div class="bio-card-title"><strong>Hello Kitty</strong></div>
           <div class="bio-card-subtitle">@BioMaRu</div>
           <div class="bio-card-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenean efficitur sit amet massa fringilla egestas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean efficitur sit amet massa fringilla egestas.
           </div>
           <div class="bio-card-actions -push-left">
             <a class="bio-link" href="#"><i class="material-icons _fs-5">satellite</i></a>
@@ -465,19 +466,40 @@
           <div class="bio-card-title"><strong>Hello Kitty</strong></div>
           <div class="bio-card-subtitle">@BioMaRu</div>
           <div class="bio-card-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenean efficitur sit amet massa fringilla egestas.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean efficitur sit amet massa fringilla egestas.
           </div>
           <div class="bio-card-actions -attached">
-            <a class="bio-link -primary" href="#">Cancel</a>
-            <a class="bio-link -primary" href="#">Share</a>
+            <a class="bio-link" href="#">Cancel</a>
+            <a class="bio-link" href="#">Share</a>
             <a class="bio-link" href="#">OK</a>
           </div>
         </div>
+
       </div>
     </div>
     
-    <div class="lo-container _pdt-16px _mgbt-32px">
+    <div class="lo-container _mgbt-32px">
+      <h2>Tooltip</h2>
+      <div class="lo-xs-6 lo-sm-4 lo-md-3 -gap-8px _alit-s _mgbt-16px">
+        <a class="bio-tooltip -top" data-tooltip="Hello This is very long tooltip">
+          <div class="bio-button">Asasa</div>
+        </a>
+        <a class="bio-tooltip -right" data-tooltip="Hello This is very long tooltip position right">
+          <div class="bio-button">Asasa</div>
+        </a>
+        <a class="bio-tooltip -bottom" data-tooltip="Hello This is very long tooltip">
+          <div class="bio-button">Asasa</div>
+        </a>
+        <a class="bio-tooltip -left" data-tooltip="Hello This is very long tooltip position right">
+          <div class="bio-button">Asasa</div>
+        </a>
+        <a class="bio-tooltip" data-tooltip="Hello This is very long tooltip position right">
+          <div class="bio-button">Asasa</div>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="lo-container _pdt-16px _mgbt-32px">
       <h2>Icons</h2>
       <div class="lo-sm-2 lo-md-1 lo-lg-1 -gap-8px -row-center">
         <span class="bio-icon-person"></span>
@@ -525,7 +547,7 @@
         <span class="bio-icon-star_border"></span>
         <span class="bio-icon-star_half"></span>
       </div>
-    </div>
+    </div> -->
 
   </body>
 </html>

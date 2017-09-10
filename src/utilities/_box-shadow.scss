@@ -13,5 +13,14 @@
 ._bsd-2 {
   box-shadow:
     0 7px 14px rgba(50,50,93,.1),
-    0 3px 6px rgba(0,0,0,.08)
+    0 3px 6px rgba(0,0,0,.08);
+}
+
+._bsd-3 {
+  box-shadow:
+    0 2px 20px 0 rgba(0,0,0,0.05);
+    // transition:
+    //   box-shadow .3s ease-out,
+    //   transform .3s ease-out,
+    //   opacity .2s ease-out;
 }

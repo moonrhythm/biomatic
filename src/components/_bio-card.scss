@@ -1,5 +1,6 @@
 .bio-card {
   display: grid;
+  @extend ._bgcl-white;
   grid-template-columns: 16px 1fr 16px;
   grid-template-rows: 
     min-content
@@ -55,7 +56,7 @@
   @extend ._bdcl-gray;
   @extend ._bdrd-4px;
   @extend ._bdrd-4px;
-  @extend ._bsd-1;
+  @extend ._bsd-3;
 
   >.bio-card-cover {
     grid-area: cover;
