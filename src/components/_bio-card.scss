@@ -2,15 +2,15 @@
   display: grid;
   grid-template-columns: 16px 1fr 16px;
   grid-template-rows: 
-    max-content
+    min-content
     12px
-    max-content
-    max-content
+    auto
+    auto
     16px
-    max-content
-    max-content
+    auto
+    auto
     16px
-    max-content;
+    auto;
 
   grid-template-areas: 
     "cover cover cover"
@@ -24,15 +24,16 @@
     "at      at     at";
 
   &.-horizontal {
-    grid-template-columns: 16px min-content 16px 1fr 16px;
+    grid-template-columns: 16px max-content 16px 1fr 16px;
     grid-template-rows: 
       16px
-      max-content
-      max-content
-      12px max-content
-      max-content
+      auto
+      auto
+      12px
+      auto
+      auto
       16px
-      max-content;
+      auto;
 
     grid-template-areas: 
       ".   .   .     .    ."
