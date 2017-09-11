@@ -1,0 +1,70 @@
+.lo-template-sidebar {
+  @extend ._dp-g;
+  height: 100vh;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows:
+    60px
+    1fr;
+
+  grid-template-areas: 
+    "navbar  navbar"
+    "sidebar content";
+
+  @include sm-lower {
+    grid-template-columns: 0px 1fr 1fr;
+    grid-template-rows: 
+      60px
+      1fr;
+  
+    grid-template-areas: 
+      "sidebar navbar  navbar"
+      "sidebar content content";
+  }
+}
+
+.lo-area-sidebar {
+  overflow: auto;
+  grid-area: sidebar;
+}
+
+.lo-area-content {
+  overflow: auto;
+  grid-area: content;
+}
+
+.lo-area-navbar {
+  grid-area: navbar;
+}
+
+@include sm-lower {
+  .lo-area-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    left: -300px;
+    transition: transform .3s ease-in-out;
+    z-index: 3;
+    &.-open {
+      transform: translateX(300px);
+    }
+  }
+  
+  .lo-area-content {
+    overflow: auto;
+    grid-area: content;
+    z-index: 1;
+  }
+  
+  .lo-area-navbar {
+    grid-area: navbar;
+    z-index: 2;
+  }
+
+  #sidebar-open {
+    position: relative;
+    &:target {
+      transform: translateX(300px);
+    }
+  }
+}
