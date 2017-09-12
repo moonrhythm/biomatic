@@ -1,0 +1,63 @@
+.bio-accordion {
+  @extend ._dp-g;
+  grid-template-columns: 1fr;
+  grid-auto-rows:
+    auto
+    auto;
+  
+  grid-template-areas:
+    "label"
+    "content";
+  
+  >input:checked ~ {
+    .bio-accordion-content {
+      transform: scaleY(1);
+      max-height: initial;
+    }
+  }
+  >label {
+    grid-area: label;
+    @extend ._cs-pt;
+    @extend ._pst-rlt;
+  }
+  >.bio-accordion-content {
+    grid-area: content;
+    max-height: 0;
+    overflow: hidden;
+    transform-origin: top;
+    backface-visibility: hidden;
+    transform: scaleY(0);
+    will-change: transform;
+    transition: max-height 0.05s .2s ease-in-out, transform .2s ease-in-out;
+  }
+  &.-icon {
+    >label, .bio-accordion-content {
+      padding-left: 18px;
+    }
+    >label {
+      &:before {
+        content: "";
+        @extend ._bd-2px;
+        @extend ._bdr-0px;
+        @extend ._bdt-0px;
+        @extend ._bdcl-dark;
+        @extend ._h-8px;
+        @extend ._w-8px;
+        @extend ._pst-asl;
+        @extend ._l-0px;
+        @extend ._t-50pct;
+        will-change: transform;
+        transition: transform .2s ease;
+        transform-origin: top center;
+        transform: rotate(-135deg) translate(0, calc(-50% - 2px));
+        z-index: 4;
+        pointer-events: none;
+      }
+    }
+    >input:checked {
+      ~ label:before {
+        transform: rotate(-45deg) translate(2px, calc(-50% - 0px));
+      }
+    }
+  }
+}

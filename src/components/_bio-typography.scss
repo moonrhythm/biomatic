@@ -2,8 +2,7 @@
   @extend ._cs-pt;
 }
 
-a.bio-link {
-  display: inline;
+.bio-link {
   font-weight: 500;
   outline: none;
 	text-decoration: none;
@@ -24,6 +23,16 @@ a.bio-link {
       background-color: transparentize($color-primary, .8);
     }
   }
+  &.-item {
+    @extend ._cl-dark;
+    @extend ._pdh-8px;
+    @extend ._pdv-4px;
+    @extend ._bdrd-2px;
+    &:hover, &:focus {
+      background-color: lighten($color-primary, 40%);
+      color: lighten($color-primary, 0%);
+    }
+  } 
   &.-primary {
     color: $color-primary;
     &:hover, &:focus {

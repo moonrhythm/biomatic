@@ -1,9 +1,9 @@
 .lo-template-sidebar {
   @extend ._dp-g;
   height: 100vh;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 240px 1fr;
   grid-template-rows:
-    60px
+    auto
     1fr;
 
   grid-template-areas: 
@@ -41,12 +41,12 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 300px;
-    left: -300px;
+    width: 240px;
+    left: -240px;
     transition: transform .3s ease-in-out;
     z-index: 3;
     &.-open {
-      transform: translateX(300px);
+      transform: translateX(240px);
     }
   }
   
@@ -62,9 +62,15 @@
   }
 
   #sidebar-open {
-    position: relative;
     &:target {
-      transform: translateX(300px);
+      box-shadow:  
+      rgba(45,45,45,0.01) 2px 2px 2px,  
+      rgba(49,49,49,0.01) 4px 4px 4px,  
+      rgba(42,42,42,0.01) 8px 8px 8px,  
+      rgba(32,32,32,0.01) 16px 16px 16px,  
+      rgba(49,49,49,0.01) 32px 32px 32px,  
+      rgba(35,35,35,0.01) 64px 64px 64px; 
+      transform: translateX(240px);
     }
   }
 }
