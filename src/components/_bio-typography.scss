@@ -117,4 +117,18 @@
       }
     }
   }
+  &.-dark {
+    color: $color-dark;
+    &:hover, &:focus {
+      color: darken($color-dark, 15%);
+    }
+    &.-fancy {
+      border-bottom-color: $color-dark;
+      border-bottom: 1px solid;
+      &:hover, &:focus {
+        border-color: transparentize($color-dark, .95);
+        background-color: transparentize($color-dark, .8);
+      }
+    }
+  }
 }
