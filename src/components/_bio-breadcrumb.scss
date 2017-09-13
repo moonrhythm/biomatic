@@ -1,0 +1,15 @@
+.bio-breadcrumb {
+  @extend ._dp-f;
+  flex-wrap: wrap;
+  > * {
+    &:not(:first-child) {
+      &:before {
+        content: "/";
+        @extend ._cl-dark;
+        @extend ._opct-40;
+        @extend ._mgl-8px;
+        @extend ._mgr-8px;
+      }
+    }
+  }
+}

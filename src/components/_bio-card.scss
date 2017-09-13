@@ -53,7 +53,7 @@
     }
   }
   @extend ._bdrd-4px;
-  // border: 1px solid transparentize($color-gray, .4);
+  border: 1px solid transparentize($color-gray, .2);
 
   >.bio-card-cover {
     grid-area: cover;
@@ -94,7 +94,7 @@
       grid-area: at;
       justify-content: justify;
       @extend ._mgt-0px;
-      border-top: 1px solid transparentize($color-gray, .4);
+      border-top: 1px solid transparentize($color-gray, .2);
       > * {
         flex: 1;
         padding: 12px;
