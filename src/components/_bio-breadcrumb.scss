@@ -2,6 +2,12 @@
   @extend ._dp-f;
   flex-wrap: wrap;
   > * {
+    @extend ._cl-dark;
+    @extend ._opct-90;
+    > * {
+      @extend ._cl-dark;
+      @extend ._opct-90;
+    }
     &:not(:first-child) {
       &:before {
         content: "/";
@@ -10,6 +16,10 @@
         @extend ._mgl-8px;
         @extend ._mgr-8px;
       }
+    }
+    &:last-child {
+      @extend ._cl-dark;
+      @extend ._opct-100;
     }
   }
 }
