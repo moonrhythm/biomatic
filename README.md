@@ -1,5 +1,5 @@
 # biomatic
-Demo: https://biomatic-ui.firebaseapp.com/
+Demo: Demo: https://biomaru.github.io/biomatic/
 Modern css framework.
 base on css grid
 
