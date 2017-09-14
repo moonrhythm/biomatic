@@ -30,6 +30,7 @@
   }
   >.bio-message-close {
     grid-area: close;
+    user-select: none;
     & ~ .bio-message-content {
       @extend ._pdr-8px;
     }
