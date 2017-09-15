@@ -1,19 +1,17 @@
 .u-rise {
   box-shadow:
-  0 4px 6px rgba(50,50,93,.11),
-  0 1px 3px rgba(0,0,0,.08);
-}
-
-.u-rise {
+    0 4px 6px rgba(50,50,93,.11),
+    0 1px 3px rgba(0,0,0,.08);
   transition:
-    box-shadow .2s ease-out,
-    transform .2s ease-out;
+    box-shadow .16s ease-out,
+    transform .16s ease-out;
 }
 
 .u-rise:hover,
 .u-rise-hovered {
-  transform: translate(0, -1px);
+  // transform: translateY(-1px);
   box-shadow:
     0 7px 14px rgba(50,50,93,.1),
+    0 5px 10px rgba(50,50,93,.09),
     0 3px 6px rgba(0,0,0,.08);
 }

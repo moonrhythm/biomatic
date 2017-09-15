@@ -11,7 +11,7 @@
         background: white;
       }
       .lo-area-sidebar {
-        background-color: #f3f7fc;
+        background-color: #f9fbfd;
       }
       .lo-area-content {
         padding-left: 32px; 
@@ -32,94 +32,145 @@
         <a class="toggle open" href="#sidebar-open">biomatic-ui</a>
       </div> -->
       
-      <div class="lo-area-sidebar _pd-16px" id="sidebar-open">
-        <a class="close" href="#">Close</a> <br>
-        <a class="close" href="#button">Buttun</a> <br>
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" class="_dp-n">
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" class="_dp-n">
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#accordion" class="bio-link -item">Accordion</a>
+              <a href="#breadcrumb" class="bio-link -item">Breadcrumb</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" class="_dp-n">
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsiveness</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" class="_dp-n">
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
       </div>
 
-      <div class="lo-area-content _pdv-32px _pdh-64px">  
+      <div class="lo-area-content _pdv-16px _pdh-64px">
 
-        <h2>Accordion</h2>
-        <div class="lo-xs-12 lo-sm-6 -gap-8px">
-          <div>
-            <div class="bio-accordion -icon">
-              <input id="ac1" type="checkbox" class="_dp-n">
-              <label for="ac1" class="_fw-500">Accordion checkbox 1</label>
-              <div class="bio-accordion-content _pdv-8px">
-                <div class="bio-link -item">Item A</div>
-                <div class="bio-link -item">Item B</div>
-                <div class="bio-link -item">Item C</div>
-                <div class="bio-link -item">Item D</div>
+        <!------------------------------------
+          Accordion 
+        -------------------------------------->
+        <div id="accordion" class="_pdt-16px">
+          <h2>
+            <a href="#accordion" class="bio-link -primary">#</a>&nbsp;&nbsp;Accordion
+          </h2>
+          <div class="lo-xs-12 lo-sm-6 -gap-8px">
+            <div>
+              <div class="bio-accordion -icon">
+                <input id="ac1" type="checkbox">
+                <label for="ac1">Accordion checkbox 1</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
+              </div>
+              <div class="bio-accordion -icon">
+                <input id="ac2" type="checkbox" class="_dp-n">
+                <label for="ac2">Accordion checkbox 2</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
               </div>
             </div>
-            <div class="bio-accordion -icon">
-              <input id="ac2" type="checkbox" class="_dp-n">
-              <label for="ac2" class="_fw-500">Accordion checkbox 2</label>
-              <div class="bio-accordion-content _pdv-8px">
-                <div class="bio-link -item">Item A</div>
-                <div class="bio-link -item">Item B</div>
-                <div class="bio-link -item">Item C</div>
-                <div class="bio-link -item">Item D</div>
-              </div>
-            </div>
-          </div>
 
-          <div>
-            <div class="bio-accordion">
-              <input id="ar1" type="radio" class="_dp-n" name="accordion-radio">
-              <label for="ar1" class="_fw-500">Accordion Radio 1</label>
-              <div class="bio-accordion-content _pdv-8px">
-                <div class="bio-link -item">Item A</div>
-                <div class="bio-link -item">Item B</div>
-                <div class="bio-link -item">Item C</div>
+            <div>
+              <div class="bio-accordion">
+                <input id="ar1" type="radio" class="_dp-n" name="accordion-radio">
+                <label for="ar1" class="_fw-500">Accordion Radio 1</label>
+                <div class="bio-accordion-content _pdv-8px">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                </div>
               </div>
-            </div>
-            <div class="bio-accordion">
-              <input id="ar2" type="radio" class="_dp-n" name="accordion-radio">
-              <label for="ar2" class="_fw-500">Accordion Radio 2</label>
-              <div class="bio-accordion-content _pdv-8px">
-                <div class="bio-link -item">Item A</div>
-                <div class="bio-link -item">Item B</div>
-                <div class="bio-link -item">Item C</div>
-                <div class="bio-link -item">Item D</div>
+              <div class="bio-accordion">
+                <input id="ar2" type="radio" class="_dp-n" name="accordion-radio">
+                <label for="ar2" class="_fw-500">Accordion Radio 2</label>
+                <div class="bio-accordion-content _pdv-8px">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
               </div>
-            </div>
-            <div class="bio-accordion">
-              <input id="ar3" type="radio" class="_dp-n" name="accordion-radio">
-              <label for="ar3" class="_fw-500">Accordion Radio 3</label>
-              <div class="bio-accordion-content _pdv-8px">
-                <div class="bio-link -item">Item A</div>
-                <div class="bio-link -item">Item B</div>
+              <div class="bio-accordion">
+                <input id="ar3" type="radio" class="_dp-n" name="accordion-radio">
+                <label for="ar3" class="_fw-500">Accordion Radio 3</label>
+                <div class="bio-accordion-content _pdv-8px">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <h2>Breadcrumb</h2>
-        <div class="lo-xs-12 lo-sm-12 -gap-8px">
-          <div class="bio-breadcrumb _mgbt-16px">
-            <div><a class="bio-link" href="#">Home</a></div>
-            <div><a class="bio-link" href="#"><i class="material-icons _fs-5">directions_walk</i> Category</a></div>
-            <div><a class="bio-link" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
-            <div><a class="bio-link" href="#">Subcategory</a></div>
-            <div>item</div>
-          </div>
-          <div class="bio-breadcrumb _mgbt-32px">
-            <div><a class="bio-link" href="#">Home</a></div>
-            <div><a class="bio-link -primary" href="#">Category</a></div>
-            <div><a class="bio-link -primary -fancy" href="#">Category</a></div>
-            <div><a class="bio-link -positive" href="#">Category</a></div>
-            <div><a class="bio-link -positive -fancy" href="#">Category</a></div>
-            <div><a class="bio-link -negative" href="#">Category</a></div>
-            <div><a class="bio-link -negative -fancy" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
-            <div><a class="bio-link -warning" href="#">Category</a></div>
-            <div><a class="bio-link -warning -fancy" href="#">Category</a></div>
-            <div><a class="bio-link -info" href="#">Category</a></div>
-            <div><a class="bio-link -info -fancy" href="#">Category</a></div>
-            <div>item</div>
+
+        <!------------------------------------
+          Breadcrumb 
+        -------------------------------------->
+        <div id="breadcrumb" class="_pdt-16px">
+          <h2>
+            <a href="#breadcrumb" class="bio-link -primary">#</a>&nbsp;&nbsp;Breadcrumb
+          </h2>
+          <div class="lo-xs-12 lo-sm-12 -gap-8px">
+
+            <div class="bio-breadcrumb _mgbt-16px">
+              <div><a class="bio-link" href="#">Home</a></div>
+              <div><a class="bio-link" href="#"><i class="material-icons _fs-5">directions_walk</i> Category</a></div>
+              <div><a class="bio-link" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
+              <div><a class="bio-link" href="#">Subcategory</a></div>
+              <div>item</div>
+            </div>
+
+            <div class="bio-breadcrumb _mgbt-32px">
+              <div><a class="bio-link" href="#">Home</a></div>
+              <div><a class="bio-link -primary" href="#">Category</a></div>
+              <div><a class="bio-link -primary -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -positive" href="#">Category</a></div>
+              <div><a class="bio-link -positive -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -negative" href="#">Category</a></div>
+              <div><a class="bio-link -negative -fancy" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
+              <div><a class="bio-link -warning" href="#">Category</a></div>
+              <div><a class="bio-link -warning -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -info" href="#">Category</a></div>
+              <div><a class="bio-link -info -fancy" href="#">Category</a></div>
+              <div>item</div>
+            </div>
+            
           </div>
         </div>
-
 
         <h2>Message</h2>
         <div class="lo-xs-12 lo-sm-12 -gap-8px">

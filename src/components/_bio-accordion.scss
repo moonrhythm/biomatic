@@ -9,10 +9,13 @@
     "label"
     "content";
   
-  >input:checked ~ {
-    .bio-accordion-content {
-      transform: scaleY(1);
-      max-height: initial;
+  >input {
+    @extend ._dp-n;
+    &:checked ~ {
+      .bio-accordion-content {
+        transform: scaleY(1);
+        max-height: initial;
+      }
     }
   }
   >label {
@@ -29,6 +32,10 @@
     transform: scaleY(0);
     will-change: transform;
     transition: max-height 0.05s .2s ease-in-out, transform .2s ease-in-out;
+    @extend ._pdv-8px;
+    > * {
+      @extend ._dp-b;
+    }
   }
   &.-icon {
     >label, .bio-accordion-content {
