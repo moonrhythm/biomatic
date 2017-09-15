@@ -4,10 +4,11 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/biomatic.css" rel="stylesheet">
+
     <link href="doc/prism.css" rel="stylesheet">
     <link href="doc/prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/biomatic.css" rel="stylesheet">
     <script src="doc/prism.js"></script>
     <style>
       .lo-area-navbar {
@@ -23,6 +24,14 @@
       .lo-area-content > div {
         max-width: 1000px;
       }
+      pre[class*='language-'] {
+        margin-top: 0;
+        margin-bottom: 32px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
       @media screen and (max-width: 600px) {
         .lo-area-content {
           padding-left: 8px; 
@@ -33,10 +42,6 @@
   </head>
   <body>
     <div class="lo-template-sidebar">
-      
-      <!-- <div class="lo-area-navbar">
-        <a class="toggle open" href="#sidebar-open">biomatic-ui</a>
-      </div> -->
       
       <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
         <div class="bio-accordion">
@@ -79,41 +84,50 @@
       </div>
 
       <div class="lo-area-content _pdv-16px _pdh-64px">
-        <div>
-          <!------------------------------------
-            Accordion 
-          -------------------------------------->
-          <div id="accordion" class="_pdt-16px">
-            <h2>
-              <a href="#accordion" class="bio-link -primary">#</a>&nbsp;&nbsp;Accordion
-            </h2>
-            <div class="lo-xs-12 -gap-8px">
-              
-              <div>
-                <div class="bio-accordion -icon">
-                  <input id="ac1" type="checkbox">
-                  <label for="ac1">Accordion checkbox 1</label>
-                  <div class="bio-accordion-content">
-                    <div class="bio-link -item">Item A</div>
-                    <div class="bio-link -item">Item B</div>
-                    <div class="bio-link -item">Item C</div>
-                    <div class="bio-link -item">Item D</div>
-                  </div>
-                </div>
-                <div class="bio-accordion -icon">
-                  <input id="ac2" type="checkbox" class="_dp-n">
-                  <label for="ac2">Accordion checkbox 2</label>
-                  <div class="bio-accordion-content">
-                    <div class="bio-link -item">Item A</div>
-                    <div class="bio-link -item">Item B</div>
-                    <div class="bio-link -item">Item C</div>
-                    <div class="bio-link -item">Item D</div>
-                  </div>
-                </div>
+      
+        <!------------------------------------
+          Accordion 
+        -------------------------------------->
+        <div id="accordion" class="_pdt-16px">
+          
+          <h2 class="_mgv-16px"><a href="#accordion" class="bio-link -primary">#</a>&nbsp;&nbsp;Accordion</h2>
 
-<pre><code class="language-markup">&lt;div class="bio-accordion -icon"&gt;
+          <p class="_mgbt-32px">Wall of text here...</p>
+
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;div class="bio-accordion"&gt;
   &lt;input id="accordion" type="checkbox"&gt;
-  &lt;label for="accordion"&gt;Accordion checkbox 1&lt;/label&gt;
+  &lt;label for="accordion"&gt;Accordion&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    // Content goes here...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          <div class="_mgbt-64px">
+            <div class="bio-accordion">
+              <input id="ac1" type="checkbox">
+              <label for="ac1">Accordion checkbox</label>
+              <div class="bio-accordion-content">
+                <div class="bio-link -item">Item A</div>
+                <div class="bio-link -item">Item B</div>
+                <div class="bio-link -item">Item C</div>
+                <div class="bio-link -item">Item D</div>
+              </div>
+            </div>
+
+            <div class="bio-accordion -icon">
+              <input id="ac2" type="checkbox" class="_dp-n">
+              <label for="ac2">Accordion checkbox w/ icon</label>
+              <div class="bio-accordion-content">
+                <div class="bio-link -item">Item A</div>
+                <div class="bio-link -item">Item B</div>
+                <div class="bio-link -item">Item C</div>
+                <div class="bio-link -item">Item D</div>
+              </div>
+            </div>
+
+            <pre><code class="language-markup">&lt;div class="bio-accordion"&gt;
+  &lt;input id="ac1" type="checkbox"&gt;
+  &lt;label for="ac1"&gt;Accordion checkbox 1&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
     &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
     &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
@@ -121,43 +135,54 @@
     &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-</code></pre>
 
+&lt;div class="bio-accordion -icon"&gt;
+  &lt;input id="ac2" type="checkbox" class="_dp-n"&gt;
+  &lt;label for="ac2"&gt;Accordion checkbox 2&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+
+          <div>
+            <div class="bio-accordion">
+              <input id="ar1" type="radio" class="_dp-n" name="accordion-radio">
+              <label for="ar1" class="_fw-500">Accordion Radio 1</label>
+              <div class="bio-accordion-content _pdv-8px">
+                <div class="bio-link -item">Item A</div>
+                <div class="bio-link -item">Item B</div>
+                <div class="bio-link -item">Item C</div>
               </div>
+            </div>
 
-              <div>
-                <div class="bio-accordion">
-                  <input id="ar1" type="radio" class="_dp-n" name="accordion-radio">
-                  <label for="ar1" class="_fw-500">Accordion Radio 1</label>
-                  <div class="bio-accordion-content _pdv-8px">
-                    <div class="bio-link -item">Item A</div>
-                    <div class="bio-link -item">Item B</div>
-                    <div class="bio-link -item">Item C</div>
-                  </div>
-                </div>
-                <div class="bio-accordion">
-                  <input id="ar2" type="radio" class="_dp-n" name="accordion-radio">
-                  <label for="ar2" class="_fw-500">Accordion Radio 2</label>
-                  <div class="bio-accordion-content _pdv-8px">
-                    <div class="bio-link -item">Item A</div>
-                    <div class="bio-link -item">Item B</div>
-                    <div class="bio-link -item">Item C</div>
-                    <div class="bio-link -item">Item D</div>
-                  </div>
-                </div>
-                <div class="bio-accordion">
-                  <input id="ar3" type="radio" class="_dp-n" name="accordion-radio">
-                  <label for="ar3" class="_fw-500">Accordion Radio 3</label>
-                  <div class="bio-accordion-content _pdv-8px">
-                    <div class="bio-link -item">Item A</div>
-                    <div class="bio-link -item">Item B</div>
-                  </div>
-                </div>
+            <div class="bio-accordion">
+              <input id="ar2" type="radio" class="_dp-n" name="accordion-radio">
+              <label for="ar2" class="_fw-500">Accordion Radio 2</label>
+              <div class="bio-accordion-content _pdv-8px">
+                <div class="bio-link -item">Item A</div>
+                <div class="bio-link -item">Item B</div>
+                <div class="bio-link -item">Item C</div>
+                <div class="bio-link -item">Item D</div>
               </div>
+            </div>
 
+            <div class="bio-accordion">
+              <input id="ar3" type="radio" class="_dp-n" name="accordion-radio">
+              <label for="ar3" class="_fw-500">Accordion Radio 3</label>
+              <div class="bio-accordion-content _pdv-8px">
+                <div class="bio-link -item">Item A</div>
+                <div class="bio-link -item">Item B</div>
+              </div>
             </div>
           </div>
           
+        </div><!-- end of #accordion -->
+
           <!------------------------------------
             Breadcrumb 
           -------------------------------------->
@@ -800,57 +825,9 @@
               </a>
             </div>
           </div>
-          <!-- <div class="lo-container _pdt-16px _mgbt-32px">
-            <h2>Icons</h2>
-            <div class="lo-sm-2 lo-md-1 lo-lg-1 -gap-8px -row-center">
-              <span class="bio-icon-person"></span>
-              <span class="bio-icon-account_circle _bgcl-primary-100"></span>
-              <span class="bio-icon-add _bgcl-primary-200"></span>
-              <span class="bio-icon-keyboard_arrow_down"></span>
-              <span class="bio-icon-keyboard_arrow_left"></span>
-              <span class="bio-icon-keyboard_arrow_right"></span>
-              <span class="bio-icon-keyboard_arrow_up"></span>
-              <span class="bio-icon-keyboard_backspace"></span>
-              <span class="bio-icon-arrow_back _bgcl-primary-300"></span>
-              <span class="bio-icon-arrow_downward _bgcl-primary-400"></span>
-              <span class="bio-icon-arrow_forward _bgcl-primary-500"></span>
-              <span class="bio-icon-arrow_upward _bgcl-primary-600"></span>
-              <span class="bio-icon-arrow_drop_down _bgcl-primary-700"></span>
-              <span class="bio-icon-arrow_drop_up _bgcl-primary-800"></span>
-              <span class="bio-icon-flag _bgcl-accent"></span>
-              <span class="bio-icon-attach_file _bgcl-accent"></span>
-              <span class="bio-icon-attachment _bgcl-accent"></span>
-              <span class="bio-icon-autorenew _bgcl-accent"></span>
-              <span class="bio-icon-cloud_upload _bgcl-positive"></span>
-              <span class="bio-icon-block _bgcl-positive"></span>
-              <span class="bio-icon-check _bgcl-positive"></span>
-              <span class="bio-icon-close _bgcl-positive"></span>
-              <span class="bio-icon-cloud_download _bgcl-positive"></span>
-              <span class="bio-icon-delete"></span>
-              <span class="bio-icon-error_outline"></span>
-              <span class="bio-icon-favorite"></span>
-              <span class="bio-icon-favorite_border"></span>
-              <span class="bio-icon-help_outline"></span>
-              <span class="bio-icon-highlight_off"></span>
-              <span class="bio-icon-home"></span>
-              <span class="bio-icon-shopping_cart"></span>
-              <span class="bio-icon-local_offer"></span>
-              <span class="bio-icon-room"></span>
-              <span class="bio-icon-lock_open"></span>
-              <span class="bio-icon-lock_outline"></span>
-              <span class="bio-icon-mail_outline"></span>
-              <span class="bio-icon-more_horiz"></span>
-              <span class="bio-icon-more_vert"></span>
-              <span class="bio-icon-priority_high"></span>
-              <span class="bio-icon-refresh"></span>
-              <span class="bio-icon-settings"></span>
-              <span class="bio-icon-star"></span>
-              <span class="bio-icon-star_border"></span>
-              <span class="bio-icon-star_half"></span>
-            </div>
-          </div> -->
+          
         </div>
-      </div>
-    </div>
+
+    </div> <!-- end of template content -->
   </body>
 </html>
