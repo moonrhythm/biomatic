@@ -22,7 +22,7 @@
         padding-right: 32px;
       }
       .lo-area-content > div {
-        max-width: 1000px;
+        max-width: 800px;
       }
       pre[class*='language-'] {
         margin-top: 0;
@@ -92,9 +92,18 @@
           
           <h2 class="_mgv-16px"><a href="#accordion" class="bio-link -primary">#</a>&nbsp;&nbsp;Accordion</h2>
 
-          <p class="_mgbt-32px">Wall of text here... ทดสอบ ๆ</p>
+          <p class="_mgbt-16px _lh-175pct">
+            Accordion ใช้ class <code>.bio-accordion</code> บน container ที่ต้องการ
+            และใส่ content ที่ต้องการซ่อน ด้านใน container ที่ใช้ class <code>.bio-accordion-content</code>
+          </p>
 
-          <pre class="_mgbt-64px"><code class="language-markup">&lt;div class="bio-accordion"&gt;
+          <p class="_mgbt-16px _lh-175pct">
+            คุณสามารถใช้ร่วมกับ <code class="_cl-accent">input</code> ได้สองแบบคือ <strong>checkbok</strong> (เปิดหลาย accordion ได้พร้อมกัน) และ <strong>radio</strong> (เปิดทีละ accordion)
+            โดยใช้ <code class="_cl-accent">Label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code>
+          </p>
+
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
+&lt;div class="bio-accordion"&gt;
   &lt;input id="accordion" type="checkbox"&gt;
   &lt;label for="accordion"&gt;Accordion&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
@@ -104,7 +113,8 @@
 
           <div class="_mgbt-64px">
             <p class="_mgbt-8px">Snippet</p>
-            <pre><code class="language-markup">&lt;div class="bio-accordion"&gt;
+            <pre><code class="language-markup">&lt;!-- Using checkbox input --&gt;
+&lt;div class="bio-accordion"&gt;
   &lt;input id="ac1" type="checkbox"&gt;
   &lt;label for="ac1"&gt;Accordion checkbox 1&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
@@ -124,8 +134,7 @@
     &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
     &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-            </code></pre>
+&lt;/div&gt;</code></pre>
 
             <div class="_pd-16px _bdrd-3px _bd-1px _bdcl-gray">
               <div class="bio-accordion">
@@ -152,9 +161,11 @@
             </div>
           </div>
 
+          <p class="_mgbt-16px">Using Radio Button</p>
+
           <div class="_mgbt-64px">
-            <p class="_mgbt-8px">Snippet</p>
-            <pre><code class="language-markup">&lt;div class="bio-accordion -icon"&gt;
+            <pre><code class="language-markup">&lt;!-- Using radio input --&gt;
+&lt;div class="bio-accordion -icon"&gt;
   &lt;input id="ar1" type="radio" name="accordion-radio"&gt;
   &lt;label for="ar1"&gt;Accordion Radio 1&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
