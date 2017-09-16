@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="doc/prism.css" rel="stylesheet">
     <link href="doc/prism-github.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/biomatic.css" rel="stylesheet">
@@ -23,10 +22,6 @@
       }
       .lo-area-content > div {
         max-width: 800px;
-      }
-      pre[class*='language-'] {
-        margin-top: 0;
-        margin-bottom: 16px;
       }
       code {
         width: 100%;
@@ -90,29 +85,52 @@
         -------------------------------------->
         <div id="accordion" class="_pdt-16px">
           
-          <h2 class="_mgv-16px"><a href="#accordion" class="bio-link -primary">#</a>&nbsp;&nbsp;Accordion</h2>
+          <h1 class="_mgv-16px">
+            <a href="#accordion" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Accordion
+          </h1>
 
           <p class="_mgbt-16px _lh-175pct">
             Accordion ใช้ class <code>.bio-accordion</code> บน container ที่ต้องการ
             และใส่ content ที่ต้องการซ่อน ด้านใน container ที่ใช้ class <code>.bio-accordion-content</code>
           </p>
 
-          <p class="_mgbt-16px _lh-175pct">
+          <p class="_mgbt-32px _lh-175pct">
             คุณสามารถใช้ร่วมกับ <code class="_cl-accent">input</code> ได้สองแบบคือ <strong>checkbok</strong> (เปิดหลาย accordion ได้พร้อมกัน) และ <strong>radio</strong> (เปิดทีละ accordion)
-            โดยใช้ <code class="_cl-accent">Label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code>
+            โดยใช้ <code class="_cl-accent">Label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code> ของ <code class="_cl-accent">input</code>
           </p>
 
-          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-32px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
 &lt;div class="bio-accordion"&gt;
   &lt;input id="accordion" type="checkbox"&gt;
   &lt;label for="accordion"&gt;Accordion&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
     // Content goes here...
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>    
+          
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">bio-accordion</code></td>
+                <td><code class="_cl-accent">-has-icon</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">bio-accordion-content</code></td>
+                <td>none</td>
+              </tr>
+            </tbody>
+          </table>
 
+          <h3 class="_mgbt-8px">ตัวอย่าง Accordion Checkbox</h3>
           <div class="_mgbt-64px">
-            <p class="_mgbt-8px">Snippet</p>
             <pre><code class="language-markup">&lt;!-- Using checkbox input --&gt;
 &lt;div class="bio-accordion"&gt;
   &lt;input id="ac1" type="checkbox"&gt;
@@ -125,7 +143,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="bio-accordion -icon"&gt;
+&lt;div class="bio-accordion -has-icon"&gt;
   &lt;input id="ac2" type="checkbox"&gt;
   &lt;label for="ac2"&gt;Accordion checkbox w/ icon&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
@@ -148,7 +166,7 @@
                 </div>
               </div>
 
-              <div class="bio-accordion -icon">
+              <div class="bio-accordion -has-icon">
                 <input id="ac2" type="checkbox" class="_dp-n">
                 <label for="ac2">Accordion checkbox w/ icon</label>
                 <div class="bio-accordion-content">
@@ -161,11 +179,10 @@
             </div>
           </div>
 
-          <p class="_mgbt-16px">Using Radio Button</p>
-
+          <h3 class="_mgbt-8px">ตัวอย่าง Accordion Radio</h3>
           <div class="_mgbt-64px">
             <pre><code class="language-markup">&lt;!-- Using radio input --&gt;
-&lt;div class="bio-accordion -icon"&gt;
+&lt;div class="bio-accordion -has-icon"&gt;
   &lt;input id="ar1" type="radio" name="accordion-radio"&gt;
   &lt;label for="ar1"&gt;Accordion Radio 1&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
@@ -196,7 +213,7 @@
 &lt;/div&gt;</code></pre>
 
             <div class="_pd-16px _bdrd-3px _bd-1px _bdcl-gray">
-              <div class="bio-accordion -icon">
+              <div class="bio-accordion -has-icon">
                 <input id="ar1" type="radio" name="accordion-radio">
                 <label for="ar1">Accordion Radio 1</label>
                 <div class="bio-accordion-content">
