@@ -55,6 +55,7 @@
             <div class="bio-accordion-content _pdv-8px">
               <a href="#accordion" class="bio-link -item">Accordion</a>
               <a href="#breadcrumb" class="bio-link -item">Breadcrumb</a>
+              <a href="#message" class="bio-link -item">Message</a>
             </div>
           </div>
 
@@ -91,17 +92,17 @@
           </h1>
 
           <p class="_mgbt-16px _lh-175pct">
-            Accordion ใช้ class <code>.bio-accordion</code> บน container ที่ต้องการ
-            และใส่ content ที่ต้องการซ่อน ด้านใน container ที่ใช้ class <code>.bio-accordion-content</code>
+            ใส่ class <code class="_cl-accent">.bio-accordion</code> บน container ที่ต้องการ
+            และใส่ content ที่ต้องการซ่อน ด้านใน container ที่ใช้ class <code class="_cl-accent">.bio-accordion-content</code>
           </p>
 
-          <p class="_mgbt-32px _lh-175pct">
+          <p class="_mgbt-64px _lh-175pct">
             คุณสามารถใช้ร่วมกับ <code class="_cl-accent">input</code> ได้สองแบบคือ <strong>checkbok</strong> (เปิดหลาย accordion ได้พร้อมกัน) และ <strong>radio</strong> (เปิดทีละ accordion)
             โดยใช้ <code class="_cl-accent">Label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code> ของ <code class="_cl-accent">input</code>
           </p>
 
           <h3 class="_mgbt-8px">Markup</h3>
-          <pre class="_mgbt-32px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
 &lt;div class="bio-accordion"&gt;
   &lt;input id="accordion" type="checkbox"&gt;
   &lt;label for="accordion"&gt;Accordion&lt;/label&gt;
@@ -110,6 +111,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>    
           
+          <h3 class="_mgbt-8px">Component Options</h3>
           <table class="bio-table _mgbt-64px">
             <thead>
               <tr>
@@ -154,7 +156,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-            <div class="_pd-16px _bdrd-3px _bd-1px _bdcl-gray">
+            <div class="u-panel">
               <div class="bio-accordion">
                 <input id="ac1" type="checkbox">
                 <label for="ac1">Accordion checkbox</label>
@@ -212,7 +214,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-            <div class="_pd-16px _bdrd-3px _bd-1px _bdcl-gray">
+            <div class="u-panel">
               <div class="bio-accordion -has-icon">
                 <input id="ar1" type="radio" name="accordion-radio">
                 <label for="ar1">Accordion Radio 1</label>
@@ -248,134 +250,191 @@
 
         </div><!-- end of #accordion -->
 
-          <!------------------------------------
-            Breadcrumb 
-          -------------------------------------->
-          <div id="breadcrumb" class="_pdt-16px">
-            <h2>
-              <a href="#breadcrumb" class="bio-link -primary">#</a>&nbsp;&nbsp;Breadcrumb
-            </h2>
-            <div class="lo-xs-12 lo-sm-12 -gap-8px">
+        <hr class="_opct-20">
 
-              <div class="bio-breadcrumb _mgbt-16px">
-                <div><a class="bio-link" href="#">Home</a></div>
-                <div><a class="bio-link" href="#"><i class="material-icons _fs-5">directions_walk</i> Category</a></div>
-                <div><a class="bio-link" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
-                <div><a class="bio-link" href="#">Subcategory</a></div>
-                <div>item</div>
-              </div>
+        <!------------------------------------
+          Breadcrumb 
+        -------------------------------------->
+        <div id="breadcrumb" class="_pdt-16px">
+          
+          <h1 class="_mgv-16px">
+            <a href="#breadcrumb" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Breadcrumb
+          </h1>
 
-              <div class="bio-breadcrumb _mgbt-32px">
-                <div><a class="bio-link" href="#">Home</a></div>
-                <div><a class="bio-link -primary" href="#">Category</a></div>
-                <div><a class="bio-link -primary -fancy" href="#">Category</a></div>
-                <div><a class="bio-link -positive" href="#">Category</a></div>
-                <div><a class="bio-link -positive -fancy" href="#">Category</a></div>
-                <div><a class="bio-link -negative" href="#">Category</a></div>
-                <div><a class="bio-link -negative -fancy" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
-                <div><a class="bio-link -warning" href="#">Category</a></div>
-                <div><a class="bio-link -warning -fancy" href="#">Category</a></div>
-                <div><a class="bio-link -info" href="#">Category</a></div>
-                <div><a class="bio-link -info -fancy" href="#">Category</a></div>
-                <div>item</div>
-              </div>
+          <p class="_mgbt-16px _lh-175pct">
+            ใส่ class <code class="_cl-accent">.bio-breadcrumb</code> บน container จะส่งผลให้
+            direct children ทุก node ด้านใน container จะกลายเป็น list ของ Breadcrumb
+          </p>
 
+          <p class="_mgbt-64px _lh-175pct">
+            คุณสามารถใช้งาน class <code class="_cl-accent">.bio-breadcrumb</code> บน element ใดๆ ก็ได้ (เช่น <code class="_cl-accent">div</code>)
+            แต่เราแนะนำให้คุณ ใช้ class นี้บน <code class="_cl-accent">ul</code> และ ใช้ <code class="_cl-accent">li</code>
+            เป็น list ของ breadcrumb เพื่อความเป็นระเบียบ และง่ายต่อการอ่าน
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre><code class="language-markup">&lt;!-- Breadcrumb Markup --&gt;
+&lt;ul class="bio-breadcrumb"&gt;
+  &lt;li&gt;Home&lt;/li&gt;
+  &lt;li&gt;item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <ul class="bio-breadcrumb">
+              <li>Home</li>
+              <li>Item</li>
+            </ul>
+          </div>
+
+          <p class="_mgbt-64px _lh-175pct">
+            คุณสามารถใช้งานร่วมกับ <code class="_cl-accent">&lt;a&gt;</code> หรือ class <code class="_cl-accent">.bio-link</code>
+            ด้านใน list เพื่อทำเป็น link ที่สวยงาน หรือใช้งาน font icon อื่นๆ ร่วมด้วยก็ได้ เช่น Material Icon เป็นต้น
+          </p>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานหลายๆ รูปแบบ</h3>
+          <pre><code class="language-markup">&lt;!-- Breadcrumb Markup --&gt;
+&lt;div class="bio-breadcrumb"&gt;
+  &lt;div&gt;&lt;a class="bio-link" href="#"&gt;Home&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -primary" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -primary -fancy" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -positive" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -positive -fancy" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -negative" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -negative -fancy" href="#"&gt;&lt;i class="material-icons _fs-5"&gt;local_shipping&lt;/i&gt; Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -warning" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -warning -fancy" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -info" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;a class="bio-link -info -fancy" href="#"&gt;Category&lt;/a&gt;&lt;/div&gt;
+  &lt;div&gt;item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-breadcrumb">
+              <div><a class="bio-link" href="#">Home</a></div>
+              <div><a class="bio-link -primary" href="#">Category</a></div>
+              <div><a class="bio-link -primary -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -positive" href="#">Category</a></div>
+              <div><a class="bio-link -positive -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -negative" href="#">Category</a></div>
+              <div><a class="bio-link -negative -fancy" href="#"><i class="material-icons _fs-5">local_shipping</i> Category</a></div>
+              <div><a class="bio-link -warning" href="#">Category</a></div>
+              <div><a class="bio-link -warning -fancy" href="#">Category</a></div>
+              <div><a class="bio-link -info" href="#">Category</a></div>
+              <div><a class="bio-link -info -fancy" href="#">Category</a></div>
+              <div>item</div>
             </div>
           </div>
 
-          <h2>Message</h2>
-          <div class="lo-xs-12 lo-sm-12 -gap-8px">
+        </div><!-- end of #breadcrumb -->
 
-            <div class="bio-message _mgbt-8px">
-              <div class="bio-message-close">
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
+        <hr class="_opct-20">
 
-            <div class="bio-message _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
+        <!------------------------------------
+          Message 
+        -------------------------------------->
+        <div id="message" class="_pdt-16px"></div>
+          
+          <h1 class="_mgv-16px">
+            <a href="#message" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Message
+          </h1>
 
-            <div class="bio-message -positive _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link -positive">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
+          <p class="_mgbt-16px _lh-175pct">
+            Hello
+          </p>
 
-            <div class="bio-message -negative _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link -negative">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+          <div class="bio-message _mgbt-8px">
+            <div class="bio-message-close">
             </div>
-            
-            <div class="bio-message -warning _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link -warning">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-            
-            <div class="bio-message -info _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link -info">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
-            
-            <div class="bio-message -dark _mgbt-8px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link -dark">close</i>
-              </div>
-              <div class="bio-message-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
-
-            <div class="bio-message _mgbt-16px">
-              <div class="bio-message-close">
-              </div>
-              <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec dictum libero odio, quis eleifend lectus finibus id. 
-                Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
-                Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
-                condimentum quis pretium non, convallis vitae nisi
-              </div>
-            </div>
-
-            <div class="bio-message _mgbt-16px">
-              <div class="bio-message-close">
-                <i class="material-icons bio-link">close</i>
-              </div>
-              <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Donec dictum libero odio, quis eleifend lectus finibus id. 
-                Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
-                Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
-                condimentum quis pretium non, convallis vitae nisi
-              </div>
-            </div>
-
           </div>
 
+          <div class="bio-message _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
 
+          <div class="bio-message -positive _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link -positive">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+
+          <div class="bio-message -negative _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link -negative">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          
+          <div class="bio-message -warning _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link -warning">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          
+          <div class="bio-message -info _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link -info">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          
+          <div class="bio-message -dark _mgbt-8px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link -dark">close</i>
+            </div>
+            <div class="bio-message-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+
+          <div class="bio-message _mgbt-16px">
+            <div class="bio-message-close">
+            </div>
+            <div class="bio-message-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Donec dictum libero odio, quis eleifend lectus finibus id. 
+              Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
+              Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
+              condimentum quis pretium non, convallis vitae nisi
+            </div>
+          </div>
+
+          <div class="bio-message _mgbt-16px">
+            <div class="bio-message-close">
+              <i class="material-icons bio-link">close</i>
+            </div>
+            <div class="bio-message-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Donec dictum libero odio, quis eleifend lectus finibus id. 
+              Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
+              Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
+              condimentum quis pretium non, convallis vitae nisi
+            </div>
+          </div>
+        </div>
+
+
+
+<!-- 
           <h2>Progress Bar</h2>
           <div class="lo-xs-12 lo-sm-6 -gap-8px">
             <progress class="bio-progress -primary" value="10" max="100"></progress>
@@ -889,7 +948,7 @@
                 <div class="bio-button">Asasa</div>
               </a>
             </div>
-          </div>
+          </div> -->
           
         </div>
 
