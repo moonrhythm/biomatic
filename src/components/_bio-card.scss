@@ -55,7 +55,7 @@
   @extend ._bdrd-4px;
   
   &:not(.u-rise) {
-    border: 1px solid transparentize($color-gray, .2);
+    border: 1px solid $color-gray;
   }
 
   >.bio-card-cover {
