@@ -42,7 +42,7 @@
         <div class="bio-accordion">
 
           <div class="bio-accordion _mgbt-8px">
-            <input id="accordion-getting-start" type="checkbox" class="_dp-n">
+            <input id="accordion-getting-start" type="checkbox" checked>
             <label for="accordion-getting-start"><strong>Getting Start</strong></label>
             <div class="bio-accordion-content _pdv-8px">
               <a href="#" class="bio-link -item">Installation</a>
@@ -50,26 +50,27 @@
           </div>
 
           <div class="bio-accordion _mgbt-8px">
-            <input id="accordion-components" type="checkbox" class="_dp-n" checked>
+            <input id="accordion-components" type="checkbox" checked>
             <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
             <div class="bio-accordion-content _pdv-8px">
               <a href="#accordion" class="bio-link -item">Accordion</a>
               <a href="#breadcrumb" class="bio-link -item">Breadcrumb</a>
+              <a href="#button" class="bio-link -item">Button</a>
               <a href="#message" class="bio-link -item">Message</a>
             </div>
           </div>
 
           <div class="bio-accordion _mgbt-8px">
-            <input id="accordion-layouts" type="checkbox" class="_dp-n">
+            <input id="accordion-layouts" type="checkbox" checked>
             <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
             <div class="bio-accordion-content _pdv-8px">
               <a href="#" class="bio-link -item">Container</a>
-              <a href="#" class="bio-link -item">Responsiveness</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
             </div>
           </div>
 
           <div class="bio-accordion _mgbt-8px">
-            <input id="accordion-utilities" type="checkbox" class="_dp-n">
+            <input id="accordion-utilities" type="checkbox" checked>
             <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
             <div class="bio-accordion-content _pdv-8px">
               <a href="#" class="bio-link -item">Rise</a>
@@ -91,12 +92,12 @@
             &nbsp;&nbsp;Accordion
           </h1>
 
-          <p class="_mgbt-16px _lh-175pct">
-            ใส่ class <code class="_cl-accent">.bio-accordion</code> บน container ที่ต้องการ
-            และใส่ content ที่ต้องการซ่อน ด้านใน container ที่ใช้ class <code class="_cl-accent">.bio-accordion-content</code>
+          <p class="_mgbt-16px">
+            ใช้สำหรับซ่อน Content ที่ต้องการ เปิด/ปิด การแสดงผล โดยการใส่ class <code class="_cl-accent">.bio-accordion</code> บน container ที่ต้องการ
+            และใส่ Content ด้านใน container ที่ใช้ class <code class="_cl-accent">.bio-accordion-content</code>
           </p>
 
-          <p class="_mgbt-64px _lh-175pct">
+          <p class="_mgbt-64px">
             คุณสามารถใช้ร่วมกับ <code class="_cl-accent">input</code> ได้สองแบบคือ <strong>checkbok</strong> (เปิดหลาย accordion ได้พร้อมกัน) และ <strong>radio</strong> (เปิดทีละ accordion)
             โดยใช้ <code class="_cl-accent">Label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code> ของ <code class="_cl-accent">input</code>
           </p>
@@ -121,12 +122,12 @@
             </thead>
             <tbody>
               <tr>
-                <td><code class="_cl-accent">bio-accordion</code></td>
+                <td><code class="_cl-accent">.bio-accordion</code></td>
                 <td><code class="_cl-accent">-has-icon</code></td>
               </tr>
               <tr>
-                <td><code class="_cl-accent">bio-accordion-content</code></td>
-                <td>none</td>
+                <td><code class="_cl-accent">.bio-accordion-content</code></td>
+                <td>-</td>
               </tr>
             </tbody>
           </table>
@@ -147,7 +148,7 @@
 
 &lt;div class="bio-accordion -has-icon"&gt;
   &lt;input id="ac2" type="checkbox"&gt;
-  &lt;label for="ac2"&gt;Accordion checkbox w/ icon&lt;/label&gt;
+  &lt;label for="ac2"&gt;Accordion checkbox 2&lt;/label&gt;
   &lt;div class="bio-accordion-content"&gt;
     &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
     &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
@@ -262,12 +263,12 @@
             &nbsp;&nbsp;Breadcrumb
           </h1>
 
-          <p class="_mgbt-16px _lh-175pct">
-            ใส่ class <code class="_cl-accent">.bio-breadcrumb</code> บน container จะส่งผลให้
-            direct children ทุก node ด้านใน container จะกลายเป็น list ของ Breadcrumb
+          <p class="_mgbt-16px">
+            ใช้สำหรับแสดงโครงสร้างการ Navigation ในหน้าปัจจุบัน โดยการใส่ class <code class="_cl-accent">.bio-breadcrumb</code> บน container จะส่งผลให้
+            direct children ทุก node ด้านใน container นี้ จะกลายเป็น list ของ Breadcrumb
           </p>
 
-          <p class="_mgbt-64px _lh-175pct">
+          <p class="_mgbt-64px">
             คุณสามารถใช้งาน class <code class="_cl-accent">.bio-breadcrumb</code> บน element ใดๆ ก็ได้ (เช่น <code class="_cl-accent">div</code>)
             แต่เราแนะนำให้คุณ ใช้ class นี้บน <code class="_cl-accent">ul</code> และ ใช้ <code class="_cl-accent">li</code>
             เป็น list ของ breadcrumb เพื่อความเป็นระเบียบ และง่ายต่อการอ่าน
@@ -287,7 +288,7 @@
             </ul>
           </div>
 
-          <p class="_mgbt-64px _lh-175pct">
+          <p class="_mgbt-64px">
             คุณสามารถใช้งานร่วมกับ <code class="_cl-accent">&lt;a&gt;</code> หรือ class <code class="_cl-accent">.bio-link</code>
             ด้านใน list เพื่อทำเป็น link ที่สวยงาน หรือใช้งาน font icon อื่นๆ ร่วมด้วยก็ได้ เช่น Material Icon เป็นต้น
           </p>
@@ -331,16 +332,183 @@
         <hr class="_opct-20">
 
         <!------------------------------------
+          Button 
+        -------------------------------------->
+        <div id="button" class="_pdt-16px">
+          
+          <h1 class="_mgv-16px">
+            <a href="#button" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Button
+          </h1>
+
+          <p class="_mgbt-16px">
+            คุณสามารถใช้ class <code class="_cl-accent">.bio-button</code> 
+            ลงบน element ใดๆ เพื่อให้แสดงผลเป็น button 
+            โดยคุณสามารถใช้คู่กับ options ต่าง ของ bio-button ได้เช่น color, style และ state ดังแสดงในตาราง
+          </p>
+
+          <p class="_mgbt-16px">
+            เพื่อความเหมาะสม เราแนะนำให้คุณใช้ <code class="_cl-accent">.bio-button</code> บน element <code class="_cl-accent">&lt;div&gt;</code> หรือ <code class="_cl-accent">&lt;input type="submit"&gt;</code>
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre><code class="language-markup">&lt;!-- Button Markup --&gt;
+&lt;input type="submit" class="bio-button" value="Click to submit"&gt;
+&lt;div class="bio-button"&gt;Button&lt;/div&gt;</code></pre>
+  
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-xs-12 lo-sm-12 lo-md-4 lo-lg-3 -gap-8px">
+              <input type="submit" value="Click to submit" class="bio-button -primary u-rise-2">
+              <div class="bio-button">Button</div>
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-button</code></td>
+                <td>
+                  <p class="_mgbt-16px">
+                    <strong class="_mgbt-8px">colors:</strong>
+                    <code class="_cl-accent">-primary</code>,
+                    <code class="_cl-accent">-accent</code>,
+                    <code class="_cl-accent">-positive</code>,
+                    <code class="_cl-accent">-negative</code>,
+                    <code class="_cl-accent">-warning</code>,
+                    <code class="_cl-accent">-info</code>,
+                    <code class="_cl-accent">-white</code>,
+                    <code class="_cl-accent">-gray</code>,
+                    <code class="_cl-accent">-dark</code>,
+                    <code class="_cl-accent">-black</code>
+                  </p>
+                  <p class="_mgbt-16px">
+                    <strong class="_mgbt-8px">states:</strong>
+                    <code class="_cl-accent">-loading</code>,
+                    <code class="_cl-accent">-disabled</code>
+                  </p>
+                  <p>
+                    <strong class="_mgbt-8px">styles:</strong>
+                    <code class="_cl-accent">-outline</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช่งาน color options</h3>
+          <pre><code class="language-markup">&lt;!-- Button Markup --&gt;
+&lt;div class="bio-button -primary"&gt;Primary&lt;/div&gt;
+&lt;div class="bio-button -accent"&gt;Accent&lt;/div&gt;
+&lt;div class="bio-button -positive"&gt;Positive&lt;/div&gt;
+&lt;div class="bio-button -negative"&gt;Negative&lt;/div&gt;
+&lt;div class="bio-button -warning"&gt;Warning&lt;/div&gt;
+&lt;div class="bio-button -info"&gt;Info&lt;/div&gt;
+&lt;div class="bio-button -white"&gt;White&lt;/div&gt;
+&lt;div class="bio-button -gray"&gt;Gray&lt;/div&gt;
+&lt;div class="bio-button -dark"&gt;Dark&lt;/div&gt;
+&lt;div class="bio-button -black"&gt;Black&lt;/div&gt;</code></pre>
+  
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-xs-12 lo-sm-12 lo-md-4 lo-lg-3 -gap-8px">
+              <div class="bio-button -primary">Primary</div>
+              <div class="bio-button -accent">Accent</div>
+              <div class="bio-button -positive">Positive</div>
+              <div class="bio-button -negative">Negative</div>
+              <div class="bio-button -warning">Warning</div>
+              <div class="bio-button -info">Info</div>
+              <div class="bio-button -white">White</div>
+              <div class="bio-button -gray">Gray</div>
+              <div class="bio-button -dark">Dark</div>
+              <div class="bio-button -black">Black</div>
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช่งาน state options</h3>
+          <pre><code class="language-markup">&lt;!-- Button Markup --&gt;
+&lt;div class="bio-button -primary -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -primary -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -positive -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -positive -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -negative -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -negative -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -white -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -white -disabled"&gt;Disabled&lt;/div&gt;</code></pre>
+  
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-xs-12 lo-sm-12 lo-md-4 lo-lg-3 -gap-8px">
+              <div class="bio-button -primary -loading">Loading</div>
+              <div class="bio-button -primary -disabled">Disabled</div>
+              <div class="bio-button -positive -loading">Loading</div>
+              <div class="bio-button -positive -disabled">Disabled</div>
+              <div class="bio-button -negative -loading">Loading</div>
+              <div class="bio-button -negative -disabled">Disabled</div>
+              <div class="bio-button -white -loading">Loading</div>
+              <div class="bio-button -white -disabled">Disabled</div>
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช่งาน style options</h3>
+          <pre><code class="language-markup">&lt;!-- Button Markup --&gt;
+&lt;div class="bio-button -primary -outline -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -primary -outline -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -positive -outline -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -positive -outline -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -negative -outline -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -negative -outline -disabled"&gt;Disabled&lt;/div&gt;
+&lt;div class="bio-button -white -outline -loading"&gt;Loading&lt;/div&gt;
+&lt;div class="bio-button -white -outline -disabled"&gt;Disabled&lt;/div&gt;</code></pre>
+  
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-xs-12 lo-sm-12 lo-md-4 lo-lg-3 -gap-8px">
+              <div class="bio-button -primary -outline -loading">Loading</div>
+              <div class="bio-button -primary -outline -disabled">Disabled</div>
+              <div class="bio-button -positive -outline -loading">Loading</div>
+              <div class="bio-button -positive -outline -disabled">Disabled</div>
+              <div class="bio-button -negative -outline -loading">Loading</div>
+              <div class="bio-button -negative -outline -disabled">Disabled</div>
+              <div class="bio-button -white -outline -loading">Loading</div>
+              <div class="bio-button -white -outline -disabled">Disabled</div>
+            </div>
+          </div>
+
+
+          <!-- <h2>Button Primary</h2>
+          <div class="lo-sm-6 lo-md-3 lo-lg-2 -gap-8px">
+            <div class="bio-button -primary">Normal</div>
+            <a class="bio-button -primary u-rise">Rise</a>
+            <input type="submit" value="Click to submit" class="bio-button -primary u-rise-2">
+            <div class="bio-button -primary -loading">Loading</div>
+            <div class="bio-button -primary -disabled">Disabled</div>
+            <div class="bio-button -primary -outline">Outline</div>
+            <div class="bio-button -primary -outline u-rise">Outline Rise</div>
+            <div class="bio-button -primary -outline -loading">Outline Loading</div>
+            <div class="bio-button -primary -outline -disabled">Outline Disabled</div>
+          </div> -->
+
+        </div>
+
+
+
+
+
+        <!------------------------------------
           Message 
         -------------------------------------->
-        <div id="message" class="_pdt-16px"></div>
+        <div id="message" class="_pdt-16px">
           
           <h1 class="_mgv-16px">
             <a href="#message" class="bio-link -primary"><strong>#</strong></a>
             &nbsp;&nbsp;Message
           </h1>
 
-          <p class="_mgbt-16px _lh-175pct">
+          <p class="_mgbt-16px">
             Hello
           </p>
 
