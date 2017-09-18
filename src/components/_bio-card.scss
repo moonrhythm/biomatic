@@ -7,7 +7,6 @@
     12px
     auto
     auto
-    16px
     auto
     auto
     16px
@@ -18,7 +17,6 @@
     ".       .       ."
     ". title         ."
     ". subtitle      ."
-    ".       .       ."
     ". content       ."
     ". actions       ."
     ".       .       ."
@@ -30,7 +28,6 @@
       16px
       auto
       auto
-      12px
       auto
       auto
       16px
@@ -40,7 +37,6 @@
       ".   .   .     .    ."
       ". cover . title    ."
       ". cover . subtitle ."
-      ". cover .     .    ."
       ". cover . content  ."
       ". cover . actions  ."
       ".   .   .     .    ."
@@ -75,8 +71,12 @@
   }
   >.bio-card-content {
     grid-area: content;
+    padding-top: 12px;
     @extend ._cl-dark;
     @extend ._lh-125pct;
+    &:first-child {
+      padding-top: 0px;
+    }
   }
   >.bio-card-actions {
     grid-area: actions;

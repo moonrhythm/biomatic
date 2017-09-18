@@ -519,11 +519,15 @@
           </h1>
 
           <p class="_mgbt-16px">
-            Card class <code class="_cl-accent">.bio-card</code> document is WIP...
+            Card คือ layout container ที่มีความยืดหยุ่นสูง สำหรับแสดงผล content class
+          </p>
+          
+          <p class="_mgbt-16px">
+            ใช้งาน Card โดยการใส่ container class <code class="_cl-accent">.bio-card</code> บน element ที่ต้องการ
           </p>
           
           <h3 class="_mgbt-8px">Markup</h3>
-          <pre><code class="language-markup">&lt;!-- Card Markup --&gt;
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Card Markup --&gt;
 &lt;div class="bio-card"&gt;
   &lt;img class="bio-card-cover" src="..."&gt;
   &lt;div class="bio-card-title"&gt; ... &lt;/div&gt;
@@ -536,12 +540,172 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
           
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-card</code></td>
+                <td>
+                  <strong class="">styles:</strong>
+                  <code class="_cl-accent">-horizontal</code>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-card-cover</code></td>
+                <td>
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-card-subtitle</code></td>
+                <td>
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-card-content</code></td>
+                <td>
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-card-actions</code></td>
+                <td>
+                  <strong class="">styles:</strong>
+                  <code class="_cl-accent">-push-left</code>,
+                  <code class="_cl-accent">-attached</code>,
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานกับพื้นฐาน</h3>
+          <pre><code class="language-markup">&lt;!-- Basic Card Markup --&gt;
+&lt;div class="bio-card"&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Basic Card Markup with Actions --&gt;
+&lt;div class="bio-card"&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions"&gt;
+    &lt;a href="#" class="bio-link"&gt;Cancel&lt;/a&gt;
+    &lt;a href="#" class="bio-link"&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Basic Card Markup with Actions left side--&gt;
+&lt;div class="bio-card"&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions -push-left"&gt;
+    &lt;a class="bio-link" href="#"&gt;&lt;i class="material-icons _fs-5"&gt;restaurant_menu&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="bio-link" href="#"&gt;&lt;i class="material-icons _fs-5"&gt;wb_sunny&lt;/i&gt;&lt;/a&gt;
+    &lt;a class="bio-link" href="#"&gt;&lt;i class="material-icons _fs-5"&gt;tag_faces&lt;/i&gt;&lt;/a&gt;
+    &lt;a href="#" class="bio-link"&gt;Cancel&lt;/a&gt;
+    &lt;a href="#" class="bio-link"&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+
+            <div class="bio-card _mgbt-16px">
+              <div class="bio-card-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean efficitur sit amet massa fringilla egestas.
+                Nullam condimentum luctus turpis.
+              </div>
+            </div>
+
+            <div class="bio-card _mgbt-16px">
+              <div class="bio-card-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean efficitur sit amet massa fringilla egestas.
+                Nullam condimentum luctus turpis.
+              </div>
+              <div class="bio-card-actions">
+                <i></i>
+                <a href="#" class="bio-link">Cancel</a>
+                <a href="#" class="bio-link">OK</a>
+              </div>
+            </div>
+
+            <div class="bio-card">
+              <div class="bio-card-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenean efficitur sit amet massa fringilla egestas.
+                Nullam condimentum luctus turpis.
+              </div>
+              <div class="bio-card-actions -push-left">
+                <a class="bio-link" href="#"><i class="material-icons _fs-5">restaurant_menu</i></a>
+                <a class="bio-link" href="#"><i class="material-icons _fs-5">wb_sunny</i></a>
+                <a class="bio-link" href="#"><i class="material-icons _fs-5">tag_faces</i></a>
+                <a href="#" class="bio-link">Cancel</a>
+                <a href="#" class="bio-link">OK</a>
+              </div>
+            </div>
+
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานอื่นๆ</h3>
+          <p class="_mgbt-16px">
+            ใช้ร่วมกับ utilities class <code class="_cl-accent">.u-rise</code> และ กำหนดความกว้างสูงสุดโดย helper class <code class="_cl-accent">._mxw-256px</code>
+          </p>
+          <pre><code class="language-markup">&lt;!-- Card Markup --&gt;
+&lt;div class="bio-card u-rise _mxw-256px"&gt;
+  &lt;img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image"&gt;
+  &lt;div class="bio-card-title"&gt;&lt;strong&gt;Hello Kitty&lt;/strong&gt;&lt;/div&gt;
+  &lt;div class="bio-card-subtitle"&gt;@BioMaRu&lt;/div&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions"&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;Cancel&lt;/a&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Card Markup with attached style actions --&gt;
+&lt;div class="bio-card u-rise _mxw-256px"&gt;
+  &lt;img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image"&gt;
+  &lt;div class="bio-card-title"&gt;&lt;strong&gt;Hello Kitty&lt;/strong&gt;&lt;/div&gt;
+  &lt;div class="bio-card-subtitle"&gt;@BioMaRu&lt;/div&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions -attached"&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;Cancel&lt;/a&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
           <div class="u-panel _mgbt-64px">
             <div class="lo-xs-12 lo-sm-12 lo-md-6 -gap-8px _alit-s">
               
-              <div class="bio-card _mxw-256px">
+              <div class="bio-card u-rise _mxw-256px">
                 <img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image">
-                <div class="bio-card-title">Hello Kitty</div>
+                <div class="bio-card-title"><strong>Hello Kitty</strong></div>
                 <div class="bio-card-subtitle">@BioMaRu</div>
                 <div class="bio-card-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -549,12 +713,71 @@
                   Nullam condimentum luctus turpis.
                 </div>
                 <div class="bio-card-actions">
-                  <a class="bio-link" href="#">Cancel</a>
-                  <a class="bio-link" href="#">OK</a>
+                  <a class="bio-link _pdh-8px" href="">Cancel</a>
+                  <a class="bio-link _pdh-8px" href="">OK</a>
+                </div>
+              </div>
+
+              <div class="bio-card u-rise _mxw-256px">
+                <img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image">
+                <div class="bio-card-title"><strong>Hello Kitty</strong></div>
+                <div class="bio-card-subtitle">@BioMaRu</div>
+                <div class="bio-card-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean efficitur sit amet massa fringilla egestas.
+                  Nullam condimentum luctus turpis.
+                </div>
+                <div class="bio-card-actions -attached">
+                  <a class="bio-link _pdh-8px" href="">Cancel</a>
+                  <a class="bio-link _pdh-8px" href="">OK</a>
                 </div>
               </div>
               
-              <div class="bio-card u-rise _mxw-256px _mgbt-32px">
+            </div>
+          </div>
+            
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานอื่นๆ</h3>
+          <p class="_mgbt-16px">
+            แสดงผลแนวนอน ด้วย Option <code class="_cl-accent">.-horizontal</code> 
+            สำหรับรูป Cover นั้น ตัวอย่างจะใส่ helper class <code class="_cl-accent">._ojf-cv</code> 
+            หรือ Style <code class="_cl-accent">object-fit: cover</code> เพื่อทำการ ขยายรูปให้เต็มพื้นที่ด้านใน
+          </p>
+          <pre><code class="language-markup">&lt;!-- Horizontal Card Markup --&gt;
+&lt;div class="bio-card -horizontal"&gt;
+  &lt;img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image"&gt;
+  &lt;div class="bio-card-title"&gt;&lt;strong&gt;Hello Kitty&lt;/strong&gt;&lt;/div&gt;
+  &lt;div class="bio-card-subtitle"&gt;@BioMaRu&lt;/div&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions"&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;Cancel&lt;/a&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Horizontal Card Markup with attached style actions --&gt;
+&lt;div class="bio-card -horizontal"&gt;
+  &lt;img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image"&gt;
+  &lt;div class="bio-card-title"&gt;&lt;strong&gt;Hello Kitty&lt;/strong&gt;&lt;/div&gt;
+  &lt;div class="bio-card-subtitle"&gt;@BioMaRu&lt;/div&gt;
+  &lt;div class="bio-card-content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Aenean efficitur sit amet massa fringilla egestas.
+    Nullam condimentum luctus turpis.
+  &lt;/div&gt;
+  &lt;div class="bio-card-actions -attached"&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;Cancel&lt;/a&gt;
+    &lt;a class="bio-link _pdh-8px" href=""&gt;OK&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-xs-12 lo-sm-12 lo-md-6 -gap-8px _alit-s">
+              
+              <div class="bio-card -horizontal">
                 <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
                 <div class="bio-card-title"><strong>Hello Kitty</strong></div>
                 <div class="bio-card-subtitle">@BioMaRu</div>
@@ -568,104 +791,25 @@
                   <a class="bio-link _pdh-8px" href="">OK</a>
                 </div>
               </div>
+
+              <div class="bio-card -horizontal">
+                <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
+                <div class="bio-card-title"><strong>Hello Kitty</strong></div>
+                <div class="bio-card-subtitle">@BioMaRu</div>
+                <div class="bio-card-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aenean efficitur sit amet massa fringilla egestas.
+                  Nullam condimentum luctus turpis.
+                </div>
+                <div class="bio-card-actions -attached">
+                  <a class="bio-link _pdh-8px" href="">Cancel</a>
+                  <a class="bio-link _pdh-8px" href="">OK</a>
+                </div>
+              </div>
               
             </div>
           </div>
-            
-          <div class="lo-xs-12 lo-sm-12 lo-md-6 -gap-8px _alit-s _mgbt-16px">
 
-            <div class="bio-card _mxw-256px">
-              <img class="bio-card-cover" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean efficitur sit amet massa fringilla egestas.
-                Nullam condimentum luctus turpis.
-              </div>
-              <div class="bio-card-actions">
-                <a class="bio-link" href="#">Cancel</a>
-                <a class="bio-link" href="#">OK</a>
-              </div>
-            </div>
-            
-            <div class="bio-card u-rise _mxw-256px _mgbt-32px">
-              <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean efficitur sit amet massa fringilla egestas.
-                Nullam condimentum luctus turpis.
-              </div>
-              <div class="bio-card-actions">
-                <a class="bio-link _pdh-8px" href="">Cancel</a>
-                <a class="bio-link _pdh-8px" href="">OK</a>
-              </div>
-            </div>
-
-            <!-- <div class="bio-card _mxw-256px _mgbt-32px">
-              <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean efficitur sit amet massa fringilla egestas.
-                Nullam condimentum luctus turpis.
-              </div>
-              <div class="bio-card-actions -attached">
-                <a class="bio-link" href="">Cancel</a>
-                <a class="bio-link" href="">OK</a>
-              </div>
-            </div>
-
-            <div class="bio-card -horizontal">
-              <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, <a class="bio-link -primary" href="#">link here</a> consectetur adipiscing elit.
-                Aenean efficitur <a class="bio-link -primary -fancy" href="#">fancy link here</a> sit amet massa fringilla egestas.
-              </div>
-              <div class="bio-card-actions">
-                <a class="bio-link _pdh-8px" href="">Cancel</a>
-                <a class="bio-link _pdh-8px" href="">OK</a>
-              </div>
-            </div>
-            
-            <div class="bio-card -horizontal">
-              <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean efficitur sit amet massa fringilla egestas.
-              </div>
-              <div class="bio-card-actions -push-left">
-                <a class="bio-link" href="#"><i class="material-icons _fs-5">satellite</i></a>
-                <a class="bio-link" href="#"><i class="material-icons _fs-5">whatshot</i></a>
-                <a class="bio-link" href="#"><i class="material-icons _fs-5">restaurant_menu</i></a>
-                <a class="bio-link" href="#"><i class="material-icons _fs-5">wb_sunny</i></a>
-                <a class="bio-link" href="#"><i class="material-icons _fs-5">tag_faces</i></a>
-              </div>
-            </div>
-            
-            <div class="bio-card -horizontal">
-              <img class="bio-card-cover _ojf-cv" src="https://placeimg.com/640/480/animals" alt="image">
-              <div class="bio-card-title"><strong>Hello Kitty</strong></div>
-              <div class="bio-card-subtitle">@BioMaRu</div>
-              <div class="bio-card-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aenean efficitur sit amet massa fringilla egestas.
-              </div>
-              <div class="bio-card-actions -attached">
-                <a class="bio-link" href="#">Cancel</a>
-                <a class="bio-link" href="#">Share</a>
-                <a class="bio-link" href="#">OK</a>
-              </div>
-            </div> -->
-
-          </div>
         </div>
 
 
