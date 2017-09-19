@@ -1,0 +1,87 @@
+.u-close {
+  @extend ._pst-rlt;
+  @extend ._dp-ilb;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  &:before, &:after {
+    content: '';
+    @extend ._pst-asl;
+    @extend ._h-1px;
+    @extend ._w-100pct;
+    @extend ._t-50pct;
+    @extend ._l-0px;
+    @extend ._bgcl-primary;
+  }
+  &:hover {
+    &:before, &:after {
+      background-color: darken($color-primary, 8%);
+    }
+  }
+  &.-accent {
+    &:before, &:after {
+      @extend ._bgcl-accent;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-accent, 8%);
+      }
+    }
+  }
+  &.-negative {
+    &:before, &:after {
+      @extend ._bgcl-negative;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-negative, 8%);
+      }
+    }
+  }
+  &.-positive {
+    &:before, &:after {
+      @extend ._bgcl-positive;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-positive, 8%);
+      }
+    }
+  }
+  &.-warning {
+    &:before, &:after {
+      @extend ._bgcl-warning;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-warning, 8%);
+      }
+    }
+  }
+  &.-info {
+    &:before, &:after {
+      @extend ._bgcl-info;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-info, 8%);
+      }
+    }
+  }
+  &.-dark {
+    &:before, &:after {
+      @extend ._bgcl-dark;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: darken($color-dark, 8%);
+      }
+    }
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

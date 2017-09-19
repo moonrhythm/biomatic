@@ -61,6 +61,7 @@
               <a href="#button" class="bio-link -item">Button</a>
               <a href="#card" class="bio-link -item">Card</a>
               <a href="#message" class="bio-link -item">Message</a>
+              <a href="#progress" class="bio-link -item">Progress</a>
             </div>
           </div>
 
@@ -585,7 +586,7 @@
             </tbody>
           </table>
           
-          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานกับพื้นฐาน</h3>
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานพื้นฐาน</h3>
           <pre><code class="language-markup">&lt;!-- Basic Card Markup --&gt;
 &lt;div class="bio-card"&gt;
   &lt;div class="bio-card-content"&gt;
@@ -806,7 +807,7 @@
                   <a class="bio-link _pdh-8px" href="">OK</a>
                 </div>
               </div>
-              
+
             </div>
           </div>
 
@@ -825,99 +826,224 @@
           </h1>
 
           <p class="_mgbt-16px">
-            Hello WIP
+            Message เหมาะสำหรับแสดง content ที่ต้องการดึงความสนใจผู้ใช้และเน้นความรู้สึกต่างๆ
+            เช่นการให้ข้อมูล, การแจ้งเตือน, การแสดงข้อผิดพลาด เป็นต้น
           </p>
 
-          <div class="bio-message _mgbt-8px">
-            <div class="bio-message-close">
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
-
-          <div class="bio-message _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link">close</i>
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
-
-          <div class="bio-message -positive _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link -positive">close</i>
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
-
-          <div class="bio-message -negative _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link -negative">close</i>
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
+          <p class="_mgbt-16px">
+            คุณสามารถใช้งาน Message ได้โดยใส่ Class <code class="_cl-accent">.bio-message</code> บน Element ที่ค้องการ
+          </p>
           
-          <div class="bio-message -warning _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link -warning">close</i>
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-          </div>
+          <p class="_mgbt-16px">
+            หากคุณต้องการจุดสำหรับแสดงปุ่มปิด คุณสามารถใส่ child ที่ใช้ Class <code class="_cl-accent">.bio-message-close</code> ได้ 
+            ซึ่งปุ่มปิดจะอยู่มุมขวาบนของ Message เสมอ โดยคุณอาจจะใช้ Utility Class <code class="_cl-accent">.u-close</code> เพื่อช่วย
+            แสดงปุ่มปิดที่สวยงามได้
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Message Markup --&gt;
+&lt;div class="bio-message _mgbt-8px"&gt;
+  &lt;div class="bio-message-close"&gt;...&lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;</code></pre>
           
-          <div class="bio-message -info _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link -info">close</i>
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-message</code></td>
+                <td>
+                  <p class="_mgbt-16px">
+                    <strong class="_mgbt-8px">colors:</strong>
+                    <code class="_cl-accent">-accent</code>,
+                    <code class="_cl-accent">-positive</code>,
+                    <code class="_cl-accent">-negative</code>,
+                    <code class="_cl-accent">-warning</code>,
+                    <code class="_cl-accent">-info</code>,
+                    <code class="_cl-accent">-dark</code>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-message-close</code></td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานพื้นฐาน</h3>
+          <pre><code class="language-markup">&lt;!-- Message Markup --&gt;
+&lt;div class="bio-message"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+
+&lt;!-- Message Markup with close --&gt;
+&lt;div class="bio-message"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -fancy" href="#"&gt;close&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+
+&lt;!-- Message Markup with close using u-close utilitiy--&gt;
+&lt;div class="bio-message"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-message _mgbt-8px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  
+            <div class="bio-message _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -fancy" href="#">close</a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-          </div>
-          
-          <div class="bio-message -dark _mgbt-8px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link -dark">close</i>
-            </div>
-            <div class="bio-message-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            
+            <div class="bio-message">
+              <div class="bio-message-close">
+                <a class="bio-link u-close" href="#"></a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
 
-          <div class="bio-message _mgbt-16px">
-            <div class="bio-message-close">
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานพื้นอื่นๆ</h3>
+          <pre><code class="language-markup">&lt;!-- Color Positive --&gt;
+&lt;div class="bio-message -positive">
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -positive u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="bio-message-content"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Color Negative --&gt;
+&lt;div class="bio-message -negative"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -negative u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="bio-message-content"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Color Warning --&gt;
+&lt;div class="bio-message -warning"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -warning u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="bio-message-content"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Color Info --&gt;
+&lt;div class="bio-message -info"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -info u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="bio-message-content"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Color Dark --&gt;
+&lt;div class="bio-message -dark"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -dark u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="bio-message-content"&gt;
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-message -positive _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -positive u-close" href="#"></a>
+              </div>
+              <div class="bio-message-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
             </div>
-            <div class="bio-message-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Donec dictum libero odio, quis eleifend lectus finibus id. 
-              Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
-              Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
-              condimentum quis pretium non, convallis vitae nisi
+  
+            <div class="bio-message -negative _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -negative u-close" href="#"></a>
+              </div>
+              <div class="bio-message-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+            
+            <div class="bio-message -warning _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -warning u-close" href="#"></a>
+              </div>
+              <div class="bio-message-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+            
+            <div class="bio-message -info _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -info u-close" href="#"></a>
+              </div>
+              <div class="bio-message-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+            
+            <div class="bio-message -dark _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -dark u-close" href="#"></a>
+              </div>
+              <div class="bio-message-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
             </div>
           </div>
 
-          <div class="bio-message _mgbt-16px">
-            <div class="bio-message-close">
-              <i class="material-icons bio-link">close</i>
-            </div>
-            <div class="bio-message-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Donec dictum libero odio, quis eleifend lectus finibus id. 
-              Curabitur finibus consectetur mauris, ut faucibus dui volutpat commodo. 
-              Morbi id porttitor diam, pellentesque tempor odio. Sed nunc eros, 
-              condimentum quis pretium non, convallis vitae nisi
-            </div>
-          </div>
         </div>
 
+        <!------------------------------------
+          Progress 
+        -------------------------------------->
+        <div id="progress" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#progress" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Progress
+          </h1>
 
+          <p class="_mgbt-16px">
+            progress WIP...
+          </p>
 
+          <div class="lo-xs-12 lo-sm-6 -gap-8px">
+            <progress class="bio-progress -primary" value="10" max="100"></progress>
+            <progress class="bio-progress -accent" value="20" max="100"></progress>
+            <progress class="bio-progress -positive" value="30" max="100"></progress>
+            <progress class="bio-progress -negative" value="40" max="100"></progress>
+            <progress class="bio-progress -warning" value="50" max="100"></progress>
+            <progress class="bio-progress -info" value="50" max="100"></progress>
+            <progress class="bio-progress -dark" value="70" max="100"></progress>
+            <progress class="bio-progress -black" value="90" max="100"></progress>
+          </div>
+        </div>
 <!-- 
           <h2>Progress Bar</h2>
           <div class="lo-xs-12 lo-sm-6 -gap-8px">
@@ -1080,8 +1206,6 @@
             </div>
             
           </div>
-        
-        
 
           <div class="lo-container _pdt-16px _mgbt-32px">
             <h2>Submit</h2>

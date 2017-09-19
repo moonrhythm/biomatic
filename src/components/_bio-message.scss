@@ -8,6 +8,10 @@
 
   @extend ._cl-primary;
   background-color: lighten($color-primary, 37%);
+  &.-accent {
+    @extend ._cl-accent;
+    background-color: lighten($color-accent, 30%);
+  }
   &.-negative {
     @extend ._cl-negative;
     background-color: lighten($color-negative, 30%);
@@ -31,8 +35,9 @@
   >.bio-message-close {
     grid-area: close;
     user-select: none;
-    & ~ .bio-message-content {
-      @extend ._pdr-8px;
+    @extend ._mgl-8px;
+    > * {
+      @extend ._dp-b;
     }
   }
   >.bio-message-content {
