@@ -74,6 +74,8 @@
 .lo-lg-10-2,
 .lo-lg-11-1 {
   @extend ._dp-g;
+  min-height: 0;
+  min-width: 0;
 
   &.-gap     { grid-gap: 8px; }
   &.-gap-2px   { grid-gap: 2px; }

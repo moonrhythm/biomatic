@@ -371,31 +371,21 @@ input[type="checkbox"] {
     }
   }
 }
-// // -Disabled
-// .bio-input.-disabled > input,
-// .bio-textarea.-disabled > textarea,
-// .bio-select.-disabled > select {
-//   @extend ._cs-na;
-//   background-color: lighten($color-gray, 10%);
-//   border-color: $color-gray;
-// }
 
 // Multiple Select
-.bio-select.-multiple > select {
-  @extend ._pd-0px;
-  > option {
-    @extend ._pdv-8px;
-    @extend ._pdh-8px;
-    box-shadow: none;
-    &:checked {
-      background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
+.bio-select.-multiple {
+  > select {
+    overflow: auto;
+    @extend ._pd-0px;
+    > option {
+      @extend ._pdv-8px;
+      @extend ._pdh-8px;
+      box-shadow: none;
+      &:checked {
+        background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
+      }
     }
   }
-}
-
-// Input Height
-.bio-input,
-.bio-select:not(.-multiple) {
 }
 
 .bio-input > input,
@@ -403,30 +393,27 @@ input[type="checkbox"] {
   height: 36px;
 }
 
-// Icon Left
+// Single Select
 .bio-select:not(.-multiple) {
   @extend ._pst-rlt;
-}
-
-.bio-select:not(.-multiple) > select {
-  @extend ._pdr-32px;
-}
-
-// Select Caret
-.bio-select:not(.-multiple)::after {
-  content: " ";
-  @extend ._bd-2px;
-  @extend ._bdr-0px;
-  @extend ._bdt-0px;
-  @extend ._h-8px;
-  @extend ._w-8px;
-  @extend ._pst-asl;
-  @extend ._r-8px;
-  @extend ._t-50pct;
-  border-color: darken( $color-gray, 5%);
-  transform: rotate(-45deg) translate(0, calc(-50% - 4px));
-  z-index: 4;
-  pointer-events: none;
+  > select {
+    @extend ._pdr-32px;
+  }
+  &:after {
+    content: " ";
+    @extend ._bd-2px;
+    @extend ._bdr-0px;
+    @extend ._bdt-0px;
+    @extend ._h-8px;
+    @extend ._w-8px;
+    @extend ._pst-asl;
+    @extend ._r-8px;
+    @extend ._t-50pct;
+    border-color: darken( $color-gray, 5%);
+    transform: rotate(-45deg) translate(0, calc(-50% - 4px));
+    z-index: 4;
+    pointer-events: none;
+  }
 }
 
 .bio-textarea > textarea {

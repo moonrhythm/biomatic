@@ -96,8 +96,8 @@
           <h1 class="_mgv-16px"> 
             <a href="#form" class="bio-link -primary"><strong>#</strong></a> 
             &nbsp;&nbsp;Form 
-          </h1> 
-  
+          </h1>
+
           <p class="_mgbt-16px"> 
             คุณสามารถควบคุม Style ของ Form Element เช่น <code class="_cl-accent">&lt;input&gt;</code>, <code class="_cl-accent">&lt;select&gt;</code>,  
             <code class="_cl-accent">&lt;textarea&gt;</code>  
@@ -144,7 +144,7 @@
             </div>
           </div>
 
-          <h3>Field</h3>
+          <h2>Field</h2>
           
           <p class="_mgbt-16px"> 
             คุณสามารถใส่ Class <code class="_cl-accent">.bio-field</code> ที่ Container ด้านนอก 
@@ -275,6 +275,76 @@
             </div>
             
           </div>
+          
+          <h3>ตัวอย่างการใช้งาน Multiple Select</h3>
+          <p class="_mgbt-8px"> 
+            คุณสามารถกำหนด Height ที่เหมาะสมที่ <code class="_cl-accent">&lt;select&gt;</code> ได้
+          </p>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- multiple select Markup --&gt;
+&lt;div class="bio-select -multiple"&gt;
+  &lt;select multiple&gt;
+    &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;option&gt;Option 4&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class="bio-select -multiple"&gt;
+  &lt;select multiple&gt;
+    &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;option&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;div class="bio-select -multiple"&gt;
+  &lt;select multiple class="_h-256px"&gt;
+    &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;option&gt;Option 4&lt;/option&gt;
+    &lt;option&gt;Option 5&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="lo-cs-12 lo-sm-6 -gap-8px">
+              <div class="bio-select -multiple _mgbt-8px">
+                <select multiple>
+                  <option disabled>Select dropdown</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </div>
+
+              <div class="bio-select -multiple _mgbt-8px">
+                <select multiple>
+                  <option disabled>Select dropdown</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+
+              <div class="bio-select -multiple _mgbt-8px">
+                <select multiple class="_h-256px">
+                  <option disabled>Select dropdown</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
 
 
         </div><!-- end of #message -->
