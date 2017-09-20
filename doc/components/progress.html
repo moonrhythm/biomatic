@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="/doc/components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="/doc/components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="/doc/components/button.html" class="bio-link -item">Button</a>
+              <a href="/doc/components/card.html" class="bio-link -item">Card</a>
+              <a href="/doc/components/message.html" class="bio-link -item">Message</a>
+              <a href="/doc/components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Progress 
+        -------------------------------------->
+        <div id="progress" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#progress" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Progress
+          </h1>
+
+          <p class="_mgbt-16px">
+            progress WIP...
+          </p>
+
+          <div class="lo-xs-12 lo-sm-6 -gap-8px">
+            <progress class="bio-progress -primary" value="10" max="100"></progress>
+            <progress class="bio-progress -accent" value="20" max="100"></progress>
+            <progress class="bio-progress -positive" value="30" max="100"></progress>
+            <progress class="bio-progress -negative" value="40" max="100"></progress>
+            <progress class="bio-progress -warning" value="50" max="100"></progress>
+            <progress class="bio-progress -info" value="50" max="100"></progress>
+            <progress class="bio-progress -dark" value="70" max="100"></progress>
+            <progress class="bio-progress -black" value="90" max="100"></progress>
+          </div>
+
+        </div><!-- end of #progress -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>

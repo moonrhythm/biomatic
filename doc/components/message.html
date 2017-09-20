@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="/doc/components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="/doc/components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="/doc/components/button.html" class="bio-link -item">Button</a>
+              <a href="/doc/components/card.html" class="bio-link -item">Card</a>
+              <a href="/doc/components/message.html" class="bio-link -item">Message</a>
+              <a href="/doc/components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Message 
+        -------------------------------------->
+        <div id="message" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#message" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Message
+          </h1>
+
+          <p class="_mgbt-16px">
+            Message เหมาะสำหรับแสดง content ที่ต้องการดึงความสนใจผู้ใช้และเน้นความรู้สึกต่างๆ
+            เช่นการให้ข้อมูล, การแจ้งเตือน, การแสดงข้อผิดพลาด เป็นต้น
+          </p>
+
+          <p class="_mgbt-16px">
+            คุณสามารถใช้งาน Message ได้โดยใส่ Class <code class="_cl-accent">.bio-message</code> บน Element ที่ค้องการ
+          </p>
+          
+          <p class="_mgbt-16px">
+            หากคุณต้องการจุดสำหรับแสดงปุ่มปิด คุณสามารถใส่ child ที่ใช้ Class <code class="_cl-accent">.bio-message-close</code> ได้ 
+            ซึ่งปุ่มปิดจะอยู่มุมขวาบนของ Message เสมอ โดยคุณอาจจะใช้ Utility Class <code class="_cl-accent">.u-close</code> เพื่อช่วย
+            แสดงปุ่มปิดที่สวยงามได้
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Message Markup --&gt;
+&lt;div class="bio-message _mgbt-8px"&gt;
+  &lt;div class="bio-message-close"&gt;...&lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;</code></pre>
+          
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-message</code></td>
+                <td>
+                  <p class="_mgbt-16px">
+                    <strong class="_mgbt-8px">colors:</strong>
+                    <code class="_cl-accent">-accent</code>,
+                    <code class="_cl-accent">-positive</code>,
+                    <code class="_cl-accent">-negative</code>,
+                    <code class="_cl-accent">-warning</code>,
+                    <code class="_cl-accent">-info</code>,
+                    <code class="_cl-accent">-dark</code>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-message-close</code></td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานพื้นฐาน</h3>
+          <pre><code class="language-markup">&lt;!-- Message Markup --&gt;
+&lt;div class="bio-message"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+
+&lt;!-- Message Markup with close --&gt;
+&lt;div class="bio-message"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -fancy" href="#"&gt;close&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;
+
+&lt;!-- Message Markup with close using u-close utilitiy--&gt;
+&lt;div class="bio-message"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-message _mgbt-8px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+  
+            <div class="bio-message _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -fancy" href="#">close</a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            
+            <div class="bio-message">
+              <div class="bio-message-close">
+                <a class="bio-link u-close" href="#"></a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานอื่นๆ</h3>
+          <pre><code class="language-markup">&lt;!-- Color Positive --&gt;
+&lt;div class="bio-message -positive">
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -positive u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;
+
+&lt;!-- Color Negative --&gt;
+&lt;div class="bio-message -negative"&gt;
+  &lt;div class="bio-message-close"&gt;
+    &lt;a class="bio-link -negative u-close" href="#"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;
+
+&lt;!-- Color Warning --&gt;
+&lt;div class="bio-message -warning"&gt;
+  Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;
+
+&lt;!-- Color Info --&gt;
+&lt;div class="bio-message -info"&gt;
+  Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;
+
+&lt;!-- Color Dark --&gt;
+&lt;div class="bio-message -dark"&gt;
+  Lorem ipsum dolor sit amet, consectetur elit.
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-message -positive _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -positive u-close" href="#"></a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </div>
+  
+            <div class="bio-message -negative _mgbt-8px">
+              <div class="bio-message-close">
+                <a class="bio-link -negative u-close" href="#"></a>
+              </div>
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </div>
+            
+            <div class="bio-message -warning _mgbt-8px">
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </div>
+            
+            <div class="bio-message -info _mgbt-8px">
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </div>
+            
+            <div class="bio-message -dark _mgbt-8px">
+              Lorem ipsum dolor sit amet, consectetur elit.
+            </div>
+          </div>
+
+        </div><!-- end of #message -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>

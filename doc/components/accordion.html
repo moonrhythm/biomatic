@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="/doc/components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="/doc/components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="/doc/components/button.html" class="bio-link -item">Button</a>
+              <a href="/doc/components/card.html" class="bio-link -item">Card</a>
+              <a href="/doc/components/message.html" class="bio-link -item">Message</a>
+              <a href="/doc/components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Accordion 
+        -------------------------------------->
+        <div id="accordion" class="_pdt-16px">
+          
+          <h1 class="_mgv-16px">
+            <a href="#accordion" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Accordion
+          </h1>
+
+          <p class="_mgbt-16px">
+            เหมาะสำหรับ Content ที่ต้องการ เปิด/ปิด การแสดงผลได้ ใช้งานโดยการใส่ Class <code class="_cl-accent">.bio-accordion</code> บน Container ที่ต้องการ
+            และใส่ Content ไว้ด้านใน Container ที่ใช้ class <code class="_cl-accent">.bio-accordion-content</code>
+          </p>
+
+          <p class="_mgbt-64px">
+            คุณสามารถใช้ร่วมกับ <code class="_cl-accent">input</code> ได้สองแบบคือ <strong>Checkbok</strong> (เปิดหลาย Accordion ได้พร้อมกัน) และ <strong>Radio</strong> (เปิดทีละ Accordion)
+            โดยใช้ <code class="_cl-accent">label</code> ของ input เป็นตัวเปิดปิดตามสถานะ <code class="_cl-accent">::checked</code> ของ <code class="_cl-accent">input</code>
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-64px"><code class="language-markup">&lt;!-- Accordion Markup --&gt;
+&lt;div class="bio-accordion"&gt;
+  &lt;input id="accordion" type="checkbox"&gt;
+  &lt;label for="accordion"&gt;Accordion&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    // Content goes here...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>    
+          
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-accordion</code></td>
+                <td><strong>Styles:</strong> <code class="_cl-accent">-has-icon</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">.bio-accordion-content</code></td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่าง Accordion แบบ Checkbox</h3>
+          <div class="_mgbt-64px">
+            <pre><code class="language-markup">&lt;!-- Using checkbox input --&gt;
+&lt;div class="bio-accordion"&gt;
+  &lt;input id="ac1" type="checkbox"&gt;
+  &lt;label for="ac1"&gt;Accordion checkbox 1&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="bio-accordion -has-icon"&gt;
+  &lt;input id="ac2" type="checkbox"&gt;
+  &lt;label for="ac2"&gt;Accordion checkbox 2&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="u-panel">
+              <div class="bio-accordion">
+                <input id="ac1" type="checkbox">
+                <label for="ac1">Accordion checkbox</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
+              </div>
+
+              <div class="bio-accordion -has-icon">
+                <input id="ac2" type="checkbox" class="_dp-n">
+                <label for="ac2">Accordion checkbox w/ icon</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่าง Accordion แบบ Radio</h3>
+          <div class="_mgbt-64px">
+            <pre><code class="language-markup">&lt;!-- Using radio input --&gt;
+&lt;div class="bio-accordion -has-icon"&gt;
+  &lt;input id="ar1" type="radio" name="accordion-radio"&gt;
+  &lt;label for="ar1"&gt;Accordion Radio 1&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="bio-accordion"&gt;
+  &lt;input id="ar2" type="radio" name="accordion-radio"&gt;
+  &lt;label for="ar2"&gt;Accordion Radio 2&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item C&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item D&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="bio-accordion"&gt;
+  &lt;input id="ar3" type="radio" name="accordion-radio"&gt;
+  &lt;label for="ar3"&gt;Accordion Radio 3&lt;/label&gt;
+  &lt;div class="bio-accordion-content"&gt;
+    &lt;div class="bio-link -item"&gt;Item A&lt;/div&gt;
+    &lt;div class="bio-link -item"&gt;Item B&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="u-panel">
+              <div class="bio-accordion -has-icon">
+                <input id="ar1" type="radio" name="accordion-radio">
+                <label for="ar1">Accordion Radio 1</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                </div>
+              </div>
+
+              <div class="bio-accordion">
+                <input id="ar2" type="radio" name="accordion-radio">
+                <label for="ar2">Accordion Radio 2</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                  <div class="bio-link -item">Item C</div>
+                  <div class="bio-link -item">Item D</div>
+                </div>
+              </div>
+
+              <div class="bio-accordion">
+                <input id="ar3" type="radio" name="accordion-radio">
+                <label for="ar3">Accordion Radio 3</label>
+                <div class="bio-accordion-content">
+                  <div class="bio-link -item">Item A</div>
+                  <div class="bio-link -item">Item B</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- end of #accordion -->
+
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+          
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>
