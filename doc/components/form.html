@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="/doc/components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="/doc/components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="/doc/components/button.html" class="bio-link -item">Button</a>
+              <a href="/doc/components/card.html" class="bio-link -item">Card</a>
+              <a href="/doc/components/form.html" class="bio-link -item">Form</a>
+              <a href="/doc/components/message.html" class="bio-link -item">Message</a>
+              <a href="/doc/components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Form 
+        -------------------------------------->
+        <div id="form" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px"> 
+            <a href="#form" class="bio-link -primary"><strong>#</strong></a> 
+            &nbsp;&nbsp;Form 
+          </h1> 
+  
+          <p class="_mgbt-16px"> 
+            คุณสามารถควบคุม Style ของ Form Element เช่น <code class="_cl-accent">&lt;input&gt;</code>, <code class="_cl-accent">&lt;select&gt;</code>,  
+            <code class="_cl-accent">&lt;textarea&gt;</code>  
+            ได้โดยง่าย ด้วย Class <code class="_cl-accent">.bio-input</code>, <code class="_cl-accent">.bio-select</code>, <code class="_cl-accent">.bio-textarea</code> ที่ Container 
+          </p> 
+          
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- input Markup --&gt;
+&lt;div class="bio-input"&gt;
+  &lt;input type="text" placeholder="Type Something"&gt;
+&lt;/div&gt;
+
+&lt;!-- textarea Markup --&gt;
+&lt;div class="bio-textarea"&gt;
+  &lt;textarea rows="3" placeholder="Textarea"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- select Markup --&gt;
+&lt;div class="bio-select"&gt;
+  &lt;select&gt;
+    &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;option&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="bio-input _mgbt-8px">
+              <input type="text" placeholder="Type Something">
+            </div>
+            
+            <div class="bio-textarea _mgbt-8px">
+              <textarea rows="3" placeholder="Textarea"></textarea>
+            </div>
+
+            <div class="bio-select">
+              <select>
+                <option disabled>Select dropdown</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+          </div>
+
+          <h3>Field</h3>
+          
+          <p class="_mgbt-16px"> 
+            คุณสามารถใส่ Class <code class="_cl-accent">.bio-field</code> ที่ Container ด้านนอก 
+            เพื่อช่วยจัดการควบคุมเรื่องของการแสดงผลได้ และใส่หัวข้อ กับคำอธิบายเพิ่มเติมได้
+          </p>
+
+          <p class="_mgbt-16px"> 
+            การกำหนดสีทำเพื่อใช้แสดงความรู้สึกเพิ่มเติมของข้อมูล เช่น ข้อมูลถูกต้อง หรือ ข้อมูลผิดพลาด เป็นต้น 
+            คุณสามารถประยุกต์ใช้สี Semantic Color ได้ตามที่คุณต้องการ
+          </p>
+
+          <p class="_mgbt-64px"> 
+            อีกทั้งคุณยังสามารถใส่ <code class="_cl-accent">&lt;label&gt;</code> เพื่อแสดงหัวข้อของ Field 
+            และใส่คำอธิบายเพิ่มเติมได้ (เราแนะนำให้ใช้ <code class="_cl-accent">&lt;small&gt;</code>)
+          </p>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้ Field</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Positive text input --&gt;
+&lt;div class="bio-field -positive"&gt;
+  &lt;label&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-input -positive"&gt;
+    &lt;input type="text" placeholder="What's your name again?" value="BioMaRu"&gt;
+  &lt;/div&gt;
+  &lt;small&gt;Great, awesome name!&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;!-- Warning number input --&gt;
+&lt;div class="bio-field -warning"&gt;
+  &lt;label&gt;&lt;strong&gt;Age&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-input"&gt;
+    &lt;input type="Number" placeholder="Tell me your age"&gt;
+  &lt;/div&gt;
+  &lt;small&gt;Shhhhhh!&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;!-- Accent password input --&gt;
+&lt;div class="bio-field -accent"&gt;
+  &lt;label&gt;&lt;strong&gt;Password&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-input -positive"&gt;
+    &lt;input type="password" placeholder="It's secret"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled text input --&gt;
+&lt;div class="bio-field -disabled"&gt;
+  &lt;label&gt;&lt;strong&gt;Under Construction&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-input"&gt;
+    &lt;input type="Number" placeholder="Tell me your age" disabled&gt;
+  &lt;/div&gt;
+  &lt;small&gt;This field is not ready yet&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;!-- Negative textarea --&gt;
+&lt;div class="bio-field -negative"&gt;
+  &lt;label&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-textarea"&gt;
+    &lt;textarea rows="3" placeholder="Tell us about you"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;small&gt;Sorry, it blank!! Please fill some data&lt;/small&gt;
+&lt;/div&gt;
+
+&lt;!-- Info select --&gt;
+&lt;div class="bio-field -info"&gt;
+  &lt;label&gt;&lt;strong&gt;Optional&lt;/strong&gt;&lt;/label&gt;
+  &lt;div class="bio-select"&gt;
+    &lt;select&gt;
+      &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;Option 1&lt;/option&gt;
+      &lt;option&gt;Option 2&lt;/option&gt;
+      &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;small&gt;&lt;i class="material-icons _fs-6"&gt;info_outline&lt;/i&gt; The secret is... You can leave this field as a blank&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+
+            <div class="bio-field -positive _mgbt-16px">
+              <label><strong>Name</strong></label>
+              <div class="bio-input -positive">
+                <input type="text" placeholder="What's your name again?" value="BioMaRu">
+              </div>
+              <small>Great, awesome name!</small>
+            </div>
+            
+            <div class="bio-field -warning _mgbt-16px">
+              <label><strong>Age</strong></label>
+              <div class="bio-input">
+                <input type="Number" placeholder="Tell me your age">
+              </div>
+              <small>Shhhhhh!</small>
+            </div>
+
+            <div class="bio-field -accent _mgbt-16px">
+              <label><strong>Password</strong></label>
+              <div class="bio-input -positive">
+                <input type="password" placeholder="It's secret">
+              </div>
+            </div>
+
+            <div class="bio-field -disabled _mgbt-16px">
+              <label><strong>Under Construction</strong></label>
+              <div class="bio-input">
+                <input type="Number" placeholder="Tell me your age" disabled>
+              </div>
+              <small>This field is not ready yet</small>
+            </div>
+            
+            <div class="bio-field -negative _mgbt-16px">
+              <label><strong>Description</strong></label>
+              <div class="bio-textarea">
+                <textarea rows="3" placeholder="Tell us about you"></textarea>
+              </div>
+              <small>Sorry, it blank!! Please fill some data</small>
+            </div>
+
+            <div class="bio-field -info _mgbt-16px">
+              <label><strong>Optional</strong></label>
+              <div class="bio-select">
+                <select>
+                  <option disabled>Select dropdown</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <small><i class="material-icons _fs-6">info_outline</i> The secret is... You can leave this field as a blank</small>
+            </div>
+            
+          </div>
+
+
+        </div><!-- end of #message -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>

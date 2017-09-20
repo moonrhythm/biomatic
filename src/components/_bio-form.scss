@@ -18,6 +18,14 @@ input[type="checkbox"] {
   color: darken($color-gray, 40%);
 }
 
+// Label
+.bio-field {
+  > label {
+    @extend ._dp-ilb;
+    @extend ._mgbt-8px;
+  }
+}
+
 // Checkbox
 .bio-checkbox:not(.-switch) {
   > input[type="checkbox"] {
@@ -260,62 +268,117 @@ input[type="checkbox"] {
   }
 }
 
-// -Positive
-.bio-input.-positive > input,
-.bio-textarea.-positive > textarea,
-.bio-select.-positive > select { 
-  border-color: $color-positive;
-  // background-color: transparentize($color-positive, .9);
-  // @extend ._cl-positive;
-  &:focus, :active {
-    box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
+.bio-field {
+  &.-accent {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        border-color: $color-accent;
+        &:focus, :active {
+          box-shadow: 0 0 0 2px transparentize($color-accent, 0.7);
+        }
+      }
+      + * {
+        @extend ._cl-accent;
+      }
+    }
+  }
+  &.-positive {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        border-color: $color-positive;
+        &:focus, :active {
+          box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
+        }
+      }
+      + * {
+        @extend ._cl-positive;
+      }
+    }
+  }
+  &.-negative {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        border-color: $color-negative;
+        &:focus, :active {
+          box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
+        }
+      }
+      + * {
+        @extend ._cl-negative;
+      }
+    }
+  }
+  &.-info {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        border-color: $color-info;
+        &:focus, :active {
+          box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
+        }
+      }
+      + * {
+        @extend ._cl-info;
+      }
+    }
+  }
+  &.-warning {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        border-color: $color-warning;
+        &:focus, :active {
+          box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
+        }
+      }
+      + * {
+        @extend ._cl-warning;
+      }
+    }
+  }
+  &.-disabled {
+    > .bio-input,
+    > .bio-textarea,
+    > .bio-select {
+      > input,
+      > textarea,
+      > select {
+        @extend ._cs-na;
+        background-color: lighten($color-gray, 5%);
+        border-color: $color-gray;
+      }
+      + * {
+        @extend ._cl-dark;
+      }
+    }
   }
 }
-
-// -Negative
-.bio-input.-negative > input,
-.bio-textarea.-negative > textarea,
-.bio-select.-negative > select { 
-  border-color: $color-negative;
-  // background-color: transparentize($color-negative, .9);
-  // @extend ._cl-negative;
-  &:focus, :active {
-    box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
-  }
-}
-  
-// -Info
-.bio-input.-info > input,
-.bio-textarea.-info > textarea,
-.bio-select.-info > select { 
-  border-color: $color-info;
-  // background-color: transparentize($color-info, .9);
-  // @extend ._cl-info;
-  &:focus, :active {
-    box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
-  }
-}
-  
-// -Warning
-.bio-input.-warning > input,
-.bio-textarea.-warning > textarea,
-.bio-select.-warning > select { 
-  border-color: $color-warning;
-  // background-color: transparentize($color-warning, .9);
-  // @extend ._cl-warning;
-  &:focus, :active {
-    box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
-  }
-}
-
-// -Disabled
-.bio-input.-disabled > input,
-.bio-textarea.-disabled > textarea,
-.bio-select.-disabled > select {
-  @extend ._cs-na;
-  background-color: lighten($color-gray, 10%);
-  border-color: $color-gray;
-}
+// // -Disabled
+// .bio-input.-disabled > input,
+// .bio-textarea.-disabled > textarea,
+// .bio-select.-disabled > select {
+//   @extend ._cs-na;
+//   background-color: lighten($color-gray, 10%);
+//   border-color: $color-gray;
+// }
 
 // Multiple Select
 .bio-select.-multiple > select {
@@ -333,14 +396,11 @@ input[type="checkbox"] {
 // Input Height
 .bio-input,
 .bio-select:not(.-multiple) {
-  height: 36px;
-  max-height: 36px;
 }
 
 .bio-input > input,
 .bio-select:not(.-multiple) > select {
   height: 36px;
-  max-height: 36px;
 }
 
 // Icon Left
@@ -358,12 +418,12 @@ input[type="checkbox"] {
   @extend ._bd-2px;
   @extend ._bdr-0px;
   @extend ._bdt-0px;
-  @extend ._bdcl-gray;
   @extend ._h-8px;
   @extend ._w-8px;
   @extend ._pst-asl;
   @extend ._r-8px;
   @extend ._t-50pct;
+  border-color: darken( $color-gray, 5%);
   transform: rotate(-45deg) translate(0, calc(-50% - 4px));
   z-index: 4;
   pointer-events: none;
