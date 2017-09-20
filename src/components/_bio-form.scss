@@ -46,7 +46,7 @@ input[type="checkbox"] {
   > label {
     @extend ._pst-rlt;
     @extend ._dp-ilb;
-    padding-left: 22px;
+    padding-left: 24px;
     margin-left: -22px;
     @extend ._cs-pt;
     &:before, &:after {
@@ -59,14 +59,16 @@ input[type="checkbox"] {
       @extend ._h-16px;
       @extend ._l-0px;
       @extend ._bd-1px;
-      @extend ._bdcl-gray;
+      @extend ._bgcl-white;
+      @extend ._bdcl-primary;
+      @extend ._bd-2px;
       @extend ._bdrd-2px;
     }
     &:after {
       content: none;
       height: 5px;
       width: 9px;
-      @extend ._t-4px;
+      top: 5px;
       @extend ._l-4px;
       @extend ._bdl-2px;
       @extend ._bdbt-2px;
@@ -79,6 +81,14 @@ input[type="checkbox"] {
     > input[type="checkbox"],
     > label {
       @extend ._cs-na;
+      &:before {
+        @extend ._opct-50;
+        @extend ._bdcl-dark;
+      }
+      &:after {
+        @extend ._opct-50;
+        @extend ._bdcl-dark;
+      }
     }
   }
 }
@@ -173,7 +183,7 @@ input[type="checkbox"] {
       @extend ._w-32px;
       left: -2px;
       top: -3px;
-      box-shadow: 0 0 7px rgba(0,0,0,.3);
+      box-shadow: 0 0 7px rgba(0,0,0,.5);
       transform: scale(.64);
       transition: all .2s ease-in-out;
     }
@@ -388,11 +398,6 @@ input[type="checkbox"] {
   }
 }
 
-.bio-input > input,
-.bio-select:not(.-multiple) > select {
-  height: 36px;
-}
-
 // Single Select
 .bio-select:not(.-multiple) {
   @extend ._pst-rlt;
@@ -420,6 +425,10 @@ input[type="checkbox"] {
   @extend ._pdv-8px;
 }
 
+.bio-input > input,
+.bio-select:not(.-multiple) > select {
+  height: 36px;
+}
 /* TODO (Consider)
 * - Size
 * - Icon left / right

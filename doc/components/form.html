@@ -280,7 +280,7 @@
           <p class="_mgbt-8px"> 
             คุณสามารถกำหนด Height ที่เหมาะสมที่ <code class="_cl-accent">&lt;select&gt;</code> ได้
           </p>
-          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- multiple select Markup --&gt;
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- multiple select --&gt;
 &lt;div class="bio-select -multiple"&gt;
   &lt;select multiple&gt;
     &lt;option disabled&gt;Select dropdown&lt;/option&gt;
@@ -291,6 +291,7 @@
   &lt;/select&gt;
 &lt;/div&gt;
 
+&lt;!-- multiple select --&gt;
 &lt;div class="bio-select -multiple"&gt;
   &lt;select multiple&gt;
     &lt;option disabled&gt;Select dropdown&lt;/option&gt;
@@ -300,6 +301,7 @@
   &lt;/select&gt;
 &lt;/div&gt;
 
+&lt;!-- Multiple select with set height --&gt;
 &lt;div class="bio-select -multiple"&gt;
   &lt;select multiple class="_h-256px"&gt;
     &lt;option disabled&gt;Select dropdown&lt;/option&gt;
@@ -309,6 +311,18 @@
     &lt;option&gt;Option 4&lt;/option&gt;
     &lt;option&gt;Option 5&lt;/option&gt;
   &lt;/select&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled multiple select --&gt;
+&lt;div class="bio-field -disabled"&gt;
+  &lt;div class="bio-select -multiple _mgbt-8px"&gt;
+    &lt;select multiple disabled&gt;
+      &lt;option disabled&gt;Select dropdown&lt;/option&gt;
+      &lt;option&gt;Option 1&lt;/option&gt;
+      &lt;option&gt;Option 2&lt;/option&gt;
+      &lt;option&gt;Option 3&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
           <div class="u-panel _mgbt-64px">
@@ -342,10 +356,88 @@
                   <option>Option 5</option>
                 </select>
               </div>
+              
+              <div class="bio-field -disabled">
+                <div class="bio-select -multiple _mgbt-8px">
+                  <select multiple disabled>
+                    <option disabled>Select dropdown</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                  </select>
+                </div>
+              </div>
+
             </div>
           </div>
 
+          <h2>Checkbox</h2>
+          
+          <p class="_mgbt-16px"> 
+            เนื่องจากรูปแบบของ DOM ค่อนข้างต่างกับ <code class="_cl-accent">&lt;input&gt;></code>  แบบอื่น คือเราจะใช้ <code class="_cl-accent">&lt;label&gt;</code> 
+            เป็นตัวแสดงหน้าตาของ Checkbox และซ่อน <code class="_cl-accent">&lt;input type="checkbox"&gt;</code> เดิมไว้ทำหน้าที่เพียงเก็บสถานะ <code class="_cl-accent">:check</code> เท่านั้น 
+            เราจึงแยก Checkbox ออกมาจาก <code class="_cl-accent">&lt;input&gt;</code> กลุ่มที่แสดงผลเป็นช่องใส่ข้อความ
+          </p>
 
+          <p class="_mgbt-16px"> 
+            Checkbox นอกจากแสดงผลรูปแบบปรกติแล้ว 
+            ยังสามารถแสดงผลในรูปแบบ Switch ได้อีกด้วย
+          </p>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้ Checkbox</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Checkbox --&gt;
+&lt;div class="bio-checkbox _jtfs-s _mgbt-16px"&gt;
+  &lt;input id="checkbox1" type="checkbox"&gt;
+  &lt;label for="checkbox1"&gt;Checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled Checkbox --&gt;
+&lt;div class="bio-checkbox -disabled _jtfs-s _mgbt-16px"&gt;
+  &lt;input id="checkbox2" type="checkbox" disabled&gt;
+  &lt;label for="checkbox2"&gt;Checkbox Disabled&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox Switch --&gt;
+&lt;div class="bio-checkbox -switch _jtfs-s _mgbt-16px"&gt;
+  &lt;input id="checkbox2" type="checkbox"&gt;
+  &lt;label for="checkbox2"&gt;&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;!-- Disabled Checkbox Switch --&gt;
+&lt;div class="bio-checkbox -switch -disabled _jtfs-s"&gt;
+  &lt;input id="checkbox2" type="checkbox" disabled&gt;
+  &lt;label for="checkbox2"&gt;&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+
+            <div class="bio-checkbox _jtfs-s _mgbt-16px">
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">Checkbox</label>
+            </div>
+
+            <div class="bio-checkbox -disabled _jtfs-s _mgbt-16px">
+              <input id="checkbox2" type="checkbox" disabled>
+              <label for="checkbox2">Checkbox Disabled</label>
+            </div>
+
+            <div class="bio-checkbox -switch _jtfs-s _mgbt-16px">
+              <input id="checkbox2" type="checkbox">
+              <label for="checkbox2"></label>
+            </div>
+
+            <div class="bio-checkbox -switch -disabled _jtfs-s">
+              <input id="checkbox2" type="checkbox" disabled>
+              <label for="checkbox2"></label>
+            </div>
+
+          </div>
+
+          <h2>Radio</h2>
+          
+          <p class="_mgbt-16px"> 
+           WIPPP
+          </p>
 
         </div><!-- end of #message -->
         
