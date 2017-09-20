@@ -98,18 +98,95 @@
           </h1>
 
           <p class="_mgbt-16px">
-            progress WIP...
+            Progress เหมาะสำหรับแสดงผลให้ผู้ใช้รู้ว่า เขาดำเนินการมาไกลแค่ไหน 
+            และอีกไกลแค่ไหนถึงจะเข้าใกล้เป้าหมาย
           </p>
 
-          <div class="lo-xs-12 lo-sm-6 -gap-8px">
-            <progress class="bio-progress -primary" value="10" max="100"></progress>
-            <progress class="bio-progress -accent" value="20" max="100"></progress>
-            <progress class="bio-progress -positive" value="30" max="100"></progress>
-            <progress class="bio-progress -negative" value="40" max="100"></progress>
-            <progress class="bio-progress -warning" value="50" max="100"></progress>
-            <progress class="bio-progress -info" value="50" max="100"></progress>
-            <progress class="bio-progress -dark" value="70" max="100"></progress>
-            <progress class="bio-progress -black" value="90" max="100"></progress>
+          <p class="_mgbt-64px">
+            การใช้งาน Progress ทำได้โดยใส่ Class <code class="_cl-accent">.bio-progress</code> 
+            ลงบน Element <code class="_cl-accent">progress</code>
+          </p>
+
+          <h3 class="_mgbt-8px">Markup</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Progress Markup --&gt;
+&lt;progress class="bio-progress" value="25" max="100"&gt;&lt;/progress&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <progress class="bio-progress" value="25" max="100"></progress>
+          </div>
+
+          <h3 class="_mgbt-8px">Component Options</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">.bio-progress</code></td>
+                <td>
+                  <p>
+                    <strong class="_mgbt-8px">colors:</strong>
+                    <code class="_cl-accent">-primary</code>,
+                    <code class="_cl-accent">-accent</code>,
+                    <code class="_cl-accent">-positive</code>,
+                    <code class="_cl-accent">-negative</code>,
+                    <code class="_cl-accent">-warning</code>,
+                    <code class="_cl-accent">-info</code>,
+                    <code class="_cl-accent">-dark</code>,
+                    <code class="_cl-accent">-black</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานอื่นๆ</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Progress Markup --&gt;
+&lt;progress class="bio-progress -primary" value="10" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -accent" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -positive" value="30" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -negative" value="40" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -warning" value="50" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -info" value="60" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -dark" value="70" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress -black" value="80" max="100"&gt;&lt;/progress&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <progress class="bio-progress -primary _mgbt-8px" value="10" max="100"></progress>
+            <progress class="bio-progress -accent _mgbt-8px" value="20" max="100"></progress>
+            <progress class="bio-progress -positive _mgbt-8px" value="30" max="100"></progress>
+            <progress class="bio-progress -negative _mgbt-8px" value="40" max="100"></progress>
+            <progress class="bio-progress -warning _mgbt-8px" value="50" max="100"></progress>
+            <progress class="bio-progress -info _mgbt-8px" value="60" max="100"></progress>
+            <progress class="bio-progress -dark _mgbt-8px" value="70" max="100"></progress>
+            <progress class="bio-progress -black" value="80" max="100"></progress>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งานอื่นๆ</h3>
+          <p class="_mgbt-8px">
+            ปรับขนาดด้วยตั้งค่า CSS Style <code class="_cl-accent">height: *px</code>
+            หรือใช้งาน Helper Class <code class="_h">._h-*</code>
+          </p>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Progress Markup --&gt;
+&lt;progress class="bio-progress _h-1px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-2px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-4px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-8px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-16px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-32px" value="20" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="bio-progress _h-64px" value="20" max="100"&gt;&lt;/progress&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <progress class="bio-progress _mgbt-8px _h-1px" value="20" max="100"></progress>
+            <progress class="bio-progress _mgbt-8px _h-2px" value="20" max="100"></progress>
+            <progress class="bio-progress _mgbt-8px _h-4px" value="20" max="100"></progress>
+            <progress class="bio-progress _mgbt-8px _h-8px" value="20" max="100"></progress>
+            <progress class="bio-progress _mgbt-8px _h-16px" value="20" max="100"></progress>
+            <progress class="bio-progress _mgbt-8px _h-32px" value="20" max="100"></progress>
+            <progress class="bio-progress _h-64px" value="20" max="100"></progress>
           </div>
 
         </div><!-- end of #progress -->

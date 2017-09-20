@@ -143,7 +143,9 @@ dfn {
 /**
  * Add the correct background and color in IE 9-.
  */
-
+pre {
+  margin: 0px
+}
 mark {
   background-color: #ff0;
   color: #000;
@@ -319,8 +321,8 @@ legend {
  */
 
 progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: block; /* 1 */
+  vertical-align: bottom; /* 2 */
 }
 
 /**
