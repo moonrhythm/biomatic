@@ -12,13 +12,13 @@
     pointer-events: none;
     backface-visibility: hidden;
   }
-  &:hover, &:focus {
+  &:hover, &:focus, &.-active {
     color: darken($color-primary, 10%);
   }
   &.-fancy {
     border-bottom-color: $color-primary;
     border-bottom: 1px solid;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       border-color: transparentize($color-primary, .9);
       background-color: transparentize($color-primary, .8);
     }
@@ -28,20 +28,20 @@
     @extend ._pdh-16px;
     @extend ._pdv-4px;
     @extend ._bdrd-2px;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       background-color: lighten($color-primary, 40%);
       color: lighten($color-primary, 0%);
     }
   } 
   &.-primary {
     color: $color-primary;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-primary, 10%);
     }
     &.-fancy {
       border-bottom-color: $color-primary;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-primary, .9);
         background-color: transparentize($color-primary, .9);
       }
@@ -49,13 +49,13 @@
   }
   &.-accent {
     color: $color-accent;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-accent, 10%);
     }
     &.-fancy {
       border-bottom-color: $color-accent;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-accent, .95);
         background-color: transparentize($color-accent, .9);
       }
@@ -63,13 +63,13 @@
   }
   &.-positive {
     color: $color-positive;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-positive, 5%);
     }
     &.-fancy {
       border-bottom-color: $color-positive;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-positive, .95);
         background-color: transparentize($color-positive, .9);
       }
@@ -77,13 +77,13 @@
   }
   &.-negative {
     color: $color-negative;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-negative, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-negative;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-negative, .95);
         background-color: transparentize($color-negative, .9);
       }
@@ -91,13 +91,13 @@
   }
   &.-warning {
     color: $color-warning;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-warning, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-warning;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-warning, .95);
         background-color: transparentize($color-warning, .9);
       }
@@ -105,13 +105,13 @@
   }
   &.-info {
     color: $color-info;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-info, 7%);
     }
     &.-fancy {
       border-bottom-color: $color-info;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-info, .95);
         background-color: transparentize($color-info, .9);
       }
@@ -119,13 +119,13 @@
   }
   &.-dark {
     color: $color-dark;
-    &:hover, &:focus {
+    &:hover, &:focus, &.-active {
       color: darken($color-dark, 15%);
     }
     &.-fancy {
       border-bottom-color: $color-dark;
       border-bottom: 1px solid;
-      &:hover, &:focus {
+      &:hover, &:focus, &.-active {
         border-color: transparentize($color-dark, .95);
         background-color: transparentize($color-dark, .8);
       }

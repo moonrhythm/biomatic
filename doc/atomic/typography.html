@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Getting Start</a>
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Atomic</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="./atomic.html" class="bio-link -item">About Atomic</a>
+              <a href="./typography.html" class="bio-link -item -active">Typography</a>
+              <a href="./color.html" class="bio-link -item">Color</a>
+            </div>
+          </div>
+          
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="../components/component.html" class="bio-link -item">About Component</a>
+              <a href="../components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="../components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="../components/button.html" class="bio-link -item">Button</a>
+              <a href="../components/card.html" class="bio-link -item">Card</a>
+              <a href="../components/form.html" class="bio-link -item">Form</a>
+              <a href="../components/message.html" class="bio-link -item">Message</a>
+              <a href="../components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">About Layout</a>
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Message 
+        -------------------------------------->
+        <div id="typography" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#typography" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Typography
+          </h1>
+
+          <p class="_mgbt-32px">
+            Typography จะเป็น Atomic Class ที่เป็น Style เกี่ยวกับ Size, Weight และการแสดงรูปแบบต่างๆ ของตัวอักษร ที่มักถูกใช้งานบ่อย
+          </p>
+
+          <h2>Font Size</h2>
+          <p class="_mgbt-32px">
+            Value จะเป็นค่าที่ไม่มีหน่วยแสดงถึงลำดับความใหญ่ของตัวอักษรตั้งแต่ 1 ถึง 8
+          </p>
+
+          <h3 class="_mgbt-8px">ตารางเปรียบเทียบของลับดับ กับ Style</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Style</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._fs-1</code></td>
+                <td><code class="_cl-accent">font-size: 3rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-2</code></td>
+                <td><code class="_cl-accent">font-size: 2.5rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-3</code></td>
+                <td><code class="_cl-accent">font-size: 2rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-4</code></td>
+                <td><code class="_cl-accent">font-size: 1.5rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-5</code></td>
+                <td><code class="_cl-accent">font-size: 1.25rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-6</code></td>
+                <td><code class="_cl-accent">font-size: 1rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-7</code></td>
+                <td><code class="_cl-accent">font-size: 0.75rem</code></td>
+              </tr>
+              <tr>
+                <td><code class="_cl-accent">._fs-8</code></td>
+                <td><code class="_cl-accent">font-size: 0.5rem</code></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_fs-1"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-2"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-3"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-4"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-5"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-6"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-7"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fs-8"&gt;Hello World&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_fs-1">Hello World</p>
+            <p class="_fs-2">Hello World</p>
+            <p class="_fs-3">Hello World</p>
+            <p class="_fs-4">Hello World</p>
+            <p class="_fs-5">Hello World</p>
+            <p class="_fs-6">Hello World</p>
+            <p class="_fs-7">Hello World</p>
+            <p class="_fs-8">Hello World</p>
+          </div>
+
+          <h2>Font Weight</h2>
+          <p class="_mgbt-32px">
+            Value จะเป็นค่าที่ไม่มีหน่วยตรงตามค่าที่กำหนดใน Style <code class="_cl-accent">font-weight</code>
+          </p>
+          
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_fw-100"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-200"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-300"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-400"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-500"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-600"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-700"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-800"&gt;Hello World&lt;/p&gt;
+&lt;p class="_fw-900"&gt;Hello World&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_fw-100">Hello World</p>
+            <p class="_fw-200">Hello World</p>
+            <p class="_fw-300">Hello World</p>
+            <p class="_fw-400">Hello World</p>
+            <p class="_fw-500">Hello World</p>
+            <p class="_fw-600">Hello World</p>
+            <p class="_fw-700">Hello World</p>
+            <p class="_fw-800">Hello World</p>
+            <p class="_fw-900">Hello World</p>
+          </div>
+
+        </div><!-- end of #typhography -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>
