@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Getting Start</a>
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Atomic</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="./atomic.html" class="bio-link -item">About Atomic</a>
+              <a href="./typography.html" class="bio-link -item">Typography</a>
+              <a href="./color.html" class="bio-link -item">Color</a>
+            </div>
+          </div>
+          
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="../components/component.html" class="bio-link -item">About Component</a>
+              <a href="../components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="../components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="../components/button.html" class="bio-link -item">Button</a>
+              <a href="../components/card.html" class="bio-link -item">Card</a>
+              <a href="../components/form.html" class="bio-link -item">Form</a>
+              <a href="../components/message.html" class="bio-link -item">Message</a>
+              <a href="../components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">About Layout</a>
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Margin 
+        -------------------------------------->
+        <div id="box-model" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#margin" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Margin
+          </h1>
+
+          <!-- <h3 class="_mgbt-8px">ตารางคลาสที่เกี่ยว</h3>
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Base</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <code class="_cl-accent">._mg</code>,
+                    <code class="_cl-accent">._cl-accent</code>,
+                    <code class="_cl-accent">._cl-neutral</code>,
+                    <code class="_cl-accent">._bgcl-primary</code>,
+                    <code class="_cl-accent">._bgcl-accent</code>,
+                    <code class="_cl-accent">._bgcl-neutral</code>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <code class="_cl-accent">900</code>
+                    <code class="_cl-accent">800</code>
+                    <code class="_cl-accent">700</code>
+                    <code class="_cl-accent">600</code>
+                    <code class="_cl-accent">600</code>
+                    <code class="_cl-accent">400</code>
+                    <code class="_cl-accent">300</code>
+                    <code class="_cl-accent">200</code>
+                    <code class="_cl-accent">100</code>
+                  </p>
+                </td>
+              </tr>
+              </tr>
+            </tbody>
+          </table> -->
+
+          <h2>Margin</h2>
+          
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mg-64px">&nbsp;</div>
+            </div>
+          </div>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgl-64px">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgt-64px">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgbt-64px">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgv-64px">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-1px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-2px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-4px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-8px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-16px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-32px">&nbsp;</div>
+            </div>
+            <div class="_bgcl-neutral-300 _mgbt-4px">
+              <div class="_bgcl-warning _dp-ilb _h-32px _w-32px _mgh-64px">&nbsp;</div>
+            </div>
+          </div>
+        </div><!-- end of #typhography -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>
