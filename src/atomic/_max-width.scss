@@ -1,3 +1,7 @@
+._mxw-0px {
+  max-width: 0px;
+}
+
 ._mxw-1px {
   max-width: 1px;
 }
@@ -36,6 +40,10 @@
 
 ._mxw-512px {
   max-width: 512px;
+}
+
+._mxw-5pct {
+  max-width: 5%;
 }
 
 ._mxw-10pct {
@@ -112,4 +120,8 @@
 
 ._mxw-100pct {
   max-width: 100%;
+}
+
+._mxw-auto {
+  max-width: auto;
 }

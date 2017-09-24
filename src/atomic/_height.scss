@@ -1,3 +1,7 @@
+._h-0px {
+  height: 0px;
+}
+
 ._h-1px {
   height: 1px;
 }
@@ -36,6 +40,10 @@
 
 ._h-512px {
   height: 512px;
+}
+
+._h-5pct {
+  height: 5%;
 }
 
 ._h-10pct {
@@ -112,4 +120,8 @@
 
 ._h-100pct {
   height: 100%;
+}
+
+._h-auto {
+  height: auto;
 }

@@ -1,3 +1,7 @@
+._w-0px {
+  width: 0px;
+}
+
 ._w-1px {
   width: 1px;
 }
@@ -36,6 +40,10 @@
 
 ._w-512px {
   width: 512px;
+}
+
+._w-5pct {
+  width: 10%;
 }
 
 ._w-10pct {
@@ -112,4 +120,8 @@
 
 ._w-100pct {
   width: 100%;
+}
+
+._w-auto {
+  width: auto;
 }
