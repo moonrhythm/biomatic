@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Getting Start</a>
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Atomic</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="./atomic.html" class="bio-link -item">About Atomic</a>
+              <a href="./typography.html" class="bio-link -item">Typography</a>
+              <a href="./color.html" class="bio-link -item">Color</a>
+            </div>
+          </div>
+          
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="../components/component.html" class="bio-link -item">About Component</a>
+              <a href="../components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="../components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="../components/button.html" class="bio-link -item">Button</a>
+              <a href="../components/card.html" class="bio-link -item">Card</a>
+              <a href="../components/form.html" class="bio-link -item">Form</a>
+              <a href="../components/message.html" class="bio-link -item">Message</a>
+              <a href="../components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">About Layout</a>
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Border
+        -------------------------------------->
+        <div id="border" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#border" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Border
+          </h1>
+
+          <p class="_mgbt-32px">
+            Class ที่เกี่ยวข้องกับ Border จะมีสามส่วนคือ กำหนด Border Width, กำหนด Border Color และกำหนด Border Radius
+          </p>
+
+          <p class="_mgbt-32px">
+            Border Width ใช้ Base <code class="_cl-accent">._bd</code>, <code class="_cl-accent">._bdl</code>, 
+            <code class="_cl-accent">._bdr</code>, <code class="_cl-accent">._bdt</code>, <code class="_cl-accent">._bdbt</code> 
+            สำหรับกำหนดขนาด Solid Border ทุกด้าน หรือด้านใดด้านหนึ่ง โดยค่าตั้งต้นจะเป็น Border Style Solid และ Border Color จะเป็น <code class="_bgcl-dark _cl-white">$color-dark</code>
+          </p>
+          
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Base</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <code class="_cl-accent">._bd</code>,
+                    <code class="_cl-accent">._bdl</code>,
+                    <code class="_cl-accent">._bdr</code>,
+                    <code class="_cl-accent">._bdt</code>,
+                    <code class="_cl-accent">._bdbt</code>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <strong>Pixel Value: </strong>
+                    <code class="_cl-accent">0px</code>
+                    <code class="_cl-accent">1px</code>
+                    <code class="_cl-accent">2px</code>
+                    <code class="_cl-accent">4px</code>
+                    <code class="_cl-accent">8px</code>
+                    <code class="_cl-accent">16px</code>
+                    <code class="_cl-accent">32px</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+
+          <h2>Border</h2>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Border --&gt;
+&lt;div class="_bd-1px"&gt;lt;/div&gt;
+&lt;div class="_bd-2px"&gt;lt;/div&gt;
+&lt;div class="_bd-4px"&gt;lt;/div&gt;
+&lt;div class="_bd-8px"&gt;lt;/div&gt;
+&lt;div class="_bd-16px"&gt;lt;/div&gt;
+
+&lt;!-- Border Left --&gt;
+&lt;div class="_bdl-1px"&gt;&lt;/div&gt;
+&lt;div class="_bdl-2px"&gt;&lt;/div&gt;
+&lt;div class="_bdl-4px"&gt;&lt;/div&gt;
+&lt;div class="_bdl-8px"&gt;&lt;/div&gt;
+&lt;div class="_bdl-16px"&gt;&lt;/div&gt;
+
+&lt;!-- Border Right --&gt;
+&lt;div class="_bdr-1px"&gt;&lt;/div&gt;
+&lt;div class="_bdr-2px"&gt;&lt;/div&gt;
+&lt;div class="_bdr-4px"&gt;&lt;/div&gt;
+&lt;div class="_bdr-8px"&gt;&lt;/div&gt;
+&lt;div class="_bdr-16px"&gt;&lt;/div&gt;
+
+&lt;!-- Border Top --&gt;
+&lt;div class="_bdt-1px"&gt;&lt;/div&gt;
+&lt;div class="_bdt-2px"&gt;&lt;/div&gt;
+&lt;div class="_bdt-4px"&gt;&lt;/div&gt;
+&lt;div class="_bdt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bdt-16px"&gt;&lt;/div&gt;
+
+&lt;!-- Border Bottom --&gt;
+&lt;div class="_bdbt-1px"&gt;&lt;/div&gt;
+&lt;div class="_bdbt-2px"&gt;&lt;/div&gt;
+&lt;div class="_bdbt-4px"&gt;&lt;/div&gt;
+&lt;div class="_bdbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bdbt-16px"&gt;&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="_bgcl-neutral-300 _wsp-nw _bd-1px _mgbt-8px">._bd-1px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bd-2px _mgbt-8px">._bd-2px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bd-4px _mgbt-8px">._bd-4px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bd-8px _mgbt-8px">._bd-8px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bd-16px _mgbt-32px">._bd-16px</div>
+
+            <div class="_bgcl-neutral-300 _wsp-nw _bdl-1px _mgbt-8px">._bdl-1px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdl-2px _mgbt-8px">._bdl-2px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdl-4px _mgbt-8px">._bdl-4px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdl-8px _mgbt-8px">._bdl-8px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdl-16px _mgbt-32px">._bdl-16px</div>
+
+            <div class="_bgcl-neutral-300 _wsp-nw _bdr-1px _mgbt-8px">._bdr-1px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdr-2px _mgbt-8px">._bdr-2px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdr-4px _mgbt-8px">._bdr-4px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdr-8px _mgbt-8px">._bdr-8px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdr-16px _mgbt-32px">._bdr-16px</div>
+
+            <div class="_bgcl-neutral-300 _wsp-nw _bdt-1px _mgbt-8px">._bdt-1px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdt-2px _mgbt-8px">._bdt-2px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdt-4px _mgbt-8px">._bdt-4px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdt-8px _mgbt-8px">._bdt-8px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdt-16px _mgbt-32px">._bdt-16px</div>
+
+            <div class="_bgcl-neutral-300 _wsp-nw _bdbt-1px _mgbt-8px">._bdbt-1px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdbt-2px _mgbt-8px">._bdbt-2px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdbt-4px _mgbt-8px">._bdbt-4px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdbt-8px _mgbt-8px">._bdbt-8px</div>
+            <div class="_bgcl-neutral-300 _wsp-nw _bdbt-16px _mgbt-32px">._bdbt-16px</div>
+          </div>
+
+          <h2>Border Color</h2>
+          
+          <p class="_mgbt-32px">
+            Border Color ใช้ Base <code class="_cl-accent">._bdcl</code> และ Value เป็นค่าสีตามรูปแบบของ <a class="bio-link -fancy" href="color.html" target="_blank">biomatic color</a>
+          </p>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Boder Color --&gt;
+&lt;div class="_bd-2px _bdcl-primary _mgbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent _mgbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-positive _mgbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-negative _mgbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-warning _mgbt-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-info _mgbt-32px"&gt;&lt;/div&gt;
+
+&lt;!-- Boder Color Primary with modifier --&gt;
+&lt;div class="_bd-2px _bdcl-primary-900"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-800"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-700"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-600"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-500"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-400"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-300"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-200"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-primary-100"&gt;&lt;/div&gt;
+
+&lt;!-- Boder Color accent with modifier --&gt;
+&lt;div class="_bd-2px _bdcl-accent-900"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-800"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-700"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-600"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-500"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-400"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-300"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-200"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-accent-100"&gt;&lt;/div&gt;
+
+&lt;!-- Boder Color neutral with modifier --&gt;
+&lt;div class="_bd-2px _bdcl-neutral-900"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-800"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-700"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-600"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-500"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-400"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-300"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-200"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdcl-neutral-100"&gt;&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="_wsp-nw _bd-2px _bdcl-primary _mgbt-8px">._bdcl-primary</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent _mgbt-8px">._bdcl-accent</div>
+            <div class="_wsp-nw _bd-2px _bdcl-positive _mgbt-8px">._bdcl-positive</div>
+            <div class="_wsp-nw _bd-2px _bdcl-negative _mgbt-8px">._bdcl-negative</div>
+            <div class="_wsp-nw _bd-2px _bdcl-warning _mgbt-8px">._bdcl-warning</div>
+            <div class="_wsp-nw _bd-2px _bdcl-info _mgbt-32px">._bdcl-info</div>
+
+            <div class="_wsp-nw _bd-2px _bdcl-primary-900 _mgbt-8px">._bdcl-primary-900</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-800 _mgbt-8px">._bdcl-primary-800</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-700 _mgbt-8px">._bdcl-primary-700</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-600 _mgbt-8px">._bdcl-primary-600</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-500 _mgbt-8px">._bdcl-primary-500</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-400 _mgbt-8px">._bdcl-primary-400</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-300 _mgbt-8px">._bdcl-primary-300</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-200 _mgbt-8px">._bdcl-primary-200</div>
+            <div class="_wsp-nw _bd-2px _bdcl-primary-100 _mgbt-8px">._bdcl-primary-100</div>
+
+            <div class="_wsp-nw _bd-2px _bdcl-accent-900 _mgbt-8px">._bdcl-accent-900</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-800 _mgbt-8px">._bdcl-accent-800</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-700 _mgbt-8px">._bdcl-accent-700</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-600 _mgbt-8px">._bdcl-accent-600</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-500 _mgbt-8px">._bdcl-accent-500</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-400 _mgbt-8px">._bdcl-accent-400</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-300 _mgbt-8px">._bdcl-accent-300</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-200 _mgbt-8px">._bdcl-accent-200</div>
+            <div class="_wsp-nw _bd-2px _bdcl-accent-100 _mgbt-32px">._bdcl-accent-100</div>
+
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-900 _mgbt-8px">._bdcl-neutral-900</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-800 _mgbt-8px">._bdcl-neutral-800</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-700 _mgbt-8px">._bdcl-neutral-700</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-600 _mgbt-8px">._bdcl-neutral-600</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _mgbt-8px">._bdcl-neutral-500</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-400 _mgbt-8px">._bdcl-neutral-400</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-300 _mgbt-8px">._bdcl-neutral-300</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-200 _mgbt-8px">._bdcl-neutral-200</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-100">._bdcl-neutral-100</div>
+          </div>
+
+          <h2>Border Radius</h2>
+          
+          <p class="_mgbt-32px">
+            Border Radius ใช้ Base <br>
+            <code class="_cl-accent">._bdrd</code> สำหรับ border-radius <br>
+            <code class="_cl-accent">._bdtlrd</code> สำหรับ border-top-left-radius <br>
+            <code class="_cl-accent">._bdtrrd</code> สำหรับ border-top-right-radius <br>
+            <code class="_cl-accent">._bdbtlrd</code> สำหรับ border-bottom-left-radius <br>
+            <code class="_cl-accent">._bdbtrrd</code> สำหรับ border-bottom-right-radius <br>
+            ส่วน Value เป็นหน่วยต่างๆ ดังตาราง 
+            แต่สำหรับ Border Radius นั้นจะพิเศษตรงที่มี Value <code class="_cl-accent">3px</code> ซึ่งเป็นค่าที่มักถูกใช้บ่อย 
+            และค่า <code class="_cl-accent">max</code> สำหรับทำ pill style ซึ่งกำหนดไว้ที่ 9999px
+          </p>
+          
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Base</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <code class="_cl-accent">._bdrd</code>,
+                    <code class="_cl-accent">._bdtlrd</code>,
+                    <code class="_cl-accent">._bdtrrd</code>,
+                    <code class="_cl-accent">._bdbtlrd</code>,
+                    <code class="_cl-accent">._bdbtrrd</code>
+                  </p>
+                </td>
+                <td>
+                  <p class="_mg-bottom-8px">
+                    <strong>Pixel Value: </strong>
+                    <code class="_cl-accent">0px</code>
+                    <code class="_cl-accent">1px</code>
+                    <code class="_cl-accent">2px</code>
+                    <code class="_cl-accent">3px</code>
+                    <code class="_cl-accent">4px</code>
+                    <code class="_cl-accent">8px</code>
+                    <code class="_cl-accent">16px</code>
+                    <code class="_cl-accent">32px</code>
+                    <code class="_cl-accent">64px</code>
+                    <code class="_cl-accent">128px</code>
+                  </p>
+                  <p class="_mg-bottom-8px">
+                    <strong>Percentage Value: </strong>
+                    <code class="_cl-accent">50pct</code>
+                  </p>
+                  <p class="_mg-bottom-8px">
+                    <strong>Other Value: </strong>
+                    <code class="_cl-accent">max</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Border Radius --&gt;
+&lt;div class="_bd-2px _bdrd-2px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdrd-4px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdrd-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdrd-max"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdrd-50pct"&gt;&lt;/div&gt;
+
+&lt;div class="_bd-2px _bdtrrd-2px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-4px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-max"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-50pct"&gt;&lt;/div&gt;
+
+&lt;div class="_bd-2px _bdtrrd-2px _bdbtrrd-2px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-4px _bdbtrrd-4px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-8px _bdbtrrd-8px"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-max _bdbtrrd-max"&gt;&lt;/div&gt;
+&lt;div class="_bd-2px _bdtrrd-50pct _bdbtrrd-50pct"&gt;&lt;/div&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdrd-2px _mgbt-8px">._bdrd-2px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdrd-4px _mgbt-8px">._bdrd-4px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdrd-8px _mgbt-8px">._bdrd-8px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdrd-max _mgbt-8px">._bdrd-max</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdrd-50pct _mgbt-32px">._bdrd-50pct</div>
+
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-2px _mgbt-8px">._bdtrrd-2px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-4px _mgbt-8px">._bdtrrd-4px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-8px _mgbt-8px">._bdtrrd-8px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-max _mgbt-8px">._bdtrrd-max</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-50pct _mgbt-32px">._bdtrrd-50pct</div>
+            
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-2px _bdbtrrd-2px _mgbt-8px">._bdtrrd-2px ._bdbtrrd-2px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-4px _bdbtrrd-4px _mgbt-8px">._bdtrrd-4px ._bdbtrrd-4px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-8px _bdbtrrd-8px _mgbt-8px">._bdtrrd-8px ._bdbtrrd-8px</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-max _bdbtrrd-max _mgbt-8px">._bdtrrd-max ._bdbtrrd-max</div>
+            <div class="_wsp-nw _bd-2px _bdcl-neutral-500 _bdtrrd-50pct _bdbtrrd-50pct">._bdtrrd-50pct ._bdbtrrd-50pct</div>
+          </div>
+
+        </div><!-- end of #border -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>

@@ -1,5 +1,5 @@
 
-$border-default-color: $color-neutral-600;
+$border-default-color: $color-dark;
 
 /*---------------------------
   Border All
@@ -75,7 +75,7 @@ $border-default-color: $color-neutral-600;
   Border Right
 ----------------------------*/
 ._bdr {
-  borderpx-right: 1px solid $border-default-color;
+  border-right: 1px solid $border-default-color;
 }
 
 ._bdr-0px {
