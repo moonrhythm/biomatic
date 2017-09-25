@@ -336,7 +336,7 @@ input[type="checkbox"] {
       > input,
       > textarea,
       > select {
-        @extend ._cs-na;
+        @extend ._cs-nal;
         background-color: lighten($color-gray, 5%);
         border-color: $color-gray;
       }
@@ -348,7 +348,7 @@ input[type="checkbox"] {
       @extend ._opct-50;
       > input[type="checkbox"],
       > label {
-        @extend ._cs-na;
+        @extend ._cs-nal;
         &:before {
           @extend ._opct-50;
           @extend ._bdcl-dark;
@@ -363,14 +363,14 @@ input[type="checkbox"] {
       @extend ._opct-50;
       > input[type="checkbox"],
       > label {
-        @extend ._cs-na;
+        @extend ._cs-nal;
       }
     }
     .bio-radio {
       @extend ._opct-50;
       > input[type="radio"],
       > label {
-        @extend ._cs-na;
+        @extend ._cs-nal;
         &:before {
           border-color: transparentize($color-dark, .5);
         }
@@ -380,7 +380,7 @@ input[type="checkbox"] {
       @extend ._opct-50;
       > input[type="file"],
       > label {
-        @extend ._cs-na;
+        @extend ._cs-nal;
       }
     }
   }

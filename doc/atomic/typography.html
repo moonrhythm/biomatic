@@ -102,7 +102,7 @@
       <div class="lo-area-content _pdv-16px _pdh-64px">
       
         <!------------------------------------
-          Message 
+          Typography 
         -------------------------------------->
         <div id="typography" class="_pdt-16px">
             
@@ -112,7 +112,10 @@
           </h1>
 
           <p class="_mgbt-32px">
-            Typography คือกลุ่ม Atomic Class ของ Style <code class="_cl-accent">font-size</code>, <code class="_cl-accent">font-weight</code>
+            Typography คือกลุ่ม Atomic Class ที่เกี่ยวข้องกับ Font และ Text ประกอบไปด้วย <code class="_cl-accent">font-size</code>, <code class="_cl-accent">font-weight</code>, 
+            <code class="_cl-accent">line-height</code>, <code class="_cl-accent">text-align</code>, 
+            <code class="_cl-accent">text-transform</code>, <code class="_cl-accent">white-space</code> และ
+            <code class="_cl-accent">letter-spacing</code>
           </p>
 
           <h2>Font Size</h2>
@@ -217,6 +220,309 @@
             <p class="_fw-900">Hello World</p>
           </div>
 
+          <hr class="_opct-20 _mgbt-32px">
+
+          <h2>Line Height</h2>
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._lh</code> และ Value ขนาดของของ Line Height ในหน่วย Percentage
+          </p>
+
+          <table class="bio-table _mgbt-64px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._lh</code></td>
+                <td>
+                  <p>
+                    <strong>Percentage Value: </strong>
+                    <code class="_cl-accent">100pct</code>
+                    <code class="_cl-accent">125pct</code>
+                    <code class="_cl-accent">150pct</code>
+                    <code class="_cl-accent">175pct</code>
+                    <code class="_cl-accent">200pct</code>
+                    <code class="_cl-accent">225pct</code>
+                    <code class="_cl-accent">250pct</code>
+                    <code class="_cl-accent">275pct</code>
+                    <code class="_cl-accent">300pct</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_lh-100pct"&gt;100%&lt;/p&gt;
+&lt;p class="_lh-125pct"&gt;125%&lt;/p&gt;
+&lt;p class="_lh-150pct"&gt;150%&lt;/p&gt;
+&lt;p class="_lh-175pct"&gt;175%&lt;/p&gt;
+&lt;p class="_lh-200pct"&gt;200%&lt;/p&gt;
+&lt;p class="_lh-225pct"&gt;225%&lt;/p&gt;
+&lt;p class="_lh-250pct"&gt;250%&lt;/p&gt;
+&lt;p class="_lh-275pct"&gt;275%&lt;/p&gt;
+&lt;p class="_lh-300pct"&gt;300%&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_lh-100pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">100%</p>
+            <p class="_lh-125pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">125%</p>
+            <p class="_lh-150pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">150%</p>
+            <p class="_lh-175pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">175%</p>
+            <p class="_lh-200pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">200%</p>
+            <p class="_lh-225pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">225%</p>
+            <p class="_lh-250pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">250%</p>
+            <p class="_lh-275pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">275%</p>
+            <p class="_lh-300pct _bd-1px _bdcl-neutral-400 _mgbt-8px _bgcl-white">300%</p>
+          </div>
+
+          <hr class="_opct-20 _mgbt-32px">
+
+          <h2>Letter Spacing</h2>
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._ltspc</code> และ Value คือขนาดของของ Letter Spacing ในหน่วย Pixel
+          </p>
+
+          <table class="bio-table _mgbt-32px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._ltspc</code></td>
+                <td>
+                  <p>
+                    <strong>Pixel Value: </strong>
+                    <code class="_cl-accent">1px</code>
+                    <code class="_cl-accent">2px</code>
+                    <code class="_cl-accent">4px</code>
+                    <code class="_cl-accent">8px</code>
+                    <code class="_cl-accent">16px</code>
+                    <code class="_cl-accent">32px</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_ltspc-1px"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ltspc-2px"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ltspc-4px"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ltspc-8px"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ltspc-16px"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ltspc-32px"&gt;Meowwloo&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_ltspc-1px _mgbt-8px">Meowwloo</p>
+            <p class="_ltspc-2px _mgbt-8px">Meowwloo</p>
+            <p class="_ltspc-4px _mgbt-8px">Meowwloo</p>
+            <p class="_ltspc-8px _mgbt-8px">Meowwloo</p>
+            <p class="_ltspc-16px _mgbt-8px">Meowwloo</p>
+            <p class="_ltspc-32px">Meowwloo</p>
+          </div>
+
+          <hr class="_opct-20 _mgbt-32px">
+          
+          <h2>Text Align</h2>
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._tal</code> และ Value คือตัวย่อของค่าใน Style <code class="_cl-accent">text-align</code>
+          </p>
+
+          <table class="bio-table _mgbt-32px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._tal</code></td>
+                <td>
+                  <p>
+                    Left: <code class="_cl-accent">l</code> <br>
+                    Right: <code class="_cl-accent">r</code> <br>
+                    Center: <code class="_cl-accent">ct</code> <br>
+                    Justify: <code class="_cl-accent">jtf</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_tal-l"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Pellentesque sit amet vel velit finibus ullamcorper. 
+  Aenean in tellus vel nibh imperdiet semper eget eu turpis
+&lt;/p&gt;
+&lt;p class="_tal-r"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Pellentesque sit amet vel velit finibus ullamcorper. 
+  Aenean in tellus vel nibh imperdiet semper eget eu turpis
+&lt;/p&gt;
+&lt;p class="_tal-ct"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Pellentesque sit amet vel velit finibus ullamcorper. 
+  Aenean in tellus vel nibh imperdiet semper eget eu turpis
+&lt;/p&gt;
+&lt;p class="_tal-jtf"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Pellentesque sit amet vel velit finibus ullamcorper. 
+  Aenean in tellus vel nibh imperdiet semper eget eu turpis
+&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_tal-l _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Pellentesque sit amet vel velit finibus ullamcorper. 
+              Aenean in tellus vel nibh imperdiet semper eget eu turpis
+            </p>
+            <p class="_tal-r _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Pellentesque sit amet vel velit finibus ullamcorper. 
+              Aenean in tellus vel nibh imperdiet semper eget eu turpis
+            </p>
+            <p class="_tal-ct _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Pellentesque sit amet vel velit finibus ullamcorper. 
+              Aenean in tellus vel nibh imperdiet semper eget eu turpis
+            </p>
+            <p class="_tal-jtf _bd-1px _bdcl-neutral-400 _bgcl-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Pellentesque sit amet vel velit finibus ullamcorper. 
+              Aenean in tellus vel nibh imperdiet semper eget eu turpis
+            </p>
+          </div>
+
+          <hr class="_opct-20 _mgbt-32px">
+          
+          <h2>Text Transform</h2>
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._ttf</code> และ Value คือตัวย่อของค่าใน Style <code class="_cl-accent">text-transform</code>
+          </p>
+
+          <table class="bio-table _mgbt-32px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._ttf</code></td>
+                <td>
+                  <p>
+                    Uppercase: <code class="_cl-accent">upc</code> <br>
+                    Lowercase: <code class="_cl-accent">lwc</code> <br>
+                    Capitalize: <code class="_cl-accent">cptl</code> <br>
+                    None: <code class="_cl-accent">n</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p class="_ttf-upc"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ttf-lwc"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ttf-cptl"&gt;Meowwloo&lt;/p&gt;
+&lt;p class="_ttf-n"&gt;Meowwloo&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <p class="_ttf-upc _mgbt-8px">Meowwloo</p>
+            <p class="_ttf-lwc _mgbt-8px">Meowwloo</p>
+            <p class="_ttf-cptl _mgbt-8px">Meowwloo</p>
+            <p class="_ttf-">Meowwloo</p>
+          </div>
+
+          <hr class="_opct-20 _mgbt-32px">
+          
+          <h2>White Space</h2>
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._wsp</code> และ Value คือตัวย่อของค่าใน Style <code class="_cl-accent">white-space</code>
+          </p>
+
+          <table class="bio-table _mgbt-32px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Class</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="_cl-accent">._wsp</code></td>
+                <td>
+                  <p>
+                    Normal: <code class="_cl-accent">nm</code> <br>
+                    No wrap: <code class="_cl-accent">nw</code> <br>
+                    Pre: <code class="_cl-accent">p</code> <br>
+                    Pre Line: <code class="_cl-accent">pl</code> <br>
+                    Pre Wrap: <code class="_cl-accent">pw</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">Example</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;div class="_wsp-nm"&gt;   A B C D E F&lt;/div&gt;
+&lt;div class="_wsp-nw"&gt;   A B C D E F&lt;/div&gt;
+&lt;div class="_wsp-p"&gt;   A B C D E F&lt;/div&gt;
+&lt;div class="_wsp-pl"&gt;   A B C D E F&lt;/div&gt;
+&lt;div class="_wsp-pw"&gt;   A B C D E F&lt;/div&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+            <div class="_wsp-nm _w-64px _h-64px _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">   A B C D E F</div>
+            <div class="_wsp-nw _w-64px _h-64px _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">   A B C D E F</div>
+            <div class="_wsp-p _w-64px _h-64px _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">   A B C D E F</div>
+            <div class="_wsp-pl _w-64px _h-64px _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">   A B C D E F</div>
+            <div class="_wsp-pw _w-64px _h-64px _mgbt-8px _bd-1px _bdcl-neutral-400 _bgcl-white">   A B C D E F</div>
+          </div>
+          
+          <hr class="_opct-20 _mgbt-32px">
+        
+          <h2>Text Elements</h2>
+          <p class="_mgbt-32px">
+            คุณสามารถใช้ HTML5 Semantic Tag เพื่อทำ Inline Styling ได้
+          </p>
+
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;mark&gt;consectetur&lt;/mark&gt; adipiscing elit.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;sup&gt;consectetur&lt;/sup&gt; adipiscing elit.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;sub&gt;consectetur&lt;/sub&gt; adipiscing elit.&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/em&gt;&lt;/p&gt;</code></pre>
+
+          <div class="u-panel _mgbt-64px">
+            <p>Lorem ipsum dolor sit amet, <mark>consectetur</mark> adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, <sup>consectetur</sup> adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, <sub>consectetur</sub> adipiscing elit.</p>
+            <p><del>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</del></p>
+            <p><s>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</s></p>
+            <p><ins>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</ins></p>
+            <p><u>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</u></p>
+            <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small></p>
+            <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
+            <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em></p>
+          </div>
+        
         </div><!-- end of #typhography -->
         
         <hr class="_opct-20 _mgbt-16px">

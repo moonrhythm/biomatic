@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../prism-github.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/biomatic.css" rel="stylesheet">
+    <script src="../prism.js"></script>
+    <style>
+      .lo-area-navbar {
+        background: white;
+      }
+      .lo-area-sidebar {
+        background-color: #f9fbfd;
+      }
+      .lo-area-content {
+        padding-left: 32px; 
+        padding-right: 32px;
+      }
+      .lo-area-content > div {
+        max-width: 800px;
+      }
+      code {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .u-panel {
+        background-color: #fcfcfc;
+      }
+      @media screen and (max-width: 600px) {
+        .lo-area-content {
+          padding-left: 8px; 
+          padding-right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lo-template-sidebar">
+      
+      <div class="lo-area-sidebar _pd-32px" id="sidebar-open">
+        <div class="bio-accordion">
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-getting-start" type="checkbox" checked>
+            <label for="accordion-getting-start"><strong>Getting Start</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Getting Start</a>
+              <a href="#" class="bio-link -item">Installation</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Atomic</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="./atomic.html" class="bio-link -item">About Atomic</a>
+              <a href="./typography.html" class="bio-link -item">Typography</a>
+              <a href="./color.html" class="bio-link -item">Color</a>
+            </div>
+          </div>
+          
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-components" type="checkbox" checked>
+            <label for="accordion-components" class="_fw-500"><strong>Components</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="../components/component.html" class="bio-link -item">About Component</a>
+              <a href="../components/accordion.html" class="bio-link -item">Accordion</a>
+              <a href="../components/breadcrumb.html" class="bio-link -item">Breadcrumb</a>
+              <a href="../components/button.html" class="bio-link -item">Button</a>
+              <a href="../components/card.html" class="bio-link -item">Card</a>
+              <a href="../components/form.html" class="bio-link -item">Form</a>
+              <a href="../components/message.html" class="bio-link -item">Message</a>
+              <a href="../components/progress.html" class="bio-link -item">Progress</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-layouts" type="checkbox" checked>
+            <label for="accordion-layouts" class="_fw-500"><strong>Layouts</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">About Layout</a>
+              <a href="#" class="bio-link -item">Container</a>
+              <a href="#" class="bio-link -item">Responsive Grid</a>
+            </div>
+          </div>
+
+          <div class="bio-accordion _mgbt-8px">
+            <input id="accordion-utilities" type="checkbox" checked>
+            <label for="accordion-utilities" class="_fw-500"><strong>Utilities</strong></label>
+            <div class="bio-accordion-content _pdv-8px">
+              <a href="#" class="bio-link -item">Rise</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="lo-area-content _pdv-16px _pdh-64px">
+      
+        <!------------------------------------
+          Float 
+        -------------------------------------->
+        <div id="float" class="_pdt-16px">
+            
+          <h1 class="_mgv-16px">
+            <a href="#float" class="bio-link -primary"><strong>#</strong></a>
+            &nbsp;&nbsp;Float
+          </h1>
+
+          <p class="_mgbt-32px">
+            Base คือ <code class="_cl-accent">._f</code>  และ Value คือตัวย่อของค่าใน Style <code class="_cl-accent">float</code>
+          </p>
+          
+          <table class="bio-table _mgbt-32px">
+            <thead>
+              <tr>
+                <th class="_w-1px">Base</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <code class="_cl-accent">._f</code>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    Left: <code class="_cl-accent">l</code> <br>
+                    Right: <code class="_cl-accent">r</code> <br>
+                    None: <code class="_cl-accent">n</code>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 class="_mgbt-8px">ตัวอย่างการใช้งาน</h3>
+          <pre class="_mgbt-16px"><code class="language-markup">&lt;!-- Markup --&gt;
+&lt;div class="_f-l"&gt;&lt;/div&gt;
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+  vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+  no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p&gt;
+
+&lt;div class="_f-r"&gt;&lt;/div&gt;
+&lt;p&gt;
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+  tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+  vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+  no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p&gt;</code></pre>
+          
+          <div class="u-panel _mgbt-64px">
+
+            <div class="_w-128px _h-64px _bgcl-gray _dp-ilb _f-l _mgr-8px"></div>
+            <p class="_lh-125pct _mgbt-32px">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            
+            <div class="_w-128px _h-64px _bgcl-gray _dp-ilb _f-r _mgr-8px"></div>
+            <p class="_lh-125pct">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+
+          </div>
+
+        </div><!-- end of #float -->
+        
+        <hr class="_opct-20 _mgbt-16px">
+
+        <footer class="_tal-ct">
+          Source code licensed <a href="http://opensource.org/licenses/mit-license.php" class="bio-link -fancy">MIT</a>.
+        </footer>
+  
+      </div>
+
+    </div> <!-- end of template content -->
+  </body>
+</html>
