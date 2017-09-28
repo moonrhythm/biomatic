@@ -25,11 +25,15 @@
 .lo-area-sidebar {
   overflow: auto;
   grid-area: sidebar;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .lo-area-content {
   overflow: auto;
   grid-area: content;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 .lo-area-navbar {
