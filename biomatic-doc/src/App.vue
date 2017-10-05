@@ -12,7 +12,7 @@
           <input id="accordion-getting-start" type="checkbox" checked>
           <label for="accordion-getting-start"><strong>Getting Start</strong></label>
           <div class="bio-accordion-content _pdv-8px">
-            <a href="#" class="bio-link -item -active">Getting Start</a>
+            <a href="#" class="bio-link -item">Getting Start</a>
             <a href="#" class="bio-link -item">Installation</a>
             <a href="#" class="bio-link -item">SCSS Variables</a>
           </div>
@@ -23,8 +23,18 @@
           <label for="accordion-components" class="_fw-500"><strong>Atomic</strong></label>
           <div class="bio-accordion-content _pdv-8px">
             <a href="./doc/atomic/atomic.html" class="bio-link -item">About Atomic</a>
-            <router-link :to="{ name: 'AtomicBorder' }" class="bio-link -item">Border</router-link>
-            <router-link :to="{ name: 'AtomicBoxPosition' }" class="bio-link -item">Box Position</router-link>
+            <router-link
+              :to="{ name: 'AtomicBorder' }"
+              class="bio-link -item"
+              :active-class="'-active'">
+              Border
+            </router-link>
+            <router-link
+              :to="{ name: 'AtomicBoxPosition' }"
+              class="bio-link -item"
+              :active-class="'-active'">
+              Box Position
+            </router-link>
             <a href="./doc/atomic/box-size.html" class="bio-link -item">Box Size</a>
             <a href="./doc/atomic/color.html" class="bio-link -item">Color</a>
             <a href="./doc/atomic/margin.html" class="bio-link -item">Margin</a>
