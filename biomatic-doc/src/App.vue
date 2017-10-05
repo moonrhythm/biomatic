@@ -87,7 +87,7 @@
         </div>
       </div>
       <div class="_pdh-64px _pdv-32px _f-1">
-        <router-view></router-view>
+        <router-view style="max-width: 800px"></router-view>
       </div>
     </div>
   </div>
