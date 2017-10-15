@@ -1,18 +1,25 @@
-/*---------------------------
-  Text Transform
-----------------------------*/
-._ttf-cptl {
-  text-transform: capitalize;
+._ttf-cptl { text-transform: capitalize; }
+._ttf-lwc  { text-transform: lowercase; }
+._ttf-upc  { text-transform: uppercase; }
+._ttf-n    { text-transform: none; }
+
+@include sm-upper {
+  ._ttf-cptl-sm { text-transform: capitalize; }
+  ._ttf-lwc-sm  { text-transform: lowercase; }
+  ._ttf-upc-sm  { text-transform: uppercase; }
+  ._ttf-n-sm    { text-transform: none; }
 }
 
-._ttf-lwc {
-  text-transform: lowercase;
+@include md-upper {
+  ._ttf-cptl-md { text-transform: capitalize; }
+  ._ttf-lwc-md  { text-transform: lowercase; }
+  ._ttf-upc-md  { text-transform: uppercase; }
+  ._ttf-n-md    { text-transform: none; }
 }
 
-._ttf-upc {
-  text-transform: uppercase;
-}
-
-._ttf-n {
-  text-transform: none;
+@include lg-upper {
+  ._ttf-cptl-lg { text-transform: capitalize; }
+  ._ttf-lwc-lg  { text-transform: lowercase; }
+  ._ttf-upc-lg  { text-transform: uppercase; }
+  ._ttf-n-lg    { text-transform: none; }
 }

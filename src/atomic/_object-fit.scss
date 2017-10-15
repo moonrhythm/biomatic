@@ -1,19 +1,29 @@
-._ojf-cv {
-  object-fit: cover;
+._ojf-cv { object-fit: cover; }
+._ojf-ct { object-fit: contain; }
+._ojf-f  { object-fit: fill; }
+._ojf-n  { object-fit: none; }
+._ojf-us { object-fit: unset; }
+
+@include sm-upper {
+  ._ojf-cv-sm { object-fit: cover; }
+  ._ojf-ct-sm { object-fit: contain; }
+  ._ojf-f-sm  { object-fit: fill; }
+  ._ojf-n-sm  { object-fit: none; }
+  ._ojf-us-sm { object-fit: unset; }
 }
 
-._ojf-ct {
-  object-fit: contain;
+@include md-upper {
+  ._ojf-cv-md { object-fit: cover; }
+  ._ojf-ct-md { object-fit: contain; }
+  ._ojf-f-md  { object-fit: fill; }
+  ._ojf-n-md  { object-fit: none; }
+  ._ojf-us-md { object-fit: unset; }
 }
 
-._ojf-f {
-  object-fit: fill;
-}
-
-._ojf-n {
-  object-fit: none;
-}
-
-._ojf-us {
-  object-fit: unset;
+@include lg-upper {
+  ._ojf-cv-lg { object-fit: cover; }
+  ._ojf-ct-lg { object-fit: contain; }
+  ._ojf-f-lg  { object-fit: fill; }
+  ._ojf-n-lg  { object-fit: none; }
+  ._ojf-us-lg { object-fit: unset; }
 }

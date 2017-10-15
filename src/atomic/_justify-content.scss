@@ -1,0 +1,49 @@
+._jtfct-at    { justify-content: auto; }
+._jtfct-st    { justify-content: start; }
+._jtfct-e     { justify-content: end; }
+._jtfct-ct    { justify-content: center; }
+._jtfct-str   { justify-content: stretch; }
+._jtfct-fst   { justify-content: flex-start; }
+._jtfct-fe    { justify-content: flex-end; }
+._jtfct-spbtw { justify-content: space-between; }
+._jtfct-spar  { justify-content: space-around; }
+._jtfct-spevl { justify-content: space-evenly; }
+
+@include sm-upper {
+  ._jtfct-at-sm    { justify-content: auto; }
+  ._jtfct-st-sm    { justify-content: start; }
+  ._jtfct-e-sm     { justify-content: end; }
+  ._jtfct-ct-sm    { justify-content: center; }
+  ._jtfct-str-sm   { justify-content: stretch; }
+  ._jtfct-fst-sm   { justify-content: flex-start; }
+  ._jtfct-fe-sm    { justify-content: flex-end; }
+  ._jtfct-spbtw-sm { justify-content: space-between; }
+  ._jtfct-spar-sm  { justify-content: space-around; }
+  ._jtfct-spevl-sm { justify-content: space-evenly; }
+}
+
+@include md-upper {
+  ._jtfct-at-md    { justify-content: auto; }
+  ._jtfct-st-md    { justify-content: start; }
+  ._jtfct-e-md     { justify-content: end; }
+  ._jtfct-ct-md    { justify-content: center; }
+  ._jtfct-str-md   { justify-content: stretch; }
+  ._jtfct-fst-md   { justify-content: flex-start; }
+  ._jtfct-fe-md    { justify-content: flex-end; }
+  ._jtfct-spbtw-md { justify-content: space-between; }
+  ._jtfct-spar-md  { justify-content: space-around; }
+  ._jtfct-spevl-md { justify-content: space-evenly; }
+}
+
+@include lg-upper {
+  ._jtfct-at-lg    { justify-content: auto; }
+  ._jtfct-st-lg    { justify-content: start; }
+  ._jtfct-e-lg     { justify-content: end; }
+  ._jtfct-ct-lg    { justify-content: center; }
+  ._jtfct-str-lg   { justify-content: stretch; }
+  ._jtfct-fst-lg   { justify-content: flex-start; }
+  ._jtfct-fe-lg    { justify-content: flex-end; }
+  ._jtfct-spbtw-lg { justify-content: space-between; }
+  ._jtfct-spar-lg  { justify-content: space-around; }
+  ._jtfct-spevl-lg { justify-content: space-evenly; }
+}

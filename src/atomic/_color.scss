@@ -1,163 +1,169 @@
-/*---------------------------
-  Color
-----------------------------*/
-._cl-primary {
-  color: $color-primary;
+._cl-primary     { color: $color-primary; }
+._cl-primary-100 { color: $color-primary-100; }
+._cl-primary-200 { color: $color-primary-200; }
+._cl-primary-300 { color: $color-primary-300; }
+._cl-primary-400 { color: $color-primary-400; }
+._cl-primary-500 { color: $color-primary-500; }
+._cl-primary-600 { color: $color-primary-600; }
+._cl-primary-700 { color: $color-primary-700; }
+._cl-primary-800 { color: $color-primary-800; }
+._cl-primary-900 { color: $color-primary-900; }
+._cl-accent      { color: $color-accent; }
+._cl-accent-100  { color: $color-accent-100; }
+._cl-accent-200  { color: $color-accent-200; }
+._cl-accent-300  { color: $color-accent-300; }
+._cl-accent-400  { color: $color-accent-400; }
+._cl-accent-500  { color: $color-accent-500; }
+._cl-accent-600  { color: $color-accent-600; }
+._cl-accent-700  { color: $color-accent-700; }
+._cl-accent-800  { color: $color-accent-800; }
+._cl-accent-900  { color: $color-accent-900; }
+._cl-positive    { color: $color-positive; }
+._cl-warning     { color: $color-warning; }
+._cl-info        { color: $color-info; }
+._cl-negative    { color: $color-negative; }
+._cl-neutral     { color: $color-neutral; }
+._cl-neutral-900 { color: $color-neutral-900; }
+._cl-neutral-800 { color: $color-neutral-800; }
+._cl-neutral-700 { color: $color-neutral-700; }
+._cl-neutral-700 { color: $color-neutral-700; }
+._cl-neutral-600 { color: $color-neutral-600; }
+._cl-neutral-500 { color: $color-neutral-500; }
+._cl-neutral-400 { color: $color-neutral-400; }
+._cl-neutral-300 { color: $color-neutral-300; }
+._cl-neutral-200 { color: $color-neutral-200; }
+._cl-neutral-100 { color: $color-neutral-100; }
+._cl-white       { color: $color-white; }
+._cl-gray        { color: $color-gray; }
+._cl-dark        { color: $color-dark; }
+._cl-black       { color: $color-black; }
+._cl-tpr         { color: transparent; }
+
+@include sm-upper {
+  ._cl-primary-sm     { color: $color-primary; }
+  ._cl-primary-100-sm { color: $color-primary-100; }
+  ._cl-primary-200-sm { color: $color-primary-200; }
+  ._cl-primary-300-sm { color: $color-primary-300; }
+  ._cl-primary-400-sm { color: $color-primary-400; }
+  ._cl-primary-500-sm { color: $color-primary-500; }
+  ._cl-primary-600-sm { color: $color-primary-600; }
+  ._cl-primary-700-sm { color: $color-primary-700; }
+  ._cl-primary-800-sm { color: $color-primary-800; }
+  ._cl-primary-900-sm { color: $color-primary-900; }
+  ._cl-accent-sm      { color: $color-accent; }
+  ._cl-accent-100-sm  { color: $color-accent-100; }
+  ._cl-accent-200-sm  { color: $color-accent-200; }
+  ._cl-accent-300-sm  { color: $color-accent-300; }
+  ._cl-accent-400-sm  { color: $color-accent-400; }
+  ._cl-accent-500-sm  { color: $color-accent-500; }
+  ._cl-accent-600-sm  { color: $color-accent-600; }
+  ._cl-accent-700-sm  { color: $color-accent-700; }
+  ._cl-accent-800-sm  { color: $color-accent-800; }
+  ._cl-accent-900-sm  { color: $color-accent-900; }
+  ._cl-positive-sm    { color: $color-positive; }
+  ._cl-warning-sm     { color: $color-warning; }
+  ._cl-info-sm        { color: $color-info; }
+  ._cl-negative-sm    { color: $color-negative; }
+  ._cl-neutral-sm     { color: $color-neutral; }
+  ._cl-neutral-900-sm { color: $color-neutral-900; }
+  ._cl-neutral-800-sm { color: $color-neutral-800; }
+  ._cl-neutral-700-sm { color: $color-neutral-700; }
+  ._cl-neutral-700-sm { color: $color-neutral-700; }
+  ._cl-neutral-600-sm { color: $color-neutral-600; }
+  ._cl-neutral-500-sm { color: $color-neutral-500; }
+  ._cl-neutral-400-sm { color: $color-neutral-400; }
+  ._cl-neutral-300-sm { color: $color-neutral-300; }
+  ._cl-neutral-200-sm { color: $color-neutral-200; }
+  ._cl-neutral-100-sm { color: $color-neutral-100; }
+  ._cl-white-sm       { color: $color-white; }
+  ._cl-gray-sm        { color: $color-gray; }
+  ._cl-dark-sm        { color: $color-dark; }
+  ._cl-black-sm       { color: $color-black; }
+  ._cl-tpr-sm         { color: transparent; }
 }
 
-._cl-primary-100 {
-  color: $color-primary-100;
+@include md-upper {
+  ._cl-primary-md     { color: $color-primary; }
+  ._cl-primary-100-md { color: $color-primary-100; }
+  ._cl-primary-200-md { color: $color-primary-200; }
+  ._cl-primary-300-md { color: $color-primary-300; }
+  ._cl-primary-400-md { color: $color-primary-400; }
+  ._cl-primary-500-md { color: $color-primary-500; }
+  ._cl-primary-600-md { color: $color-primary-600; }
+  ._cl-primary-700-md { color: $color-primary-700; }
+  ._cl-primary-800-md { color: $color-primary-800; }
+  ._cl-primary-900-md { color: $color-primary-900; }
+  ._cl-accent-md      { color: $color-accent; }
+  ._cl-accent-100-md  { color: $color-accent-100; }
+  ._cl-accent-200-md  { color: $color-accent-200; }
+  ._cl-accent-300-md  { color: $color-accent-300; }
+  ._cl-accent-400-md  { color: $color-accent-400; }
+  ._cl-accent-500-md  { color: $color-accent-500; }
+  ._cl-accent-600-md  { color: $color-accent-600; }
+  ._cl-accent-700-md  { color: $color-accent-700; }
+  ._cl-accent-800-md  { color: $color-accent-800; }
+  ._cl-accent-900-md  { color: $color-accent-900; }
+  ._cl-positive-md    { color: $color-positive; }
+  ._cl-warning-md     { color: $color-warning; }
+  ._cl-info-md        { color: $color-info; }
+  ._cl-negative-md    { color: $color-negative; }
+  ._cl-neutral-md     { color: $color-neutral; }
+  ._cl-neutral-900-md { color: $color-neutral-900; }
+  ._cl-neutral-800-md { color: $color-neutral-800; }
+  ._cl-neutral-700-md { color: $color-neutral-700; }
+  ._cl-neutral-700-md { color: $color-neutral-700; }
+  ._cl-neutral-600-md { color: $color-neutral-600; }
+  ._cl-neutral-500-md { color: $color-neutral-500; }
+  ._cl-neutral-400-md { color: $color-neutral-400; }
+  ._cl-neutral-300-md { color: $color-neutral-300; }
+  ._cl-neutral-200-md { color: $color-neutral-200; }
+  ._cl-neutral-100-md { color: $color-neutral-100; }
+  ._cl-white-md       { color: $color-white; }
+  ._cl-gray-md        { color: $color-gray; }
+  ._cl-dark-md        { color: $color-dark; }
+  ._cl-black-md       { color: $color-black; }
+  ._cl-tpr-md         { color: transparent; }
 }
 
-._cl-primary-200 {
-  color: $color-primary-200;
-}
-
-._cl-primary-300 {
-  color: $color-primary-300;
-}
-
-._cl-primary-400 {
-  color: $color-primary-400;
-}
-
-._cl-primary-500 {
-  color: $color-primary-500;
-}
-
-._cl-primary-600 {
-  color: $color-primary-600;
-}
-
-._cl-primary-700 {
-  color: $color-primary-700;
-}
-
-._cl-primary-800 {
-  color: $color-primary-800;
-}
-
-._cl-primary-900 {
-  color: $color-primary-900;
-}
-
-._cl-accent {
-  color: $color-accent;
-}
-
-._cl-accent-100 {
-  color: $color-accent-100;
-}
-
-._cl-accent-200 {
-  color: $color-accent-200;
-}
-
-._cl-accent-300 {
-  color: $color-accent-300;
-}
-
-._cl-accent-400 {
-  color: $color-accent-400;
-}
-
-._cl-accent-500 {
-  color: $color-accent-500;
-}
-
-._cl-accent-600 {
-  color: $color-accent-600;
-}
-
-._cl-accent-700 {
-  color: $color-accent-700;
-}
-
-._cl-accent-800 {
-  color: $color-accent-800;
-}
-
-._cl-accent-900 {
-  color: $color-accent-900;
-}
-
-._cl-positive {
-  color: $color-positive;
-}
-
-._cl-warning {
-  color: $color-warning;
-}
-
-._cl-info {
-  color: $color-info;
-}
-
-._cl-negative {
-  color: $color-negative;
-}
-
-._cl-neutral {
-  color: $color-neutral;
-}
-
-._cl-neutral-900 {
-  color: $color-neutral-900;
-}
-
-._cl-neutral-800 {
-  color: $color-neutral-800;
-}
-
-._cl-neutral-700 {
-  color: $color-neutral-700;
-}
-
-._cl-neutral-700 {
-  color: $color-neutral-700;
-}
-
-._cl-neutral-600 {
-  color: $color-neutral-600;
-}
-
-._cl-neutral-500 {
-  color: $color-neutral-500;
-}
-
-._cl-neutral-400 {
-  color: $color-neutral-400;
-}
-
-._cl-neutral-300 {
-  color: $color-neutral-300;
-}
-
-._cl-neutral-200 {
-  color: $color-neutral-200;
-}
-
-._cl-neutral-100 {
-  color: $color-neutral-100;
-}
-
-._cl-white {
-  color: $color-white;
-}
-
-._cl-gray {
-  color: $color-gray;
-}
-
-._cl-dark {
-  color: $color-dark;
-}
-
-._cl-black {
-  color: $color-black;
-}
-
-
-._cl-tpr {
-  color: transparent;
+@include lg-upper {
+  ._cl-primary-lg     { color: $color-primary; }
+  ._cl-primary-100-lg { color: $color-primary-100; }
+  ._cl-primary-200-lg { color: $color-primary-200; }
+  ._cl-primary-300-lg { color: $color-primary-300; }
+  ._cl-primary-400-lg { color: $color-primary-400; }
+  ._cl-primary-500-lg { color: $color-primary-500; }
+  ._cl-primary-600-lg { color: $color-primary-600; }
+  ._cl-primary-700-lg { color: $color-primary-700; }
+  ._cl-primary-800-lg { color: $color-primary-800; }
+  ._cl-primary-900-lg { color: $color-primary-900; }
+  ._cl-accent-lg      { color: $color-accent; }
+  ._cl-accent-100-lg  { color: $color-accent-100; }
+  ._cl-accent-200-lg  { color: $color-accent-200; }
+  ._cl-accent-300-lg  { color: $color-accent-300; }
+  ._cl-accent-400-lg  { color: $color-accent-400; }
+  ._cl-accent-500-lg  { color: $color-accent-500; }
+  ._cl-accent-600-lg  { color: $color-accent-600; }
+  ._cl-accent-700-lg  { color: $color-accent-700; }
+  ._cl-accent-800-lg  { color: $color-accent-800; }
+  ._cl-accent-900-lg  { color: $color-accent-900; }
+  ._cl-positive-lg    { color: $color-positive; }
+  ._cl-warning-lg     { color: $color-warning; }
+  ._cl-info-lg        { color: $color-info; }
+  ._cl-negative-lg    { color: $color-negative; }
+  ._cl-neutral-lg     { color: $color-neutral; }
+  ._cl-neutral-900-lg { color: $color-neutral-900; }
+  ._cl-neutral-800-lg { color: $color-neutral-800; }
+  ._cl-neutral-700-lg { color: $color-neutral-700; }
+  ._cl-neutral-700-lg { color: $color-neutral-700; }
+  ._cl-neutral-600-lg { color: $color-neutral-600; }
+  ._cl-neutral-500-lg { color: $color-neutral-500; }
+  ._cl-neutral-400-lg { color: $color-neutral-400; }
+  ._cl-neutral-300-lg { color: $color-neutral-300; }
+  ._cl-neutral-200-lg { color: $color-neutral-200; }
+  ._cl-neutral-100-lg { color: $color-neutral-100; }
+  ._cl-white-lg       { color: $color-white; }
+  ._cl-gray-lg        { color: $color-gray; }
+  ._cl-dark-lg        { color: $color-dark; }
+  ._cl-black-lg       { color: $color-black; }
+  ._cl-tpr-lg         { color: transparent; }
 }

@@ -46,16 +46,6 @@ section {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -158,6 +148,17 @@ mark {
 small {
   font-size: 80%;
 }
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+h1 { font-size: 2.75rem }
+h2 { font-size: 2rem }
+h3 { font-size: 1.75rem }
+h4 { font-size: 1.5rem }
+h5 { font-size: 1.25rem }
+h6 { font-size: 1rem }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in

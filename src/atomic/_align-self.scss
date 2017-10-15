@@ -1,15 +1,23 @@
-._als-s {
-  align-self: start;
-}
+._als-s  { align-self: start; }
+._als-e  { align-self: end; }
+._als-ct { align-self: center; }
+._als-st { align-self: strecth; }
 
-._als-e {
-  align-self: end;
+@include sm-upper {
+  ._als-s-sm  { align-self: start; }
+  ._als-e-sm  { align-self: end; }
+  ._als-ct-sm { align-self: center; }
+  ._als-st-sm { align-self: strecth; }
 }
-
-._als-ct {
-  align-self: center;
+@include md-upper {
+  ._als-s-md  { align-self: start; }
+  ._als-e-md  { align-self: end; }
+  ._als-ct-md { align-self: center; }
+  ._als-st-md { align-self: strecth; }
 }
-
-._als-st {
-  align-self: strecth;
+@include lg-upper {
+  ._als-s-lg  { align-self: start; }
+  ._als-e-lg  { align-self: end; }
+  ._als-ct-lg { align-self: center; }
+  ._als-st-lg { align-self: strecth; }
 }

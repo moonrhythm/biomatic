@@ -1,30 +1,37 @@
-/*---------------------------
-  Display
-----------------------------*/
-._dp-b {
-  display: block;
+._dp-b   { display: block; }
+._dp-f   { display: flex; }
+._dp-g   { display: grid; }
+._dp-il  { display: inline; }
+._dp-ilb { display: inline-block; }
+._dp-tb  { display: table; }
+._dp-n   { display: none; }
+
+@include sm-upper {
+  ._dp-b-sm   { display: block; }
+  ._dp-f-sm   { display: flex; }
+  ._dp-g-sm   { display: grid; }
+  ._dp-il-sm  { display: inline; }
+  ._dp-ilb-sm { display: inline-block; }
+  ._dp-tb-sm  { display: table; }
+  ._dp-n-sm   { display: none; }
 }
 
-._dp-f {
-  display: flex;
+@include md-upper {
+  ._dp-b-md   { display: block; }
+  ._dp-f-md   { display: flex; }
+  ._dp-g-md   { display: grid; }
+  ._dp-il-md  { display: inline; }
+  ._dp-ilb-md { display: inline-block; }
+  ._dp-tb-md  { display: table; }
+  ._dp-n-md   { display: none; }
 }
 
-._dp-g {
-  display: grid;
-}
-
-._dp-il {
-  display: inline;
-}
-
-._dp-ilb {
-  display: inline-block;
-}
-
-._dp-tb {
-  display: table;
-}
-
-._dp-n {
-  display: none;
+@include lg-upper {
+  ._dp-b-lg   { display: block; }
+  ._dp-f-lg   { display: flex; }
+  ._dp-g-lg   { display: grid; }
+  ._dp-il-lg  { display: inline; }
+  ._dp-ilb-lg { display: inline-block; }
+  ._dp-tb-lg  { display: table; }
+  ._dp-n-lg   { display: none; }
 }

@@ -1,50 +1,57 @@
-/*---------------------------
-  Opacity
-----------------------------*/
-._opct {
-  opacity: .5;
+._opct     { opacity: .5; }
+._opct-100 { opacity: 1; }
+._opct-90  { opacity: .9; }
+._opct-80  { opacity: .8; }
+._opct-70  { opacity: .7; }
+._opct-60  { opacity: .6; }
+._opct-50  { opacity: .5; }
+._opct-40  { opacity: .4; }
+._opct-30  { opacity: .3; }
+._opct-20  { opacity: .2; }
+._opct-10  { opacity: .1; }
+._opct-0   { opacity: 0;  }
+
+@include sm-upper {
+  ._opct-sm     { opacity: .5; }
+  ._opct-100-sm { opacity: 1; }
+  ._opct-90-sm  { opacity: .9; }
+  ._opct-80-sm  { opacity: .8; }
+  ._opct-70-sm  { opacity: .7; }
+  ._opct-60-sm  { opacity: .6; }
+  ._opct-50-sm  { opacity: .5; }
+  ._opct-40-sm  { opacity: .4; }
+  ._opct-30-sm  { opacity: .3; }
+  ._opct-20-sm  { opacity: .2; }
+  ._opct-10-sm  { opacity: .1; }
+  ._opct-0-sm   { opacity: 0;  }
 }
 
-._opct-100 {
-  opacity: 1;
+@include md-upper {
+  ._opct-md     { opacity: .5; }
+  ._opct-100-md { opacity: 1; }
+  ._opct-90-md  { opacity: .9; }
+  ._opct-80-md  { opacity: .8; }
+  ._opct-70-md  { opacity: .7; }
+  ._opct-60-md  { opacity: .6; }
+  ._opct-50-md  { opacity: .5; }
+  ._opct-40-md  { opacity: .4; }
+  ._opct-30-md  { opacity: .3; }
+  ._opct-20-md  { opacity: .2; }
+  ._opct-10-md  { opacity: .1; }
+  ._opct-0-md   { opacity: 0;  }
 }
 
-._opct-90  {
-  opacity: .9;
-}
-
-._opct-80  {
-  opacity: .8;
-}
-
-._opct-70  {
-  opacity: .7;
-}
-
-._opct-60  {
-  opacity: .6;
-}
-
-._opct-50  {
-  opacity: .5;
-}
-
-._opct-40  {
-  opacity: .4;
-}
-
-._opct-30  {
-  opacity: .3;
-}
-
-._opct-20  {
-  opacity: .2;
-}
-
-._opct-10  {
-  opacity: .1;
-}
-
-._opct-0   {
-  opacity: 0; 
+@include lg-upper {
+  ._opct-lg     { opacity: .5; }
+  ._opct-100-lg { opacity: 1; }
+  ._opct-90-lg  { opacity: .9; }
+  ._opct-80-lg  { opacity: .8; }
+  ._opct-70-lg  { opacity: .7; }
+  ._opct-60-lg  { opacity: .6; }
+  ._opct-50-lg  { opacity: .5; }
+  ._opct-40-lg  { opacity: .4; }
+  ._opct-30-lg  { opacity: .3; }
+  ._opct-20-lg  { opacity: .2; }
+  ._opct-10-lg  { opacity: .1; }
+  ._opct-0-lg   { opacity: 0;  }
 }

@@ -1,11 +1,21 @@
-._f-l {
-  float: left;
+._f-l { float: left; }
+._f-r { float: right; }
+._f-n { float: none; }
+
+@include sm-upper {
+  ._f-l-sm { float: left; }
+  ._f-r-sm { float: right; }
+  ._f-n-sm { float: none; }
 }
 
-._f-r {
-  float: right;
+@include md-upper {
+  ._f-l-md { float: left; }
+  ._f-r-md { float: right; }
+  ._f-n-md { float: none; }
 }
 
-._f-n {
-  float: none;
+@include lg-upper {
+  ._f-l-lg { float: left; }
+  ._f-r-lg { float: right; }
+  ._f-n-lg { float: none; }
 }

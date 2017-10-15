@@ -1,15 +1,25 @@
-._jtfit-s {
-  justify-items: start;
+._jtfit-s  { justify-items: start; }
+._jtfit-e  { justify-items: end; }
+._jtfit-ct { justify-items: center; }
+._jtfit-st { justify-items: strecth; }
+
+@include sm-upper {
+  ._jtfit-s-sm  { justify-items: start; }
+  ._jtfit-e-sm  { justify-items: end; }
+  ._jtfit-ct-sm { justify-items: center; }
+  ._jtfit-st-sm { justify-items: strecth; }
 }
 
-._jtfit-e {
-  justify-items: end;
+@include md-upper {
+  ._jtfit-s-md  { justify-items: start; }
+  ._jtfit-e-md  { justify-items: end; }
+  ._jtfit-ct-md { justify-items: center; }
+  ._jtfit-st-md { justify-items: strecth; }
 }
 
-._jtfit-ct {
-  justify-items: center;
-}
-
-._jtfit-st {
-  justify-items: strecth;
+@include lg-upper {
+  ._jtfit-s-lg  { justify-items: start; }
+  ._jtfit-e-lg  { justify-items: end; }
+  ._jtfit-ct-lg { justify-items: center; }
+  ._jtfit-st-lg { justify-items: strecth; }
 }

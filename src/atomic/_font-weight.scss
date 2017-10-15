@@ -1,38 +1,45 @@
-/*---------------------------
-  Font Weight
-----------------------------*/
-._fw-100 {
-  font-weight: 100;
+._fw-100 { font-weight: 100; }
+._fw-200 { font-weight: 200; }
+._fw-300 { font-weight: 300; }
+._fw-400 { font-weight: 400; }
+._fw-500 { font-weight: 500; }
+._fw-600 { font-weight: 600; }
+._fw-700 { font-weight: 700; }
+._fw-800 { font-weight: 800; }
+._fw-900 { font-weight: 900; }
+
+@include sm-upper {
+  ._fw-100-sm { font-weight: 100; }
+  ._fw-200-sm { font-weight: 200; }
+  ._fw-300-sm { font-weight: 300; }
+  ._fw-400-sm { font-weight: 400; }
+  ._fw-500-sm { font-weight: 500; }
+  ._fw-600-sm { font-weight: 600; }
+  ._fw-700-sm { font-weight: 700; }
+  ._fw-800-sm { font-weight: 800; }
+  ._fw-900-sm { font-weight: 900; }
 }
 
-._fw-200 {
-  font-weight: 200;
+@include md-upper {
+  ._fw-100-md { font-weight: 100; }
+  ._fw-200-md { font-weight: 200; }
+  ._fw-300-md { font-weight: 300; }
+  ._fw-400-md { font-weight: 400; }
+  ._fw-500-md { font-weight: 500; }
+  ._fw-600-md { font-weight: 600; }
+  ._fw-700-md { font-weight: 700; }
+  ._fw-800-md { font-weight: 800; }
+  ._fw-900-md { font-weight: 900; }
 }
 
-._fw-300 {
-  font-weight: 300;
-}
-
-._fw-400 {
-  font-weight: 400;
-}
-
-._fw-500 {
-  font-weight: 500;
-}
-
-._fw-600 {
-  font-weight: 600;
-}
-
-._fw-700 {
-  font-weight: 700;
-}
-
-._fw-800 {
-  font-weight: 800;
-}
-
-._fw-900 {
-  font-weight: 900;
+@include lg-upper {
+  ._fw-100-lg { font-weight: 100; }
+  ._fw-200-lg { font-weight: 200; }
+  ._fw-300-lg { font-weight: 300; }
+  ._fw-400-lg { font-weight: 400; }
+  ._fw-500-lg { font-weight: 500; }
+  ._fw-600-lg { font-weight: 600; }
+  ._fw-700-lg { font-weight: 700; }
+  ._fw-800-lg { font-weight: 800; }
+  ._fw-900-lg { font-weight: 900; }
 }

@@ -1,22 +1,29 @@
-/*---------------------------
-  White Space
-----------------------------*/
-._wsp-nm {
-  white-space: normal;
+._wsp-nm { white-space: normal; }
+._wsp-nw { white-space: nowrap; }
+._wsp-p  { white-space: pre; }
+._wsp-pl { white-space: pre-line; }
+._wsp-pw { white-space: pre-wrap; }
+
+@include sm-upper {
+  ._wsp-nm-sm { white-space: normal; }
+  ._wsp-nw-sm { white-space: nowrap; }
+  ._wsp-p-sm  { white-space: pre; }
+  ._wsp-pl-sm { white-space: pre-line; }
+  ._wsp-pw-sm { white-space: pre-wrap; }
 }
 
-._wsp-nw {
-  white-space: nowrap;
+@include md-upper {
+  ._wsp-nm-md { white-space: normal; }
+  ._wsp-nw-md { white-space: nowrap; }
+  ._wsp-p-md  { white-space: pre; }
+  ._wsp-pl-md { white-space: pre-line; }
+  ._wsp-pw-md { white-space: pre-wrap; }
 }
 
-._wsp-p {
-  white-space: pre;
-}
-
-._wsp-pl {
-  white-space: pre-line;
-}
-
-._wsp-pw {
-  white-space: pre-wrap;
+@include lg-upper {
+  ._wsp-nm-lg { white-space: normal; }
+  ._wsp-nw-lg { white-space: nowrap; }
+  ._wsp-p-lg  { white-space: pre; }
+  ._wsp-pl-lg { white-space: pre-line; }
+  ._wsp-pw-lg { white-space: pre-wrap; }
 }

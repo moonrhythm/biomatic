@@ -1,18 +1,25 @@
-/*---------------------------
-  Text Align
-----------------------------*/
-._tal-l {
-  text-align: left;
+._tal-l   { text-align: left; }
+._tal-r   { text-align: right; }
+._tal-ct  { text-align: center; }
+._tal-jtf { text-align: justify; }
+
+@include sm-upper {
+  ._tal-l-sm   { text-align: left; }
+  ._tal-r-sm   { text-align: right; }
+  ._tal-ct-sm  { text-align: center; }
+  ._tal-jtf-sm { text-align: justify; }
 }
 
-._tal-r {
-  text-align: right;
+@include md-upper {
+  ._tal-l-md   { text-align: left; }
+  ._tal-r-md   { text-align: right; }
+  ._tal-ct-md  { text-align: center; }
+  ._tal-jtf-md { text-align: justify; }
 }
 
-._tal-ct {
-  text-align: center;
-}
-
-._tal-jtf {
-  text-align: justify;
+@include lg-upper {
+  ._tal-l-lg   { text-align: left; }
+  ._tal-r-lg   { text-align: right; }
+  ._tal-ct-lg  { text-align: center; }
+  ._tal-jtf-lg { text-align: justify; }
 }

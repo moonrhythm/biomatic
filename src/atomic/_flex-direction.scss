@@ -1,7 +1,17 @@
-._fdrt-r {
-  flex-direction: row;
+._fdrt-r { flex-direction: row; }
+._fdrt-cl { flex-direction: column; }
+
+@include sm-upper {
+  ._fdrt-r-sm { flex-direction: row; }
+  ._fdrt-cl-sm { flex-direction: column; }
 }
 
-._fdrt-cl {
-  flex-direction: column;
+@include md-upper {
+  ._fdrt-r-md { flex-direction: row; }
+  ._fdrt-cl-md { flex-direction: column; }
+}
+
+@include lg-upper {
+  ._fdrt-r-lg { flex-direction: row; }
+  ._fdrt-cl-lg { flex-direction: column; }
 }

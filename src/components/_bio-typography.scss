@@ -131,4 +131,18 @@
       }
     }
   }
+  &.-white {
+    color: $color-white;
+    &:hover, &:focus, &.-active {
+      color: transparentize($color-white, .3);
+    }
+    &.-fancy {
+      border-bottom-color: $color-white;
+      border-bottom: 1px solid;
+      &:hover, &:focus, &.-active {
+        border-color: transparentize($color-white, .95);
+        background-color: transparentize($color-white, .8);
+      }
+    }
+  }
 }

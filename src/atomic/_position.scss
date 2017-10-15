@@ -1,18 +1,25 @@
-/*---------------------------
-  Position
-----------------------------*/
-._pst-stt {
-  position: static;
+._pst-stt { position: static; }
+._pst-rlt { position: relative; }
+._pst-asl { position: absolute; }
+._pst-f   { position: fixed; }
+
+@include sm-upper {
+  ._pst-stt-sm { position: static; }
+  ._pst-rlt-sm { position: relative; }
+  ._pst-asl-sm { position: absolute; }
+  ._pst-f-sm   { position: fixed; }
 }
 
-._pst-rlt {
-  position: relative;
+@include md-upper {
+  ._pst-stt-md { position: static; }
+  ._pst-rlt-md { position: relative; }
+  ._pst-asl-md { position: absolute; }
+  ._pst-f-md   { position: fixed; }
 }
 
-._pst-asl {
-  position: absolute;
-}
-
-._pst-f {
-  position: fixed;
+@include lg-upper {
+  ._pst-stt-lg { position: static; }
+  ._pst-rlt-lg { position: relative; }
+  ._pst-asl-lg { position: absolute; }
+  ._pst-f-lg   { position: fixed; }
 }

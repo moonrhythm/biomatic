@@ -1,15 +1,26 @@
-._jtfs-s {
-  justify-self: start;
+._jtfs-s  { justify-self: start; }
+._jtfs-e  { justify-self: end; }
+._jtfs-ct { justify-self: center; }
+._jtfs-st { justify-self: strecth; }
+
+@include sm-upper {
+  ._jtfs-s-sm  { justify-self: start; }
+  ._jtfs-e-sm  { justify-self: end; }
+  ._jtfs-ct-sm { justify-self: center; }
+  ._jtfs-st-sm { justify-self: strecth; }
 }
 
-._jtfs-e {
-  justify-self: end;
+@include md-upper {
+  ._jtfs-s-md  { justify-self: start; }
+  ._jtfs-e-md  { justify-self: end; }
+  ._jtfs-ct-md { justify-self: center; }
+  ._jtfs-st-md { justify-self: strecth; }
 }
 
-._jtfs-ct {
-  justify-self: center;
-}
 
-._jtfs-st {
-  justify-self: strecth;
+@include lg-upper {
+  ._jtfs-s-lg  { justify-self: start; }
+  ._jtfs-e-lg  { justify-self: end; }
+  ._jtfs-ct-lg { justify-self: center; }
+  ._jtfs-st-lg { justify-self: strecth; }
 }

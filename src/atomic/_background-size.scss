@@ -1,7 +1,17 @@
-._bgs-cv {
-  background-size: cover;
+._bgs-cv { background-size: cover; }
+._bgs-ct { background-size: contain; }
+
+@include sm-upper {
+  ._bgs-cv-sm { background-size: cover; }
+  ._bgs-ct-sm { background-size: contain; }
 }
 
-._bgs-ct {
-  background-size: contain;
+@include md-upper {
+  ._bgs-cv-md { background-size: cover; }
+  ._bgs-ct-md { background-size: contain; }
+}
+
+@include lg-upper {
+  ._bgs-cv-lg { background-size: cover; }
+  ._bgs-ct-lg { background-size: contain; }
 }

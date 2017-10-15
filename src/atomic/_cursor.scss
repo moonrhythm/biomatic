@@ -1,11 +1,21 @@
-._cs-pt {
-  cursor: pointer;
+._cs-pt  { cursor: pointer; }
+._cs-h   { cursor: help; }
+._cs-nal { cursor: not-allowed; }
+
+@include sm-upper {
+  ._cs-pt-sm  { cursor: pointer; }
+  ._cs-h-sm   { cursor: help; }
+  ._cs-nal-sm { cursor: not-allowed; }
 }
 
-._cs-h {
-  cursor: help;
+@include md-upper {
+  ._cs-pt-md  { cursor: pointer; }
+  ._cs-h-md   { cursor: help; }
+  ._cs-nal-md { cursor: not-allowed; }
 }
 
-._cs-nal {
-  cursor: not-allowed;
+@include lg-upper {
+  ._cs-pt-lg  { cursor: pointer; }
+  ._cs-h-lg   { cursor: help; }
+  ._cs-nal-lg { cursor: not-allowed; }
 }

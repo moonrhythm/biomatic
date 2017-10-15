@@ -188,7 +188,7 @@
 .lo-lg-6  { @include lg-upper { grid-template-columns: 1fr 1fr; } }
 .lo-lg-12 { @include lg-upper { grid-template-columns: 1fr; } }
 
-.lo-lg-1-11 { @include md-upper { grid-template-columns: 1fr 11fr; } }
+.lo-lg-1-11 { @include lg-upper { grid-template-columns: 1fr 11fr; } }
 .lo-lg-2-10 { @include lg-upper { grid-template-columns: 2fr 10fr; } }
 .lo-lg-3-9  { @include lg-upper { grid-template-columns: 3fr 9fr; } }
 .lo-lg-4-8  { @include lg-upper { grid-template-columns: 4fr 8fr; } }
