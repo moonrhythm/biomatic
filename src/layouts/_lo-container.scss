@@ -1,7 +1,7 @@
 .lo-container {
   display: grid;
   width: 100%;
-  grid-template-columns: 10px 1fr 10px;
+  grid-template-columns: 10px minmax(0px, auto) 10px;
   grid-template-rows: auto;
   @include sm-upper {
     grid-template-columns: 1fr $breakpoint-sm - 20px 1fr;
