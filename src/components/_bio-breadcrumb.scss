@@ -1,25 +1,25 @@
 .bio-breadcrumb {
-  @extend ._dp-f;
+  display: flex;
   flex-wrap: wrap;
   > * {
-    @extend ._cl-dark;
-    @extend ._opct-90;
+    color: $color-dark;
+    opacity: .9;
     > * {
-      @extend ._cl-dark;
-      @extend ._opct-90;
+      color: $color-dark;
+      opacity: .9;
     }
     &:not(:first-child) {
       &:before {
         content: "/";
-        @extend ._cl-dark;
-        @extend ._opct-40;
-        @extend ._mgl-8px;
-        @extend ._mgr-8px;
+        color: $color-dark;
+        opacity: .4;
+        margin-left: 8px;
+        margin-right: 8px;
       }
     }
     &:last-child {
-      @extend ._cl-dark;
-      @extend ._opct-100;
+      color: $color-dark;
+      opacity: 1;
     }
   }
 }

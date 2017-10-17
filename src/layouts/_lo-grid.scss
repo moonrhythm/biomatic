@@ -73,7 +73,7 @@
 .lo-lg-9-3,
 .lo-lg-10-2,
 .lo-lg-11-1 {
-  @extend ._dp-g;
+  display: grid;
   min-height: 0;
   min-width: 0;
 

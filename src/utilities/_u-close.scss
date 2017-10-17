@@ -1,17 +1,17 @@
 .u-close {
-  @extend ._pst-rlt;
-  @extend ._dp-ilb;
+  position: relative;
+  display: inline-block;
   width: 20px;
   height: 20px;
   overflow: hidden;
   &:before, &:after {
     content: '';
-    @extend ._pst-asl;
-    @extend ._h-1px;
-    @extend ._w-100pct;
-    @extend ._t-50pct;
-    @extend ._l-0px;
-    @extend ._bgcl-primary;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0px;
+    background-color: $color-primary;
   }
   &:hover {
     &:before, &:after {
@@ -20,7 +20,7 @@
   }
   &.-accent {
     &:before, &:after {
-      @extend ._bgcl-accent;
+      background-color: $color-accent;
     }
     &:hover {
       &:before, &:after {
@@ -30,7 +30,7 @@
   }
   &.-negative {
     &:before, &:after {
-      @extend ._bgcl-negative;
+      background-color: $color-negative;
     }
     &:hover {
       &:before, &:after {
@@ -40,7 +40,7 @@
   }
   &.-positive {
     &:before, &:after {
-      @extend ._bgcl-positive;
+      background-color: $color-positive;
     }
     &:hover {
       &:before, &:after {
@@ -50,7 +50,7 @@
   }
   &.-warning {
     &:before, &:after {
-      @extend ._bgcl-warning;
+      background-color: $color-warning;
     }
     &:hover {
       &:before, &:after {
@@ -60,7 +60,7 @@
   }
   &.-info {
     &:before, &:after {
-      @extend ._bgcl-info;
+      background-color: $color-info;
     }
     &:hover {
       &:before, &:after {
@@ -70,7 +70,7 @@
   }
   &.-dark {
     &:before, &:after {
-      @extend ._bgcl-dark;
+      background-color: $color-dark;
     }
     &:hover {
       &:before, &:after {

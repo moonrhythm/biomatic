@@ -1,5 +1,5 @@
 .bio-link {
-  @extend ._cs-pt;
+  cursor: pointer;
 }
 
 .bio-link {
@@ -24,10 +24,9 @@
     }
   }
   &.-item {
-    @extend ._cl-dark;
-    @extend ._pdh-16px;
-    @extend ._pdv-4px;
-    @extend ._bdrd-2px;
+    color: $color-dark;
+    padding: 4px 16px;
+    border-radius: 2px;
     &:hover, &:focus, &.-active {
       background-color: lighten($color-primary, 40%);
       color: lighten($color-primary, 0%);

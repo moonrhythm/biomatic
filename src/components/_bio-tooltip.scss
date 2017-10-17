@@ -1,12 +1,12 @@
 .bio-tooltip {
-  @extend ._pst-rlt;
+  position: relative;
   &:before {
     content: '';
-    @extend ._pst-asl;
-    @extend ._bgcl-white;
-    @extend ._opct-0;
-    @extend ._w-8px;
-    @extend ._h-8px;
+    position: absolute;
+    background-color: $color-white;
+    opacity: 0;
+    width: 8px;
+    height: 8px;
     transition: all .16s ease;
     z-index: 2;
     pointer-events: none;
@@ -17,15 +17,15 @@
   }
   &:after {
     content: attr(data-tooltip);
-    @extend ._pst-asl;
-    @extend ._opct-0;
+    position: absolute;
+    opacity: 0;
     font-size: 86%;
-    @extend ._lh-125pct;
-    @extend ._bd-1px;
-    @extend ._bdcl-gray;
+    line-height: 125%;
+    border: 1px solid $color-dark;
+    border-color: $color-gray;
     padding: 8px 12px;
-    @extend ._bgcl-white;
-    @extend ._bdrd-2px;
+    background-color: $color-white;
+    border-radius: 2px;
     transition: all .16s ease;
     z-index: 1;
     pointer-events: none;

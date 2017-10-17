@@ -1,18 +1,18 @@
 .bio-table {
   border-collapse: collapse;
   border-spacing: 0;
-  @extend ._w-100pct;
-  @extend ._mxw-100pct;
-  @extend ._mgbt-16px;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 16px;
   th {
-    @extend ._pd-16px;
-    @extend ._bd-1px;
-    @extend ._bdcl-gray;
+    padding: 16px;
+    border: 1px solid $color-dark;
+    border-color: $color-gray;
   }
   td {
     vertical-align: top;
-    @extend ._pd-16px;
-    @extend ._bd-1px;
-    @extend ._bdcl-gray;
+    padding: 16px;
+    border: 1px solid $color-dark;
+    border-color: $color-gray;
   }
 }

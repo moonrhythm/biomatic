@@ -1,11 +1,11 @@
 progress.bio-progress[value] {
   appearance: none;
-  @extend ._bd-0px;
-  @extend ._w-100pct;
-  @extend ._bdrd-3px;
+  border: 0px solid $color-dark;
+  width: 100%;
+  border-radius: 3px;
   overflow: hidden;
   &::-webkit-progress-bar {
-    @extend ._bgcl-gray;
+    background-color: $color-gray;
   }
   &::-webkit-progress-value { background-color: $color-primary }
   &::-moz-progress-bar { background-color: $color-primary; }

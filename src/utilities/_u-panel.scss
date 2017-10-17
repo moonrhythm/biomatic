@@ -1,6 +1,6 @@
 .u-panel {
-  @extend ._pd-16px;
-  @extend ._bdrd-3px;
-  @extend ._bd-1px;
-  @extend ._bdcl-gray;
+  padding: 16px;
+  border-radius: 3px;
+  border: 1px solid $color-dark;
+  border-color: $color-gray;
 }

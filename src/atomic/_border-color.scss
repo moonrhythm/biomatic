@@ -1,0 +1,21 @@
+@each $key, $value in $color-value {
+  ._bdcl-#{$key} { border-width: #{$value}; }
+};
+
+@include sm-upper {
+  @each $key, $value in $color-value {
+    ._bdcl-#{$key}-sm { border-width: #{$value}; }
+  };
+}
+
+@include md-upper {
+  @each $key, $value in $color-value {
+    ._bdcl-#{$key}-md { border-width: #{$value}; }
+  };
+}
+
+@include lg-upper {
+  @each $key, $value in $color-value {
+    ._bdcl-#{$key}-lg { border-width: #{$value}; }
+  };
+}

@@ -1,12 +1,12 @@
 .bio-button {
-  @extend ._pd-8px;
-  @extend ._bdrd-2px;
-  @extend ._bgcl-primary;
-  @extend ._tal-ct;
-  @extend ._cs-pt;
-  @extend ._lh-150pct;
-  @extend ._pst-rlt;
-  @extend ._cl-white;
+  padding: 8px;
+  border-radius: 2px;
+  background-color: $color-primary;
+  text-align: center;
+  cursor: pointer;
+  line-height: 150%;
+  position: relative;
+  color: $color-white;
   user-select: none;
   transition:
     transform 0.18s ease,
@@ -19,14 +19,14 @@
   }
 
   &.-primary {
-    @extend ._bgcl-primary;
+    background-color: $color-primary;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-primary;
-      @extend ._cl-primary;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-primary;
+      color: $color-primary;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-primary;
           border-bottom-color: $color-primary;
@@ -39,14 +39,14 @@
   }
   
   &.-accent {
-    @extend ._bgcl-accent;
+    background-color: $color-accent;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-accent;
-      @extend ._cl-accent;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-accent;
+      color: $color-accent;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-accent;
           border-bottom-color: $color-accent;
@@ -59,14 +59,14 @@
   }
 
   &.-positive {
-    @extend ._bgcl-positive;
+    background-color: $color-positive;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-positive;
-      @extend ._cl-positive;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-positive;
+      color: $color-positive;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-positive;
           border-bottom-color: $color-positive;
@@ -79,14 +79,14 @@
   }
 
   &.-info {
-    @extend ._bgcl-info;
+    background-color: $color-info;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-info;
-      @extend ._cl-info;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-info;
+      color: $color-info;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-info;
           border-bottom-color: $color-info;
@@ -99,14 +99,14 @@
   }
   
   &.-warning {
-    @extend ._bgcl-warning;
+    background-color: $color-warning;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-warning;
-      @extend ._cl-warning;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-warning;
+      color: $color-warning;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-warning;
           border-bottom-color: $color-warning;
@@ -119,14 +119,14 @@
   }
 
   &.-negative {
-    @extend ._bgcl-negative;
+    background-color: $color-negative;
     &.-outline {
-      @extend ._bd-1px;
-      @extend ._bdcl-negative;
-      @extend ._cl-negative;
-      @extend ._bgcl-tpr;
+      border: 1px solid $color-dark;
+      border-color: $color-negative;
+      color: $color-negative;
+      background-color: transparent;
       &.-loading {
-        @extend ._cl-tpr;
+        color: transparent;
         &:after {
           border-left-color: $color-negative;
           border-bottom-color: $color-negative;
@@ -139,32 +139,32 @@
   }
 
   &.-dark {
-    @extend ._bgcl-dark;
+    background-color: $color-dark;
     &:hover {
       background-color: lighten($color-dark, 5%);
     }
   }
 
   &.-black {
-    @extend ._bgcl-black;
+    background-color: $color-black;
     &:hover {
       background-color: lighten($color-black, 15%);
     }
   }
   
   &.-gray {
-    @extend ._bgcl-gray;
-    @extend ._cl-dark;
+    background-color: $color-gray;
+    color: $color-dark;
     &:hover {
       background-color: lighten($color-gray, 5%);
     }
   }
 
   &.-white {
-    @extend ._bgcl-white;
-    @extend ._cl-dark;
-    @extend ._bd-1px;
-    @extend ._bdcl-gray;
+    background-color: $color-white;
+    color: $color-dark;
+    border: 1px solid $color-dark;
+    border-color: $color-gray;
     &:hover {
       background-color: lighten($color-gray, 30%);
       border-color: lighten($color-dark, 50%);
@@ -180,13 +180,13 @@
   // }
 
   &.-disabled {
-    @extend ._cs-nal;
-    @extend ._opct-40;
-    @extend ._cs-nal;
+    cursor: not-allowed;
+    opacity: .4;
+    cursor: not-allowed;
   }
   
   &.-loading {
-    @extend ._cl-tpr;
+    color: transparent;
     &:after {
       content: "";
       position: absolute;

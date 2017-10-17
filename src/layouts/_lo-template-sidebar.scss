@@ -1,5 +1,5 @@
 .lo-template-sidebar {
-  @extend ._dp-g;
+  display: grid;
   height: 100vh;
   grid-template-columns: 240px 1fr;
   grid-template-rows:

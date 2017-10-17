@@ -1,5 +1,5 @@
 .lo-field {
-  @extend ._dp-g;
+  display: grid;
   grid-auto-rows: max-content;
   grid-template-areas: 
     "label"
@@ -15,8 +15,8 @@
   }
 
   >label {
-    @extend ._mgbt-4px;
-    @extend ._cl-dark;
+    margin-bottom: 4px;
+    color: $color-dark;
     align-self: center;
     grid-area: label;
   }
@@ -33,20 +33,20 @@
   .bio-select,
   .bio-textarea {
     + * {
-      @extend ._cl-dark;
+      color: $color-dark;
       grid-area: help;
     }
     &.-negative + * {
-      @extend ._cl-negative;
+      color: $color-negative;
     }
     &.-positive + * {
-      @extend ._cl-positive;
+      color: $color-positive;
     }
     &.-info + * {
-      @extend ._cl-info;
+      color: $color-info;
     }
     &.-warning + * {
-      @extend ._cl-warning;
+      color: $color-warning;
     }
   }
 

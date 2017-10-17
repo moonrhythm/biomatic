@@ -1,43 +1,43 @@
 .bio-message {
-  @extend ._dp-g;
-  @extend ._pd-16px;
-  @extend ._bdrd-2px;
+  display: grid;
+  padding: 16px;
+  border-radius: 2px;
   grid-template-columns: 1fr auto;
   grid-template-areas:
     "content close";
 
-  @extend ._cl-primary;
+  color: $color-primary;
   background-color: lighten($color-primary, 37%);
   &.-accent {
-    @extend ._cl-accent;
+    color: $color-accent;
     background-color: lighten($color-accent, 30%);
   }
   &.-negative {
-    @extend ._cl-negative;
+    color: $color-negative;
     background-color: lighten($color-negative, 30%);
   }
   &.-positive {
-    @extend ._cl-positive;
+    color: $color-positive;
     background-color: lighten($color-positive, 45%);
   }
   &.-warning {
-    @extend ._cl-warning;
+    color: $color-warning;
     background-color: lighten($color-warning, 33%);
   }
   &.-info {
-    @extend ._cl-info;
+    color: $color-info;
     background-color: lighten($color-info, 31%);
   }
   &.-dark {
-    @extend ._cl-dark;
+    color: $color-dark;
     background-color: lighten($color-dark, 68%);
   }
   >.bio-message-close {
     grid-area: close;
     user-select: none;
-    @extend ._mgl-8px;
+    margin-left: 8px;
     > * {
-      @extend ._dp-b;
+      display: block;
     }
   }
   >.bio-message-content {

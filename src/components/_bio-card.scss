@@ -1,6 +1,6 @@
 .bio-card {
   display: grid;
-  @extend ._bgcl-white;
+  background-color: $color-white;
   grid-template-columns: 16px 1fr 16px;
   grid-template-rows: 
     min-content
@@ -45,10 +45,10 @@
     >.bio-card-cover {
       width: 112px;
       height: 112px;
-      @extend ._bdrd-2px;
+      border-radius: 2px;
     }
   }
-  @extend ._bdrd-4px;
+  border-radius: 4px;
   
   &:not(.u-rise) {
     border: 1px solid $color-gray;
@@ -56,24 +56,24 @@
 
   >.bio-card-cover {
     grid-area: cover;
-    @extend ._w-100pct;
+    width: 100%;
   }
   >.bio-card-title {
     grid-area: title;
-    @extend ._fs-4;
-    @extend ._cl-dark;
+    font-size: 1.5rem;
+    color: $color-dark;
   }
   >.bio-card-subtitle {
     grid-area: subtitle;
-    @extend ._fs-7;
-    @extend ._opct-60;
-    @extend ._cl-dark;
+    font-size: 0.75rem;
+    opacity: .6;
+    color: $color-dark;
   }
   >.bio-card-content {
     grid-area: content;
     padding-top: 12px;
-    @extend ._cl-dark;
-    @extend ._lh-125pct;
+    color: $color-dark;
+    line-height: 125%;
     &:first-child {
       padding-top: 0px;
     }
@@ -84,10 +84,10 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-top: 16px;
-    @extend ._cl-dark;
+    color: $color-dark;
     > * {
       &:not(:last-child) {
-        @extend ._mgr-16px;
+        margin-right: 16px;
       }
     }
     &.-push-left {
@@ -96,13 +96,13 @@
     &.-attached {
       grid-area: at;
       justify-content: justify;
-      @extend ._mgt-0px;
+      margin-top: 0px;
       border-top: 1px solid transparentize($color-gray, .2);
       > * {
         flex: 1;
         padding: 12px;
-        @extend ._mgr-0px;
-        @extend ._tal-ct;
+        margin-right: 0px;
+        text-align: center;
         &:not(:last-child) {
           border-right: 1px solid transparentize($color-gray, .4);
         }

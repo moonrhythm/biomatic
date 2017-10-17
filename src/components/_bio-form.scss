@@ -6,7 +6,7 @@ input[type="submit"]:focus {
 }
 
 input[type="checkbox"] {
-  @extend ._cs-pt;
+  cursor: pointer;
 }
 
 // Placeholder Color
@@ -21,16 +21,16 @@ input[type="checkbox"] {
 // Label
 .bio-field {
   > label {
-    @extend ._dp-ilb;
-    @extend ._mgbt-8px;
+    display: inline-block;
+    margin-bottom: 8px;
   }
 }
 
 // Checkbox
 .bio-checkbox:not(.-switch) {
   > input[type="checkbox"] {
-    @extend ._opct-0;
-    @extend ._cs-pt;
+    opacity: 0;
+    cursor: pointer;
     pointer-events: none;
     &:checked {
       + label::after {
@@ -44,35 +44,35 @@ input[type="checkbox"] {
     }
   }
   > label {
-    @extend ._pst-rlt;
-    @extend ._dp-ilb;
+    position: relative;
+    display: inline-block;
     padding-left: 26px;
     margin-left: -22px;
-    @extend ._cs-pt;
+    cursor: pointer;
     &:before, &:after {
       content: "";
-      @extend ._pst-asl;
-      @extend ._dp-ilb;
+      position: absolute;
+      display: inline-block;
     }
     &:before {
-      @extend ._w-16px;
-      @extend ._h-16px;
-      @extend ._l-0px;
-      @extend ._bd-1px;
-      @extend ._bgcl-white;
-      @extend ._bdcl-primary;
-      @extend ._bd-2px;
-      @extend ._bdrd-2px;
+      width: 16px;
+      height: 16px;
+      left: 0px;
+      border: 1px solid $color-dark;
+      background-color: $color-white;
+      border-color: $color-primary;
+      border: 2px solid $color-dark;
+      border-radius: 2px;
     }
     &:after {
       content: none;
       height: 5px;
       width: 9px;
       top: 5px;
-      @extend ._l-4px;
-      @extend ._bdl-2px;
-      @extend ._bdbt-2px;
-      @extend ._bdcl-primary;
+      left: 4px;
+      border-left-width: 2px;
+      border-bottom-width: 2px;
+      border-color: $color-primary;
       transform: rotate(-45deg);
     }
   }
@@ -81,8 +81,8 @@ input[type="checkbox"] {
 // Radio
 .bio-radio {
   > input[type="radio"] {
-    @extend ._opct-0;
-    @extend ._cs-pt;
+    opacity: 0;
+    cursor: pointer;
     pointer-events: none;
     &:checked {
       + label::after {
@@ -96,34 +96,34 @@ input[type="checkbox"] {
     }
   }
   > label {
-    @extend ._pst-rlt;
-    @extend ._dp-ilb;
+    position: relative;
+    display: inline-block;
     padding-left: 26px;
     margin-left: -22px;
-    @extend ._cs-pt;
+    cursor: pointer;
     &:before, &:after {
       content: "";
-      @extend ._pst-asl;
-      @extend ._dp-ilb;
+      position: absolute;
+      display: inline-block;
     }
     &:before {
       width: 18px;
       height: 18px;
-      @extend ._l-0px;
-      @extend ._bd-1px;
-      @extend ._bdcl-primary;
-      @extend ._bdrd-50pct;
-      @extend ._bgcl-white;
+      left: 0px;
+      border: 1px solid $color-dark;
+      border-color: $color-primary;
+      border-radius: 50%;
+      background-color: $color-white;
     }
     &:after {
       content: none;
       height: 12px;
       width: 12px;
-      @extend ._t-4px;
-      @extend ._l-4px;
-      @extend ._bgcl-primary;
-      @extend ._bdcl-primary;
-      @extend ._bdrd-50pct;
+      top: 4px;
+      left: 4px;
+      background-color: $color-primary;
+      border-color: $color-primary;
+      border-radius: 50%;
     }
   }
 }
@@ -139,10 +139,10 @@ input[type="checkbox"] {
 // Switch
 .bio-checkbox.-switch {
   > input[type="checkbox"] {
-    @extend ._pst-rlt;
-    @extend ._bgcl-gray;
-    @extend ._cs-pt;
-    @extend ._bdrd-128px;
+    position: relative;
+    background-color: $color-gray;
+    cursor: pointer;
+    border-radius: 128px;
     -webkit-appearance: none;
       -moz-appearance: none;
             appearance: none;
@@ -151,15 +151,15 @@ input[type="checkbox"] {
     transition: all .2s ease-in-out;
     outline: none;
     &:checked {
-      @extend ._bgcl-primary;
+      background-color: $color-primary;
     }
     &:after {
       content: " ";
-      @extend ._pst-asl;
-      @extend ._bdrd-50pct;
-      @extend ._bgcl-white;
-      @extend ._h-32px;
-      @extend ._w-32px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: $color-white;
+      height: 32px;
+      width: 32px;
       left: -2px;
       top: -3px;
       box-shadow: 0 0 7px rgba(0,0,0,.5);
@@ -175,24 +175,24 @@ input[type="checkbox"] {
 // File
 .bio-file {
   position: relative;
-  @extend ._cs-pt;
+  cursor: pointer;
   > input[type="file"] {
-    @extend ._pst-asl;
-    @extend ._dp-b;
-    @extend ._w-100pct;
-    @extend ._h-100pct;
-    @extend ._cs-pt;
-    @extend ._opct-0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
     pointer-events: none;
   }
   > input[type="file"] + * {
-    @extend ._dp-b;
-    @extend ._bd-1px;
-    @extend ._bgcl-white;
-    @extend ._cl-dark;
-    @extend ._bdcl-gray;
-    @extend ._bdrd-2px;
-    @extend ._cs-pt;
+    display: block;
+    border: 1px solid $color-dark;
+    background-color: $color-white;
+    color: $color-dark;
+    border-color: $color-gray;
+    border-radius: 2px;
+    cursor: pointer;
     padding: 10px 16px;
     user-select: none;
     &:before {
@@ -219,12 +219,12 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  @extend ._bgcl-white;
-  @extend ._bdrd-4px;
-  @extend ._bd-1px;
-  @extend ._bdcl-gray;
-  @extend ._cl-dark;
-  @extend ._w-100pct;
+  background-color: $color-white;
+  border-radius: 4px;
+  border: 1px solid $color-dark;
+  border-color: $color-gray;
+  color: $color-dark;
+  width: 100%;
   // @extend ._fw-500;
   vertical-align: top;
   padding-left: 12px;
@@ -257,7 +257,7 @@ input[type="checkbox"] {
         }
       }
       + * {
-        @extend ._cl-accent;
+        color: $color-accent;
       }
     }
   }
@@ -274,7 +274,7 @@ input[type="checkbox"] {
         }
       }
       + * {
-        @extend ._cl-positive;
+        color: $color-positive;
       }
     }
   }
@@ -291,7 +291,7 @@ input[type="checkbox"] {
         }
       }
       + * {
-        @extend ._cl-negative;
+        color: $color-negative;
       }
     }
   }
@@ -308,7 +308,7 @@ input[type="checkbox"] {
         }
       }
       + * {
-        @extend ._cl-info;
+        color: $color-info;
       }
     }
   }
@@ -325,7 +325,7 @@ input[type="checkbox"] {
         }
       }
       + * {
-        @extend ._cl-warning;
+        color: $color-warning;
       }
     }
   }
@@ -336,51 +336,51 @@ input[type="checkbox"] {
       > input,
       > textarea,
       > select {
-        @extend ._cs-nal;
+        cursor: not-allowed;
         background-color: lighten($color-gray, 5%);
         border-color: $color-gray;
       }
       + * {
-        @extend ._cl-dark;
+        color: $color-dark;
       }
     }
     .bio-checkbox:not(.-switch) {
-      @extend ._opct-50;
+      opacity: .5;
       > input[type="checkbox"],
       > label {
-        @extend ._cs-nal;
+        cursor: not-allowed;
         &:before {
-          @extend ._opct-50;
-          @extend ._bdcl-dark;
+          opacity: .5;
+          border-color: $color-dark;
         }
         &:after {
-          @extend ._opct-50;
-          @extend ._bdcl-dark;
+          opacity: .5;
+          border-color: $color-dark;
         }
       }
     }
     .bio-checkbox.-switch {
-      @extend ._opct-50;
+      opacity: .5;
       > input[type="checkbox"],
       > label {
-        @extend ._cs-nal;
+        cursor: not-allowed;
       }
     }
     .bio-radio {
-      @extend ._opct-50;
+      opacity: .5;
       > input[type="radio"],
       > label {
-        @extend ._cs-nal;
+        cursor: not-allowed;
         &:before {
           border-color: transparentize($color-dark, .5);
         }
       }
     }
     .bio-file {
-      @extend ._opct-50;
+      opacity: .5;
       > input[type="file"],
       > label {
-        @extend ._cs-nal;
+        cursor: not-allowed;
       }
     }
   }
@@ -390,10 +390,9 @@ input[type="checkbox"] {
 .bio-select.-multiple {
   > select {
     overflow: auto;
-    @extend ._pd-0px;
+    padding: 0px;
     > option {
-      @extend ._pdv-8px;
-      @extend ._pdh-8px;
+      padding: 8px;
       box-shadow: none;
       &:checked {
         background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
@@ -404,20 +403,20 @@ input[type="checkbox"] {
 
 // Single Select
 .bio-select:not(.-multiple) {
-  @extend ._pst-rlt;
+  position: relative;
   > select {
-    @extend ._pdr-32px;
+    padding-right: 32px;;
   }
   &:after {
     content: " ";
-    @extend ._bd-2px;
-    @extend ._bdr-0px;
-    @extend ._bdt-0px;
-    @extend ._h-8px;
-    @extend ._w-8px;
-    @extend ._pst-asl;
-    @extend ._r-8px;
-    @extend ._t-50pct;
+    border: 2px solid $color-dark;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
     border-color: darken( $color-gray, 5%);
     transform: rotate(-45deg) translate(0, calc(-50% - 4px));
     z-index: 4;
@@ -426,7 +425,8 @@ input[type="checkbox"] {
 }
 
 .bio-textarea > textarea {
-  @extend ._pdv-8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .bio-input > input,
