@@ -153,10 +153,10 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-h1 { font-size: 2.75rem }
-h2 { font-size: 2rem }
-h3 { font-size: 1.75rem }
-h4 { font-size: 1.5rem }
+h1 { font-size: 3rem }
+h2 { font-size: 2.50rem }
+h3 { font-size: 2rem }
+h4 { font-size: 1.50rem }
 h5 { font-size: 1.25rem }
 h6 { font-size: 1rem }
 
@@ -436,43 +436,7 @@ template {
 
 /* Box-sizing
    ========================================================================== */
-
-/**
- * 
- */
-
-html,
-body,
-div,
-article,
-section,
-main,
-footer,
-header,
-form,
-fieldset,
-legend,
-a,
-h1,h2,h3,h4,h5,h6,
-p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-textarea,
-table, 
-td,
-th,
-tr,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-.border-box {
+* {
   box-sizing: border-box;
 }
 
