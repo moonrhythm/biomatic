@@ -1,185 +1,22 @@
-._bgcl-primary     { background-color: $color-primary; }
-._bgcl-primary-100 { background-color: $color-primary-100; }
-._bgcl-primary-200 { background-color: $color-primary-200; }
-._bgcl-primary-300 { background-color: $color-primary-300; }
-._bgcl-primary-400 { background-color: $color-primary-400; }
-._bgcl-primary-500 { background-color: $color-primary-500; }
-._bgcl-primary-600 { background-color: $color-primary-600; }
-._bgcl-primary-700 { background-color: $color-primary-700; }
-._bgcl-primary-800 { background-color: $color-primary-800; }
-._bgcl-primary-900 { background-color: $color-primary-900; }
-
-._bgcl-accent     { background-color: $color-accent; }
-._bgcl-accent-100 { background-color: $color-accent-100; }
-._bgcl-accent-200 { background-color: $color-accent-200; }
-._bgcl-accent-300 { background-color: $color-accent-300; }
-._bgcl-accent-400 { background-color: $color-accent-400; }
-._bgcl-accent-500 { background-color: $color-accent-500; }
-._bgcl-accent-600 { background-color: $color-accent-600; }
-._bgcl-accent-700 { background-color: $color-accent-700; }
-._bgcl-accent-800 { background-color: $color-accent-800; }
-._bgcl-accent-900 { background-color: $color-accent-900; }
-
-._bgcl-positive { background-color: $color-positive; }
-._bgcl-warning  { background-color: $color-warning; }
-._bgcl-info     { background-color: $color-info; }
-._bgcl-negative { background-color: $color-negative; }
-
-._bgcl-neutral     { background-color: $color-neutral; }
-._bgcl-neutral-900 { background-color: $color-neutral-900; }
-._bgcl-neutral-800 { background-color: $color-neutral-800; }
-._bgcl-neutral-700 { background-color: $color-neutral-700; }
-._bgcl-neutral-700 { background-color: $color-neutral-700; }
-._bgcl-neutral-600 { background-color: $color-neutral-600; }
-._bgcl-neutral-500 { background-color: $color-neutral-500; }
-._bgcl-neutral-400 { background-color: $color-neutral-400; }
-._bgcl-neutral-300 { background-color: $color-neutral-300; }
-._bgcl-neutral-200 { background-color: $color-neutral-200; }
-._bgcl-neutral-100 { background-color: $color-neutral-100; }
-
-._bgcl-white { background-color: $color-white; }
-._bgcl-gray  { background-color: $color-gray; }
-._bgcl-dark  { background-color: $color-dark; }
-._bgcl-black { background-color: $color-black; }
-._bgcl-tpr   { background-color: transparent; }
+@each $key, $value in $color-value {
+  ._bgcl-#{$key} { background-color: #{$value}; }
+};
 
 @include sm-upper {
-  ._bgcl-primary-sm     { background-color: $color-primary; }
-  ._bgcl-primary-100-sm { background-color: $color-primary-100; }
-  ._bgcl-primary-200-sm { background-color: $color-primary-200; }
-  ._bgcl-primary-300-sm { background-color: $color-primary-300; }
-  ._bgcl-primary-400-sm { background-color: $color-primary-400; }
-  ._bgcl-primary-500-sm { background-color: $color-primary-500; }
-  ._bgcl-primary-600-sm { background-color: $color-primary-600; }
-  ._bgcl-primary-700-sm { background-color: $color-primary-700; }
-  ._bgcl-primary-800-sm { background-color: $color-primary-800; }
-  ._bgcl-primary-900-sm { background-color: $color-primary-900; }
-  
-  ._bgcl-accent-sm     { background-color: $color-accent; }
-  ._bgcl-accent-100-sm { background-color: $color-accent-100; }
-  ._bgcl-accent-200-sm { background-color: $color-accent-200; }
-  ._bgcl-accent-300-sm { background-color: $color-accent-300; }
-  ._bgcl-accent-400-sm { background-color: $color-accent-400; }
-  ._bgcl-accent-500-sm { background-color: $color-accent-500; }
-  ._bgcl-accent-600-sm { background-color: $color-accent-600; }
-  ._bgcl-accent-700-sm { background-color: $color-accent-700; }
-  ._bgcl-accent-800-sm { background-color: $color-accent-800; }
-  ._bgcl-accent-900-sm { background-color: $color-accent-900; }
-  
-  ._bgcl-positive-sm { background-color: $color-positive; }
-  ._bgcl-warning-sm  { background-color: $color-warning; }
-  ._bgcl-info-sm     { background-color: $color-info; }
-  ._bgcl-negative-sm { background-color: $color-negative; }
-  
-  ._bgcl-neutral-sm     { background-color: $color-neutral; }
-  ._bgcl-neutral-900-sm { background-color: $color-neutral-900; }
-  ._bgcl-neutral-800-sm { background-color: $color-neutral-800; }
-  ._bgcl-neutral-700-sm { background-color: $color-neutral-700; }
-  ._bgcl-neutral-700-sm { background-color: $color-neutral-700; }
-  ._bgcl-neutral-600-sm { background-color: $color-neutral-600; }
-  ._bgcl-neutral-500-sm { background-color: $color-neutral-500; }
-  ._bgcl-neutral-400-sm { background-color: $color-neutral-400; }
-  ._bgcl-neutral-300-sm { background-color: $color-neutral-300; }
-  ._bgcl-neutral-200-sm { background-color: $color-neutral-200; }
-  ._bgcl-neutral-100-sm { background-color: $color-neutral-100; }
-  
-  ._bgcl-white-sm { background-color: $color-white; }
-  ._bgcl-gray-sm  { background-color: $color-gray; }
-  ._bgcl-dark-sm  { background-color: $color-dark; }
-  ._bgcl-black-sm { background-color: $color-black; }
-  ._bgcl-tpr-sm   { background-color: transparent; }
+  @each $key, $value in $color-value {
+    ._bgcl-#{$key}-sm { background-color: #{$value}; }
+  };
 }
 
 @include md-upper {
-  ._bgcl-primary-md     { background-color: $color-primary; }
-  ._bgcl-primary-100-md { background-color: $color-primary-100; }
-  ._bgcl-primary-200-md { background-color: $color-primary-200; }
-  ._bgcl-primary-300-md { background-color: $color-primary-300; }
-  ._bgcl-primary-400-md { background-color: $color-primary-400; }
-  ._bgcl-primary-500-md { background-color: $color-primary-500; }
-  ._bgcl-primary-600-md { background-color: $color-primary-600; }
-  ._bgcl-primary-700-md { background-color: $color-primary-700; }
-  ._bgcl-primary-800-md { background-color: $color-primary-800; }
-  ._bgcl-primary-900-md { background-color: $color-primary-900; }
-  
-  ._bgcl-accent-md     { background-color: $color-accent; }
-  ._bgcl-accent-100-md { background-color: $color-accent-100; }
-  ._bgcl-accent-200-md { background-color: $color-accent-200; }
-  ._bgcl-accent-300-md { background-color: $color-accent-300; }
-  ._bgcl-accent-400-md { background-color: $color-accent-400; }
-  ._bgcl-accent-500-md { background-color: $color-accent-500; }
-  ._bgcl-accent-600-md { background-color: $color-accent-600; }
-  ._bgcl-accent-700-md { background-color: $color-accent-700; }
-  ._bgcl-accent-800-md { background-color: $color-accent-800; }
-  ._bgcl-accent-900-md { background-color: $color-accent-900; }
-  
-  ._bgcl-positive-md { background-color: $color-positive; }
-  ._bgcl-warning-md  { background-color: $color-warning; }
-  ._bgcl-info-md     { background-color: $color-info; }
-  ._bgcl-negative-md { background-color: $color-negative; }
-  
-  ._bgcl-neutral-md     { background-color: $color-neutral; }
-  ._bgcl-neutral-900-md { background-color: $color-neutral-900; }
-  ._bgcl-neutral-800-md { background-color: $color-neutral-800; }
-  ._bgcl-neutral-700-md { background-color: $color-neutral-700; }
-  ._bgcl-neutral-700-md { background-color: $color-neutral-700; }
-  ._bgcl-neutral-600-md { background-color: $color-neutral-600; }
-  ._bgcl-neutral-500-md { background-color: $color-neutral-500; }
-  ._bgcl-neutral-400-md { background-color: $color-neutral-400; }
-  ._bgcl-neutral-300-md { background-color: $color-neutral-300; }
-  ._bgcl-neutral-200-md { background-color: $color-neutral-200; }
-  ._bgcl-neutral-100-md { background-color: $color-neutral-100; }
-  
-  ._bgcl-white-md { background-color: $color-white; }
-  ._bgcl-gray-md  { background-color: $color-gray; }
-  ._bgcl-dark-md  { background-color: $color-dark; }
-  ._bgcl-black-md { background-color: $color-black; }
-  ._bgcl-tpr-md   { background-color: transparent; }
+  @each $key, $value in $color-value {
+    ._bgcl-#{$key}-md { background-color: #{$value}; }
+  };
 }
 
 @include lg-upper {
-  ._bgcl-primary-lg     { background-color: $color-primary; }
-  ._bgcl-primary-100-lg { background-color: $color-primary-100; }
-  ._bgcl-primary-200-lg { background-color: $color-primary-200; }
-  ._bgcl-primary-300-lg { background-color: $color-primary-300; }
-  ._bgcl-primary-400-lg { background-color: $color-primary-400; }
-  ._bgcl-primary-500-lg { background-color: $color-primary-500; }
-  ._bgcl-primary-600-lg { background-color: $color-primary-600; }
-  ._bgcl-primary-700-lg { background-color: $color-primary-700; }
-  ._bgcl-primary-800-lg { background-color: $color-primary-800; }
-  ._bgcl-primary-900-lg { background-color: $color-primary-900; }
-  
-  ._bgcl-accent-lg     { background-color: $color-accent; }
-  ._bgcl-accent-100-lg { background-color: $color-accent-100; }
-  ._bgcl-accent-200-lg { background-color: $color-accent-200; }
-  ._bgcl-accent-300-lg { background-color: $color-accent-300; }
-  ._bgcl-accent-400-lg { background-color: $color-accent-400; }
-  ._bgcl-accent-500-lg { background-color: $color-accent-500; }
-  ._bgcl-accent-600-lg { background-color: $color-accent-600; }
-  ._bgcl-accent-700-lg { background-color: $color-accent-700; }
-  ._bgcl-accent-800-lg { background-color: $color-accent-800; }
-  ._bgcl-accent-900-lg { background-color: $color-accent-900; }
-  
-  ._bgcl-positive-lg { background-color: $color-positive; }
-  ._bgcl-warning-lg  { background-color: $color-warning; }
-  ._bgcl-info-lg     { background-color: $color-info; }
-  ._bgcl-negative-lg { background-color: $color-negative; }
-  
-  ._bgcl-neutral-lg     { background-color: $color-neutral; }
-  ._bgcl-neutral-900-lg { background-color: $color-neutral-900; }
-  ._bgcl-neutral-800-lg { background-color: $color-neutral-800; }
-  ._bgcl-neutral-700-lg { background-color: $color-neutral-700; }
-  ._bgcl-neutral-700-lg { background-color: $color-neutral-700; }
-  ._bgcl-neutral-600-lg { background-color: $color-neutral-600; }
-  ._bgcl-neutral-500-lg { background-color: $color-neutral-500; }
-  ._bgcl-neutral-400-lg { background-color: $color-neutral-400; }
-  ._bgcl-neutral-300-lg { background-color: $color-neutral-300; }
-  ._bgcl-neutral-200-lg { background-color: $color-neutral-200; }
-  ._bgcl-neutral-100-lg { background-color: $color-neutral-100; }
-  
-  ._bgcl-white-lg { background-color: $color-white; }
-  ._bgcl-gray-lg  { background-color: $color-gray; }
-  ._bgcl-dark-lg  { background-color: $color-dark; }
-  ._bgcl-black-lg { background-color: $color-black; }
-  ._bgcl-tpr-lg   { background-color: transparent; }
+  @each $key, $value in $color-value {
+    ._bgcl-#{$key}-lg { background-color: #{$value}; }
+  };
 }
+
