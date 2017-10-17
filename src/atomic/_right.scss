@@ -1,146 +1,21 @@
-._r-0px    { right: 0px; }
-._r-1px    { right: 1px; }
-._r-2px    { right: 2px; }
-._r-4px    { right: 4px; }
-._r-8px    { right: 8px; }
-._r-12px   { right: 12px; }
-._r-16px   { right: 16px; }
-._r-24px   { right: 24px; }
-._r-32px   { right: 32px; }
-._r-64px   { right: 64px; }
-._r-128px  { right: 128px; }
-._r-256px  { right: 256px; }
-._r-512px  { right: 512px; }
-._r-5pct   { right: 10%; }
-._r-10pct  { right: 10%; }
-._r-15pct  { right: 15%; }
-._r-20pct  { right: 20%; }
-._r-25pct  { right: 25%; }
-._r-30pct  { right: 30%; }
-._r-35pct  { right: 35%; }
-._r-40pct  { right: 40%; }
-._r-45pct  { right: 45%; }
-._r-50pct  { right: 50%; }
-._r-55pct  { right: 55%; }
-._r-60pct  { right: 60%; }
-._r-65pct  { right: 65%; }
-._r-70pct  { right: 70%; }
-._r-75pct  { right: 75%; }
-._r-80pct  { right: 80%; }
-._r-85pct  { right: 85%; }
-._r-90pct  { right: 90%; }
-._r-95pct  { right: 95%; }
-._r-100pct { right: 100%; }
-._r-auto   { right: auto; }
+@each $key, $value in $pixel-value {
+  ._r-#{$key} { right: #{$value}; }
+};
 
 @include sm-upper {
-  ._r-0px-sm    { right: 0px; }
-  ._r-1px-sm    { right: 1px; }
-  ._r-2px-sm    { right: 2px; }
-  ._r-4px-sm    { right: 4px; }
-  ._r-8px-sm    { right: 8px; }
-  ._r-12px-sm   { right: 12px; }
-  ._r-16px-sm   { right: 16px; }
-  ._r-24px-sm   { right: 24px; }
-  ._r-32px-sm   { right: 32px; }
-  ._r-64px-sm   { right: 64px; }
-  ._r-128px-sm  { right: 128px; }
-  ._r-256px-sm  { right: 256px; }
-  ._r-512px-sm  { right: 512px; }
-  ._r-5pct-sm   { right: 10%; }
-  ._r-10pct-sm  { right: 10%; }
-  ._r-15pct-sm  { right: 15%; }
-  ._r-20pct-sm  { right: 20%; }
-  ._r-25pct-sm  { right: 25%; }
-  ._r-30pct-sm  { right: 30%; }
-  ._r-35pct-sm  { right: 35%; }
-  ._r-40pct-sm  { right: 40%; }
-  ._r-45pct-sm  { right: 45%; }
-  ._r-50pct-sm  { right: 50%; }
-  ._r-55pct-sm  { right: 55%; }
-  ._r-60pct-sm  { right: 60%; }
-  ._r-65pct-sm  { right: 65%; }
-  ._r-70pct-sm  { right: 70%; }
-  ._r-75pct-sm  { right: 75%; }
-  ._r-80pct-sm  { right: 80%; }
-  ._r-85pct-sm  { right: 85%; }
-  ._r-90pct-sm  { right: 90%; }
-  ._r-95pct-sm  { right: 95%; }
-  ._r-100pct-sm { right: 100%; }
-  ._r-auto-sm   { right: auto; }
+  @each $key, $value in $pixel-value {
+    ._r-#{$key}-sm { right: #{$value}; }
+  };
 }
 
 @include md-upper {
-  ._r-0px-md    { right: 0px; }
-  ._r-1px-md    { right: 1px; }
-  ._r-2px-md    { right: 2px; }
-  ._r-4px-md    { right: 4px; }
-  ._r-8px-md    { right: 8px; }
-  ._r-12px-md   { right: 12px; }
-  ._r-16px-md   { right: 16px; }
-  ._r-24px-md   { right: 24px; }
-  ._r-32px-md   { right: 32px; }
-  ._r-64px-md   { right: 64px; }
-  ._r-128px-md  { right: 128px; }
-  ._r-256px-md  { right: 256px; }
-  ._r-512px-md  { right: 512px; }
-  ._r-5pct-md   { right: 10%; }
-  ._r-10pct-md  { right: 10%; }
-  ._r-15pct-md  { right: 15%; }
-  ._r-20pct-md  { right: 20%; }
-  ._r-25pct-md  { right: 25%; }
-  ._r-30pct-md  { right: 30%; }
-  ._r-35pct-md  { right: 35%; }
-  ._r-40pct-md  { right: 40%; }
-  ._r-45pct-md  { right: 45%; }
-  ._r-50pct-md  { right: 50%; }
-  ._r-55pct-md  { right: 55%; }
-  ._r-60pct-md  { right: 60%; }
-  ._r-65pct-md  { right: 65%; }
-  ._r-70pct-md  { right: 70%; }
-  ._r-75pct-md  { right: 75%; }
-  ._r-80pct-md  { right: 80%; }
-  ._r-85pct-md  { right: 85%; }
-  ._r-90pct-md  { right: 90%; }
-  ._r-95pct-md  { right: 95%; }
-  ._r-100pct-md { right: 100%; }
-  ._r-auto-md   { right: auto; }
+  @each $key, $value in $pixel-value {
+    ._r-#{$key}-md { right: #{$value}; }
+  };
 }
 
 @include lg-upper {
-  ._r-0px-lg    { right: 0px; }
-  ._r-1px-lg    { right: 1px; }
-  ._r-2px-lg    { right: 2px; }
-  ._r-4px-lg    { right: 4px; }
-  ._r-8px-lg    { right: 8px; }
-  ._r-12px-lg   { right: 12px; }
-  ._r-16px-lg   { right: 16px; }
-  ._r-24px-lg   { right: 24px; }
-  ._r-24px-lg   { right: 24px; }
-  ._r-32px-lg   { right: 32px; }
-  ._r-64px-lg   { right: 64px; }
-  ._r-128px-lg  { right: 128px; }
-  ._r-256px-lg  { right: 256px; }
-  ._r-512px-lg  { right: 512px; }
-  ._r-5pct-lg   { right: 10%; }
-  ._r-10pct-lg  { right: 10%; }
-  ._r-15pct-lg  { right: 15%; }
-  ._r-20pct-lg  { right: 20%; }
-  ._r-25pct-lg  { right: 25%; }
-  ._r-30pct-lg  { right: 30%; }
-  ._r-35pct-lg  { right: 35%; }
-  ._r-40pct-lg  { right: 40%; }
-  ._r-45pct-lg  { right: 45%; }
-  ._r-50pct-lg  { right: 50%; }
-  ._r-55pct-lg  { right: 55%; }
-  ._r-60pct-lg  { right: 60%; }
-  ._r-65pct-lg  { right: 65%; }
-  ._r-70pct-lg  { right: 70%; }
-  ._r-75pct-lg  { right: 75%; }
-  ._r-80pct-lg  { right: 80%; }
-  ._r-85pct-lg  { right: 85%; }
-  ._r-90pct-lg  { right: 90%; }
-  ._r-95pct-lg  { right: 95%; }
-  ._r-100pct-lg { right: 100%; }
-  ._r-auto-lg   { right: auto; }
+  @each $key, $value in $pixel-value {
+    ._r-#{$key}-lg { right: #{$value}; }
+  };
 }

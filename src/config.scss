@@ -59,6 +59,73 @@ $container-grid-gap: 0px 10px;
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 $font-secondary: '';
 
+// Atomic Value for spacing style
+// (margin, padding top, bottom, left, right, width, height)
+$pixel-value: (
+  '0px': 0px,
+  '1px': 1px,
+  '2px': 2px,
+  '4px': 4px,
+  '8px': 8px,
+  '12px': 12px,
+  '16px': 16px,
+  '24px': 24px,
+  '32px': 32px,
+  '48px': 48px,
+  '64px': 64px,
+  '128px': 128px,
+  '256px': 256px,
+  '512px': 512px,
+  '50pct': 50%,
+  'at': auto
+);
+
+$border-radius-value: (
+  '0px': 0px,
+  '1px': 1px,
+  '2px': 2px,
+  '3px': 3px,
+  '4px': 4px,
+  '8px': 8px,
+  '12px': 12px,
+  '16px': 16px,
+  '24px': 24px,
+  '32px': 32px,
+  '48px': 48px,
+  '64px': 64px,
+  '128px': 128px,
+  '256px': 256px,
+  '512px': 512px,
+  '50pct': 50%,
+  'max': 9999px
+);
+
+// for (width, height)
+$percentage-value: (
+  '0pct': 0%,
+  '5pct': 5%,
+  '10pct': 10%,
+  '15pct': 15%,
+  '20pct': 20%,
+  '25pct': 25%,
+  '30pct': 30%,
+  '35pct': 35%,
+  '40pct': 40%,
+  '45pct': 45%,
+  '50pct': 50%,
+  '55pct': 55%,
+  '60pct': 60%,
+  '65pct': 65%,
+  '70pct': 70%,
+  '75pct': 75%,
+  '80pct': 80%,
+  '85pct': 85%,
+  '90pct': 90%,
+  '95pct': 95%,
+  '100pct': 100%,
+  'at': auto
+);
+
 html {
   color: $color-dark;
   font-family: $font-primary;

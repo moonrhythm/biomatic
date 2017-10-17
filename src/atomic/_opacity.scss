@@ -1,4 +1,3 @@
-._opct     { opacity: .5; }
 ._opct-100 { opacity: 1; }
 ._opct-90  { opacity: .9; }
 ._opct-80  { opacity: .8; }
@@ -12,7 +11,6 @@
 ._opct-0   { opacity: 0;  }
 
 @include sm-upper {
-  ._opct-sm     { opacity: .5; }
   ._opct-100-sm { opacity: 1; }
   ._opct-90-sm  { opacity: .9; }
   ._opct-80-sm  { opacity: .8; }
@@ -27,7 +25,6 @@
 }
 
 @include md-upper {
-  ._opct-md     { opacity: .5; }
   ._opct-100-md { opacity: 1; }
   ._opct-90-md  { opacity: .9; }
   ._opct-80-md  { opacity: .8; }
@@ -42,7 +39,6 @@
 }
 
 @include lg-upper {
-  ._opct-lg     { opacity: .5; }
   ._opct-100-lg { opacity: 1; }
   ._opct-90-lg  { opacity: .9; }
   ._opct-80-lg  { opacity: .8; }

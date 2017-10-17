@@ -1,146 +1,37 @@
-._w-0px    { width: 0px; }
-._w-1px    { width: 1px; }
-._w-2px    { width: 2px; }
-._w-4px    { width: 4px; }
-._w-8px    { width: 8px; }
-._w-12px   { width: 12px; }
-._w-16px   { width: 16px; }
-._w-24px   { width: 24px; }
-._w-32px   { width: 32px; }
-._w-64px   { width: 64px; }
-._w-128px  { width: 128px; }
-._w-256px  { width: 256px; }
-._w-512px  { width: 512px; }
-._w-5pct   { width: 10%; }
-._w-10pct  { width: 10%; }
-._w-15pct  { width: 15%; }
-._w-20pct  { width: 20%; }
-._w-25pct  { width: 25%; }
-._w-30pct  { width: 30%; }
-._w-35pct  { width: 35%; }
-._w-40pct  { width: 40%; }
-._w-45pct  { width: 45%; }
-._w-50pct  { width: 50%; }
-._w-55pct  { width: 55%; }
-._w-60pct  { width: 60%; }
-._w-65pct  { width: 65%; }
-._w-70pct  { width: 70%; }
-._w-75pct  { width: 75%; }
-._w-80pct  { width: 80%; }
-._w-85pct  { width: 85%; }
-._w-90pct  { width: 90%; }
-._w-95pct  { width: 95%; }
-._w-100pct { width: 100%; }
-._w-auto   { width: auto; }
+@each $key, $value in $pixel-value {
+  ._w-#{$key} { width: #{$value}; }
+};
+
+@each $key, $value in $percentage-value {
+  ._w-#{$key} { width: #{$value}; }
+};
 
 @include sm-upper {
-  ._w-0px-sm    { width: 0px; }
-  ._w-1px-sm    { width: 1px; }
-  ._w-2px-sm    { width: 2px; }
-  ._w-4px-sm    { width: 4px; }
-  ._w-8px-sm    { width: 8px; }
-  ._w-12px-sm   { width: 12px; }
-  ._w-16px-sm   { width: 16px; }
-  ._w-24px-sm   { width: 24px; }
-  ._w-32px-sm   { width: 32px; }
-  ._w-64px-sm   { width: 64px; }
-  ._w-128px-sm  { width: 128px; }
-  ._w-256px-sm  { width: 256px; }
-  ._w-512px-sm  { width: 512px; }
-  ._w-5pct-sm   { width: 10%; }
-  ._w-10pct-sm  { width: 10%; }
-  ._w-15pct-sm  { width: 15%; }
-  ._w-20pct-sm  { width: 20%; }
-  ._w-25pct-sm  { width: 25%; }
-  ._w-30pct-sm  { width: 30%; }
-  ._w-35pct-sm  { width: 35%; }
-  ._w-40pct-sm  { width: 40%; }
-  ._w-45pct-sm  { width: 45%; }
-  ._w-50pct-sm  { width: 50%; }
-  ._w-55pct-sm  { width: 55%; }
-  ._w-60pct-sm  { width: 60%; }
-  ._w-65pct-sm  { width: 65%; }
-  ._w-70pct-sm  { width: 70%; }
-  ._w-75pct-sm  { width: 75%; }
-  ._w-80pct-sm  { width: 80%; }
-  ._w-85pct-sm  { width: 85%; }
-  ._w-90pct-sm  { width: 90%; }
-  ._w-95pct-sm  { width: 95%; }
-  ._w-100pct-sm { width: 100%; }
-  ._w-auto-sm   { width: auto; }
+  @each $key, $value in $pixel-value {
+    ._w-#{$key}-sm { width: #{$value}; }
+  };
+
+  @each $key, $value in $percentage-value {
+    ._w-#{$key}-sm { width: #{$value}; }
+  };
 }
 
 @include md-upper {
-  ._w-0px-md    { width: 0px; }
-  ._w-1px-md    { width: 1px; }
-  ._w-2px-md    { width: 2px; }
-  ._w-4px-md    { width: 4px; }
-  ._w-8px-md    { width: 8px; }
-  ._w-12px-md   { width: 12px; }
-  ._w-16px-md   { width: 16px; }
-  ._w-24px-md   { width: 24px; }
-  ._w-32px-md   { width: 32px; }
-  ._w-64px-md   { width: 64px; }
-  ._w-128px-md  { width: 128px; }
-  ._w-256px-md  { width: 256px; }
-  ._w-512px-md  { width: 512px; }
-  ._w-5pct-md   { width: 10%; }
-  ._w-10pct-md  { width: 10%; }
-  ._w-15pct-md  { width: 15%; }
-  ._w-20pct-md  { width: 20%; }
-  ._w-25pct-md  { width: 25%; }
-  ._w-30pct-md  { width: 30%; }
-  ._w-35pct-md  { width: 35%; }
-  ._w-40pct-md  { width: 40%; }
-  ._w-45pct-md  { width: 45%; }
-  ._w-50pct-md  { width: 50%; }
-  ._w-55pct-md  { width: 55%; }
-  ._w-60pct-md  { width: 60%; }
-  ._w-65pct-md  { width: 65%; }
-  ._w-70pct-md  { width: 70%; }
-  ._w-75pct-md  { width: 75%; }
-  ._w-80pct-md  { width: 80%; }
-  ._w-85pct-md  { width: 85%; }
-  ._w-90pct-md  { width: 90%; }
-  ._w-95pct-md  { width: 95%; }
-  ._w-100pct-md { width: 100%; }
-  ._w-auto-md   { width: auto; }
+  @each $key, $value in $pixel-value {
+    ._w-#{$key}-md { width: #{$value}; }
+  };
+
+  @each $key, $value in $percentage-value {
+    ._w-#{$key}-md { width: #{$value}; }
+  };
 }
 
 @include lg-upper {
-  ._w-0px-lg    { width: 0px; }
-  ._w-1px-lg    { width: 1px; }
-  ._w-2px-lg    { width: 2px; }
-  ._w-4px-lg    { width: 4px; }
-  ._w-8px-lg    { width: 8px; }
-  ._w-12px-lg   { width: 12px; }
-  ._w-16px-lg   { width: 16px; }
-  ._w-24px-lg   { width: 24px; }
-  ._w-24px-lg   { width: 24px; }
-  ._w-32px-lg   { width: 32px; }
-  ._w-64px-lg   { width: 64px; }
-  ._w-128px-lg  { width: 128px; }
-  ._w-256px-lg  { width: 256px; }
-  ._w-512px-lg  { width: 512px; }
-  ._w-5pct-lg   { width: 10%; }
-  ._w-10pct-lg  { width: 10%; }
-  ._w-15pct-lg  { width: 15%; }
-  ._w-20pct-lg  { width: 20%; }
-  ._w-25pct-lg  { width: 25%; }
-  ._w-30pct-lg  { width: 30%; }
-  ._w-35pct-lg  { width: 35%; }
-  ._w-40pct-lg  { width: 40%; }
-  ._w-45pct-lg  { width: 45%; }
-  ._w-50pct-lg  { width: 50%; }
-  ._w-55pct-lg  { width: 55%; }
-  ._w-60pct-lg  { width: 60%; }
-  ._w-65pct-lg  { width: 65%; }
-  ._w-70pct-lg  { width: 70%; }
-  ._w-75pct-lg  { width: 75%; }
-  ._w-80pct-lg  { width: 80%; }
-  ._w-85pct-lg  { width: 85%; }
-  ._w-90pct-lg  { width: 90%; }
-  ._w-95pct-lg  { width: 95%; }
-  ._w-100pct-lg { width: 100%; }
-  ._w-auto-lg   { width: auto; }
+  @each $key, $value in $pixel-value {
+    ._w-#{$key}-lg { width: #{$value}; }
+  };
+
+  @each $key, $value in $percentage-value {
+    ._w-#{$key}-lg { width: #{$value}; }
+  };
 }
