@@ -1,0 +1,10 @@
+.u-animation-pulse {
+  animation: pulse .35s infinite alternate;
+  -webkit-animation: pulse .35s infinite alternate;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.1);
+  }
+}
