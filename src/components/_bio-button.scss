@@ -2,6 +2,7 @@
   padding: 8px;
   border-radius: 2px;
   background-color: $color-primary;
+  border: 1px solid $color-primary;
   text-align: center;
   cursor: pointer;
   line-height: 150%;
@@ -20,10 +21,8 @@
 
   &.-primary {
     background-color: $color-primary;
+    border: 1px solid $color-primary;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-primary;
-      color: $color-primary;
       background-color: transparent;
       &.-loading {
         color: transparent;
@@ -40,9 +39,8 @@
   
   &.-accent {
     background-color: $color-accent;
+    border: 1px solid $color-accent;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-accent;
       color: $color-accent;
       background-color: transparent;
       &.-loading {
@@ -59,10 +57,9 @@
   }
 
   &.-positive {
-    background-color: $color-positive;
+    background-color: $color-accent;
+    border: 1px solid $color-positive;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-positive;
       color: $color-positive;
       background-color: transparent;
       &.-loading {
@@ -80,9 +77,8 @@
 
   &.-info {
     background-color: $color-info;
+    border: 1px solid $color-info;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-info;
       color: $color-info;
       background-color: transparent;
       &.-loading {
@@ -100,9 +96,8 @@
   
   &.-warning {
     background-color: $color-warning;
+    border: 1px solid $color-warning;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-warning;
       color: $color-warning;
       background-color: transparent;
       &.-loading {
@@ -120,9 +115,8 @@
 
   &.-negative {
     background-color: $color-negative;
+    border: 1px solid $color-negative;
     &.-outline {
-      border: 1px solid $color-dark;
-      border-color: $color-negative;
       color: $color-negative;
       background-color: transparent;
       &.-loading {
