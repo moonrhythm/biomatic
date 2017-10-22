@@ -1,23 +1,23 @@
-._als-s  { align-self: start; }
-._als-e  { align-self: end; }
-._als-ct { align-self: center; }
-._als-st { align-self: strecth; }
+._als-s  { align-self: start !important; }
+._als-e  { align-self: end !important; }
+._als-ct { align-self: center !important; }
+._als-st { align-self: strecth !important; }
 
 @include sm-upper {
-  ._als-s-sm  { align-self: start; }
-  ._als-e-sm  { align-self: end; }
-  ._als-ct-sm { align-self: center; }
-  ._als-st-sm { align-self: strecth; }
+  ._als-s-sm  { align-self: start !important; }
+  ._als-e-sm  { align-self: end !important; }
+  ._als-ct-sm { align-self: center !important; }
+  ._als-st-sm { align-self: strecth !important; }
 }
 @include md-upper {
-  ._als-s-md  { align-self: start; }
-  ._als-e-md  { align-self: end; }
-  ._als-ct-md { align-self: center; }
-  ._als-st-md { align-self: strecth; }
+  ._als-s-md  { align-self: start !important; }
+  ._als-e-md  { align-self: end !important; }
+  ._als-ct-md { align-self: center !important; }
+  ._als-st-md { align-self: strecth !important; }
 }
 @include lg-upper {
-  ._als-s-lg  { align-self: start; }
-  ._als-e-lg  { align-self: end; }
-  ._als-ct-lg { align-self: center; }
-  ._als-st-lg { align-self: strecth; }
+  ._als-s-lg  { align-self: start !important; }
+  ._als-e-lg  { align-self: end !important; }
+  ._als-ct-lg { align-self: center !important; }
+  ._als-st-lg { align-self: strecth !important; }
 }

@@ -1,45 +1,45 @@
 @each $key, $value in $pixel-value {
-  ._mg-#{$key} { margin: #{$value}; }
-  ._mgl-#{$key} { margin-left: #{$value}; }
-  ._mgr-#{$key} { margin-right: #{$value}; }
-  ._mgt-#{$key} { margin-top: #{$value}; }
-  ._mgbt-#{$key} { margin-bottom: #{$value}; }
-  ._mgv-#{$key} { margin-top: #{$value}; margin-bottom: #{$value}; }
-  ._mgh-#{$key} { margin-left: #{$value}; margin-right: #{$value}; }
+  ._mg-#{$key}   { margin: #{$value} !important; }
+  ._mgl-#{$key}  { margin-left: #{$value} !important; }
+  ._mgr-#{$key}  { margin-right: #{$value} !important; }
+  ._mgt-#{$key}  { margin-top: #{$value} !important; }
+  ._mgbt-#{$key} { margin-bottom: #{$value} !important; }
+  ._mgv-#{$key}  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
+  ._mgh-#{$key}  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $pixel-value {
-    ._mg-#{$key}-sm   { margin: #{$value}; }
-    ._mgl-#{$key}-sm  { margin-left: #{$value}; }
-    ._mgr-#{$key}-sm  { margin-right: #{$value}; }
-    ._mgt-#{$key}-sm  { margin-top: #{$value}; }
-    ._mgbt-#{$key}-sm { margin-bottom: #{$value}; }
-    ._mgv-#{$key}-sm  { margin-top: #{$value}; margin-bottom: #{$value}; }
-    ._mgh-#{$key}-sm  { margin-left: #{$value}; margin-right: #{$value}; }
+    ._mg-#{$key}-sm   { margin: #{$value} !important; }
+    ._mgl-#{$key}-sm  { margin-left: #{$value} !important; }
+    ._mgr-#{$key}-sm  { margin-right: #{$value} !important; }
+    ._mgt-#{$key}-sm  { margin-top: #{$value} !important; }
+    ._mgbt-#{$key}-sm { margin-bottom: #{$value} !important; }
+    ._mgv-#{$key}-sm  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
+    ._mgh-#{$key}-sm  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $pixel-value {
-    ._mg-#{$key}-md   { margin: #{$value}; }
-    ._mgl-#{$key}-md  { margin-left: #{$value}; }
-    ._mgr-#{$key}-md  { margin-right: #{$value}; }
-    ._mgt-#{$key}-md  { margin-top: #{$value}; }
-    ._mgbt-#{$key}-md { margin-bottom: #{$value}; }
-    ._mgv-#{$key}-md  { margin-top: #{$value}; margin-bottom: #{$value}; }
-    ._mgh-#{$key}-md  { margin-left: #{$value}; margin-right: #{$value}; }
+    ._mg-#{$key}-md   { margin: #{$value} !important; }
+    ._mgl-#{$key}-md  { margin-left: #{$value} !important; }
+    ._mgr-#{$key}-md  { margin-right: #{$value} !important; }
+    ._mgt-#{$key}-md  { margin-top: #{$value} !important; }
+    ._mgbt-#{$key}-md { margin-bottom: #{$value} !important; }
+    ._mgv-#{$key}-md  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
+    ._mgh-#{$key}-md  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $pixel-value {
-    ._mg-#{$key}-lg   { margin: #{$value}; }
-    ._mgl-#{$key}-lg  { margin-left: #{$value}; }
-    ._mgr-#{$key}-lg  { margin-right: #{$value}; }
-    ._mgt-#{$key}-lg  { margin-top: #{$value}; }
-    ._mgbt-#{$key}-lg { margin-bottom: #{$value}; }
-    ._mgv-#{$key}-lg  { margin-top: #{$value}; margin-bottom: #{$value}; }
-    ._mgh-#{$key}-lg  { margin-left: #{$value}; margin-right: #{$value}; }
+    ._mg-#{$key}-lg   { margin: #{$value} !important; }
+    ._mgl-#{$key}-lg  { margin-left: #{$value} !important; }
+    ._mgr-#{$key}-lg  { margin-right: #{$value} !important; }
+    ._mgt-#{$key}-lg  { margin-top: #{$value} !important; }
+    ._mgbt-#{$key}-lg { margin-bottom: #{$value} !important; }
+    ._mgv-#{$key}-lg  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
+    ._mgh-#{$key}-lg  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
   };
 }

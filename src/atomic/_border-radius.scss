@@ -1,37 +1,37 @@
 @each $key, $value in $border-radius-value {
-  ._bdrd-#{$key}    { border-radius: #{$value}; }
-  ._bdtlrd-#{$key}  { border-top-left-radius: #{$value}; }
-  ._bdtrrd-#{$key}  { border-top-right-radius: #{$value}; }
-  ._bdbtlrd-#{$key} { border-bottom-left-radius: #{$value}; }
-  ._bdbtrrd-#{$key} { border-bottom-right-radius: #{$value}; }
+  ._bdrd-#{$key}    { border-radius: #{$value} !important; }
+  ._bdtlrd-#{$key}  { border-top-left-radius: #{$value} !important; }
+  ._bdtrrd-#{$key}  { border-top-right-radius: #{$value} !important; }
+  ._bdbtlrd-#{$key} { border-bottom-left-radius: #{$value} !important; }
+  ._bdbtrrd-#{$key} { border-bottom-right-radius: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $border-radius-value {
-    ._bdrd-#{$key}-sm    { border-radius: #{$value}; }
-    ._bdtlrd-#{$key}-sm  { border-top-left-radius: #{$value}; }
-    ._bdtrrd-#{$key}-sm  { border-top-right-radius: #{$value}; }
-    ._bdbtlrd-#{$key}-sm { border-bottom-left-radius: #{$value}; }
-    ._bdbtrrd-#{$key}-sm { border-bottom-right-radius: #{$value}; }
+    ._bdrd-#{$key}-sm    { border-radius: #{$value} !important; }
+    ._bdtlrd-#{$key}-sm  { border-top-left-radius: #{$value} !important; }
+    ._bdtrrd-#{$key}-sm  { border-top-right-radius: #{$value} !important; }
+    ._bdbtlrd-#{$key}-sm { border-bottom-left-radius: #{$value} !important; }
+    ._bdbtrrd-#{$key}-sm { border-bottom-right-radius: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $border-radius-value {
-    ._bdrd-#{$key}-md    { border-radius: #{$value}; }
-    ._bdtlrd-#{$key}-md  { border-top-left-radius: #{$value}; }
-    ._bdtrrd-#{$key}-md  { border-top-right-radius: #{$value}; }
-    ._bdbtlrd-#{$key}-md { border-bottom-left-radius: #{$value}; }
-    ._bdbtrrd-#{$key}-md { border-bottom-right-radius: #{$value}; }
+    ._bdrd-#{$key}-md    { border-radius: #{$value} !important; }
+    ._bdtlrd-#{$key}-md  { border-top-left-radius: #{$value} !important; }
+    ._bdtrrd-#{$key}-md  { border-top-right-radius: #{$value} !important; }
+    ._bdbtlrd-#{$key}-md { border-bottom-left-radius: #{$value} !important; }
+    ._bdbtrrd-#{$key}-md { border-bottom-right-radius: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $border-radius-value {
-    ._bdrd-#{$key}-lg    { border-radius: #{$value}; }
-    ._bdtlrd-#{$key}-lg  { border-top-left-radius: #{$value}; }
-    ._bdtrrd-#{$key}-lg  { border-top-right-radius: #{$value}; }
-    ._bdbtlrd-#{$key}-lg { border-bottom-left-radius: #{$value}; }
-    ._bdbtrrd-#{$key}-lg { border-bottom-right-radius: #{$value}; }
+    ._bdrd-#{$key}-lg    { border-radius: #{$value} !important; }
+    ._bdtlrd-#{$key}-lg  { border-top-left-radius: #{$value} !important; }
+    ._bdtrrd-#{$key}-lg  { border-top-right-radius: #{$value} !important; }
+    ._bdbtlrd-#{$key}-lg { border-bottom-left-radius: #{$value} !important; }
+    ._bdbtrrd-#{$key}-lg { border-bottom-right-radius: #{$value} !important; }
   };
 }

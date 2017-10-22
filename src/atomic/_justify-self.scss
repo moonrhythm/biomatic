@@ -1,26 +1,26 @@
-._jtfs-s  { justify-self: start; }
-._jtfs-e  { justify-self: end; }
-._jtfs-ct { justify-self: center; }
-._jtfs-st { justify-self: strecth; }
+._jtfs-s  { justify-self: start !important; }
+._jtfs-e  { justify-self: end !important; }
+._jtfs-ct { justify-self: center !important; }
+._jtfs-st { justify-self: strecth !important; }
 
 @include sm-upper {
-  ._jtfs-s-sm  { justify-self: start; }
-  ._jtfs-e-sm  { justify-self: end; }
-  ._jtfs-ct-sm { justify-self: center; }
-  ._jtfs-st-sm { justify-self: strecth; }
+  ._jtfs-s-sm  { justify-self: start !important; }
+  ._jtfs-e-sm  { justify-self: end !important; }
+  ._jtfs-ct-sm { justify-self: center !important; }
+  ._jtfs-st-sm { justify-self: strecth !important; }
 }
 
 @include md-upper {
-  ._jtfs-s-md  { justify-self: start; }
-  ._jtfs-e-md  { justify-self: end; }
-  ._jtfs-ct-md { justify-self: center; }
-  ._jtfs-st-md { justify-self: strecth; }
+  ._jtfs-s-md  { justify-self: start !important; }
+  ._jtfs-e-md  { justify-self: end !important; }
+  ._jtfs-ct-md { justify-self: center !important; }
+  ._jtfs-st-md { justify-self: strecth !important; }
 }
 
 
 @include lg-upper {
-  ._jtfs-s-lg  { justify-self: start; }
-  ._jtfs-e-lg  { justify-self: end; }
-  ._jtfs-ct-lg { justify-self: center; }
-  ._jtfs-st-lg { justify-self: strecth; }
+  ._jtfs-s-lg  { justify-self: start !important; }
+  ._jtfs-e-lg  { justify-self: end !important; }
+  ._jtfs-ct-lg { justify-self: center !important; }
+  ._jtfs-st-lg { justify-self: strecth !important; }
 }

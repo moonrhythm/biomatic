@@ -1,21 +1,21 @@
 @each $key, $value in $pixel-value {
-  ._l-#{$key} { left: #{$value}; }
+  ._l-#{$key} { left: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $pixel-value {
-    ._l-#{$key}-sm { left: #{$value}; }
+    ._l-#{$key}-sm { left: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $pixel-value {
-    ._l-#{$key}-md { left: #{$value}; }
+    ._l-#{$key}-md { left: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $pixel-value {
-    ._l-#{$key}-lg { left: #{$value}; }
+    ._l-#{$key}-lg { left: #{$value} !important; }
   };
 }

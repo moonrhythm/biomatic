@@ -1,21 +1,21 @@
 @each $key, $value in $color-value {
-  ._bdcl-#{$key} { border-width: #{$value}; }
+  ._bdcl-#{$key} { border-width: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $color-value {
-    ._bdcl-#{$key}-sm { border-width: #{$value}; }
+    ._bdcl-#{$key}-sm { border-width: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $color-value {
-    ._bdcl-#{$key}-md { border-width: #{$value}; }
+    ._bdcl-#{$key}-md { border-width: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $color-value {
-    ._bdcl-#{$key}-lg { border-width: #{$value}; }
+    ._bdcl-#{$key}-lg { border-width: #{$value} !important; }
   };
 }

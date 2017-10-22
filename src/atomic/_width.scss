@@ -1,37 +1,37 @@
 @each $key, $value in $pixel-value {
-  ._w-#{$key} { width: #{$value}; }
+  ._w-#{$key} { width: #{$value} !important; }
 };
 
 @each $key, $value in $percentage-value {
-  ._w-#{$key} { width: #{$value}; }
+  ._w-#{$key} { width: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $pixel-value {
-    ._w-#{$key}-sm { width: #{$value}; }
+    ._w-#{$key}-sm { width: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._w-#{$key}-sm { width: #{$value}; }
+    ._w-#{$key}-sm { width: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $pixel-value {
-    ._w-#{$key}-md { width: #{$value}; }
+    ._w-#{$key}-md { width: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._w-#{$key}-md { width: #{$value}; }
+    ._w-#{$key}-md { width: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $pixel-value {
-    ._w-#{$key}-lg { width: #{$value}; }
+    ._w-#{$key}-lg { width: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._w-#{$key}-lg { width: #{$value}; }
+    ._w-#{$key}-lg { width: #{$value} !important; }
   };
 }

@@ -1,37 +1,37 @@
 @each $key, $value in $pixel-value {
-  ._h-#{$key} { height: #{$value}; }
+  ._h-#{$key} { height: #{$value} !important; }
 };
 
 @each $key, $value in $percentage-value {
-  ._h-#{$key} { height: #{$value}; }
+  ._h-#{$key} { height: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $pixel-value {
-    ._h-#{$key}-sm { height: #{$value}; }
+    ._h-#{$key}-sm { height: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._h-#{$key}-sm { height: #{$value}; }
+    ._h-#{$key}-sm { height: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $pixel-value {
-    ._h-#{$key}-md { height: #{$value}; }
+    ._h-#{$key}-md { height: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._h-#{$key}-md { height: #{$value}; }
+    ._h-#{$key}-md { height: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $pixel-value {
-    ._h-#{$key}-lg { height: #{$value}; }
+    ._h-#{$key}-lg { height: #{$value} !important; }
   };
 
   @each $key, $value in $percentage-value {
-    ._h-#{$key}-lg { height: #{$value}; }
+    ._h-#{$key}-lg { height: #{$value} !important; }
   };
 }

@@ -1,22 +1,22 @@
 @each $key, $value in $color-value {
-  ._bgcl-#{$key} { background-color: #{$value}; }
+  ._bgcl-#{$key} { background-color: #{$value} !important; }
 };
 
 @include sm-upper {
   @each $key, $value in $color-value {
-    ._bgcl-#{$key}-sm { background-color: #{$value}; }
+    ._bgcl-#{$key}-sm { background-color: #{$value} !important; }
   };
 }
 
 @include md-upper {
   @each $key, $value in $color-value {
-    ._bgcl-#{$key}-md { background-color: #{$value}; }
+    ._bgcl-#{$key}-md { background-color: #{$value} !important; }
   };
 }
 
 @include lg-upper {
   @each $key, $value in $color-value {
-    ._bgcl-#{$key}-lg { background-color: #{$value}; }
+    ._bgcl-#{$key}-lg { background-color: #{$value} !important; }
   };
 }
 

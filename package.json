@@ -1,0 +1,25 @@
+{
+  "name": "biomatic",
+  "version": "0.0.1",
+  "description": "Modern CSS Framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BioMaRu/biomatic.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "BioMaRu <Bio.Color.Palette@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BioMaRu/biomatic/issues"
+  },
+  "homepage": "https://github.com/BioMaRu/biomatic#readme"
+}

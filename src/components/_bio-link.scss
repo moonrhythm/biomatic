@@ -25,7 +25,8 @@
   }
   &.-item {
     color: $color-dark;
-    padding: 4px 16px;
+    padding: 8px 16px;
+    margin-bottom: 2px;
     border-radius: 2px;
     &:hover, &:focus, &.-active {
       background-color: lighten($color-primary, 40%);

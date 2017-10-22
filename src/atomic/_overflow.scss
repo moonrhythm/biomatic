@@ -1,45 +1,45 @@
-._ovf-at  { overflow: auto }
-._ovf-hd  { overflow: hidden }
-._ovf-sc  { overflow: scroll }
-._ovfx-at { overflow-x: auto }
-._ovfx-hd { overflow-x: hidden }
-._ovfx-sc { overflow-x: scroll }
-._ovfy-at { overflow-y: auto }
-._ovfy-hd { overflow-y: hidden }
-._ovfy-sc { overflow-y: scroll }
+._ovf-at  { overflow: auto !important; }
+._ovf-hd  { overflow: hidden !important; }
+._ovf-sc  { overflow: scroll !important; }
+._ovfx-at { overflow-x: auto !important; }
+._ovfx-hd { overflow-x: hidden !important; }
+._ovfx-sc { overflow-x: scroll !important; }
+._ovfy-at { overflow-y: auto !important; }
+._ovfy-hd { overflow-y: hidden !important; }
+._ovfy-sc { overflow-y: scroll !important; }
 
 @include sm-upper {
-  ._ovf-at-sm  { overflow: auto }
-  ._ovf-hd-sm  { overflow: hidden }
-  ._ovf-sc-sm  { overflow: scroll }
-  ._ovfx-at-sm { overflow-x: auto }
-  ._ovfx-hd-sm { overflow-x: hidden }
-  ._ovfx-sc-sm { overflow-x: scroll }
-  ._ovfy-at-sm { overflow-y: auto }
-  ._ovfy-hd-sm { overflow-y: hidden }
-  ._ovfy-sc-sm { overflow-y: scroll }
+  ._ovf-at-sm  { overflow: auto !important; }
+  ._ovf-hd-sm  { overflow: hidden !important; }
+  ._ovf-sc-sm  { overflow: scroll !important; }
+  ._ovfx-at-sm { overflow-x: auto !important; }
+  ._ovfx-hd-sm { overflow-x: hidden !important; }
+  ._ovfx-sc-sm { overflow-x: scroll !important; }
+  ._ovfy-at-sm { overflow-y: auto !important; }
+  ._ovfy-hd-sm { overflow-y: hidden !important; }
+  ._ovfy-sc-sm { overflow-y: scroll !important; }
 }
 
 @include md-upper {
-  ._ovf-at-md  { overflow: auto }
-  ._ovf-hd-md  { overflow: hidden }
-  ._ovf-sc-md  { overflow: scroll }
-  ._ovfx-at-md { overflow-x: auto }
-  ._ovfx-hd-md { overflow-x: hidden }
-  ._ovfx-sc-md { overflow-x: scroll }
-  ._ovfy-at-md { overflow-y: auto }
-  ._ovfy-hd-md { overflow-y: hidden }
-  ._ovfy-sc-md { overflow-y: scroll }
+  ._ovf-at-md  { overflow: auto !important; }
+  ._ovf-hd-md  { overflow: hidden !important; }
+  ._ovf-sc-md  { overflow: scroll !important; }
+  ._ovfx-at-md { overflow-x: auto !important; }
+  ._ovfx-hd-md { overflow-x: hidden !important; }
+  ._ovfx-sc-md { overflow-x: scroll !important; }
+  ._ovfy-at-md { overflow-y: auto !important; }
+  ._ovfy-hd-md { overflow-y: hidden !important; }
+  ._ovfy-sc-md { overflow-y: scroll !important; }
 }
 
 @include lg-upper {
-  ._ovf-at-lg  { overflow: auto }
-  ._ovf-hd-lg  { overflow: hidden }
-  ._ovf-sc-lg  { overflow: scroll }
-  ._ovfx-at-lg { overflow-x: auto }
-  ._ovfx-hd-lg { overflow-x: hidden }
-  ._ovfx-sc-lg { overflow-x: scroll }
-  ._ovfy-at-lg { overflow-y: auto }
-  ._ovfy-hd-lg { overflow-y: hidden }
-  ._ovfy-sc-lg { overflow-y: scroll }
+  ._ovf-at-lg  { overflow: auto !important; }
+  ._ovf-hd-lg  { overflow: hidden !important; }
+  ._ovf-sc-lg  { overflow: scroll !important; }
+  ._ovfx-at-lg { overflow-x: auto !important; }
+  ._ovfx-hd-lg { overflow-x: hidden !important; }
+  ._ovfx-sc-lg { overflow-x: scroll !important; }
+  ._ovfy-at-lg { overflow-y: auto !important; }
+  ._ovfy-hd-lg { overflow-y: hidden !important; }
+  ._ovfy-sc-lg { overflow-y: scroll !important; }
 }

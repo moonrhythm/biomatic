@@ -16,7 +16,8 @@
     border-color 0.18s ease;
   
   &:hover {
-    background-color: lighten($color-primary, 5%)
+    background-color: lighten($color-primary, 5%);
+    border-color: lighten($color-primary, 5%)
   }
 
   &.-primary {
@@ -33,7 +34,8 @@
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-primary, 5%)
+      background-color: lighten($color-primary, 5%);
+      border-color: lighten($color-primary, 5%)
     }
   }
   
@@ -52,7 +54,8 @@
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-accent, 10%)
+      background-color: lighten($color-accent, 10%);
+      border-color: lighten($color-accent, 10%)
     }
   }
 
@@ -72,6 +75,7 @@
     }
     &:not(.-outline):hover {
       background-color: lighten($color-positive, 3%);
+      border-color: lighten($color-positive, 3%)
     }
   }
 
@@ -91,6 +95,7 @@
     }
     &:not(.-outline):hover {
       background-color: lighten($color-info, 5%);
+      border-color: lighten($color-info, 5%)
     }
   }
   
@@ -110,6 +115,7 @@
     }
     &:not(.-outline):hover {
       background-color: lighten($color-warning, 7%);
+      border-color: lighten($color-warning, 7%)
     }
   }
 
@@ -128,7 +134,8 @@
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-negative, 6%);
+      background-color: lighten($color-negative, 3%);
+      border-color: lighten($color-negative, 3%)
     }
   }
 
@@ -136,6 +143,7 @@
     background-color: $color-dark;
     &:hover {
       background-color: lighten($color-dark, 5%);
+      border-color: lighten($color-dark, 5%)
     }
   }
 
@@ -143,6 +151,7 @@
     background-color: $color-black;
     &:hover {
       background-color: lighten($color-black, 15%);
+      border-color: lighten($color-black, 15%)
     }
   }
   
@@ -151,6 +160,7 @@
     color: $color-dark;
     &:hover {
       background-color: lighten($color-gray, 5%);
+      border-color: lighten($color-gray, 5%)
     }
   }
 

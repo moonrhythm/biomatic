@@ -1,33 +1,33 @@
-._ltspc-1px  { letter-spacing: 1px; }
-._ltspc-2px  { letter-spacing: 2px; }
-._ltspc-4px  { letter-spacing: 4px; }
-._ltspc-8px  { letter-spacing: 8px; }
-._ltspc-16px { letter-spacing: 16px; }
-._ltspc-32px { letter-spacing: 32px; }
+._ltspc-1px  { letter-spacing: 1px !important; }
+._ltspc-2px  { letter-spacing: 2px !important; }
+._ltspc-4px  { letter-spacing: 4px !important; }
+._ltspc-8px  { letter-spacing: 8px !important; }
+._ltspc-16px { letter-spacing: 16px !important; }
+._ltspc-32px { letter-spacing: 32px !important; }
 
 @include sm-upper {
-  ._ltspc-1px-sm  { letter-spacing: 1px; }
-  ._ltspc-2px-sm  { letter-spacing: 2px; }
-  ._ltspc-4px-sm  { letter-spacing: 4px; }
-  ._ltspc-8px-sm  { letter-spacing: 8px; }
-  ._ltspc-16px-sm { letter-spacing: 16px; }
-  ._ltspc-32px-sm { letter-spacing: 32px; }
+  ._ltspc-1px-sm  { letter-spacing: 1px !important; }
+  ._ltspc-2px-sm  { letter-spacing: 2px !important; }
+  ._ltspc-4px-sm  { letter-spacing: 4px !important; }
+  ._ltspc-8px-sm  { letter-spacing: 8px !important; }
+  ._ltspc-16px-sm { letter-spacing: 16px !important; }
+  ._ltspc-32px-sm { letter-spacing: 32px !important; }
 }
 
 @include md-upper {
-  ._ltspc-1px-md  { letter-spacing: 1px; }
-  ._ltspc-2px-md  { letter-spacing: 2px; }
-  ._ltspc-4px-md  { letter-spacing: 4px; }
-  ._ltspc-8px-md  { letter-spacing: 8px; }
-  ._ltspc-16px-md { letter-spacing: 16px; }
-  ._ltspc-32px-md { letter-spacing: 32px; }
+  ._ltspc-1px-md  { letter-spacing: 1px !important; }
+  ._ltspc-2px-md  { letter-spacing: 2px !important; }
+  ._ltspc-4px-md  { letter-spacing: 4px !important; }
+  ._ltspc-8px-md  { letter-spacing: 8px !important; }
+  ._ltspc-16px-md { letter-spacing: 16px !important; }
+  ._ltspc-32px-md { letter-spacing: 32px !important; }
 }
 
 @include lg-upper {
-  ._ltspc-1px-lg  { letter-spacing: 1px; }
-  ._ltspc-2px-lg  { letter-spacing: 2px; }
-  ._ltspc-4px-lg  { letter-spacing: 4px; }
-  ._ltspc-8px-lg  { letter-spacing: 8px; }
-  ._ltspc-16px-lg { letter-spacing: 16px; }
-  ._ltspc-32px-lg { letter-spacing: 32px; }
+  ._ltspc-1px-lg  { letter-spacing: 1px !important; }
+  ._ltspc-2px-lg  { letter-spacing: 2px !important; }
+  ._ltspc-4px-lg  { letter-spacing: 4px !important; }
+  ._ltspc-8px-lg  { letter-spacing: 8px !important; }
+  ._ltspc-16px-lg { letter-spacing: 16px !important; }
+  ._ltspc-32px-lg { letter-spacing: 32px !important; }
 }
