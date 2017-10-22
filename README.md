@@ -1,5 +1,4 @@
 # biomatic
-Demo: Demo: https://biomaru.github.io/biomatic/
-Modern css framework.
-base on css grid
+Website: https://biomatic-ui.com/
+Modern CSS Framework
 
