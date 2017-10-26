@@ -1,23 +1,47 @@
-._als-s  { align-self: start !important; }
-._als-e  { align-self: end !important; }
-._als-ct { align-self: center !important; }
-._als-st { align-self: strecth !important; }
+._als-st  { align-self: start !important; }
+._als-e   { align-self: end !important; }
+._als-l   { align-self: left !important; }
+._als-r   { align-self: right !important; }
+._als-fst { align-self: flex-start !important; }
+._als-fe  { align-self: flex-end !important; }
+._als-sst { align-self: self-start !important; }
+._als-se  { align-self: self-end !important; }
+._als-ct  { align-self: center !important; }
+._als-str { align-self: strecth !important; }
 
 @include sm-upper {
-  ._als-s-sm  { align-self: start !important; }
-  ._als-e-sm  { align-self: end !important; }
-  ._als-ct-sm { align-self: center !important; }
-  ._als-st-sm { align-self: strecth !important; }
+  ._als-st-sm  { align-self: start !important; }
+  ._als-e-sm   { align-self: end !important; }
+  ._als-l-sm   { align-self: left !important; }
+  ._als-r-sm   { align-self: right !important; }
+  ._als-fst-sm { align-self: flex-start !important; }
+  ._als-fe-sm  { align-self: flex-end !important; }
+  ._als-sst-sm { align-self: self-start !important; }
+  ._als-se-sm  { align-self: self-end !important; }
+  ._als-ct-sm  { align-self: center !important; }
+  ._als-str-sm { align-self: strecth !important; }
 }
 @include md-upper {
-  ._als-s-md  { align-self: start !important; }
-  ._als-e-md  { align-self: end !important; }
-  ._als-ct-md { align-self: center !important; }
-  ._als-st-md { align-self: strecth !important; }
+  ._als-st-md  { align-self: start !important; }
+  ._als-e-md   { align-self: end !important; }
+  ._als-l-md   { align-self: left !important; }
+  ._als-r-md   { align-self: right !important; }
+  ._als-fst-md { align-self: flex-start !important; }
+  ._als-fe-md  { align-self: flex-end !important; }
+  ._als-sst-md { align-self: self-start !important; }
+  ._als-se-md  { align-self: self-end !important; }
+  ._als-ct-md  { align-self: center !important; }
+  ._als-str-md { align-self: strecth !important; }
 }
 @include lg-upper {
-  ._als-s-lg  { align-self: start !important; }
-  ._als-e-lg  { align-self: end !important; }
-  ._als-ct-lg { align-self: center !important; }
-  ._als-st-lg { align-self: strecth !important; }
+  ._als-st-lg  { align-self: start !important; }
+  ._als-e-lg   { align-self: end !important; }
+  ._als-l-lg   { align-self: left !important; }
+  ._als-r-lg   { align-self: right !important; }
+  ._als-fst-lg { align-self: flex-start !important; }
+  ._als-fe-lg  { align-self: flex-end !important; }
+  ._als-sst-lg { align-self: self-start !important; }
+  ._als-se-lg  { align-self: self-end !important; }
+  ._als-ct-lg  { align-self: center !important; }
+  ._als-str-lg { align-self: strecth !important; }
 }

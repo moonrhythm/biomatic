@@ -1,6 +1,7 @@
-._jtfct-at    { justify-content: auto !important; }
 ._jtfct-st    { justify-content: start !important; }
 ._jtfct-e     { justify-content: end !important; }
+._jtfct-l     { justify-content: left !important; }
+._jtfct-r     { justify-content: right !important; }
 ._jtfct-ct    { justify-content: center !important; }
 ._jtfct-str   { justify-content: stretch !important; }
 ._jtfct-fst   { justify-content: flex-start !important; }
@@ -10,9 +11,10 @@
 ._jtfct-spevl { justify-content: space-evenly !important; }
 
 @include sm-upper {
-  ._jtfct-at-sm    { justify-content: auto !important; }
   ._jtfct-st-sm    { justify-content: start !important; }
   ._jtfct-e-sm     { justify-content: end !important; }
+  ._jtfct-l-sm     { justify-content: left !important; }
+  ._jtfct-r-sm     { justify-content: right !important; }
   ._jtfct-ct-sm    { justify-content: center !important; }
   ._jtfct-str-sm   { justify-content: stretch !important; }
   ._jtfct-fst-sm   { justify-content: flex-start !important; }
@@ -23,9 +25,10 @@
 }
 
 @include md-upper {
-  ._jtfct-at-md    { justify-content: auto !important; }
   ._jtfct-st-md    { justify-content: start !important; }
   ._jtfct-e-md     { justify-content: end !important; }
+  ._jtfct-l-md     { justify-content: left !important; }
+  ._jtfct-r-md     { justify-content: right !important; }
   ._jtfct-ct-md    { justify-content: center !important; }
   ._jtfct-str-md   { justify-content: stretch !important; }
   ._jtfct-fst-md   { justify-content: flex-start !important; }
@@ -36,9 +39,10 @@
 }
 
 @include lg-upper {
-  ._jtfct-at-lg    { justify-content: auto !important; }
   ._jtfct-st-lg    { justify-content: start !important; }
   ._jtfct-e-lg     { justify-content: end !important; }
+  ._jtfct-l-lg     { justify-content: left !important; }
+  ._jtfct-r-lg     { justify-content: right !important; }
   ._jtfct-ct-lg    { justify-content: center !important; }
   ._jtfct-str-lg   { justify-content: stretch !important; }
   ._jtfct-fst-lg   { justify-content: flex-start !important; }
