@@ -142,7 +142,19 @@
 
   &.-dark {
     background-color: $color-dark;
-    &:hover {
+    border: 1px solid $color-dark;
+    &.-outline {
+      color: $color-dark;
+      background-color: transparent;
+      &.-loading {
+        color: transparent;
+        &:after {
+          border-left-color: $color-dark;
+          border-bottom-color: $color-dark;
+        }
+      }
+    }
+    &:not(.-outline):hover {
       background-color: lighten($color-dark, 5%);
       border-color: lighten($color-dark, 5%)
     }
@@ -150,39 +162,54 @@
 
   &.-black {
     background-color: $color-black;
-    &:hover {
-      background-color: lighten($color-black, 15%);
-      border-color: lighten($color-black, 15%)
+    border: 1px solid $color-black;
+    &.-outline {
+      color: $color-black;
+      background-color: transparent;
+      &.-loading {
+        color: transparent;
+        &:after {
+          border-left-color: $color-black;
+          border-bottom-color: $color-black;
+        }
+      }
     }
   }
   
   &.-gray {
     background-color: $color-gray;
+    border: 1px solid $color-gray;
     color: $color-dark;
-    &:hover {
-      background-color: lighten($color-gray, 5%);
-      border-color: lighten($color-gray, 5%)
+    &.-outline {
+      color: $color-gray;
+      background-color: transparent;
+      &.-loading {
+        color: transparent;
+        &:after {
+          border-left-color: $color-gray;
+          border-bottom-color: $color-gray;
+        }
+      }
     }
   }
 
   &.-white {
     background-color: $color-white;
     color: $color-dark;
-    border: 1px solid $color-dark;
-    border-color: $color-gray;
-    &:hover {
-      background-color: lighten($color-gray, 30%);
-      border-color: lighten($color-dark, 50%);
+    border: 1px solid $color-gray;
+    &.-outline {
+      color: $color-white;
+      border: 1px solid $color-white;
+      background-color: transparent;
+      &.-loading {
+        color: transparent;
+        &:after {
+          border-left-color: $color-white;
+          border-bottom-color: $color-white;
+        }
+      }
     }
   }
-
-  // &.-rise {
-  //   @extend ._bsd-1;
-  //   &:hover {
-  //     @extend ._bsd-2;
-  //     transform: translate(0, -1px);
-  //   }
-  // }
 
   &.-disabled {
     cursor: not-allowed;

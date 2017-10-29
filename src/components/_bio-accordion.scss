@@ -22,6 +22,8 @@
     grid-area: label;
     cursor: pointer;
     position: relative;
+    user-select: none;
+    margin-bottom: 8px;
   }
   >.bio-accordion-content {
     grid-area: content;
