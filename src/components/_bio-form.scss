@@ -46,8 +46,9 @@ input[type="checkbox"] {
   > label {
     position: relative;
     display: inline-block;
-    padding-left: 26px;
-    margin-left: -22px;
+    padding-left: 28px;
+    margin-left: -19px;
+    line-height: 19px;
     cursor: pointer;
     &:before, &:after {
       content: "";
@@ -55,23 +56,24 @@ input[type="checkbox"] {
       display: inline-block;
     }
     &:before {
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       left: 0px;
-      border: 1px solid $color-dark;
       background-color: $color-white;
-      border-color: $color-primary;
-      border: 2px solid $color-dark;
+      border: 2px solid $color-primary;
       border-radius: 2px;
+      box-sizing: border-box;
     }
     &:after {
       content: none;
-      height: 5px;
+      height: 4px;
       width: 9px;
       top: 5px;
       left: 4px;
-      border-left-width: 2px;
-      border-bottom-width: 2px;
+      border-left-width: 3px;
+      border-bottom-width: 3px;
+      border-left-style: solid;
+      border-bottom-style: solid;
       border-color: $color-primary;
       transform: rotate(-45deg);
     }
@@ -98,8 +100,9 @@ input[type="checkbox"] {
   > label {
     position: relative;
     display: inline-block;
-    padding-left: 26px;
-    margin-left: -22px;
+    padding-left: 28px;
+    margin-left: -19px;
+    line-height: 21px;
     cursor: pointer;
     &:before, &:after {
       content: "";
@@ -107,10 +110,11 @@ input[type="checkbox"] {
       display: inline-block;
     }
     &:before {
-      width: 18px;
-      height: 18px;
+      box-sizing: border-box;
+      width: 22px;
+      height: 22px;
       left: 0px;
-      border: 1px solid $color-dark;
+      border: 2px solid $color-dark;
       border-color: $color-primary;
       border-radius: 50%;
       background-color: $color-white;
@@ -119,8 +123,8 @@ input[type="checkbox"] {
       content: none;
       height: 12px;
       width: 12px;
-      top: 4px;
-      left: 4px;
+      top: 5px;
+      left: 5px;
       background-color: $color-primary;
       border-color: $color-primary;
       border-radius: 50%;
@@ -374,6 +378,10 @@ input[type="checkbox"] {
         &:before {
           border-color: transparentize($color-dark, .5);
         }
+        &:after {
+          background-color: transparentize($color-dark, .5);
+          border-color: transparentize($color-dark, .5);
+        }
       }
     }
     .bio-file {
@@ -425,8 +433,7 @@ input[type="checkbox"] {
 }
 
 .bio-textarea > textarea {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 8px;
 }
 
 .bio-input > input,

@@ -21,7 +21,7 @@
     background-color: lighten($color-positive, 45%);
   }
   &.-warning {
-    color: $color-warning;
+    color: darken($color-warning, 14%);
     background-color: lighten($color-warning, 33%);
   }
   &.-info {
