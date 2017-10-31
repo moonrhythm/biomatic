@@ -117,17 +117,17 @@
   &.-row-end     { justify-items: end; }
   &.-row-stretch { justify-items: stretch; }
 
-  &.-push-r {
-    >* {
-      grid-column-start: 2;
-    }
-  }
+  // &.-push-r {
+  //   >* {
+  //     grid-column-start: 2;
+  //   }
+  // }
 
-  &.-push-l {
-    >* {
-      grid-column-end: 2;
-    }
-  }
+  // &.-push-l {
+  //   >* {
+  //     grid-column-end: 2;
+  //   }
+  // }
 }
 
 .lo-1-11 { grid-template-columns: 1fr 11fr; }
