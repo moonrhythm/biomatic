@@ -20,3 +20,10 @@
   };
 }
 
+@each $key, $value in $color-value {
+  ._bgcl-#{$key}-hover { 
+    &:hover {
+      background-color: #{$value} !important;
+    }
+  };
+};

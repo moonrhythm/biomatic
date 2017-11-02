@@ -20,3 +20,13 @@
   };
 }
 
+
+@each $key, $value in $color-value {
+  ._cl-#{$key}-hover { 
+    &:hover {
+      color: #{$value} !important; 
+    }
+  };
+};
+
+

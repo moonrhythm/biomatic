@@ -8,29 +8,36 @@
 
   color: $color-primary;
   background-color: lighten($color-primary, 37%);
+  border-left: 4px solid $color-primary;
   &.-accent {
     color: $color-accent;
     background-color: lighten($color-accent, 30%);
+    border-left: 4px solid $color-accent;
   }
   &.-negative {
     color: $color-negative;
     background-color: lighten($color-negative, 30%);
+    border-left: 4px solid $color-negative;
   }
   &.-positive {
     color: $color-positive;
     background-color: lighten($color-positive, 45%);
+    border-left: 4px solid $color-positive;
   }
   &.-warning {
     color: darken($color-warning, 14%);
     background-color: lighten($color-warning, 33%);
+    border-left: 4px solid darken($color-warning, 14%);
   }
   &.-info {
     color: $color-info;
     background-color: lighten($color-info, 31%);
+    border-left: 4px solid $color-info;
   }
   &.-dark {
     color: $color-dark;
     background-color: lighten($color-dark, 68%);
+    border-left: 4px solid $color-dark;
   }
   >.bio-message-close {
     grid-area: close;

@@ -19,3 +19,11 @@
     ._bdcl-#{$key}-lg { border-color: #{$value} !important; }
   };
 }
+
+@each $key, $value in $color-value {
+  ._bdcl-#{$key}-hover { 
+    &:hover {
+      border-color: #{$value} !important;
+    }
+  };
+};
