@@ -2,14 +2,12 @@
 ._ojf-ct { object-fit: contain !important; }
 ._ojf-f  { object-fit: fill !important; }
 ._ojf-n  { object-fit: none !important; }
-._ojf-us { object-fit: unset !important; }
 
 @include sm-upper {
   ._ojf-cv-sm { object-fit: cover !important; }
   ._ojf-ct-sm { object-fit: contain !important; }
   ._ojf-f-sm  { object-fit: fill !important; }
   ._ojf-n-sm  { object-fit: none !important; }
-  ._ojf-us-sm { object-fit: unset !important; }
 }
 
 @include md-upper {
@@ -17,7 +15,6 @@
   ._ojf-ct-md { object-fit: contain !important; }
   ._ojf-f-md  { object-fit: fill !important; }
   ._ojf-n-md  { object-fit: none !important; }
-  ._ojf-us-md { object-fit: unset !important; }
 }
 
 @include lg-upper {
@@ -25,5 +22,4 @@
   ._ojf-ct-lg { object-fit: contain !important; }
   ._ojf-f-lg  { object-fit: fill !important; }
   ._ojf-n-lg  { object-fit: none !important; }
-  ._ojf-us-lg { object-fit: unset !important; }
 }

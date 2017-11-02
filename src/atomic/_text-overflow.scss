@@ -1,0 +1,17 @@
+._tovf-c   { text-overflow: clip !important; }
+._tovf-els { text-overflow: ellipsis !important; }
+
+@include sm-upper {
+  ._tovf-c-sm   { text-overflow: clip !important; }
+  ._tovf-els-sm { text-overflow: ellipsis !important; }
+}
+
+@include md-upper {
+  ._tovf-c-md   { text-overflow: clip !important; }
+  ._tovf-els-md { text-overflow: ellipsis !important; }
+}
+
+@include lg-upper {
+  ._tovf-c-lg   { text-overflow: clip !important; }
+  ._tovf-els-lg { text-overflow: ellipsis !important; }
+}
