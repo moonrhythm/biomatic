@@ -4,13 +4,13 @@
   grid-template-columns: 10px minmax(0px, auto) 10px;
   grid-template-rows: auto;
   @include sm-upper {
-    grid-template-columns: 1fr $breakpoint-sm - 20px 1fr;
+    grid-template-columns: 1fr $breakpoint-sm - 40px 1fr;
   }
   @include md-upper {
-    grid-template-columns: 1fr $breakpoint-md - 20px 1fr;
+    grid-template-columns: 1fr $breakpoint-md - 40px 1fr;
   }
   @include lg-upper {
-    grid-template-columns: 1fr $breakpoint-lg - 20px 1fr;
+    grid-template-columns: 1fr $breakpoint-lg - 40px 1fr;
   }
   >* {
     grid-column: 2 / 3;
