@@ -35,4 +35,10 @@
   </h3>
 </div>
 
-Still working on document
+## Features
+- __minimal size:__ weighing `4kb`, `choo` is a tiny little framework
+- __event based:__ our performant event system makes writing apps easy
+- __small api:__ with only 6 methods there's not much to learn
+- __minimal tooling:__ built for the cutting edge `browserify` compiler
+- __isomorphic:__ renders seamlessly in both Node and browsers
+- __very cute:__ choo choo!
