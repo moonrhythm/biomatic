@@ -4,7 +4,6 @@
 
 <h1 align="center">Biomatic UI</h1>
 <p align="center">A Flexible Atomic-Focused CSS Framework</p>
-<br>
 <div align="center">
   <h3>
     <a href="https://biomatic-ui.com">
