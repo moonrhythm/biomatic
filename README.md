@@ -38,7 +38,7 @@
 ## Table of Content
 - [Features](#features)
 - [Installation](#installation)
-- [License](#License)
+- [License](#license)
 
 ## Features
 - __atomic-focus:__ craft anythings you need with very flexible atomic class
