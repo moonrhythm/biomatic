@@ -35,6 +35,10 @@
   </h3>
 </div>
 
+## Table of Content
+- [Features](#features)
+- [Installation](#installation)
+
 ## Features
 - __atomic-focus:__ craft anythings you need with very flexible atomic class
 - __battery-included:__ basic components included for rapid UI development
@@ -43,3 +47,6 @@
 - __configurable:__ config and build to match what you need 
 - __pure css:__ no javascript required
 - __fun:__ yes, very fun to use
+
+## Installation
+
