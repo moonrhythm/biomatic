@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://biomatic-ui.com">
-  	<img width=18% src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/logo.png">
+  	<img width=15% src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/logo.png">
   </a>
 </p>
 
