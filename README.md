@@ -1,5 +1,5 @@
 # biomatic
-![logo](https://raw.githubusercontent.com/BioMaRu/biomatic-doc/master/src/assets/logo.svg)
+![logo](/../readme-resource/logo.png?raw=true "Optional Title")
 Website: https://biomatic-ui.com/
 Modern CSS Framework
 
