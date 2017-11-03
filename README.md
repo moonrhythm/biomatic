@@ -9,7 +9,7 @@
     <a href="https://biomatic-ui.com">
       Website
     </a>
-    <span> | </span>
+    <span> &nbsp;|&nbsp; </span>
     <a href="https://biomatic-ui.com/document/introduction">
       Document
     </a>
