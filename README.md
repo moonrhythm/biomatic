@@ -39,7 +39,7 @@
 - __atomic-focus:__ craft anythings you need with very flexible atomic class
 - __battery-included:__ basic components included for rapid UI development
 - __clean responsive grid:__ simple and clean grid layout using css grid
-- __carefully naming:__ class name is readable and predictable
+- __carefully naming:__ readable and predictable class name
 - __configurable:__ config and build to match what you need 
 - __pure css:__ only use the magic of css
 - __fun:__ yes, very fun to use
