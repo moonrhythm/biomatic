@@ -41,5 +41,5 @@
 - __clean responsive grid:__ simple and clean grid layout using css grid
 - __carefully naming:__ readable and predictable class name
 - __configurable:__ config and build to match what you need 
-- __pure css:__ only use the magic of css
+- __pure css:__ no javascript required
 - __fun:__ yes, very fun to use
