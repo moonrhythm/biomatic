@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+*.codekit3
+/index.html
+
+\.firebaserc
+
+firebase\.json
+
+functions/
+
+database\.rules\.json
+
+
+README\.html
