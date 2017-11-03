@@ -9,6 +9,11 @@
 
 <div align="center">
   
+  <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/BioMaRu/biomatic.svg?style=flat-square"
+      alt="NPM version" />
+  </a>
+
   <a href="https://npmjs.org/package/biomatic">
     <img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square"
       alt="NPM version" />
