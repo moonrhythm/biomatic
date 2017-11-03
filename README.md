@@ -36,9 +36,10 @@
 </div>
 
 ## Features
-- __minimal size:__ weighing `4kb`, `choo` is a tiny little framework
-- __event based:__ our performant event system makes writing apps easy
-- __small api:__ with only 6 methods there's not much to learn
-- __minimal tooling:__ built for the cutting edge `browserify` compiler
-- __isomorphic:__ renders seamlessly in both Node and browsers
-- __very cute:__ choo choo!
+- __atomic-focus:__ craft anythings you need with very flexible atomic class
+- __battery-included:__ basic components included for rapid UI development
+- __clean responsive grid:__ simple and clean grid layout using css grid
+- __carefully naming:__ class name is readable and predictable
+- __configurable:__ config and build to match what you need 
+- __pure css:__ only use the magic of css
+- __fun:__ yes, very fun to use
