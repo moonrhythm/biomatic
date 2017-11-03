@@ -49,4 +49,7 @@
 - __fun:__ yes, very fun to use
 
 ## Installation
-You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.1.2/biomatic.full.min.css.zip) latest installable version of Biomatic
+You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.1.2/biomatic.full.min.css.zip) latest complied version of Biomatic and link to your project using
+```html
+<link href="/path/to/biomatic.full.min.css" rel="stylesheet">
+```
