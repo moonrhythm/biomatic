@@ -13,9 +13,12 @@
     <img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square"
       alt="NPM version" />
   </a>
-
   <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/BioMaRu/biomatic.svg?style=flat-square"
+      alt="License" />
+  </a>
+  <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/gzip-34kb-brightgreeen.svg"
       alt="License" />
   </a>
   
