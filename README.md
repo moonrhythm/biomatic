@@ -4,6 +4,19 @@
 
 <h1 align="center">Biomatic UI</h1>
 <p align="center">A Flexible Atomic-Focused CSS Framework</p>
+<br>
+<div align="center">
+  <h3>
+    <a href="https://biomatic-ui.com">
+      Website
+    </a>
+    <span> | </span>
+    <a href="https://biomatic-ui.com/document/introduction">
+      Document
+    </a>
+  </h3>
+</div>
+
 Website: https://biomatic-ui.com/
 Modern CSS Framework
 
