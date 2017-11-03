@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">Biomatic UI</h1>
-<p align="center">AS</p>
+<p align="center">Flexible Atomic-Focused CSS Framework</p>
 Website: https://biomatic-ui.com/
 Modern CSS Framework
 
