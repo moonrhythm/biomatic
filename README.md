@@ -38,6 +38,7 @@
 ## Table of Content
 - [Features](#features)
 - [Installation](#installation)
+- [License](#License)
 
 ## Features
 - __atomic-focus:__ craft anythings you need with very flexible atomic class
@@ -62,3 +63,6 @@ npm install biomatic
 ```shell
 yarn add biomatic
 ```
+
+## License
+Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
