@@ -54,7 +54,11 @@ You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.1.2/
 <link href="/path/to/biomatic.full.min.css" rel="stylesheet">
 ```
 
-You can install using NPM or Yarn too
+Or install using NPM or Yarn
 ```shell
 npm install biomatic
+```
+
+```shell
+yarn add biomatic
 ```
