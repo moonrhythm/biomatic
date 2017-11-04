@@ -18,7 +18,7 @@
       alt="Gzip size" />
   </a>
   <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/BioMaRu/biomatic.svg?style=flat-square"
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"
       alt="License" />
   </a>
 </div>
