@@ -1,4 +1,6 @@
-// Primary Color
+/*==================================== 
+  Main / Branding Color
+======================================*/
 $color-primary:     hsl(206, 100%, 56%);
 $color-primary-900: hsl(206, 100%, 18%);
 $color-primary-800: hsl(206, 100%, 27%);
@@ -10,7 +12,6 @@ $color-primary-300: hsl(206, 100%, 79%);
 $color-primary-200: hsl(206, 100%, 87%);
 $color-primary-100: hsl(206, 100%, 95%);
 
-// Accent Color
 $color-accent:     hsl(350, 100%, 60%);
 $color-accent-900: hsl(350, 100%, 20%);
 $color-accent-800: hsl(350, 100%, 30%);
@@ -22,7 +23,6 @@ $color-accent-300: hsl(350, 100%, 80%);
 $color-accent-200: hsl(350, 100%, 90%);
 $color-accent-100: hsl(350, 100%, 95%);
 
-// Neutral Color
 $color-neutral:     hsl(213, 30%, 80%);
 $color-neutral-900: hsl(213, 30%, 18%);
 $color-neutral-800: hsl(213, 30%, 27%);
@@ -35,32 +35,41 @@ $color-neutral-300: hsl(213, 30%, 92%);
 $color-neutral-200: hsl(213, 30%, 95%);
 $color-neutral-100: hsl(213, 30%, 98%);
 
-// Semantic Color
+/*==================================== 
+  Semantic Color
+======================================*/
 $color-positive: hsl(150, 80%, 45%);
 $color-warning: hsl(40, 90%, 60%);
 $color-info:    hsl(200, 100%, 65%);
 $color-negative:   hsl(0, 100%, 65%);
 
-// Gray Scale Color
+/*==================================== 
+  Gray Scale Color
+======================================*/
 $color-white: hsl(0, 255%, 100%);
 $color-gray: hsla(0, 0%, 90%, 0.8);
 $color-dark: hsla(231, 10%, 25%, 0.9);
 $color-black: hsl(0, 0%, 0%);
 
-// Break Point
+/*==================================== 
+  Responsive Breakpoint
+======================================*/
 $breakpoint-sm: 770px;
 $breakpoint-md: 900px;
 $breakpoint-lg: 1200px;
 
-// Grid
-$container-grid-gap: 0px 10px;
-
-// Font family
+/*==================================== 
+  Default Font Family
+======================================*/
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-$font-secondary: '';
 
-// Atomic Value for spacing style
-// (margin, padding top, bottom, left, right, width, height)
+
+
+/*==================================== 
+  Mapping Value
+======================================*/
+
+//  Value for Spacing -> Margin, Padding Top, Bottom, Left, Right, Width, Height
 $pixel-value: (
   '0px': 0px,
   '1px': 1px,
@@ -80,6 +89,8 @@ $pixel-value: (
   'at': auto
 );
 
+
+// Value for Border Radius 
 $border-radius-value: (
   '0px': 0px,
   '1px': 1px,
@@ -99,33 +110,23 @@ $border-radius-value: (
   '50pct': 50%,
   'max': 9999px
 );
-
-// for (width, height)
+ 
+// Percentage Value for Width, Height
 $percentage-value: (
-  // '0pct': 0%,
-  // '5pct': 5%,
   '10pct': 10%,
-  // '15pct': 15%,
   '20pct': 20%,
-  // '25pct': 25%,
   '30pct': 30%,
-  // '35pct': 35%,
   '40pct': 40%,
-  // '45pct': 45%,
   '50pct': 50%,
-  // '55pct': 55%,
   '60pct': 60%,
-  // '65pct': 65%,
   '70pct': 70%,
-  // '75pct': 75%,
   '80pct': 80%,
-  // '85pct': 85%,
   '90pct': 90%,
-  // '95pct': 95%,
   '100pct': 100%,
   'at': auto
 );
 
+// Color Value for Color, Background Color, Border Color
 $color-value: (
   'primary': $color-primary,
   'primary-900': $color-primary-900,
@@ -173,6 +174,14 @@ $color-value: (
   'tpr': transparent
 );
 
+// Breakpoint
+$breakpoints: (
+  'sm': $breakpoint-sm,
+  'md': $breakpoint-md,
+  'lg': $breakpoint-lg
+);
+
+// Document Default
 html {
   color: $color-dark;
   font-family: $font-primary;
