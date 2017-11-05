@@ -4,7 +4,7 @@
   "description": "Modern CSS Framework",
   "main": "index.js",
   "directories": {
-    "doc": "doc"
+    "src": "src"
   },
   "scripts": {
     "build-full": "gulp build-full",
