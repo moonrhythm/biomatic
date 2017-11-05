@@ -66,7 +66,7 @@ yarn add biomatic
 ```
 
 ## Configuration
-Work in progress...
+You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Change value to Atomic Class to match your design or branding
 
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
