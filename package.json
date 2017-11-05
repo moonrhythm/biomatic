@@ -7,19 +7,35 @@
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-full": "gulp build-full",
+    "build-atomic": "gulp build-atomic",
+    "build-component": "gulp build-component",
+    "build-layout": "gulp build-layout",
+    "build-utility": "gulp build-utility",
+    "build": "npm run build-full && npm run build-atomic && npm run build-component && npm run build-layout && npm run build-utility"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BioMaRu/biomatic.git"
   },
   "keywords": [
-    "css"
+    "css",
+    "scss",
+    "framework",
+    "atomic",
+    "responsive",
+    "component"
   ],
   "author": "BioMaRu <Bio.Color.Palette@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BioMaRu/biomatic/issues"
   },
-  "homepage": "https://github.com/BioMaRu/biomatic#readme"
+  "homepage": "https://bimatic-ui.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
 }
