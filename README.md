@@ -70,9 +70,7 @@ You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Chang
 
 All configurations located in [config.scss](https://github.com/BioMaRu/biomatic/blob/update-readme-build/src/config.scss)
 
-The easiest way build Biomatic is using Gulp.
-
-
+To build Biomatic
 __First, install devDependencies using yarn or NPM.__
 ```shell
 yarn
@@ -88,6 +86,6 @@ __Then use npm script to build.__
 ```shell
 npm run build
 ```
-
+c
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
