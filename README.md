@@ -72,6 +72,7 @@ All configurations located in [config.scss](https://github.com/BioMaRu/biomatic/
 
 The easiest way build Biomatic is using Gulp.
 
+
 __First, install devDependencies using yarn or NPM.__
 ```shell
 yarn
@@ -81,6 +82,7 @@ yarn
 npm install
 ```
 This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass to the project.
+
 
 __Then use npm script to build.__
 ```shell
