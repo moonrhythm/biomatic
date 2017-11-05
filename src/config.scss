@@ -89,7 +89,6 @@ $pixel-value: (
   'at': auto
 );
 
-
 // Value for Border Radius 
 $border-radius-value: (
   '0px': 0px,
@@ -172,13 +171,6 @@ $color-value: (
   'black': $color-black,
 
   'tpr': transparent
-);
-
-// Breakpoint
-$breakpoints: (
-  'sm': $breakpoint-sm,
-  'md': $breakpoint-md,
-  'lg': $breakpoint-lg
 );
 
 // Document Default

@@ -38,6 +38,7 @@
 ## Table of Content
 - [Features](#features)
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [License](#license)
 
 ## Features
@@ -64,5 +65,33 @@ npm install biomatic
 yarn add biomatic
 ```
 
+## Configuration
+You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Change Values to Atomic Class to match your design or branding.
+
+All configurations located in [config.scss](https://github.com/BioMaRu/biomatic/blob/master/src/config.scss)
+
+To build Biomatic
+
+__First, install devDependencies using yarn or NPM.__
+```shell
+yarn
+```
+
+```shell
+npm install
+```
+This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass to the project.
+
+
+__Then use yarn or NPM run build script to build.__
+```shell
+yarn run build
+```
+
+```shell
+npm run build
+```
+The CSS output will be in '/dist' directory.
+Outer build options located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
