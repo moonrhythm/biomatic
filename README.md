@@ -65,6 +65,11 @@ npm install biomatic
 yarn add biomatic
 ```
 
+Or use CDN (jsdelivr via NPM)
+```
+https://cdn.jsdelivr.net/npm/biomatic@0.1.3/dist/biomatic.full.min.css
+```
+
 ## Configuration
 You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Change Values to Atomic Class to match your design or branding.
 
