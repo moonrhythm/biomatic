@@ -71,11 +71,16 @@ You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Chang
 All configurations located in [config.scss](https://github.com/BioMaRu/biomatic/blob/update-readme-build/src/config.scss)
 
 The easiest way build Biomatic is using Gulp.
-First, install devDependencies.
+
+First, install devDependencies using yarn or NPM.
 ```shell
 yarn
 ```
-this will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass to the project
+
+```shell
+npm install
+```
+This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass to the project.
 
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
