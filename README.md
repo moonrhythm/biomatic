@@ -64,6 +64,7 @@ npm install biomatic
 ```shell
 yarn add biomatic
 ```
+
 ## Configuration
 Work in progress...
 
