@@ -80,7 +80,7 @@ yarn
 ```shell
 npm install
 ```
-This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass to the project.
+This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass.
 
 
 __Then use yarn or NPM run build script to build.__
