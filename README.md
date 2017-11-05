@@ -67,8 +67,7 @@ yarn add biomatic
 
 Or use CDN (jsdelivr via NPM)
 ```html
-<link href="
-https://cdn.jsdelivr.net/npm/biomatic@0.1.3/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/biomatic@0.1.3/dist/biomatic.full.min.css" rel="stylesheet">
 ```
 
 ## Configuration
