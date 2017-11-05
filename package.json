@@ -1,7 +1,7 @@
 {
   "name": "biomatic",
   "version": "0.1.3",
-  "description": "Modern CSS Framework",
+  "description": "A Flexible Atomic-Focused CSS Framework",
   "main": "index.js",
   "directories": {
     "src": "src"
