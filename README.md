@@ -42,13 +42,13 @@
 - [License](#license)
 
 ## Features
-- __atomic-focus:__ craft anythings you need with very flexible atomic class
-- __battery-included:__ basic components included for rapid UI development
-- __clean responsive grid:__ simple and clean grid layout using css grid
-- __carefully naming:__ readable and predictable class name
-- __configurable:__ config and build to match what you need 
-- __pure css:__ no javascript required
-- __fun:__ yes, very fun to use
+- __Atomic-Focus:__ craft anythings you need with very flexible atomic class
+- __Battery included:__ basic components included for rapid UI development
+- __Clean responsive grid:__ simple and clean grid layout using css grid
+- __Carefully naming:__ readable and predictable class name
+- __Configurable:__ config and build to match what you need 
+- __Pure CSS:__ no javascript required
+- __Fun:__ yes, very fun to use
 
 ## Installation
 You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.1.2/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
@@ -97,6 +97,6 @@ yarn run build
 npm run build
 ```
 The CSS output will be in '/dist' directory.
-Outer build options located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
+Other build command located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
