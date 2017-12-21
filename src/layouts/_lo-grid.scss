@@ -5,12 +5,34 @@
 .lo-6,
 .lo-12,
 
+.lo-1-11,
+.lo-2-10,
+.lo-3-9,
+.lo-4-8,
+.lo-5-7,
+.lo-7-5,
+.lo-8-4,
+.lo-9-3,
+.lo-10-2,
+.lo-11-1,
+
 .lo-1-sm,
 .lo-2-sm,
 .lo-3-sm,
 .lo-4-sm,
 .lo-6-sm,
 .lo-12-sm,
+
+.lo-1-11-sm,
+.lo-2-10-sm,
+.lo-3-9-sm,
+.lo-4-8-sm,
+.lo-5-7-sm,
+.lo-7-5-sm,
+.lo-8-4-sm,
+.lo-9-3-sm,
+.lo-10-2-sm,
+.lo-11-1-sm,
 
 .lo-1-md,
 .lo-2-md,
@@ -19,48 +41,24 @@
 .lo-6-md,
 .lo-12-md,
 
+.lo-1-11-md,
+.lo-2-10-md,
+.lo-3-9-md,
+.lo-4-8-md,
+.lo-5-7-md,
+.lo-6-md,
+.lo-7-5-md,
+.lo-8-4-md,
+.lo-9-3-md,
+.lo-10-2-md,
+.lo-11-1-md,
+
 .lo-1-lg,
 .lo-2-lg,
 .lo-3-lg,
 .lo-4-lg,
 .lo-6-lg,
 .lo-12-lg,
-
-.lo-1-11,
-.lo-2-10,
-.lo-3-9,
-.lo-4-8,
-.lo-5-7,
-.lo-6-6,
-.lo-7-5,
-.lo-8-4,
-.lo-9-3,
-.lo-10-2,
-.lo-11-1,
-
-.lo-1-11-sm,
-.lo-2-10-sm,
-.lo-3-9-sm,
-.lo-4-8-sm,
-.lo-5-7-sm,
-.lo-6-6-sm,
-.lo-7-5-sm,
-.lo-8-4-sm,
-.lo-9-3-sm,
-.lo-10-2-sm,
-.lo-11-1-sm,
-
-.lo-1-11-md,
-.lo-2-10-md,
-.lo-3-9-md,
-.lo-4-8-md,
-.lo-5-7-md,
-.lo-6-6-md,
-.lo-7-5-md,
-.lo-8-4-md,
-.lo-9-3-md,
-.lo-10-2-md,
-.lo-11-1-md,
 
 .lo-1-11-lg,
 .lo-2-10-lg,
@@ -111,7 +109,7 @@
   &.-col-start    { align-items: start; }
   &.-col-end      { align-items: end; }
   &.-col-stretch  { align-items: stretch; }
-  
+
   &.-row-center  { justify-items: center; }
   &.-row-start   { justify-items: start; }
   &.-row-end     { justify-items: end; }

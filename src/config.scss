@@ -1,4 +1,4 @@
-/*==================================== 
+/*====================================
   Main / Branding Color
 ======================================*/
 $color-primary:     hsl(206, 100%, 56%);
@@ -35,15 +35,15 @@ $color-neutral-300: hsl(213, 30%, 92%);
 $color-neutral-200: hsl(213, 30%, 95%);
 $color-neutral-100: hsl(213, 30%, 98%);
 
-/*==================================== 
+/*====================================
   Semantic Color
 ======================================*/
 $color-positive: hsl(150, 80%, 45%);
-$color-warning: hsl(40, 90%, 60%);
-$color-info:    hsl(200, 100%, 65%);
-$color-negative:   hsl(0, 100%, 65%);
+$color-warning:  hsl(40, 90%, 60%);
+$color-info:     hsl(200, 100%, 65%);
+$color-negative: hsl(0, 100%, 65%);
 
-/*==================================== 
+/*====================================
   Gray Scale Color
 ======================================*/
 $color-white: hsl(0, 255%, 100%);
@@ -51,21 +51,19 @@ $color-gray: hsla(0, 0%, 90%, 0.8);
 $color-dark: hsla(231, 10%, 25%, 0.9);
 $color-black: hsl(0, 0%, 0%);
 
-/*==================================== 
+/*====================================
   Responsive Breakpoint
 ======================================*/
 $breakpoint-sm: 770px;
 $breakpoint-md: 900px;
 $breakpoint-lg: 1200px;
 
-/*==================================== 
+/*====================================
   Default Font Family
 ======================================*/
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 
-
-
-/*==================================== 
+/*====================================
   Mapping Value
 ======================================*/
 
@@ -89,7 +87,7 @@ $pixel-value: (
   'at': auto
 );
 
-// Value for Border Radius 
+// Value for Border Radius
 $border-radius-value: (
   '0px': 0px,
   '1px': 1px,
@@ -109,7 +107,7 @@ $border-radius-value: (
   '50pct': 50%,
   'max': 9999px
 );
- 
+
 // Percentage Value for Width, Height
 $percentage-value: (
   '10pct': 10%,
@@ -127,6 +125,7 @@ $percentage-value: (
 
 // Color Value for Color, Background Color, Border Color
 $color-value: (
+  'crcl': currentColor,
   'primary': $color-primary,
   'primary-900': $color-primary-900,
   'primary-800': $color-primary-800,
@@ -159,12 +158,12 @@ $color-value: (
   'neutral-300': $color-neutral-300,
   'neutral-200': $color-neutral-200,
   'neutral-100': $color-neutral-100,
-  
+
   'positive': $color-positive,
   'warning': $color-warning,
   'info': $color-info,
   'negative': $color-negative,
-  
+
   'white': $color-white,
   'gray': $color-gray,
   'dark': $color-dark,
