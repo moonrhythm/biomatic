@@ -80,10 +80,10 @@ select {
 }
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -129,10 +129,6 @@ progress {
   -webkit-appearance: button;
   font: inherit;
 }
-
-/*
- * Add the correct display in all browsers.
- */
 
 summary {
   display: list-item;
