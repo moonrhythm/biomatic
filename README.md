@@ -8,7 +8,7 @@
 <p align="center">A Flexible Atomic-Focused CSS Framework</p>
 
 <div align="center">
-  
+
   <a href="https://npmjs.org/package/biomatic">
     <img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square"
       alt="NPM version" />
@@ -46,7 +46,7 @@
 - __Battery included:__ basic components included for rapid UI development
 - __Clean responsive grid:__ simple and clean grid layout using css grid
 - __Carefully naming:__ readable and predictable class name
-- __Configurable:__ config and build to match what you need 
+- __Configurable:__ config and build to match what you need
 - __Pure CSS:__ no javascript required
 - __Fun:__ yes, very fun to use
 
@@ -67,7 +67,7 @@ yarn add biomatic
 
 Or use CDN (jsdelivr via NPM)
 ```html
-<link href="https://cdn.jsdelivr.net/npm/biomatic@0.1.3/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/biomatic@0.1.4/dist/biomatic.full.min.css" rel="stylesheet">
 ```
 
 ## Configuration
