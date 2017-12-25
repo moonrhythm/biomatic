@@ -1,0 +1,21 @@
+._bgatm-sc { background-attachment: scroll !important; }
+._bgatm-f { background-attachment: fixed !important; }
+._bgatm-lc { background-attachment: local !important; }
+
+@include sm-upper {
+  ._bgatm-sc-sm { background-attachment: scroll !important; }
+  ._bgatm-f-sm { background-attachment: fixed !important; }
+  ._bgatm-lc-sm { background-attachment: local !important; }
+}
+
+@include md-upper {
+  ._bgatm-sc-md { background-attachment: scroll !important; }
+  ._bgatm-f-md { background-attachment: fixed !important; }
+  ._bgatm-lc-md { background-attachment: local !important; }
+}
+
+@include lg-upper {
+  ._bgatm-sc-lg { background-attachment: scroll !important; }
+  ._bgatm-f-lg { background-attachment: fixed !important; }
+  ._bgatm-lc-lg { background-attachment: local !important; }
+}

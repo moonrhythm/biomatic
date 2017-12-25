@@ -1,0 +1,17 @@
+._ffml-primary { font-family: $font-primary !important }
+._ffml-secondary { font-family: $font-primary !important }
+
+@include sm-upper {
+  ._ffml-primary-sm { font-family: $font-primary !important }
+  ._ffml-secondary-sm { font-family: $font-primary !important }
+}
+
+@include md-upper {
+  ._ffml-primary-md { font-family: $font-primary !important }
+  ._ffml-secondary-md { font-family: $font-primary !important }
+}
+
+@include lg-upper {
+  ._ffml-primary-lg { font-family: $font-primary !important }
+  ._ffml-secondary-lg { font-family: $font-primary !important }
+}
