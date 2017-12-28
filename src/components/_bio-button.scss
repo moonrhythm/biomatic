@@ -1,6 +1,6 @@
 .bio-button {
   display: block;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 2px;
   background-color: $color-primary;
   border: 1px solid $color-primary;
@@ -15,7 +15,7 @@
     box-shadow 0.18s ease,
     background-color 0.18s ease,
     border-color 0.18s ease;
-  
+
   &:hover {
     background-color: lighten($color-primary, 5%);
     border-color: lighten($color-primary, 5%)
@@ -39,7 +39,7 @@
       border-color: lighten($color-primary, 5%)
     }
   }
-  
+
   &.-accent {
     background-color: $color-accent;
     border: 1px solid $color-accent;
@@ -56,7 +56,7 @@
     }
     &:not(.-outline):hover {
       background-color: lighten($color-accent, 10%);
-      border-color: lighten($color-accent, 10%)
+      border-color: lighten($color-accent, 5%)
     }
   }
 
@@ -99,7 +99,7 @@
       border-color: lighten($color-info, 5%)
     }
   }
-  
+
   &.-warning {
     background-color: $color-warning;
     border: 1px solid $color-warning;
@@ -175,7 +175,7 @@
       }
     }
   }
-  
+
   &.-gray {
     background-color: $color-gray;
     border: 1px solid $color-gray;
@@ -216,7 +216,7 @@
     opacity: .4;
     cursor: not-allowed;
   }
-  
+
   &.-loading {
     color: transparent;
     &:after {
@@ -232,7 +232,7 @@
       border-right-color: transparent;
       border-top-color: transparent;
     }
-    
+
     &:not(.-outline) {
       &:after {
         border-left-color: $color-white;
