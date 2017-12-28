@@ -55,7 +55,7 @@
       }
     }
     &:not(.-outline):hover {
-      background-color: lighten($color-accent, 10%);
+      background-color: lighten($color-accent, 5%);
       border-color: lighten($color-accent, 5%)
     }
   }
