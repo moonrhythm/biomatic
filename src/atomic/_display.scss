@@ -4,6 +4,7 @@
 ._dp-il  { display: inline !important; }
 ._dp-ilb { display: inline-block !important; }
 ._dp-tb  { display: table !important; }
+._dp-tbc { display: table-cell !important; }
 ._dp-n   { display: none !important; }
 
 @include sm-upper {
@@ -13,6 +14,7 @@
   ._dp-il-sm  { display: inline !important; }
   ._dp-ilb-sm { display: inline-block !important; }
   ._dp-tb-sm  { display: table !important; }
+  ._dp-tbc-sm { display: table-cell !important; }
   ._dp-n-sm   { display: none !important; }
 }
 
@@ -23,6 +25,7 @@
   ._dp-il-md  { display: inline !important; }
   ._dp-ilb-md { display: inline-block !important; }
   ._dp-tb-md  { display: table !important; }
+  ._dp-tbc-md { display: table-cell !important; }
   ._dp-n-md   { display: none !important; }
 }
 
@@ -33,5 +36,6 @@
   ._dp-il-lg  { display: inline !important; }
   ._dp-ilb-lg { display: inline-block !important; }
   ._dp-tb-lg  { display: table !important; }
+  ._dp-tbc-lg { display: table-cell !important; }
   ._dp-n-lg   { display: none !important; }
 }
