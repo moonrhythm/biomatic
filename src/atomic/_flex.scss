@@ -7,6 +7,7 @@
 ._f-7 { flex: 7 !important; }
 ._f-8 { flex: 8 !important; }
 ._f-9 { flex: 9 !important; }
+._f-at { flex: auto !important; }
 
 @include sm-upper {
   ._f-1-sm { flex: 1 !important; }
@@ -18,6 +19,7 @@
   ._f-7-sm { flex: 7 !important; }
   ._f-8-sm { flex: 8 !important; }
   ._f-9-sm { flex: 9 !important; }
+  ._f-at-sm { flex: auto !important; }
 }
 
 @include md-upper {
@@ -30,6 +32,7 @@
   ._f-7-md { flex: 7 !important; }
   ._f-8-md { flex: 8 !important; }
   ._f-9-md { flex: 9 !important; }
+  ._f-at-md { flex: auto !important; }
 }
 
 @include lg-upper {
@@ -42,4 +45,5 @@
   ._f-7-lg { flex: 7 !important; }
   ._f-8-lg { flex: 8 !important; }
   ._f-9-lg { flex: 9 !important; }
+  ._f-at-lg { flex: auto !important; }
 }

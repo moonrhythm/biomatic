@@ -26,6 +26,7 @@
     border: 1px solid $color-primary;
     &.-outline {
       background-color: transparent;
+      color: $color-primary;
       &.-loading {
         color: transparent;
         &:after {

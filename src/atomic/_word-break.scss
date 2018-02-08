@@ -1,0 +1,21 @@
+._wb-nm   { word-break: normal !important; }
+._wb-ba   { word-break: break-all !important; }
+._wb-ka   { word-break: keep-all !important; }
+
+@include sm-upper {
+  ._wb-nm-sm   { word-break: normal !important; }
+  ._wb-ba-sm   { word-break: break-all !important; }
+  ._wb-ka-sm   { word-break: keep-all !important; }
+}
+
+@include md-upper {
+  ._wb-nm-md   { word-break: normal !important; }
+  ._wb-ba-md   { word-break: break-all !important; }
+  ._wb-ka-md   { word-break: keep-all !important; }
+}
+
+@include lg-upper {
+  ._wb-nm-lg   { word-break: normal !important; }
+  ._wb-ba-lg   { word-break: break-all !important; }
+  ._wb-ka-lg   { word-break: keep-all !important; }
+}
