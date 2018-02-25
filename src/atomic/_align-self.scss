@@ -7,7 +7,7 @@
 ._als-sst { align-self: self-start !important; }
 ._als-se  { align-self: self-end !important; }
 ._als-ct  { align-self: center !important; }
-._als-str { align-self: strecth !important; }
+._als-str { align-self: stretch !important; }
 
 @include sm-upper {
   ._als-st-sm  { align-self: start !important; }
@@ -19,7 +19,7 @@
   ._als-sst-sm { align-self: self-start !important; }
   ._als-se-sm  { align-self: self-end !important; }
   ._als-ct-sm  { align-self: center !important; }
-  ._als-str-sm { align-self: strecth !important; }
+  ._als-str-sm { align-self: stretch !important; }
 }
 @include md-upper {
   ._als-st-md  { align-self: start !important; }
@@ -31,7 +31,7 @@
   ._als-sst-md { align-self: self-start !important; }
   ._als-se-md  { align-self: self-end !important; }
   ._als-ct-md  { align-self: center !important; }
-  ._als-str-md { align-self: strecth !important; }
+  ._als-str-md { align-self: stretch !important; }
 }
 @include lg-upper {
   ._als-st-lg  { align-self: start !important; }
@@ -43,5 +43,5 @@
   ._als-sst-lg { align-self: self-start !important; }
   ._als-se-lg  { align-self: self-end !important; }
   ._als-ct-lg  { align-self: center !important; }
-  ._als-str-lg { align-self: strecth !important; }
+  ._als-str-lg { align-self: stretch !important; }
 }

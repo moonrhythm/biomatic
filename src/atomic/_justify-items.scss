@@ -1,25 +1,25 @@
 ._jtfit-s  { justify-items: start !important; }
 ._jtfit-e  { justify-items: end !important; }
 ._jtfit-ct { justify-items: center !important; }
-._jtfit-st { justify-items: strecth !important; }
+._jtfit-st { justify-items: stretch !important; }
 
 @include sm-upper {
   ._jtfit-s-sm  { justify-items: start !important; }
   ._jtfit-e-sm  { justify-items: end !important; }
   ._jtfit-ct-sm { justify-items: center !important; }
-  ._jtfit-st-sm { justify-items: strecth !important; }
+  ._jtfit-st-sm { justify-items: stretch !important; }
 }
 
 @include md-upper {
   ._jtfit-s-md  { justify-items: start !important; }
   ._jtfit-e-md  { justify-items: end !important; }
   ._jtfit-ct-md { justify-items: center !important; }
-  ._jtfit-st-md { justify-items: strecth !important; }
+  ._jtfit-st-md { justify-items: stretch !important; }
 }
 
 @include lg-upper {
   ._jtfit-s-lg  { justify-items: start !important; }
   ._jtfit-e-lg  { justify-items: end !important; }
   ._jtfit-ct-lg { justify-items: center !important; }
-  ._jtfit-st-lg { justify-items: strecth !important; }
+  ._jtfit-st-lg { justify-items: stretch !important; }
 }

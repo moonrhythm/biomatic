@@ -7,7 +7,7 @@
 ._jtfs-sst { justify-self: self-start !important; }
 ._jtfs-se  { justify-self: self-end !important; }
 ._jtfs-ct  { justify-self: center !important; }
-._jtfs-str { justify-self: strecth !important; }
+._jtfs-str { justify-self: stretch !important; }
 
 @include sm-upper {
   ._jtfs-st-sm  { justify-self: start !important; }
@@ -19,7 +19,7 @@
   ._jtfs-sst-sm { justify-self: self-start !important; }
   ._jtfs-se-sm  { justify-self: self-end !important; }
   ._jtfs-ct-sm  { justify-self: center !important; }
-  ._jtfs-str-sm { justify-self: strecth !important; }
+  ._jtfs-str-sm { justify-self: stretch !important; }
 }
 @include md-upper {
   ._jtfs-st-md  { justify-self: start !important; }
@@ -31,7 +31,7 @@
   ._jtfs-sst-md { justify-self: self-start !important; }
   ._jtfs-se-md  { justify-self: self-end !important; }
   ._jtfs-ct-md  { justify-self: center !important; }
-  ._jtfs-str-md { justify-self: strecth !important; }
+  ._jtfs-str-md { justify-self: stretch !important; }
 }
 @include lg-upper {
   ._jtfs-st-lg  { justify-self: start !important; }
@@ -43,5 +43,5 @@
   ._jtfs-sst-lg { justify-self: self-start !important; }
   ._jtfs-se-lg  { justify-self: self-end !important; }
   ._jtfs-ct-lg  { justify-self: center !important; }
-  ._jtfs-str-lg { justify-self: strecth !important; }
+  ._jtfs-str-lg { justify-self: stretch !important; }
 }
