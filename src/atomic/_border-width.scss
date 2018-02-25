@@ -34,12 +34,12 @@
 
 @include lg-upper {
   @each $key, $value in $pixel-value {
-    ._bdw-#{$key}-lg { border-width: #{$value} !important; border-style: solid; }
     ._bdlw-#{$key}-lg { border-left-width: #{$value} !important; border-left-style: solid; }
     ._bdrw-#{$key}-lg { border-right-width: #{$value} !important; border-right-style: solid; }
     ._bdtw-#{$key}-lg { border-top-width: #{$value} !important; border-top-style: solid; }
     ._bdbtw-#{$key}-lg { border-bottom-width: #{$value} !important; border-bottom-style: solid; }
     ._bdvw-#{$key}-lg { border-top-width: #{$value} !important; border-bottom-width: #{$value} !important; border-top-style: solid; border-bottom-style: solid; }
     ._bdhw-#{$key}-lg { border-left-width: #{$value} !important; border-right-width: #{$value} !important; border-right-style: solid; border-left-style: solid; }
+    ._bdw-#{$key}-lg { border-width: #{$value} !important; border-style: solid; }
   };
 }
