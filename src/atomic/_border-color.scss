@@ -3,7 +3,7 @@
 };
 
 @each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size( $mediaQuery ) {
+	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $colors {
 		._bdcl-#{$key}-#{$breakpoint} { border-color: #{$value} !important; }
 		};

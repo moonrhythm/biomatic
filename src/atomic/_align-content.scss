@@ -11,7 +11,7 @@
 ._alct-spevl { align-content: space-evenly !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size( $mediaQuery ) {
+	@include minimum-screen-size ($mediaQuery) {
 		._alct-st-#{$breakpoint}    { align-content: start !important; }
 		._alct-e-#{$breakpoint}     { align-content: end !important; }
 		._alct-l-#{$breakpoint}     { align-content: left !important; }

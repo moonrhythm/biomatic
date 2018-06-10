@@ -6,7 +6,7 @@
 ._bgrp-r   { background-repeat: round !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size( $mediaQuery ) {
+	@include minimum-screen-size ($mediaQuery) {
 		._bgrp-rp-#{$breakpoint}  { background-repeat: repeat !important; }
 		._bgrp-rpx-#{$breakpoint} { background-repeat: repeat-x !important; }
 		._bgrp-rpy-#{$breakpoint} { background-repeat: repeat-y !important; }
