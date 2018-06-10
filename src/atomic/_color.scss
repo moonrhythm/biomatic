@@ -1,32 +1,21 @@
 @each $key, $value in $colors {
-  ._cl-#{$key} { color: #{$value} !important; }
+  	._cl-#{$key} { color: #{$value} !important; }
 };
 
-@include sm-upper {
-  @each $key, $value in $colors {
-    ._cl-#{$key}-sm { color: #{$value} !important; }
-  };
-}
-
-@include md-upper {
-  @each $key, $value in $colors {
-    ._cl-#{$key}-md { color: #{$value} !important; }
-  };
-}
-
-@include lg-upper {
-  @each $key, $value in $colors {
-    ._cl-#{$key}-lg { color: #{$value} !important; }
-  };
-}
-
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $colors {
+			._cl-#{$key}-#{$breakpoint} { color: #{$value} !important; }
+		};
+	};
+};
 
 @each $key, $value in $colors {
-  ._cl-#{$key}-hover {
-    &:hover {
-      color: #{$value} !important;
-    }
-  };
+	._cl-#{$key}-hover {
+		&:hover {
+			color: #{$value} !important;
+		}
+	}
 };
 
 

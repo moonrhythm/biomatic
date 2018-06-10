@@ -1,17 +1,9 @@
 ._fdrt-r { flex-direction: row !important; }
 ._fdrt-cl { flex-direction: column !important; }
 
-@include sm-upper {
-  ._fdrt-r-sm { flex-direction: row !important; }
-  ._fdrt-cl-sm { flex-direction: column !important; }
-}
-
-@include md-upper {
-  ._fdrt-r-md { flex-direction: row !important; }
-  ._fdrt-cl-md { flex-direction: column !important; }
-}
-
-@include lg-upper {
-  ._fdrt-r-lg { flex-direction: row !important; }
-  ._fdrt-cl-lg { flex-direction: column !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._fdrt-r-#{$breakpoint} { flex-direction: row !important; }
+		._fdrt-cl-#{$breakpoint} { flex-direction: column !important; }
+	};
+};

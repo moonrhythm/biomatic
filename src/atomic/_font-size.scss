@@ -7,35 +7,15 @@
 ._fs-7 { font-size: 0.85rem !important; }
 ._fs-8 { font-size: 0.70rem !important; }
 
-@include sm-upper {
-  ._fs-1-sm { font-size: 3rem !important; }
-  ._fs-2-sm { font-size: 2.5rem !important; }
-  ._fs-3-sm { font-size: 2rem !important; }
-  ._fs-4-sm { font-size: 1.5rem !important; }
-  ._fs-5-sm { font-size: 1.125rem !important; }
-  ._fs-6-sm { font-size: 1rem !important; }
-  ._fs-7-sm { font-size: 0.85rem !important; }
-  ._fs-8-sm { font-size: 0.70rem !important; }
-}
-
-@include md-upper {
-  ._fs-1-md { font-size: 3rem !important; }
-  ._fs-2-md { font-size: 2.5rem !important; }
-  ._fs-3-md { font-size: 2rem !important; }
-  ._fs-4-md { font-size: 1.5rem !important; }
-  ._fs-5-md { font-size: 1.125rem !important; }
-  ._fs-6-md { font-size: 1rem !important; }
-  ._fs-7-md { font-size: 0.85rem !important; }
-  ._fs-8-md { font-size: 0.70rem !important; }
-}
-
-@include lg-upper {
-  ._fs-1-lg { font-size: 3rem !important; }
-  ._fs-2-lg { font-size: 2.5rem !important; }
-  ._fs-3-lg { font-size: 2rem !important; }
-  ._fs-4-lg { font-size: 1.5rem !important; }
-  ._fs-5-lg { font-size: 1.125rem !important; }
-  ._fs-6-lg { font-size: 1rem !important; }
-  ._fs-7-lg { font-size: 0.85rem !important; }
-  ._fs-8-lg { font-size: 0.70rem !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._fs-1-#{$breakpoint} { font-size: 3rem !important; }
+		._fs-2-#{$breakpoint} { font-size: 2.5rem !important; }
+		._fs-3-#{$breakpoint} { font-size: 2rem !important; }
+		._fs-4-#{$breakpoint} { font-size: 1.5rem !important; }
+		._fs-5-#{$breakpoint} { font-size: 1.125rem !important; }
+		._fs-6-#{$breakpoint} { font-size: 1rem !important; }
+		._fs-7-#{$breakpoint} { font-size: 0.85rem !important; }
+		._fs-8-#{$breakpoint} { font-size: 0.70rem !important; }
+	};
+};

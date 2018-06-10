@@ -7,35 +7,15 @@
 ._dp-tbc { display: table-cell !important; }
 ._dp-n   { display: none !important; }
 
-@include sm-upper {
-  ._dp-b-sm   { display: block !important; }
-  ._dp-f-sm   { display: flex !important; }
-  ._dp-g-sm   { display: grid !important; }
-  ._dp-il-sm  { display: inline !important; }
-  ._dp-ilb-sm { display: inline-block !important; }
-  ._dp-tb-sm  { display: table !important; }
-  ._dp-tbc-sm { display: table-cell !important; }
-  ._dp-n-sm   { display: none !important; }
-}
-
-@include md-upper {
-  ._dp-b-md   { display: block !important; }
-  ._dp-f-md   { display: flex !important; }
-  ._dp-g-md   { display: grid !important; }
-  ._dp-il-md  { display: inline !important; }
-  ._dp-ilb-md { display: inline-block !important; }
-  ._dp-tb-md  { display: table !important; }
-  ._dp-tbc-md { display: table-cell !important; }
-  ._dp-n-md   { display: none !important; }
-}
-
-@include lg-upper {
-  ._dp-b-lg   { display: block !important; }
-  ._dp-f-lg   { display: flex !important; }
-  ._dp-g-lg   { display: grid !important; }
-  ._dp-il-lg  { display: inline !important; }
-  ._dp-ilb-lg { display: inline-block !important; }
-  ._dp-tb-lg  { display: table !important; }
-  ._dp-tbc-lg { display: table-cell !important; }
-  ._dp-n-lg   { display: none !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._dp-b-#{$breakpoint}   { display: block !important; }
+		._dp-f-#{$breakpoint}   { display: flex !important; }
+		._dp-g-#{$breakpoint}   { display: grid !important; }
+		._dp-il-#{$breakpoint}  { display: inline !important; }
+		._dp-ilb-#{$breakpoint} { display: inline-block !important; }
+		._dp-tb-#{$breakpoint}  { display: table !important; }
+		._dp-tbc-#{$breakpoint} { display: table-cell !important; }
+		._dp-n-#{$breakpoint}   { display: none !important; }
+	};
+};

@@ -5,15 +5,15 @@
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $colors {
-		._bdcl-#{$key}-#{$breakpoint} { border-color: #{$value} !important; }
+			._bdcl-#{$key}-#{$breakpoint} { border-color: #{$value} !important; }
 		};
-	}
-}
+	};
+};
 
 @each $key, $value in $colors {
 	._bdcl-#{$key}-hover {
 		&:hover {
 			border-color: #{$value} !important;
 		}
-	};
+	}
 };

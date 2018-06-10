@@ -2,20 +2,10 @@
 ._f-r { float: right !important; }
 ._f-n { float: none !important; }
 
-@include sm-upper {
-  ._f-l-sm { float: left !important; }
-  ._f-r-sm { float: right !important; }
-  ._f-n-sm { float: none !important; }
-}
-
-@include md-upper {
-  ._f-l-md { float: left !important; }
-  ._f-r-md { float: right !important; }
-  ._f-n-md { float: none !important; }
-}
-
-@include lg-upper {
-  ._f-l-lg { float: left !important; }
-  ._f-r-lg { float: right !important; }
-  ._f-n-lg { float: none !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._f-l-#{$breakpoint} { float: left !important; }
+		._f-r-#{$breakpoint} { float: right !important; }
+		._f-n-#{$breakpoint} { float: none !important; }
+	};
+};
