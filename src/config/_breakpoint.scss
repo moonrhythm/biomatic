@@ -1,11 +1,9 @@
-// Breakpoint
 $sm: 770px;
 $md: 900px;
 $lg: 1200px;
 
-// Note: Largest screen first
 $breakpoints: (
-	'lg': '(min-width: 1200px)',
+	'sm': '(min-width: 770px)',
 	'md': '(min-width: 900px)',
-	'sm': '(min-width: 770px)'
+	'lg': '(min-width: 1200px)'
 );
