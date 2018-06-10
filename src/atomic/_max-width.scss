@@ -1,21 +1,11 @@
 @each $key, $value in $spacings {
-  ._mxw-#{$key} { max-width: #{$value} !important; }
+  	._mxw-#{$key} { max-width: #{$value} !important; }
 };
 
-@include sm-upper {
-  @each $key, $value in $spacings {
-    ._mxw-#{$key}-sm { max-width: #{$value} !important; }
-  };
-}
-
-@include md-upper {
-  @each $key, $value in $spacings {
-    ._mxw-#{$key}-md { max-width: #{$value} !important; }
-  };
-}
-
-@include lg-upper {
-  @each $key, $value in $spacings {
-    ._mxw-#{$key}-lg { max-width: #{$value} !important; }
-  };
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._mxw-#{$key}-#{$breakpoint} { max-width: #{$value} !important; }
+		};
+	};
+};

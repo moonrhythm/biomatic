@@ -11,47 +11,19 @@
 ._ovfy-hd  { overflow-y: hidden !important; }
 ._ovfy-sc  { overflow-y: scroll !important; }
 
-@include sm-upper {
-  ._ovf-vsb-sm  { overflow: visible !important; }
-  ._ovf-at-sm   { overflow: auto !important; }
-  ._ovf-hd-sm   { overflow: hidden !important; }
-  ._ovf-sc-sm   { overflow: scroll !important; }
-  ._ovfx-vsb-sm { overflow-x: visible !important; }
-  ._ovfx-at-sm  { overflow-x: auto !important; }
-  ._ovfx-hd-sm  { overflow-x: hidden !important; }
-  ._ovfx-sc-sm  { overflow-x: scroll !important; }
-  ._ovfy-vsb-sm { overflow-y: visible !important; }
-  ._ovfy-at-sm  { overflow-y: auto !important; }
-  ._ovfy-hd-sm  { overflow-y: hidden !important; }
-  ._ovfy-sc-sm  { overflow-y: scroll !important; }
-}
-
-@include md-upper {
-  ._ovf-vsb-md  { overflow: visible !important; }
-  ._ovf-at-md   { overflow: auto !important; }
-  ._ovf-hd-md   { overflow: hidden !important; }
-  ._ovf-sc-md   { overflow: scroll !important; }
-  ._ovfx-vsb-md { overflow-x: visible !important; }
-  ._ovfx-at-md  { overflow-x: auto !important; }
-  ._ovfx-hd-md  { overflow-x: hidden !important; }
-  ._ovfx-sc-md  { overflow-x: scroll !important; }
-  ._ovfy-vsb-md { overflow-y: visible !important; }
-  ._ovfy-at-md  { overflow-y: auto !important; }
-  ._ovfy-hd-md  { overflow-y: hidden !important; }
-  ._ovfy-sc-md  { overflow-y: scroll !important; }
-}
-
-@include lg-upper {
-  ._ovf-vsb-lg  { overflow: visible !important; }
-  ._ovf-at-lg   { overflow: auto !important; }
-  ._ovf-hd-lg   { overflow: hidden !important; }
-  ._ovf-sc-lg   { overflow: scroll !important; }
-  ._ovfx-vsb-lg { overflow-x: visible !important; }
-  ._ovfx-at-lg  { overflow-x: auto !important; }
-  ._ovfx-hd-lg  { overflow-x: hidden !important; }
-  ._ovfx-sc-lg  { overflow-x: scroll !important; }
-  ._ovfy-vsb-lg { overflow-y: visible !important; }
-  ._ovfy-at-lg  { overflow-y: auto !important; }
-  ._ovfy-hd-lg  { overflow-y: hidden !important; }
-  ._ovfy-sc-lg  { overflow-y: scroll !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ovf-vsb-#{$breakpoint}  { overflow: visible !important; }
+		._ovf-at-#{$breakpoint}   { overflow: auto !important; }
+		._ovf-hd-#{$breakpoint}   { overflow: hidden !important; }
+		._ovf-sc-#{$breakpoint}   { overflow: scroll !important; }
+		._ovfx-vsb-#{$breakpoint} { overflow-x: visible !important; }
+		._ovfx-at-#{$breakpoint}  { overflow-x: auto !important; }
+		._ovfx-hd-#{$breakpoint}  { overflow-x: hidden !important; }
+		._ovfx-sc-#{$breakpoint}  { overflow-x: scroll !important; }
+		._ovfy-vsb-#{$breakpoint} { overflow-y: visible !important; }
+		._ovfy-at-#{$breakpoint}  { overflow-y: auto !important; }
+		._ovfy-hd-#{$breakpoint}  { overflow-y: hidden !important; }
+		._ovfy-sc-#{$breakpoint}  { overflow-y: scroll !important; }
+	};
+};

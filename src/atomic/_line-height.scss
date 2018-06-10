@@ -3,43 +3,13 @@
 ._lh-150pct { line-height: 150% !important; }
 ._lh-175pct { line-height: 175% !important; }
 ._lh-200pct { line-height: 200% !important; }
-._lh-225pct { line-height: 225% !important; }
-._lh-250pct { line-height: 250% !important; }
-._lh-275pct { line-height: 275% !important; }
-._lh-300pct { line-height: 300% !important; }
 
-@include sm-upper {
-  ._lh-100pct-sm { line-height: 100% !important; }
-  ._lh-125pct-sm { line-height: 125% !important; }
-  ._lh-150pct-sm { line-height: 150% !important; }
-  ._lh-175pct-sm { line-height: 175% !important; }
-  ._lh-200pct-sm { line-height: 200% !important; }
-  ._lh-225pct-sm { line-height: 225% !important; }
-  ._lh-250pct-sm { line-height: 250% !important; }
-  ._lh-275pct-sm { line-height: 275% !important; }
-  ._lh-300pct-sm { line-height: 300% !important; }
-}
-
-@include md-upper {
-  ._lh-100pct-md { line-height: 100% !important; }
-  ._lh-125pct-md { line-height: 125% !important; }
-  ._lh-150pct-md { line-height: 150% !important; }
-  ._lh-175pct-md { line-height: 175% !important; }
-  ._lh-200pct-md { line-height: 200% !important; }
-  ._lh-225pct-md { line-height: 225% !important; }
-  ._lh-250pct-md { line-height: 250% !important; }
-  ._lh-275pct-md { line-height: 275% !important; }
-  ._lh-300pct-md { line-height: 300% !important; }
-}
-
-@include lg-upper {
-  ._lh-100pct-lg { line-height: 100% !important; }
-  ._lh-125pct-lg { line-height: 125% !important; }
-  ._lh-150pct-lg { line-height: 150% !important; }
-  ._lh-175pct-lg { line-height: 175% !important; }
-  ._lh-200pct-lg { line-height: 200% !important; }
-  ._lh-225pct-lg { line-height: 225% !important; }
-  ._lh-250pct-lg { line-height: 250% !important; }
-  ._lh-275pct-lg { line-height: 275% !important; }
-  ._lh-300pct-lg { line-height: 300% !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._lh-100pct-#{$breakpoint} { line-height: 100% !important; }
+		._lh-125pct-#{$breakpoint} { line-height: 125% !important; }
+		._lh-150pct-#{$breakpoint} { line-height: 150% !important; }
+		._lh-175pct-#{$breakpoint} { line-height: 175% !important; }
+		._lh-200pct-#{$breakpoint} { line-height: 200% !important; }
+	};
+};

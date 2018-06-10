@@ -3,23 +3,11 @@
 ._pst-asl { position: absolute !important; }
 ._pst-f   { position: fixed !important; }
 
-@include sm-upper {
-  ._pst-stt-sm { position: static !important; }
-  ._pst-rlt-sm { position: relative !important; }
-  ._pst-asl-sm { position: absolute !important; }
-  ._pst-f-sm   { position: fixed !important; }
-}
-
-@include md-upper {
-  ._pst-stt-md { position: static !important; }
-  ._pst-rlt-md { position: relative !important; }
-  ._pst-asl-md { position: absolute !important; }
-  ._pst-f-md   { position: fixed !important; }
-}
-
-@include lg-upper {
-  ._pst-stt-lg { position: static !important; }
-  ._pst-rlt-lg { position: relative !important; }
-  ._pst-asl-lg { position: absolute !important; }
-  ._pst-f-lg   { position: fixed !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._pst-stt-#{$breakpoint} { position: static !important; }
+		._pst-rlt-#{$breakpoint} { position: relative !important; }
+		._pst-asl-#{$breakpoint} { position: absolute !important; }
+		._pst-f-#{$breakpoint}   { position: fixed !important; }
+	};
+};

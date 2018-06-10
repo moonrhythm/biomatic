@@ -3,23 +3,11 @@
 ._ojf-f  { object-fit: fill !important; }
 ._ojf-n  { object-fit: none !important; }
 
-@include sm-upper {
-  ._ojf-cv-sm { object-fit: cover !important; }
-  ._ojf-ct-sm { object-fit: contain !important; }
-  ._ojf-f-sm  { object-fit: fill !important; }
-  ._ojf-n-sm  { object-fit: none !important; }
-}
-
-@include md-upper {
-  ._ojf-cv-md { object-fit: cover !important; }
-  ._ojf-ct-md { object-fit: contain !important; }
-  ._ojf-f-md  { object-fit: fill !important; }
-  ._ojf-n-md  { object-fit: none !important; }
-}
-
-@include lg-upper {
-  ._ojf-cv-lg { object-fit: cover !important; }
-  ._ojf-ct-lg { object-fit: contain !important; }
-  ._ojf-f-lg  { object-fit: fill !important; }
-  ._ojf-n-lg  { object-fit: none !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ojf-cv-#{$breakpoint} { object-fit: cover !important; }
+		._ojf-ct-#{$breakpoint} { object-fit: contain !important; }
+		._ojf-f-#{$breakpoint}  { object-fit: fill !important; }
+		._ojf-n-#{$breakpoint}  { object-fit: none !important; }
+	};
+};

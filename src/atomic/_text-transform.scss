@@ -3,23 +3,11 @@
 ._ttf-upc  { text-transform: uppercase !important; }
 ._ttf-n    { text-transform: none !important; }
 
-@include sm-upper {
-  ._ttf-cptl-sm { text-transform: capitalize !important; }
-  ._ttf-lwc-sm  { text-transform: lowercase !important; }
-  ._ttf-upc-sm  { text-transform: uppercase !important; }
-  ._ttf-n-sm    { text-transform: none !important; }
-}
-
-@include md-upper {
-  ._ttf-cptl-md { text-transform: capitalize !important; }
-  ._ttf-lwc-md  { text-transform: lowercase !important; }
-  ._ttf-upc-md  { text-transform: uppercase !important; }
-  ._ttf-n-md    { text-transform: none !important; }
-}
-
-@include lg-upper {
-  ._ttf-cptl-lg { text-transform: capitalize !important; }
-  ._ttf-lwc-lg  { text-transform: lowercase !important; }
-  ._ttf-upc-lg  { text-transform: uppercase !important; }
-  ._ttf-n-lg    { text-transform: none !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ttf-cptl-#{$breakpoint} { text-transform: capitalize !important; }
+		._ttf-lwc-#{$breakpoint}  { text-transform: lowercase !important; }
+		._ttf-upc-#{$breakpoint}  { text-transform: uppercase !important; }
+		._ttf-n-#{$breakpoint}    { text-transform: none !important; }
+	};
+};

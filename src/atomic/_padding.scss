@@ -1,45 +1,23 @@
 @each $key, $value in $spacings {
-  ._pd-#{$key} { padding: #{$value} !important; }
-  ._pdl-#{$key} { padding-left: #{$value} !important; }
-  ._pdr-#{$key} { padding-right: #{$value} !important; }
-  ._pdt-#{$key} { padding-top: #{$value} !important; }
-  ._pdbt-#{$key} { padding-bottom: #{$value} !important; }
-  ._pdv-#{$key} { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
-  ._pdh-#{$key} { padding-left: #{$value} !important; padding-right: #{$value} !important; }
+	._pd-#{$key} { padding: #{$value} !important; }
+	._pdl-#{$key} { padding-left: #{$value} !important; }
+	._pdr-#{$key} { padding-right: #{$value} !important; }
+	._pdt-#{$key} { padding-top: #{$value} !important; }
+	._pdbt-#{$key} { padding-bottom: #{$value} !important; }
+	._pdv-#{$key} { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
+	._pdh-#{$key} { padding-left: #{$value} !important; padding-right: #{$value} !important; }
 };
 
-@include sm-upper {
-  @each $key, $value in $spacings {
-    ._pd-#{$key}-sm   { padding: #{$value} !important; }
-    ._pdl-#{$key}-sm  { padding-left: #{$value} !important; }
-    ._pdr-#{$key}-sm  { padding-right: #{$value} !important; }
-    ._pdt-#{$key}-sm  { padding-top: #{$value} !important; }
-    ._pdbt-#{$key}-sm { padding-bottom: #{$value} !important; }
-    ._pdv-#{$key}-sm  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
-    ._pdh-#{$key}-sm  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
-  };
-}
-
-@include md-upper {
-  @each $key, $value in $spacings {
-    ._pd-#{$key}-md   { padding: #{$value} !important; }
-    ._pdl-#{$key}-md  { padding-left: #{$value} !important; }
-    ._pdr-#{$key}-md  { padding-right: #{$value} !important; }
-    ._pdt-#{$key}-md  { padding-top: #{$value} !important; }
-    ._pdbt-#{$key}-md { padding-bottom: #{$value} !important; }
-    ._pdv-#{$key}-md  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
-    ._pdh-#{$key}-md  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
-  };
-}
-
-@include lg-upper {
-  @each $key, $value in $spacings {
-    ._pd-#{$key}-lg   { padding: #{$value} !important; }
-    ._pdl-#{$key}-lg  { padding-left: #{$value} !important; }
-    ._pdr-#{$key}-lg  { padding-right: #{$value} !important; }
-    ._pdt-#{$key}-lg  { padding-top: #{$value} !important; }
-    ._pdbt-#{$key}-lg { padding-bottom: #{$value} !important; }
-    ._pdv-#{$key}-lg  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
-    ._pdh-#{$key}-lg  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
-  };
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._pd-#{$key}-#{$breakpoint}   { padding: #{$value} !important; }
+			._pdl-#{$key}-#{$breakpoint}  { padding-left: #{$value} !important; }
+			._pdr-#{$key}-#{$breakpoint}  { padding-right: #{$value} !important; }
+			._pdt-#{$key}-#{$breakpoint}  { padding-top: #{$value} !important; }
+			._pdbt-#{$key}-#{$breakpoint} { padding-bottom: #{$value} !important; }
+			._pdv-#{$key}-#{$breakpoint}  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
+			._pdh-#{$key}-#{$breakpoint}  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
+		};
+  	};
+};

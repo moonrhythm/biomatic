@@ -4,26 +4,12 @@
 ._lst-lwap { list-style: lower-alpha !important }
 ._lst-apap { list-style: upper-alpha !important }
 
-@include sm-upper {
-  ._lst-n-sm { list-style: none !important }
-  ._lst-d-sm { list-style: disc !important }
-  ._lst-dcm-sm { list-style: decimal !important }
-  ._lst-lwap-sm { list-style: lower-alpha !important }
-  ._lst-apap-sm { list-style: upper-alpha !important }
-}
-
-@include md-upper {
-  ._lst-n-md { list-style: none !important }
-  ._lst-d-md { list-style: disc !important }
-  ._lst-dcm-md { list-style: decimal !important }
-  ._lst-lwap-md { list-style: lower-alpha !important }
-  ._lst-apap-md { list-style: upper-alpha !important }
-}
-
-@include lg-upper {
-  ._lst-n-lg { list-style: none !important }
-  ._lst-d-lg { list-style: disc !important }
-  ._lst-dcm-lg { list-style: decimal !important }
-  ._lst-lwap-lg { list-style: lower-alpha !important }
-  ._lst-apap-lg { list-style: upper-alpha !important }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._lst-n-#{$breakpoint} { list-style: none !important }
+		._lst-d-#{$breakpoint} { list-style: disc !important }
+		._lst-dcm-#{$breakpoint} { list-style: decimal !important }
+		._lst-lwap-#{$breakpoint} { list-style: lower-alpha !important }
+		._lst-apap-#{$breakpoint} { list-style: upper-alpha !important }
+	};
+};

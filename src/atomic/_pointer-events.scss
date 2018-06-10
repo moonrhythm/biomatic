@@ -1,17 +1,9 @@
 ._ptev-at { pointer-events: auto !important; }
 ._ptev-n { pointer-events: none !important; }
 
-@include sm-upper {
-  ._ptev-at-sm { pointer-events: auto !important; }
-  ._ptev-n-sm { pointer-events: none !important; }
-}
-
-@include md-upper {
-  ._ptev-at-md { pointer-events: auto !important; }
-  ._ptev-n-md { pointer-events: none !important; }
-}
-
-@include lg-upper {
-  ._ptev-at-lg { pointer-events: auto !important; }
-  ._ptev-n-lg { pointer-events: none !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ptev-at-#{$breakpoint} { pointer-events: auto !important; }
+		._ptev-n-#{$breakpoint} { pointer-events: none !important; }
+	};
+};

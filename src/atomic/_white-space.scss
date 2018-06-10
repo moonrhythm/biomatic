@@ -4,26 +4,12 @@
 ._wsp-pl { white-space: pre-line !important; }
 ._wsp-pw { white-space: pre-wrap !important; }
 
-@include sm-upper {
-  ._wsp-nm-sm { white-space: normal !important; }
-  ._wsp-nw-sm { white-space: nowrap !important; }
-  ._wsp-p-sm  { white-space: pre !important; }
-  ._wsp-pl-sm { white-space: pre-line !important; }
-  ._wsp-pw-sm { white-space: pre-wrap !important; }
-}
-
-@include md-upper {
-  ._wsp-nm-md { white-space: normal !important; }
-  ._wsp-nw-md { white-space: nowrap !important; }
-  ._wsp-p-md  { white-space: pre !important; }
-  ._wsp-pl-md { white-space: pre-line !important; }
-  ._wsp-pw-md { white-space: pre-wrap !important; }
-}
-
-@include lg-upper {
-  ._wsp-nm-lg { white-space: normal !important; }
-  ._wsp-nw-lg { white-space: nowrap !important; }
-  ._wsp-p-lg  { white-space: pre !important; }
-  ._wsp-pl-lg { white-space: pre-line !important; }
-  ._wsp-pw-lg { white-space: pre-wrap !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._wsp-nm-#{$breakpoint} { white-space: normal !important; }
+		._wsp-nw-#{$breakpoint} { white-space: nowrap !important; }
+		._wsp-p-#{$breakpoint}  { white-space: pre !important; }
+		._wsp-pl-#{$breakpoint} { white-space: pre-line !important; }
+		._wsp-pw-#{$breakpoint} { white-space: pre-wrap !important; }
+	};
+};

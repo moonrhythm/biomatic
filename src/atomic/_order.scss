@@ -4,26 +4,12 @@
 ._od--1 { order: -1 !important; }
 ._od--2 { order: -2 !important; }
 
-@include sm-upper {
-  ._od-0-sm  { order: 0 !important; }
-  ._od-1-sm  { order: 1 !important; }
-  ._od-2-sm  { order: 2 !important; }
-  ._od--1-sm { order: -1 !important; }
-  ._od--2-sm { order: -2 !important; }
-}
-
-@include md-upper {
-  ._od-0-md  { order: 0 !important; }
-  ._od-1-md  { order: 1 !important; }
-  ._od-2-md  { order: 2 !important; }
-  ._od--1-md { order: -1 !important; }
-  ._od--2-md { order: -2 !important; }
-}
-
-@include lg-upper {
-  ._od-0-lg  { order: 0 !important; }
-  ._od-1-lg  { order: 1 !important; }
-  ._od-2-lg  { order: 2 !important; }
-  ._od--1-lg { order: -1 !important; }
-  ._od--2-lg { order: -2 !important; }
-}
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._od-0-#{$breakpoint}  { order: 0 !important; }
+		._od-1-#{$breakpoint}  { order: 1 !important; }
+		._od-2-#{$breakpoint}  { order: 2 !important; }
+		._od--1-#{$breakpoint} { order: -1 !important; }
+		._od--2-#{$breakpoint} { order: -2 !important; }
+	};
+};
