@@ -1,59 +1,59 @@
 @mixin xs-only {
-  @media (max-width: $breakpoint-sm - 1px) {
+  @media (max-width: $sm - 1px) {
     @content;
   }
 }
 
 @mixin sm-only {
-  @media (min-width: $breakpoint-sm) and  (max-width: $breakpoint-md - 1px) {
+  @media (min-width: $sm) and  (max-width: $md - 1px) {
     @content;
   }
 }
 
 @mixin md-only {
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1px) {
+  @media (min-width: $md) and (max-width: $lg - 1px) {
     @content;
   }
 }
 
 @mixin lg-only {
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $lg) {
     @content;
   }
 }
 
 @mixin sm-upper {
-  @media (min-width: $breakpoint-sm) {
+  @media (min-width: $sm) {
     @content;
   }
 }
 
 @mixin md-upper {
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: $md) {
     @content;
   }
 }
 
 @mixin lg-upper {
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $lg) {
     @content;
   }
 }
 
 @mixin sm-lower {
-  @media (max-width: $breakpoint-sm - 1px) {
+  @media (max-width: $sm - 1px) {
     @content;
   }
 }
 
 @mixin md-lower {
-  @media (max-width: $breakpoint-md - 1px) {
+  @media (max-width: $md - 1px) {
     @content;
   }
 }
 
 @mixin lg-lower {
-  @media (max-width: $breakpoint-lg - 1px) {
+  @media (max-width: $lg - 1px) {
     @content;
   }
 }
