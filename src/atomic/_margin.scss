@@ -1,4 +1,4 @@
-@each $key, $value in $pixel-value {
+@each $key, $value in $spacings {
   ._mg-#{$key}   { margin: #{$value} !important; }
   ._mgl-#{$key}  { margin-left: #{$value} !important; }
   ._mgr-#{$key}  { margin-right: #{$value} !important; }
@@ -9,7 +9,7 @@
 };
 
 @include sm-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._mg-#{$key}-sm   { margin: #{$value} !important; }
     ._mgl-#{$key}-sm  { margin-left: #{$value} !important; }
     ._mgr-#{$key}-sm  { margin-right: #{$value} !important; }
@@ -21,7 +21,7 @@
 }
 
 @include md-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._mg-#{$key}-md   { margin: #{$value} !important; }
     ._mgl-#{$key}-md  { margin-left: #{$value} !important; }
     ._mgr-#{$key}-md  { margin-right: #{$value} !important; }
@@ -33,7 +33,7 @@
 }
 
 @include lg-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._mg-#{$key}-lg   { margin: #{$value} !important; }
     ._mgl-#{$key}-lg  { margin-left: #{$value} !important; }
     ._mgr-#{$key}-lg  { margin-right: #{$value} !important; }

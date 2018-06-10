@@ -1,4 +1,4 @@
-@each $key, $value in $pixel-value {
+@each $key, $value in $spacings {
   ._bdw-#{$key} { border-width: #{$value} !important; border-style: solid;}
   ._bdlw-#{$key} { border-left-width: #{$value} !important; border-left-style: solid; }
   ._bdrw-#{$key} { border-right-width: #{$value} !important; border-right-style: solid; }
@@ -9,7 +9,7 @@
 };
 
 @include sm-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._bdw-#{$key}-sm { border-width: #{$value} !important; border-style: solid; }
     ._bdlw-#{$key}-sm { border-left-width: #{$value} !important; border-left-style: solid; }
     ._bdrw-#{$key}-sm { border-right-width: #{$value} !important; border-right-style: solid; }
@@ -21,7 +21,7 @@
 }
 
 @include md-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._bdw-#{$key}-md { border-width: #{$value} !important; border-style: solid; }
     ._bdlw-#{$key}-md { border-left-width: #{$value} !important; border-left-style: solid; }
     ._bdrw-#{$key}-md { border-right-width: #{$value} !important; border-right-style: solid; }
@@ -33,7 +33,7 @@
 }
 
 @include lg-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._bdlw-#{$key}-lg { border-left-width: #{$value} !important; border-left-style: solid; }
     ._bdrw-#{$key}-lg { border-right-width: #{$value} !important; border-right-style: solid; }
     ._bdtw-#{$key}-lg { border-top-width: #{$value} !important; border-top-style: solid; }

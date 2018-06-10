@@ -1,4 +1,4 @@
-@each $key, $value in $pixel-value {
+@each $key, $value in $spacings {
   ._w-#{$key} { width: #{$value} !important; }
 };
 
@@ -7,7 +7,7 @@
 };
 
 @include sm-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._w-#{$key}-sm { width: #{$value} !important; }
   };
 
@@ -17,7 +17,7 @@
 }
 
 @include md-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._w-#{$key}-md { width: #{$value} !important; }
   };
 
@@ -27,7 +27,7 @@
 }
 
 @include lg-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._w-#{$key}-lg { width: #{$value} !important; }
   };
 

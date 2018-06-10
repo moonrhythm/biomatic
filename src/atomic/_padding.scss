@@ -1,4 +1,4 @@
-@each $key, $value in $pixel-value {
+@each $key, $value in $spacings {
   ._pd-#{$key} { padding: #{$value} !important; }
   ._pdl-#{$key} { padding-left: #{$value} !important; }
   ._pdr-#{$key} { padding-right: #{$value} !important; }
@@ -9,7 +9,7 @@
 };
 
 @include sm-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._pd-#{$key}-sm   { padding: #{$value} !important; }
     ._pdl-#{$key}-sm  { padding-left: #{$value} !important; }
     ._pdr-#{$key}-sm  { padding-right: #{$value} !important; }
@@ -21,7 +21,7 @@
 }
 
 @include md-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._pd-#{$key}-md   { padding: #{$value} !important; }
     ._pdl-#{$key}-md  { padding-left: #{$value} !important; }
     ._pdr-#{$key}-md  { padding-right: #{$value} !important; }
@@ -33,7 +33,7 @@
 }
 
 @include lg-upper {
-  @each $key, $value in $pixel-value {
+  @each $key, $value in $spacings {
     ._pd-#{$key}-lg   { padding: #{$value} !important; }
     ._pdl-#{$key}-lg  { padding-left: #{$value} !important; }
     ._pdr-#{$key}-lg  { padding-right: #{$value} !important; }
