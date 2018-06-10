@@ -1,37 +1,9 @@
-@import '_color';
+@import '_reset';
+
 @import '_breakpoint';
-@import '_spacing';
+@import '_color';
 @import '_radius';
+@import '_spacing';
 
-/*====================================
-  Default Font Family
-======================================*/
-$font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-
-// Value for Border Radius
-
-
-// Percentage Value for Width, Height
-$percentage-value: (
-  '10pct': 10%,
-  '20pct': 20%,
-  '30pct': 30%,
-  '40pct': 40%,
-  '50pct': 50%,
-  '60pct': 60%,
-  '70pct': 70%,
-  '80pct': 80%,
-  '90pct': 90%,
-  '100pct': 100%,
-  'at': auto
-);
-
-// Document Default
-html {
-  color: $color-dark;
-  font-family: $font-primary;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+@import '_font';
+@import '_initial';

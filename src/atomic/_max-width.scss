@@ -2,16 +2,8 @@
   ._mxw-#{$key} { max-width: #{$value} !important; }
 };
 
-@each $key, $value in $percentage-value {
-  ._mxw-#{$key} { max-width: #{$value} !important; }
-};
-
 @include sm-upper {
   @each $key, $value in $spacings {
-    ._mxw-#{$key}-sm { max-width: #{$value} !important; }
-  };
-
-  @each $key, $value in $percentage-value {
     ._mxw-#{$key}-sm { max-width: #{$value} !important; }
   };
 }
@@ -20,18 +12,10 @@
   @each $key, $value in $spacings {
     ._mxw-#{$key}-md { max-width: #{$value} !important; }
   };
-
-  @each $key, $value in $percentage-value {
-    ._mxw-#{$key}-md { max-width: #{$value} !important; }
-  };
 }
 
 @include lg-upper {
   @each $key, $value in $spacings {
-    ._mxw-#{$key}-lg { max-width: #{$value} !important; }
-  };
-
-  @each $key, $value in $percentage-value {
     ._mxw-#{$key}-lg { max-width: #{$value} !important; }
   };
 }

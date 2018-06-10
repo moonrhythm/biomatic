@@ -2,16 +2,8 @@
   ._h-#{$key} { height: #{$value} !important; }
 };
 
-@each $key, $value in $percentage-value {
-  ._h-#{$key} { height: #{$value} !important; }
-};
-
 @include sm-upper {
   @each $key, $value in $spacings {
-    ._h-#{$key}-sm { height: #{$value} !important; }
-  };
-
-  @each $key, $value in $percentage-value {
     ._h-#{$key}-sm { height: #{$value} !important; }
   };
 }
@@ -20,18 +12,10 @@
   @each $key, $value in $spacings {
     ._h-#{$key}-md { height: #{$value} !important; }
   };
-
-  @each $key, $value in $percentage-value {
-    ._h-#{$key}-md { height: #{$value} !important; }
-  };
 }
 
 @include lg-upper {
   @each $key, $value in $spacings {
-    ._h-#{$key}-lg { height: #{$value} !important; }
-  };
-
-  @each $key, $value in $percentage-value {
     ._h-#{$key}-lg { height: #{$value} !important; }
   };
 }
