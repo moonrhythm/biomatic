@@ -1,27 +1,27 @@
-@each $key, $value in $color-value {
+@each $key, $value in $colors {
   ._tdcrtcl-#{$key} { text-decoration-color: #{$value} !important; }
 };
 
 @include sm-upper {
-  @each $key, $value in $color-value {
+  @each $key, $value in $colors {
     ._tdcrtcl-#{$key}-sm { text-decoration-color: #{$value} !important; }
   };
 }
 
 @include md-upper {
-  @each $key, $value in $color-value {
+  @each $key, $value in $colors {
     ._tdcrtcl-#{$key}-md { text-decoration-color: #{$value} !important; }
   };
 }
 
 @include lg-upper {
-  @each $key, $value in $color-value {
+  @each $key, $value in $colors {
     ._tdcrtcl-#{$key}-lg { text-decoration-color: #{$value} !important; }
   };
 }
 
 
-@each $key, $value in $color-value {
+@each $key, $value in $colors {
   ._tdcrtcl-#{$key}-hover {
     &:hover {
       text-decoration-color: #{$value} !important;

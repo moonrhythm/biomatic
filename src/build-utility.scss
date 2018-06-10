@@ -1,10 +1,4 @@
-// Required
-@import 'reset';
-@import 'config';
+@import 'config/reset';
+@import 'config/config';
 @import 'mixins/mixins';
-
-// Module
-// @import 'layouts/layout';
-// @import 'components/component';
 @import 'utilities/utilities';
-// @import 'atomic/atomic';

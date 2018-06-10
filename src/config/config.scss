@@ -1,0 +1,83 @@
+@import '_color';
+
+/*====================================
+  Responsive Breakpoint
+======================================*/
+$breakpoint-sm: 770px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1200px;
+
+/*====================================
+  Default Font Family
+======================================*/
+$font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+/*====================================
+  Mapping Value
+======================================*/
+$pixel-value: (
+  '0px': 0px,
+  '1px': 1px,
+  '2px': 2px,
+  '4px': 4px,
+  '8px': 8px,
+  '12px': 12px,
+  '16px': 16px,
+  '24px': 24px,
+  '32px': 32px,
+  '48px': 48px,
+  '64px': 64px,
+  '128px': 128px,
+  '256px': 256px,
+  '512px': 512px,
+  '50pct': 50%,
+  '100vw': 100vw,
+  '100vh': 100vh,
+  'at': auto
+);
+
+// Value for Border Radius
+$border-radius-value: (
+  '0px': 0px,
+  '1px': 1px,
+  '2px': 2px,
+  '3px': 3px,
+  '4px': 4px,
+  '8px': 8px,
+  '12px': 12px,
+  '16px': 16px,
+  '24px': 24px,
+  '32px': 32px,
+  '48px': 48px,
+  '64px': 64px,
+  '128px': 128px,
+  '256px': 256px,
+  '512px': 512px,
+  '50pct': 50%,
+  'max': 9999px
+);
+
+// Percentage Value for Width, Height
+$percentage-value: (
+  '10pct': 10%,
+  '20pct': 20%,
+  '30pct': 30%,
+  '40pct': 40%,
+  '50pct': 50%,
+  '60pct': 60%,
+  '70pct': 70%,
+  '80pct': 80%,
+  '90pct': 90%,
+  '100pct': 100%,
+  'at': auto
+);
+
+// Document Default
+html {
+  color: $color-dark;
+  font-family: $font-primary;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
