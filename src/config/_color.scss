@@ -1,14 +1,14 @@
 //  Main Color
 $color-primary:     hsl(206, 100%, 56%);
 $color-accent:      hsl(350, 100%, 60%);
-$color-neutral-900: hsl(212, 28%, 46%);
-$color-neutral-800: hsl(212, 28%, 52%);
-$color-neutral-700: hsl(212, 28%, 59%);
-$color-neutral-600: hsl(212, 28%, 65%);
-$color-neutral-500: hsl(212, 28%, 71%);
-$color-neutral-400: hsl(212, 28%, 77%);
-$color-neutral-300: hsl(212, 28%, 83%);
-$color-neutral-200: hsl(212, 28%, 88%);
+$color-neutral-900: hsl(212, 28%, 16%);
+$color-neutral-800: hsl(212, 28%, 26%);
+$color-neutral-700: hsl(212, 28%, 36%);
+$color-neutral-600: hsl(212, 28%, 46%);
+$color-neutral-500: hsl(212, 28%, 56%);
+$color-neutral-400: hsl(212, 28%, 66%);
+$color-neutral-300: hsl(212, 28%, 76%);
+$color-neutral-200: hsl(212, 28%, 86%);
 $color-neutral-100: hsl(212, 30%, 92%);
 
 // Semantic Color
@@ -18,10 +18,34 @@ $color-info:     hsl(200, 100%, 65%);
 $color-negative: hsl(0, 100%, 65%);
 
 // Gray Scale Color
-$color-white: hsl(0, 255%, 100%);
-$color-gray: hsl(0, 0%, 92%);
-$color-dark: hsla(231, 10%, 25%, 0.94);
+$color-white:   hsl(0, 255%, 100%);
+$color-gray:  hsl(0, 0%, 92%);
+$color-dark:  hsla(231, 10%, 25%, 0.94);
 $color-black: hsl(0, 0%, 0%);
+
+:root {
+	--color-primary:   hsl(206, 100%, 56%);
+	--color-accent:    hsl(350, 100%, 60%);
+	--color-neutral-900: hsl(212, 28%, 16%);
+	--color-neutral-800: hsl(212, 28%, 26%);
+	--color-neutral-700: hsl(212, 28%, 36%);
+	--color-neutral-600: hsl(212, 28%, 46%);
+	--color-neutral-500: hsl(212, 28%, 56%);
+	--color-neutral-400: hsl(212, 28%, 66%);
+	--color-neutral-300: hsl(212, 28%, 76%);
+	--color-neutral-200: hsl(212, 28%, 86%);
+	--color-neutral-100: hsl(212, 30%, 92%);
+
+	--color-positive: hsl(150, 80%, 45%);
+	--color-warning:  hsl(40, 90%, 60%);
+	--color-info:     hsl(200, 100%, 65%);
+	--color-negative: hsl(0, 100%, 65%);
+
+	--color-white:   hsl(0, 255%, 100%);
+	--color-gray:  hsl(0, 0%, 92%);
+	--color-dark:  hsla(231, 10%, 25%, 0.94);
+	--color-black: hsl(0, 0%, 0%);
+}
 
 // Map keyword
 $colors: (
