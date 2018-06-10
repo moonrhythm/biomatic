@@ -2,7 +2,6 @@ $spacings: (
 	'0px': 0px,
 	'1px': 1px,
 	'2px': 2px,
-	'3px': 3px,
 	'4px': 4px,
 	'8px': 8px,
 	'12px': 12px,
@@ -11,7 +10,11 @@ $spacings: (
 	'32px': 32px,
 	'48px': 48px,
 	'64px': 64px,
+	'128px': 128px,
+	'256px': 256px,
+	'512px': 512px,
 	'50pct': 50%,
 	'100pct': 100%,
-	'max': 9999px
+	'100vw': 100vw,
+	'100vh': 100vh,
 );
