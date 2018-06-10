@@ -5,29 +5,13 @@
 ._bgrp-sp  { background-repeat: space !important; }
 ._bgrp-r   { background-repeat: round !important; }
 
-@include sm-upper {
-  ._bgrp-rp-sm  { background-repeat: repeat !important; }
-  ._bgrp-rpx-sm { background-repeat: repeat-x !important; }
-  ._bgrp-rpy-sm { background-repeat: repeat-y !important; }
-  ._bgrp-nrp-sm { background-repeat: no-repeat !important; }
-  ._bgrp-sp-sm  { background-repeat: space !important; }
-  ._bgrp-r-sm   { background-repeat: round !important; }
-}
-
-@include md-upper {
-  ._bgrp-rp-md  { background-repeat: repeat !important; }
-  ._bgrp-rpx-md { background-repeat: repeat-x !important; }
-  ._bgrp-rpy-md { background-repeat: repeat-y !important; }
-  ._bgrp-nrp-md { background-repeat: no-repeat !important; }
-  ._bgrp-sp-md  { background-repeat: space !important; }
-  ._bgrp-r-md   { background-repeat: round !important; }
-}
-
-@include lg-upper {
-  ._bgrp-rp-lg  { background-repeat: repeat !important; }
-  ._bgrp-rpx-lg { background-repeat: repeat-x !important; }
-  ._bgrp-rpy-lg { background-repeat: repeat-y !important; }
-  ._bgrp-nrp-lg { background-repeat: no-repeat !important; }
-  ._bgrp-sp-lg  { background-repeat: space !important; }
-  ._bgrp-r-lg   { background-repeat: round !important; }
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size( $mediaQuery ) {
+		._bgrp-rp-#{$breakpoint}  { background-repeat: repeat !important; }
+		._bgrp-rpx-#{$breakpoint} { background-repeat: repeat-x !important; }
+		._bgrp-rpy-#{$breakpoint} { background-repeat: repeat-y !important; }
+		._bgrp-nrp-#{$breakpoint} { background-repeat: no-repeat !important; }
+		._bgrp-sp-#{$breakpoint}  { background-repeat: space !important; }
+		._bgrp-r-#{$breakpoint}   { background-repeat: round !important; }
+	}
 }

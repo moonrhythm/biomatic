@@ -1,29 +1,19 @@
 @each $key, $value in $colors {
-  ._bdcl-#{$key} { border-color: #{$value} !important; }
+  	._bdcl-#{$key} { border-color: #{$value} !important; }
 };
 
-@include sm-upper {
-  @each $key, $value in $colors {
-    ._bdcl-#{$key}-sm { border-color: #{$value} !important; }
-  };
-}
-
-@include md-upper {
-  @each $key, $value in $colors {
-    ._bdcl-#{$key}-md { border-color: #{$value} !important; }
-  };
-}
-
-@include lg-upper {
-  @each $key, $value in $colors {
-    ._bdcl-#{$key}-lg { border-color: #{$value} !important; }
-  };
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size( $mediaQuery ) {
+		@each $key, $value in $colors {
+		._bdcl-#{$key}-#{$breakpoint} { border-color: #{$value} !important; }
+		};
+	}
 }
 
 @each $key, $value in $colors {
-  ._bdcl-#{$key}-hover {
-    &:hover {
-      border-color: #{$value} !important;
-    }
-  };
+	._bdcl-#{$key}-hover {
+		&:hover {
+			border-color: #{$value} !important;
+		}
+	};
 };

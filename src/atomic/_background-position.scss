@@ -8,38 +8,16 @@
 ._bgpst-ctr { background-position: center right !important; }
 ._bgpst-ctl { background-position: center left!important; }
 
-@include sm-upper {
-  ._bgpst-t-sm   { background-position: top !important; }
-  ._bgpst-tr-sm  { background-position: top right !important; }
-  ._bgpst-tl-sm  { background-position: top left !important; }
-  ._bgpst-bt-sm  { background-position: bottom !important; }
-  ._bgpst-btr-sm { background-position: bottom right !important; }
-  ._bgpst-btl-sm { background-position: bottom left !important; }
-  ._bgpst-ct-sm  { background-position: center !important; }
-  ._bgpst-ctr-sm { background-position: center right !important; }
-  ._bgpst-ctl-sm { background-position: center left!important; }
-}
-
-@include md-upper {
-  ._bgpst-t-md   { background-position: top !important; }
-  ._bgpst-tr-md  { background-position: top right !important; }
-  ._bgpst-tl-md  { background-position: top left !important; }
-  ._bgpst-bt-md  { background-position: bottom !important; }
-  ._bgpst-btr-md { background-position: bottom right !important; }
-  ._bgpst-btl-md { background-position: bottom left !important; }
-  ._bgpst-ct-md  { background-position: center !important; }
-  ._bgpst-ctr-md { background-position: center right !important; }
-  ._bgpst-ctl-md { background-position: center left!important; }
-}
-
-@include lg-upper {
-  ._bgpst-t-lg   { background-position: top !important; }
-  ._bgpst-tr-lg  { background-position: top right !important; }
-  ._bgpst-tl-lg  { background-position: top left !important; }
-  ._bgpst-bt-lg  { background-position: bottom !important; }
-  ._bgpst-btr-lg { background-position: bottom right !important; }
-  ._bgpst-btl-lg { background-position: bottom left !important; }
-  ._bgpst-ct-lg  { background-position: center !important; }
-  ._bgpst-ctr-lg { background-position: center right !important; }
-  ._bgpst-ctl-lg { background-position: center left!important; }
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size( $mediaQuery ) {
+		._bgpst-t-#{$breakpoint}   { background-position: top !important; }
+		._bgpst-tr-#{$breakpoint}  { background-position: top right !important; }
+		._bgpst-tl-#{$breakpoint}  { background-position: top left !important; }
+		._bgpst-bt-#{$breakpoint}  { background-position: bottom !important; }
+		._bgpst-btr-#{$breakpoint} { background-position: bottom right !important; }
+		._bgpst-btl-#{$breakpoint} { background-position: bottom left !important; }
+		._bgpst-ct-#{$breakpoint}  { background-position: center !important; }
+		._bgpst-ctr-#{$breakpoint} { background-position: center right !important; }
+		._bgpst-ctl-#{$breakpoint} { background-position: center left!important; }
+	}
 }
