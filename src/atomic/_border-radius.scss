@@ -1,4 +1,4 @@
-@each $key, $value in $border-radius-value {
+@each $key, $value in $radiuses {
   ._bdrd-#{$key}    { border-radius: #{$value} !important; }
   ._bdtlrd-#{$key}  { border-top-left-radius: #{$value} !important; }
   ._bdtrrd-#{$key}  { border-top-right-radius: #{$value} !important; }
@@ -7,7 +7,7 @@
 };
 
 @include sm-upper {
-  @each $key, $value in $border-radius-value {
+  @each $key, $value in $radiuses {
     ._bdrd-#{$key}-sm    { border-radius: #{$value} !important; }
     ._bdtlrd-#{$key}-sm  { border-top-left-radius: #{$value} !important; }
     ._bdtrrd-#{$key}-sm  { border-top-right-radius: #{$value} !important; }
@@ -17,7 +17,7 @@
 }
 
 @include md-upper {
-  @each $key, $value in $border-radius-value {
+  @each $key, $value in $radiuses {
     ._bdrd-#{$key}-md    { border-radius: #{$value} !important; }
     ._bdtlrd-#{$key}-md  { border-top-left-radius: #{$value} !important; }
     ._bdtrrd-#{$key}-md  { border-top-right-radius: #{$value} !important; }
@@ -27,7 +27,7 @@
 }
 
 @include lg-upper {
-  @each $key, $value in $border-radius-value {
+  @each $key, $value in $radiuses {
     ._bdrd-#{$key}-lg    { border-radius: #{$value} !important; }
     ._bdtlrd-#{$key}-lg  { border-top-left-radius: #{$value} !important; }
     ._bdtrrd-#{$key}-lg  { border-top-right-radius: #{$value} !important; }

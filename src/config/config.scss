@@ -1,7 +1,7 @@
 @import '_color';
 @import '_breakpoint';
 @import '_spacing';
-
+@import '_radius';
 
 /*====================================
   Default Font Family
@@ -10,25 +10,7 @@ $font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 
 // Value for Border Radius
-$border-radius-value: (
-  '0px': 0px,
-  '1px': 1px,
-  '2px': 2px,
-  '3px': 3px,
-  '4px': 4px,
-  '8px': 8px,
-  '12px': 12px,
-  '16px': 16px,
-  '24px': 24px,
-  '32px': 32px,
-  '48px': 48px,
-  '64px': 64px,
-  '128px': 128px,
-  '256px': 256px,
-  '512px': 512px,
-  '50pct': 50%,
-  'max': 9999px
-);
+
 
 // Percentage Value for Width, Height
 $percentage-value: (
