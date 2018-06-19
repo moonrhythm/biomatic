@@ -1,0 +1,21 @@
+._gatf-r { grid-auto-flow: row !important }
+._gatf-cl { grid-auto-flow: column !important }
+._gatf-d { grid-auto-flow: dense !important }
+
+@include sm-upper {
+  ._gatf-r-sm { grid-auto-flow: row !important }
+  ._gatf-cl-sm { grid-auto-flow: column !important }
+  ._gatf-d-sm { grid-auto-flow: dense !important }
+}
+
+@include md-upper {
+  ._gatf-r-md { grid-auto-flow: row !important }
+  ._gatf-cl-md { grid-auto-flow: column !important }
+  ._gatf-d-md { grid-auto-flow: dense !important }
+}
+
+@include lg-upper {
+  ._gatf-r-lg { grid-auto-flow: row !important }
+  ._gatf-cl-lg { grid-auto-flow: column !important }
+  ._gatf-d-lg { grid-auto-flow: dense !important }
+}
