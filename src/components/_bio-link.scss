@@ -1,148 +1,120 @@
 .bio-link {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .bio-link {
-  font-weight: 400;
-  outline: none;
+	font-weight: 400;
+	outline: none;
 	text-decoration: none;
-  color: $color-primary;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  &:before, &:after {
-    pointer-events: none;
-    backface-visibility: hidden;
-  }
-  &:hover, &:focus, &.-active {
-    color: darken($color-primary, 10%);
-  }
-  &.-fancy {
-    border-bottom-color: $color-primary;
-    border-bottom: 1px solid;
-    &:hover, &:focus, &.-active {
-      border-color: transparentize($color-primary, .9);
-      background-color: transparentize($color-primary, .8);
-    }
-  }
-  &.-item {
-    color: $color-dark;
-    padding: 8px 16px;
-    margin-bottom: 2px;
-    border-radius: 2px;
-    &:hover, &:focus, &.-active {
-      background-color: lighten($color-primary, 40%);
-      color: lighten($color-primary, 0%);
-    }
-  } 
-  &.-primary {
-    color: $color-primary;
-    &:hover, &:focus, &.-active {
-      color: darken($color-primary, 10%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-primary;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-primary, .9);
-        background-color: transparentize($color-primary, .9);
-      }
-    }
-  }
-  &.-accent {
-    color: $color-accent;
-    &:hover, &:focus, &.-active {
-      color: darken($color-accent, 10%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-accent;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-accent, .95);
-        background-color: transparentize($color-accent, .9);
-      }
-    }
-  }
-  &.-positive {
-    color: $color-positive;
-    &:hover, &:focus, &.-active {
-      color: darken($color-positive, 5%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-positive;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-positive, .95);
-        background-color: transparentize($color-positive, .9);
-      }
-    }
-  }
-  &.-negative {
-    color: $color-negative;
-    &:hover, &:focus, &.-active {
-      color: darken($color-negative, 7%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-negative;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-negative, .95);
-        background-color: transparentize($color-negative, .9);
-      }
-    }
-  }
-  &.-warning {
-    color: $color-warning;
-    &:hover, &:focus, &.-active {
-      color: darken($color-warning, 7%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-warning;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-warning, .95);
-        background-color: transparentize($color-warning, .9);
-      }
-    }
-  }
-  &.-info {
-    color: $color-info;
-    &:hover, &:focus, &.-active {
-      color: darken($color-info, 7%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-info;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-info, .95);
-        background-color: transparentize($color-info, .9);
-      }
-    }
-  }
-  &.-dark {
-    color: $color-dark;
-    &:hover, &:focus, &.-active {
-      color: darken($color-dark, 15%);
-    }
-    &.-fancy {
-      border-bottom-color: $color-dark;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-dark, .95);
-        background-color: transparentize($color-dark, .8);
-      }
-    }
-  }
-  &.-white {
-    color: $color-white;
-    &:hover, &:focus, &.-active {
-      color: transparentize($color-white, .3);
-    }
-    &.-fancy {
-      border-bottom-color: $color-white;
-      border-bottom: 1px solid;
-      &:hover, &:focus, &.-active {
-        border-color: transparentize($color-white, .95);
-        background-color: transparentize($color-white, .8);
-      }
-    }
-  }
+	color: $color-primary;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+	&:before, &:after {
+		pointer-events: none;
+		backface-visibility: hidden;
+	}
+	&:hover, &:focus, &.-active {
+	  	color: darken($color-primary, 10%);
+	}
+	&.-fancy {
+		border-bottom-color: $color-primary;
+		border-bottom: 1px solid;
+		&:hover, &:focus, &.-active {
+			border-color: transparentize($color-primary, .9);
+			background-color: transparentize($color-primary, .8);
+		}
+	}
+	&.-item {
+		color: $color-dark;
+		padding: 8px 16px;
+		margin-bottom: 2px;
+		border-radius: 2px;
+		&:hover, &:focus, &.-active {
+			background-color: lighten($color-primary, 40%);
+			color: lighten($color-primary, 0%);
+		}
+	}
+	&.-primary {
+		color: $color-primary;
+		&:hover, &:focus, &.-active {
+			color: darken($color-primary, 10%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-primary;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-primary, .9);
+				background-color: transparentize($color-primary, .9);
+			}
+		}
+	}
+	&.-accent {
+		color: $color-accent;
+		&:hover, &:focus, &.-active {
+			color: darken($color-accent, 10%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-accent;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-accent, .95);
+				background-color: transparentize($color-accent, .9);
+			}
+		}
+	}
+	&.-positive {
+		color: $color-positive;
+		&:hover, &:focus, &.-active {
+			color: darken($color-positive, 5%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-positive;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-positive, .95);
+				background-color: transparentize($color-positive, .9);
+			}
+		}
+	}
+	&.-negative {
+		color: $color-negative;
+		&:hover, &:focus, &.-active {
+			color: darken($color-negative, 7%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-negative;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-negative, .95);
+				background-color: transparentize($color-negative, .9);
+			}
+		}
+	}
+	&.-warning {
+		color: $color-warning;
+		&:hover, &:focus, &.-active {
+			color: darken($color-warning, 7%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-warning;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-warning, .95);
+				background-color: transparentize($color-warning, .9);
+			}
+		}
+	}
+	&.-info {
+		color: $color-info;
+		&:hover, &:focus, &.-active {
+			color: darken($color-info, 7%);
+		}
+		&.-fancy {
+			border-bottom-color: $color-info;
+			border-bottom: 1px solid;
+			&:hover, &:focus, &.-active {
+				border-color: transparentize($color-info, .95);
+				background-color: transparentize($color-info, .9);
+			}
+		}
+	}
 }
