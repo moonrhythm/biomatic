@@ -1,7 +1,5 @@
 ._jtfct-st    { justify-content: start !important; }
 ._jtfct-e     { justify-content: end !important; }
-._jtfct-l     { justify-content: left !important; }
-._jtfct-r     { justify-content: right !important; }
 ._jtfct-ct    { justify-content: center !important; }
 ._jtfct-str   { justify-content: stretch !important; }
 ._jtfct-fst   { justify-content: flex-start !important; }
@@ -14,8 +12,6 @@
 	@include minimum-screen-size ($mediaQuery) {
 		._jtfct-st-#{$breakpoint}    { justify-content: start !important; }
 		._jtfct-e-#{$breakpoint}     { justify-content: end !important; }
-		._jtfct-l-#{$breakpoint}     { justify-content: left !important; }
-		._jtfct-r-#{$breakpoint}     { justify-content: right !important; }
 		._jtfct-ct-#{$breakpoint}    { justify-content: center !important; }
 		._jtfct-str-#{$breakpoint}   { justify-content: stretch !important; }
 		._jtfct-fst-#{$breakpoint}   { justify-content: flex-start !important; }

@@ -12,19 +12,15 @@ p {
 	line-height: 1.5;
 }
 
-h1, h2, h3, h4, h4, h6 {
+body, p, h1, h2, h3, h4, h4, h6, ul, ol {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
 	line-height: 1.15;
 }
 
-body, p, h1, h2, h3, h4, h4, h6 {
-	margin: 0;
-	padding: 0;
-}
-
-hr {
-	height: 0;
-	border: 0px;
-	border-bottom: 1px solid rgb(187, 187, 187);
+ul, ol {
+	list-style-type: none;
 }
 
 a {
@@ -32,8 +28,7 @@ a {
 	text-decoration: none;
 }
 
-b,
-strong {
+b, strong {
 	font-weight: bolder;
 }
 
@@ -48,39 +43,15 @@ h4 { font-size: 1.50rem }
 h5 { font-size: 1.25rem }
 h6 { font-size: 1rem }
 
-sub,
-sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sub {
-	bottom: -0.25em;
-}
-
-sup {
-	top: -0.5em;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, select, textarea {
 	font-size: 1rem;
-	line-height: 1.20;
+	line-height: 1.15;
 	margin: 0;
-}
-
-button,
-select {
 	text-transform: none;
 }
 
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
@@ -133,20 +104,9 @@ progress {
 	cursor: not-allowed;
 }
 
-img,
-video,
-object {
+img, video, object {
 	vertical-align: top;
+	max-width: 100%;
+ 	height: auto;
 }
 
-ul,
-ol {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-
-i {
-	vertical-align: middle;
-	margin-top: -2px;
-}

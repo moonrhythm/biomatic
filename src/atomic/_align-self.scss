@@ -1,11 +1,7 @@
 ._als-st  { align-self: start !important; }
 ._als-e   { align-self: end !important; }
-._als-l   { align-self: left !important; }
-._als-r   { align-self: right !important; }
 ._als-fst { align-self: flex-start !important; }
 ._als-fe  { align-self: flex-end !important; }
-._als-sst { align-self: self-start !important; }
-._als-se  { align-self: self-end !important; }
 ._als-ct  { align-self: center !important; }
 ._als-str { align-self: stretch !important; }
 
@@ -13,12 +9,8 @@
 	@include minimum-screen-size ($mediaQuery) {
 		._als-st-#{$breakpoint}  { align-self: start !important; }
 		._als-e-#{$breakpoint}   { align-self: end !important; }
-		._als-l-#{$breakpoint}   { align-self: left !important; }
-		._als-r-#{$breakpoint}   { align-self: right !important; }
 		._als-fst-#{$breakpoint} { align-self: flex-start !important; }
 		._als-fe-#{$breakpoint}  { align-self: flex-end !important; }
-		._als-sst-#{$breakpoint} { align-self: self-start !important; }
-		._als-se-#{$breakpoint}  { align-self: self-end !important; }
 		._als-ct-#{$breakpoint}  { align-self: center !important; }
 		._als-str-#{$breakpoint} { align-self: stretch !important; }
 	};

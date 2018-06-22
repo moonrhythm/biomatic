@@ -2,8 +2,6 @@
 ._bgrp-rpx { background-repeat: repeat-x !important; }
 ._bgrp-rpy { background-repeat: repeat-y !important; }
 ._bgrp-nrp { background-repeat: no-repeat !important; }
-._bgrp-sp  { background-repeat: space !important; }
-._bgrp-r   { background-repeat: round !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
@@ -11,7 +9,5 @@
 		._bgrp-rpx-#{$breakpoint} { background-repeat: repeat-x !important; }
 		._bgrp-rpy-#{$breakpoint} { background-repeat: repeat-y !important; }
 		._bgrp-nrp-#{$breakpoint} { background-repeat: no-repeat !important; }
-		._bgrp-sp-#{$breakpoint}  { background-repeat: space !important; }
-		._bgrp-r-#{$breakpoint}   { background-repeat: round !important; }
 	};
 };

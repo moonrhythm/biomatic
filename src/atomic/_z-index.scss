@@ -1,5 +1,6 @@
 ._zid-0 { z-index: 0 !important; }
 ._zid-1 { z-index: 1 !important; }
+._zid-2 { z-index: 2 !important; }
 ._zid--1 { z-index: -1 !important; }
 ._zid-at { z-index: auto !important; }
 
@@ -7,6 +8,7 @@
 	@include minimum-screen-size ($mediaQuery) {
 		._zid-0-#{$breakpoint} { z-index: 0 !important; }
 		._zid-1-#{$breakpoint} { z-index: 1 !important; }
+		._zid-2-#{$breakpoint} { z-index: 2 !important; }
 		._zid--1-#{$breakpoint} { z-index: -1 !important; }
 		._zid-at-#{$breakpoint} { z-index: auto !important; }
 	};

@@ -1,0 +1,15 @@
+@each $key, $value in $spacings {
+	._gg-#{$key} { grid-gap: #{$value} !important; }
+	._grg-#{$key} { grid-row-gap: #{$value} !important; }
+	._gclg-#{$key} { grid-column-gap: #{$value} !important; }
+};
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._gg-#{$key}-#{$breakpoint} { grid-gap: #{$value} !important; }
+			._grg-#{$key}-#{$breakpoint} { grid-row-gap: #{$value} !important; }
+			._gclg-#{$key}-#{$breakpoint} { grid-column-gap: #{$value} !important; }
+		};
+	};
+};

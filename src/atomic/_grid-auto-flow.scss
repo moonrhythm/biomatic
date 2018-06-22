@@ -1,0 +1,11 @@
+._gatf-r { grid-auto-flow: row !important }
+._gatf-cl { grid-auto-flow: column !important }
+._gatf-d { grid-auto-flow: dense !important }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._gatf-r-#{$breakpoint} { grid-auto-flow: row !important }
+		._gatf-cl-#{$breakpoint} { grid-auto-flow: column !important }
+		._gatf-d-#{$breakpoint} { grid-auto-flow: dense !important }
+	};
+};
