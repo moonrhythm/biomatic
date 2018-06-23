@@ -46,7 +46,6 @@
 .lo-3-9-md,
 .lo-4-8-md,
 .lo-5-7-md,
-.lo-6-md,
 .lo-7-5-md,
 .lo-8-4-md,
 .lo-9-3-md,
@@ -65,7 +64,6 @@
 .lo-3-9-lg,
 .lo-4-8-lg,
 .lo-5-7-lg,
-.lo-6-6-lg,
 .lo-7-5-lg,
 .lo-8-4-lg,
 .lo-9-3-lg,
@@ -74,36 +72,6 @@
 	display: grid;
 	min-height: 0;
 	min-width: 0;
-
-	&.-gap-2px   { grid-gap: 2px; }
-	&.-gap-4px   { grid-gap: 4px; }
-	&.-gap-8px   { grid-gap: 8px; }
-	&.-gap-12px  { grid-gap: 8px; }
-	&.-gap-16px  { grid-gap: 16px; }
-	&.-gap-24px  { grid-gap: 24px; }
-	&.-gap-32px  { grid-gap: 32px; }
-	&.-gap-48px  { grid-gap: 48px; }
-	&.-gap-64px  { grid-gap: 64px; }
-
-	&.-gapv-2px  { grid-column-gap: 2px; }
-	&.-gapv-4px  { grid-column-gap: 4px; }
-	&.-gapv-8px  { grid-column-gap: 8px; }
-	&.-gapv-12px { grid-column-gap: 12px; }
-	&.-gapv-16px { grid-column-gap: 16px; }
-	&.-gapv-24px { grid-column-gap: 24px; }
-	&.-gapv-32px { grid-column-gap: 32px; }
-	&.-gapv-48px { grid-column-gap: 48px; }
-	&.-gapv-64px { grid-column-gap: 64px; }
-
-	&.-gaph-2px  { grid-row-gap: 2px; }
-	&.-gaph-4px  { grid-row-gap: 4px; }
-	&.-gaph-8px  { grid-row-gap: 8px; }
-	&.-gaph-12px { grid-row-gap: 12px; }
-	&.-gaph-16px { grid-row-gap: 16px; }
-	&.-gaph-24px { grid-row-gap: 24px; }
-	&.-gaph-32px { grid-row-gap: 32px; }
-	&.-gaph-48px { grid-row-gap: 48px; }
-	&.-gaph-64px { grid-row-gap: 64px; }
 }
 
 .lo-1-11 { grid-template-columns: 1fr 11fr; }
@@ -111,7 +79,6 @@
 .lo-3-9  { grid-template-columns: 3fr 9fr; }
 .lo-4-8  { grid-template-columns: 4fr 8fr; }
 .lo-5-7  { grid-template-columns: 5fr 7fr; }
-.lo-6-6  { grid-template-columns: 6fr 6fr; }
 .lo-7-5  { grid-template-columns: 7fr 5fr; }
 .lo-8-4  { grid-template-columns: 8fr 4fr; }
 .lo-9-3  { grid-template-columns: 9fr 3fr; }
@@ -130,7 +97,6 @@
 .lo-3-9-sm  { @include sm-upper { grid-template-columns: 3fr 9fr; } }
 .lo-4-8-sm  { @include sm-upper { grid-template-columns: 4fr 8fr; } }
 .lo-5-7-sm  { @include sm-upper { grid-template-columns: 5fr 7fr; } }
-.lo-6-6-sm  { @include sm-upper { grid-template-columns: 6fr 6fr; } }
 .lo-7-5-sm  { @include sm-upper { grid-template-columns: 7fr 5fr; } }
 .lo-8-4-sm  { @include sm-upper { grid-template-columns: 8fr 4fr; } }
 .lo-9-3-sm  { @include sm-upper { grid-template-columns: 9fr 3fr; } }
@@ -156,7 +122,6 @@
 .lo-3-9-md  { @include md-upper { grid-template-columns: 3fr 9fr; } }
 .lo-4-8-md  { @include md-upper { grid-template-columns: 4fr 8fr; } }
 .lo-5-7-md  { @include md-upper { grid-template-columns: 5fr 7fr; } }
-.lo-6-6-md  { @include md-upper { grid-template-columns: 6fr 6fr; } }
 .lo-7-5-md  { @include md-upper { grid-template-columns: 7fr 5fr; } }
 .lo-8-4-md  { @include md-upper { grid-template-columns: 8fr 4fr; } }
 .lo-9-3-md  { @include md-upper { grid-template-columns: 9fr 3fr; } }
@@ -175,7 +140,6 @@
 .lo-3-9-lg  { @include lg-upper { grid-template-columns: 3fr 9fr; } }
 .lo-4-8-lg  { @include lg-upper { grid-template-columns: 4fr 8fr; } }
 .lo-5-7-lg  { @include lg-upper { grid-template-columns: 5fr 7fr; } }
-.lo-6-6-lg  { @include lg-upper { grid-template-columns: 6fr 6fr; } }
 .lo-7-5-lg  { @include lg-upper { grid-template-columns: 7fr 5fr; } }
 .lo-8-4-lg  { @include lg-upper { grid-template-columns: 8fr 4fr; } }
 .lo-9-3-lg  { @include lg-upper { grid-template-columns: 9fr 3fr; } }

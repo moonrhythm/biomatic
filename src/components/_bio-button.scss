@@ -1,262 +1,262 @@
 .bio-button {
-  display: block;
-  padding: 8px 12px;
-  border-radius: 2px;
-  background-color: $color-primary;
-  border: 1px solid $color-primary;
-  text-align: center;
-  cursor: pointer;
-  line-height: 150%;
-  position: relative;
-  color: $color-white;
-  user-select: none;
-  transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background-color 0.18s ease,
-    border-color 0.18s ease;
+	display: block;
+	padding: 8px 12px;
+	border-radius: 2px;
+	background-color: $color-primary;
+	border: 1px solid $color-primary;
+	text-align: center;
+	cursor: pointer;
+	line-height: 150%;
+	position: relative;
+	color: $color-white;
+	user-select: none;
+	transition:
+	transform 0.18s ease,
+	box-shadow 0.18s ease,
+	background-color 0.18s ease,
+	border-color 0.18s ease;
 
-  &:hover {
-    background-color: lighten($color-primary, 5%);
-    border-color: lighten($color-primary, 5%)
-  }
+	&:hover {
+		background-color: lighten($color-primary, 5%);
+		border-color: lighten($color-primary, 5%)
+	}
 
-  &.-primary {
-    background-color: $color-primary;
-    border: 1px solid $color-primary;
-    &.-outline {
-      background-color: transparent;
-      color: $color-primary;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-primary;
-          border-bottom-color: $color-primary;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-primary, 5%);
-      border-color: lighten($color-primary, 5%)
-    }
-  }
+	&.-primary {
+		background-color: $color-primary;
+		border: 1px solid $color-primary;
+		&.-outline {
+			background-color: transparent;
+			color: $color-primary;
+			&.-loading {
+				color: transparent;
+				&:after {
+					border-left-color: $color-primary;
+					border-bottom-color: $color-primary;
+				}
+			}
+		}
+		&:not(.-outline):hover {
+			background-color: lighten($color-primary, 5%);
+			border-color: lighten($color-primary, 5%)
+		}
+	}
 
-  &.-accent {
-    background-color: $color-accent;
-    border: 1px solid $color-accent;
-    &.-outline {
-      color: $color-accent;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-accent;
-          border-bottom-color: $color-accent;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-accent, 5%);
-      border-color: lighten($color-accent, 5%)
-    }
-  }
+	&.-accent {
+	background-color: $color-accent;
+	border: 1px solid $color-accent;
+	&.-outline {
+		color: $color-accent;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-accent;
+			border-bottom-color: $color-accent;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-accent, 5%);
+		border-color: lighten($color-accent, 5%)
+	}
+	}
 
-  &.-positive {
-    background-color: $color-positive;
-    border: 1px solid $color-positive;
-    &.-outline {
-      color: $color-positive;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-positive;
-          border-bottom-color: $color-positive;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-positive, 3%);
-      border-color: lighten($color-positive, 3%)
-    }
-  }
+	&.-positive {
+	background-color: $color-positive;
+	border: 1px solid $color-positive;
+	&.-outline {
+		color: $color-positive;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-positive;
+			border-bottom-color: $color-positive;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-positive, 3%);
+		border-color: lighten($color-positive, 3%)
+	}
+	}
 
-  &.-info {
-    background-color: $color-info;
-    border: 1px solid $color-info;
-    &.-outline {
-      color: $color-info;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-info;
-          border-bottom-color: $color-info;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-info, 5%);
-      border-color: lighten($color-info, 5%)
-    }
-  }
+	&.-info {
+	background-color: $color-info;
+	border: 1px solid $color-info;
+	&.-outline {
+		color: $color-info;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-info;
+			border-bottom-color: $color-info;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-info, 5%);
+		border-color: lighten($color-info, 5%)
+	}
+	}
 
-  &.-warning {
-    background-color: $color-warning;
-    border: 1px solid $color-warning;
-    &.-outline {
-      color: $color-warning;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-warning;
-          border-bottom-color: $color-warning;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-warning, 7%);
-      border-color: lighten($color-warning, 7%)
-    }
-  }
+	&.-warning {
+	background-color: $color-warning;
+	border: 1px solid $color-warning;
+	&.-outline {
+		color: $color-warning;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-warning;
+			border-bottom-color: $color-warning;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-warning, 7%);
+		border-color: lighten($color-warning, 7%)
+	}
+	}
 
-  &.-negative {
-    background-color: $color-negative;
-    border: 1px solid $color-negative;
-    &.-outline {
-      color: $color-negative;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-negative;
-          border-bottom-color: $color-negative;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-negative, 3%);
-      border-color: lighten($color-negative, 3%)
-    }
-  }
+	&.-negative {
+	background-color: $color-negative;
+	border: 1px solid $color-negative;
+	&.-outline {
+		color: $color-negative;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-negative;
+			border-bottom-color: $color-negative;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-negative, 3%);
+		border-color: lighten($color-negative, 3%)
+	}
+	}
 
-  &.-dark {
-    background-color: $color-dark;
-    border: 1px solid $color-dark;
-    &.-outline {
-      color: $color-dark;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-dark;
-          border-bottom-color: $color-dark;
-        }
-      }
-    }
-    &:not(.-outline):hover {
-      background-color: lighten($color-dark, 5%);
-      border-color: lighten($color-dark, 5%)
-    }
-  }
+	&.-dark {
+	background-color: $color-dark;
+	border: 1px solid $color-dark;
+	&.-outline {
+		color: $color-dark;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-dark;
+			border-bottom-color: $color-dark;
+		}
+		}
+	}
+	&:not(.-outline):hover {
+		background-color: lighten($color-dark, 5%);
+		border-color: lighten($color-dark, 5%)
+	}
+	}
 
-  &.-black {
-    background-color: $color-black;
-    border: 1px solid $color-black;
-    &.-outline {
-      color: $color-black;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-black;
-          border-bottom-color: $color-black;
-        }
-      }
-    }
-  }
+	&.-black {
+	background-color: $color-black;
+	border: 1px solid $color-black;
+	&.-outline {
+		color: $color-black;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-black;
+			border-bottom-color: $color-black;
+		}
+		}
+	}
+	}
 
-  &.-gray {
-    background-color: $color-gray;
-    border: 1px solid $color-gray;
-    color: $color-dark;
-    &.-outline {
-      color: $color-gray;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-gray;
-          border-bottom-color: $color-gray;
-        }
-      }
-    }
-  }
+	&.-gray {
+	background-color: $color-gray;
+	border: 1px solid $color-gray;
+	color: $color-dark;
+	&.-outline {
+		color: $color-gray;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-gray;
+			border-bottom-color: $color-gray;
+		}
+		}
+	}
+	}
 
-  &.-white {
-    background-color: $color-white;
-    color: $color-dark;
-    border: 1px solid $color-gray;
-    &.-outline {
-      color: $color-white;
-      border: 1px solid $color-white;
-      background-color: transparent;
-      &.-loading {
-        color: transparent;
-        &:after {
-          border-left-color: $color-white;
-          border-bottom-color: $color-white;
-        }
-      }
-    }
-  }
+	&.-white {
+	background-color: $color-white;
+	color: $color-dark;
+	border: 1px solid $color-gray;
+	&.-outline {
+		color: $color-white;
+		border: 1px solid $color-white;
+		background-color: transparent;
+		&.-loading {
+		color: transparent;
+		&:after {
+			border-left-color: $color-white;
+			border-bottom-color: $color-white;
+		}
+		}
+	}
+	}
 
-  &.-disabled {
-    cursor: not-allowed;
-    opacity: .4;
-    cursor: not-allowed;
-  }
+	&.-disabled {
+	cursor: not-allowed;
+	opacity: .4;
+	cursor: not-allowed;
+	}
 
-  &.-loading {
-    color: transparent;
-    &:after {
-      content: "";
-      position: absolute;
-      height: 1em;
-      width: 1em;
-      left: calc(50% - ((1em + 6px) / 2));
-      top: calc(50% - ((1em + 6px) / 2));
-      animation: spinAround 500ms infinite linear;
-      border: 3px solid;
-      border-radius: 290486px;
-      border-right-color: transparent;
-      border-top-color: transparent;
-    }
+	&.-loading {
+	color: transparent;
+	&:after {
+		content: "";
+		position: absolute;
+		height: 1em;
+		width: 1em;
+		left: calc(50% - ((1em + 6px) / 2));
+		top: calc(50% - ((1em + 6px) / 2));
+		animation: spinAround 500ms infinite linear;
+		border: 3px solid;
+		border-radius: 290486px;
+		border-right-color: transparent;
+		border-top-color: transparent;
+	}
 
-    &:not(.-outline) {
-      &:after {
-        border-left-color: $color-white;
-        border-bottom-color: $color-white;
-      }
-    }
+	&:not(.-outline) {
+		&:after {
+		border-left-color: $color-white;
+		border-bottom-color: $color-white;
+		}
+	}
 
-    &.-white {
-      &:after {
-        border-left-color: $color-dark;
-        border-bottom-color: $color-dark;
-      }
-    }
-  }
+	&.-white {
+		&:after {
+		border-left-color: $color-dark;
+		border-bottom-color: $color-dark;
+		}
+	}
+	}
 }
 
 @keyframes spinAround {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
+	from {
+	-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+	}
+	to {
+	-webkit-transform: rotate(359deg);
+			transform: rotate(359deg);
+	}
 }

@@ -37,7 +37,7 @@
 		}
 	}
 
-	&.-has-icon > label:after {
+	&.-has-chevron > label:after {
 		content: "";
 		border: 2px solid currentColor;
 		border-right-width: 0px;
@@ -54,19 +54,19 @@
 		pointer-events: none;
 	}
 
-	&.-has-icon >input:checked {
+	&.-has-chevron >input:checked {
 		~ label:after {
 			transform: rotate(-45deg) translate(2px, calc(-50% - 0px));
 		}
 	}
 
-	&.-has-icon:not(.-left) {
+	&.-has-chevron:not(.-left) {
 		> label:after {
 			right: 0px;
 		}
 	}
 
-	&.-has-icon.-left {
+	&.-has-chevron.-left {
 		> label {
 			padding-left: 18px;
 		}

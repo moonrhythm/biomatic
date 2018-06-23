@@ -1,13 +1,16 @@
 .bio-breadcrumb {
 	display: flex;
 	flex-wrap: wrap;
+
 	> * {
 		color: $color-dark;
 		opacity: .9;
+
 		> * {
 			color: $color-dark;
 			opacity: .9;
 		}
+
 		&:not(:first-child) {
 			&:before {
 				content: "/";
@@ -17,6 +20,7 @@
 				margin-right: 8px;
 			}
 		}
+
 		&:last-child {
 			color: $color-dark;
 			opacity: 1;
