@@ -1,6 +1,8 @@
 ._cs-pt  { cursor: pointer !important; }
 ._cs-h   { cursor: help !important; }
 ._cs-nal { cursor: not-allowed !important; }
+._cs-m   { cursor: move !important; }
+._cs-w   { cursor: wait !important; }
 ._cs-at  { cursor: auto !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
@@ -8,6 +10,8 @@
 		._cs-pt-#{$breakpoint}  { cursor: pointer !important; }
 		._cs-h-#{$breakpoint}   { cursor: help !important; }
 		._cs-nal-#{$breakpoint} { cursor: not-allowed !important; }
+		._cs-m-#{$breakpoint}   { cursor: move !important; }
+		._cs-w-#{$breakpoint}   { cursor: wait !important; }
 		._cs-at-#{$breakpoint}  { cursor: auto !important; }
 	};
 };

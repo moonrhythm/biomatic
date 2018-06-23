@@ -1,25 +1,11 @@
 ._f-1 { flex: 1 !important; }
-._f-2 { flex: 2 !important; }
-._f-3 { flex: 3 !important; }
-._f-4 { flex: 4 !important; }
-._f-5 { flex: 5 !important; }
-._f-6 { flex: 6 !important; }
-._f-7 { flex: 7 !important; }
-._f-8 { flex: 8 !important; }
-._f-9 { flex: 9 !important; }
+._f-n { flex: none !important; }
 ._f-at { flex: auto !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
 		._f-1-#{$breakpoint} { flex: 1 !important; }
-		._f-2-#{$breakpoint} { flex: 2 !important; }
-		._f-3-#{$breakpoint} { flex: 3 !important; }
-		._f-4-#{$breakpoint} { flex: 4 !important; }
-		._f-5-#{$breakpoint} { flex: 5 !important; }
-		._f-6-#{$breakpoint} { flex: 6 !important; }
-		._f-7-#{$breakpoint} { flex: 7 !important; }
-		._f-8-#{$breakpoint} { flex: 8 !important; }
-		._f-9-#{$breakpoint} { flex: 9 !important; }
+		._f-n-#{$breakpoint} { flex: none !important; }
 		._f-at-#{$breakpoint} { flex: auto !important; }
 	};
 };

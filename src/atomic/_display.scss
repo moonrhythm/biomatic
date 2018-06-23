@@ -3,6 +3,7 @@
 ._dp-g   { display: grid !important; }
 ._dp-il  { display: inline !important; }
 ._dp-ilb { display: inline-block !important; }
+._dp-ilf { display: inline-flex !important; }
 ._dp-tb  { display: table !important; }
 ._dp-tbc { display: table-cell !important; }
 ._dp-n   { display: none !important; }
@@ -14,6 +15,7 @@
 		._dp-g-#{$breakpoint}   { display: grid !important; }
 		._dp-il-#{$breakpoint}  { display: inline !important; }
 		._dp-ilb-#{$breakpoint} { display: inline-block !important; }
+		._dp-ilf-#{$breakpoint} { display: inline-flex !important; }
 		._dp-tb-#{$breakpoint}  { display: table !important; }
 		._dp-tbc-#{$breakpoint} { display: table-cell !important; }
 		._dp-n-#{$breakpoint}   { display: none !important; }
