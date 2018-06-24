@@ -17,7 +17,6 @@ $color-positive: hsl(150, 80%, 45%);
 $color-warning:  hsl(40, 90%, 60%);
 $color-info:     hsl(200, 100%, 65%);
 $color-negative: hsl(0, 100%, 65%);
-$color-disabled: hsl(220, 32%, 89%);
 
 // Gray Scale Color
 $color-white:   hsl(0, 255%, 100%);
@@ -43,7 +42,6 @@ $color-black: hsl(0, 0%, 0%);
 	--color-warning:  hsl(40, 90%, 60%);
 	--color-info:     hsl(200, 100%, 65%);
 	--color-negative: hsl(0, 100%, 65%);
-	--color-disabled: hsl(220, 32%, 89%);
 
 	--color-white:   hsl(0, 255%, 100%);
 	--color-light:   hsla(0, 255%, 100%, 0.92);
@@ -70,7 +68,6 @@ $colors: (
 	'warning': $color-warning,
 	'info': $color-info,
 	'negative': $color-negative,
-	'disabled': $color-disabled,
 
 	'white': $color-white,
 	'light': $color-light,
