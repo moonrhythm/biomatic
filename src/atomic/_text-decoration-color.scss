@@ -1,5 +1,5 @@
 @each $key, $value in $colors {
-  	._tdcrtcl-#{$key} { text-decoration-color: #{$value} !important; }
+	._tdcrtcl-#{$key} { text-decoration-color: #{$value} !important; }
 };
 
 @each $breakpoint, $mediaQuery in $breakpoints {

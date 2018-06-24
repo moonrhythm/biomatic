@@ -7,6 +7,6 @@
 	@include md-upper { grid-template-columns: 1fr $md - 40px 1fr; }
 	@include lg-upper { grid-template-columns: 1fr $lg - 40px 1fr; }
 	>* {
-	  	grid-column: 2 / 3;
+		grid-column: 2 / 3;
 	}
 }

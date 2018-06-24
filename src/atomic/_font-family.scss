@@ -4,7 +4,7 @@
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
 		._ffml-primary-#{$breakpoint} { font-family: $font-primary !important }
-    	._ffml-secondary-#{$breakpoint} { font-family: $font-secondary !important }
+		._ffml-secondary-#{$breakpoint} { font-family: $font-secondary !important }
 	};
 };
 

@@ -1,10 +1,10 @@
 .bio-message {
-    display: grid;
-    padding: 16px;
-    border-radius: 2px;
-    grid-template-columns: 1fr auto;
-    grid-template-areas:
-      "content close";
+	display: grid;
+	padding: 16px;
+	border-radius: 2px;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"content close";
 
 	color: $color-primary;
 	background-color: transparentize($color-primary, .8);

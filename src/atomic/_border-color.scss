@@ -1,5 +1,5 @@
 @each $key, $value in $colors {
-  	._bdcl-#{$key} { border-color: #{$value} !important; }
+	._bdcl-#{$key} { border-color: #{$value} !important; }
 };
 
 @each $breakpoint, $mediaQuery in $breakpoints {

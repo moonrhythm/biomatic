@@ -1,5 +1,5 @@
 @each $key, $value in $spacings {
-  	._t-#{$key} { top: #{$value} !important; }
+	._t-#{$key} { top: #{$value} !important; }
 };
 
 @each $breakpoint, $mediaQuery in $breakpoints {

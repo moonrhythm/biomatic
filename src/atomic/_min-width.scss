@@ -3,9 +3,9 @@
 };
 
 @each $breakpoint, $mediaQuery in $breakpoints {
-  @include minimum-screen-size ($mediaQuery) {
-	  @each $key, $value in $spacings {
-		  ._mnw-#{$key}-#{$breakpoint} { min-width: #{$value} !important; }
-	  };
-  };
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._mnw-#{$key}-#{$breakpoint} { min-width: #{$value} !important; }
+		};
+	};
 };
