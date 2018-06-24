@@ -9,7 +9,7 @@
 
 // Field
 .bio-field {
-	> label {
+	label {
 		font-weight: 600;
 		display: inline-block;
 		margin-bottom: 4px;
@@ -17,6 +17,12 @@
 }
 
 // Input
+.bio-input,
+.bio-textarea,
+.bio-select {
+	border-radius: 4px;
+}
+
 .bio-input > input,
 .bio-textarea > textarea,
 .bio-select > select {
@@ -25,9 +31,10 @@
 	appearance: none;
 	color: $color-dark;
 	background-color: $color-white;
-	border-radius: 3px;
+	border-radius: inherit;
 	border: 1px solid hsla(228, 10%, 90%, 0.96);
 	width: 100%;
+	height: 100%;
 	vertical-align: top;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -280,24 +287,24 @@ $arr: (
 .bio-field {
 	@each $key, $value in $arr {
 		&.-#{$key} {
-			> .bio-input > input,
-			> .bio-textarea > textarea,
-			> .bio-select > select {
+			.bio-input > input,
+			.bio-textarea > textarea,
+			.bio-select > select {
 				border-color: $value;
 				&:focus, :active {
 					box-shadow: 0 0 0 2px transparentize($value, 0.8);
 				}
 			}
-			> small {
+			small {
 				color: $value;
 			}
 		}
 	};
 
 	&.-disabled {
-		> .bio-input > input,
-		> .bio-textarea > textarea,
-		> .bio-select > select {
+		.bio-input > input,
+		.bio-textarea > textarea,
+		.bio-select > select {
 			cursor: not-allowed;
 			background-color: hsla(0, 0%, 97%, 0.92);
 			border-color: hsla(0, 0%, 97%, 0.92);
@@ -355,23 +362,30 @@ $arr: (
 	padding: 8px;
 }
 
-.bio-input > input,
-.bio-select:not(.-multiple) > select {
+.bio-input,
+.bio-select:not(.-multiple){
 	height: 36px;
 }
 
 .bio-field {
 	&.-big {
+		.bio-input,
+		.bio-select:not(.-multiple) {
+			height: 40px;
+		}
 		.bio-input > input,
 		.bio-select:not(.-multiple) > select {
-			height: 40px;
 			font-size: 1.125rem;
 		}
 	}
 	&.-small {
+		.bio-input,
+		.bio-select:not(.-multiple) {
+			height: 32px;
+		}
 		.bio-input > input,
 		.bio-select:not(.-multiple) > select {
-			height: 32px;
+			height: 100%;
 			font-size: 0.875rem;
 		}
 	}
@@ -388,8 +402,9 @@ $arr: (
 		align-items: center;
 		justify-content: center;
 		position: absolute;
+		top: 0px;
 		width: 42px;
-		height: 36px;
+		height: 100%;
 	}
 }
 
@@ -426,7 +441,6 @@ $arr: (
 			padding-right: 40px;
 		}
 		> i {
-			height: 32px;
 			width: 40px;
 			right: 0px;
 		}
@@ -436,7 +450,6 @@ $arr: (
 			padding-left: 40px;
 		}
 		> i {
-			height: 32px;
 			width: 40px;
 			left: 0px;
 		}
@@ -446,7 +459,6 @@ $arr: (
 			padding-left: 40px;
 		}
 		> i {
-			height: 32px;
 			width: 40px;
 			left: 0px;
 		}
@@ -459,7 +471,6 @@ $arr: (
 			padding-right: 44px;
 		}
 		> i {
-			height: 40px;
 			width: 44px;
 			right: 0px;
 		}
@@ -469,7 +480,6 @@ $arr: (
 			padding-left: 44px;
 		}
 		> i {
-			height: 40px;
 			width: 44px;
 			left: 0px;
 		}
@@ -479,7 +489,6 @@ $arr: (
 			padding-left: 44px;
 		}
 		> i {
-			height: 40px;
 			width: 44px;
 			left: 0px;
 		}
