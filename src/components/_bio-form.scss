@@ -274,7 +274,7 @@
 		position: absolute;
 		right: 8px;
 		top: 50%;
-		border-color: darken( $color-gray, 5%);
+		border-color: darken( $color-gray, 15%);
 		transform: rotate(-45deg) translate(0, calc(-50% - 4px));
 		pointer-events: none;
 	}
@@ -391,6 +391,7 @@ $arr: (
 
 // input icon
 .bio-input.-has-icon-left,
+.bio-select.-has-icon-left,
 .bio-input.-has-icon-right {
 	position: relative;
 	> i {
@@ -406,6 +407,15 @@ $arr: (
 
 .bio-input.-has-icon-left {
 	> input {
+		padding-left: 42px;
+	}
+	> i {
+		left: 0px;
+	}
+}
+
+.bio-select.-has-icon-left {
+	> select {
 		padding-left: 42px;
 	}
 	> i {
@@ -443,6 +453,16 @@ $arr: (
 			left: 0px;
 		}
 	}
+	.bio-select.-has-icon-left {
+		> select {
+			padding-left: 40px;
+		}
+		> i {
+			height: 32px;
+			width: 40px;
+			left: 0px;
+		}
+	}
 }
 
 .bio-field.-big {
@@ -466,9 +486,14 @@ $arr: (
 			left: 0px;
 		}
 	}
+	.bio-select.-has-icon-left {
+		> select {
+			padding-left: 44px;
+		}
+		> i {
+			height: 40px;
+			width: 44px;
+			left: 0px;
+		}
+	}
 }
-/* TODO (Consider)
-* - Size
-* - Icon left / right
-* - Loading state
-*/
