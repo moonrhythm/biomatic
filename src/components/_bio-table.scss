@@ -4,6 +4,7 @@
 	border-spacing: 0;
 	width: 100%;
 	max-width: 100%;
+	overflow: auto;
 	th {
 		padding: 16px;
 		border: 1px solid $color-gray;
@@ -13,25 +14,27 @@
 		padding: 16px;
 		border: 1px solid $color-gray;
 	}
-
+	tbody tr:nth-child(even) {
+		background-color: hsl(0, 0%, 98%);
+	}
 }
 
 .bio-table {
-	tr th, tr td {
+	th, td {
 		border: 0px;
 		vertical-align: middle;
 		padding: 12px 12px;
 	}
-	tr th {
+	th {
 		border-bottom: 2px solid var(--color-gray);
 		text-align: left;
 		padding-top: 12px;
 		padding-bottom: 12px;
 	}
-	tr td {
+	td {
 		border-bottom: 1px solid var(--color-gray);
 	}
-	tbody tr, tbody tr td {
+	tbody tr, td {
 		height: 48px;
 	}
 }
