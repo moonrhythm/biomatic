@@ -1,73 +1,59 @@
 .bio-tooltip {
 	position: relative;
+	&:before,
+	&:after {
+		position: absolute;
+		pointer-events: none;
+		visibility: hidden;
+		transition: all .16s ease-in-out;
+		background-color: $color-primary;
+		opacity: 0;
+	}
+
 	&:before {
 		content: '';
-		position: absolute;
-		background-color: $color-white;
-		opacity: 0;
 		width: 8px;
 		height: 8px;
-		transition: all .16s ease;
-		z-index: 2;
-		pointer-events: none;
-		visibility: hidden;
-		box-shadow:
-		0 4px 6px rgba(50,50,93,.11),
-		0 1px 3px rgba(0,0,0,.08);
+		margin-left: -3px;
+		margin-bottom: 6px;
+		left: 50%;
+		bottom: 100%;
+		transform: translateX(-50%);
+		z-index: 1;
 	}
+
 	&:after {
 		content: attr(data-tooltip);
-		position: absolute;
-		opacity: 0;
-		font-size: 86%;
+		font-size: 85%;
+		font-weight: 500;
 		line-height: 125%;
-		border: 1px solid $color-dark;
-		border-color: $color-gray;
 		padding: 8px 12px;
-		background-color: $color-white;
-		border-radius: 2px;
-		transition: all .16s ease;
-		z-index: 1;
-		pointer-events: none;
-		visibility: hidden;
+		color: $color-light;
+		border-radius: 3px;
 		width: 150px;
+		left: 50%;
+		bottom: 100%;
+		margin-bottom: 8px;
+		transform: translateX(-50%) scale(0);
+		transform-origin: center bottom;
 		box-shadow:
-		0 4px 6px rgba(50,50,93,.11),
-		0 1px 3px rgba(0,0,0,.08);
+			0 2px 6px transparentize($color-primary, .8),
+			0 3px 8px transparentize($color-primary, .8);
 	}
+
 	&:hover {
 	  	&:after, &:before {
 			opacity: 1;
 			visibility: visible;
 		}
-	}
-
-	&.-top,
-	&:not(.-top):not(.-left):not(.-right):not(.-bottom) {
-		&:before {
-			margin-left: -3px;
-			margin-bottom: 6px;
-			box-shadow: 1px 1px 0 0 $color-gray;
-			left: 50%;
-			bottom: 100%;
-			transform: translateX(-50%);
-		}
-	  	&:after {
-			left: 50%;
-			bottom: 100%;
-			margin-bottom: 8px;
-			transform: translateX(-50%) scale(0);
-			transform-origin: center bottom;
-		}
-		&:hover:before { transform: rotate(45deg) scale(1); }
-		&:hover:after  { transform: translateX(-50%) scale(1); }
+		&:before { transform: rotate(45deg) scale(1); }
+		&:after  { transform: translateX(-50%) scale(1); }
 	}
 
 	&.-right {
 		&:before {
 			margin-top: -3px;
 			margin-left: 6px;
-			box-shadow: -1px 1px 0 0 $color-gray;
 			left: 100%;
 			top: 50%;
 			transform: translateY(-50%);
@@ -75,6 +61,7 @@
 		&:after {
 			left: 100%;
 			top: 50%;
+			bottom: auto;
 			margin-left: 8px;
 			transform: translateY(-50%) scale(0);
 			transform-origin: left center;
@@ -87,14 +74,15 @@
 		&:before {
 			margin-left: -3px;
 			margin-top: 6px;
-			box-shadow: -1px -1px 0 0 $color-gray;
 			left: 50%;
 			top: 100%;
+			bottom: auto;
 			transform: translateY(50%);
 		}
 		&:after {
 			left: 50%;
 			top: 100%;
+			bottom: auto;
 			margin-top: 8px;
 			transform: translateY(50%) translateX(-50%) scale(0);
 			transform-origin: center top;
@@ -107,19 +95,58 @@
 		&:before {
 			margin-top: -3px;
 			margin-right: 6px;
-			box-shadow: 1px -1px 0 0 $color-gray;
 			right: 100%;
 			top: 50%;
+			bottom: auto;
+			left: auto;
 			transform: translateY(50%);
 		}
 		&:after {
 			right: 100%;
 			top: 50%;
+			bottom: auto;
+			left: auto;
 			margin-right: 8px;
 			transform: translateY(-50%) scale(0);
 			transform-origin: right center;
 		}
 		&:hover:before { transform: rotate(45deg) scale(1); }
 		&:hover:after  { transform: translateY(-50%) scale(1); }
+	}
+
+	$arr: (
+		'accent': $color-accent,
+		'positive': $color-positive,
+		'negative': $color-negative,
+		'warning': $color-warning,
+		'info': $color-info,
+		'dark': hsla(231, 10%, 25%, 1)
+	);
+
+	@each $key, $value in $arr {
+		&.-#{$key} {
+			&:before,
+			&:after {
+				background-color: $value;
+			}
+			&:after {
+				box-shadow:
+					0 2px 6px transparentize($value, .8),
+					0 3px 8px transparentize($value, .8);
+			}
+		}
+	};
+
+	&.-white {
+		&:before,
+		&:after {
+			color: $color-dark;
+			background-color: $color-white;
+		}
+		&:after {
+			box-shadow:
+				0 2px 6px transparentize($color-dark, .8),
+				0 3px 8px transparentize($color-dark, .8);
+		}
 	}
 }
