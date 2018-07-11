@@ -9,9 +9,24 @@
 	align-items: center;
 }
 
+.u-valign-top {
+	display: flex;
+	justify-content: flex-start;
+}
+
 .u-halign-center {
 	display: flex;
 	justify-content: center;
+}
+
+.u-halign-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.u-halign-right {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .u-halign-split {
