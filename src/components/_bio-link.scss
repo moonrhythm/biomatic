@@ -20,9 +20,10 @@
 
 	&.-fancy {
 		border-bottom-color: $color-primary;
-		border-bottom: 1px solid;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
 		&:hover, &:focus, &.-active {
-			border-color: transparentize($color-primary, .9);
+			border-bottom-color: transparentize($color-primary, .9);
 			background-color: transparentize($color-primary, .9);
 		}
 	}
@@ -44,9 +45,8 @@
 			}
 			&.-fancy {
 				border-bottom-color: $value;
-				border-bottom: 1px solid;
 				&:hover, &:focus, &.-active {
-					border-color: transparentize($value, .9);
+					border-bottom-color: transparentize($value, .9);
 					background-color: transparentize($value, .9);
 				}
 			}
