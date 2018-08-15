@@ -1,14 +1,14 @@
-// Font stack variables
+/* Font stack variables */
 $font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 $font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 
-// for generate "_ffml-*" classes
+/* for generate "_ffml-*" classes */
 $font-families: (
 	'primary': $font-primary,
 	'secondary': $font-secondary
 );
 
-// Font size
+/* Font size */
 $h1: 3rem;
 $h2: 2.5rem;
 $h3: 2rem;
@@ -25,7 +25,7 @@ $font-size-6: 1rem;
 $font-size-7: 0.85rem;
 $font-size-8: 0.70rem;
 
-// for generate "_fs-*" classes
+/* for generate "_fs-*" classes */
 $font-sizes: (
 	'1': $font-size-1,
 	'2': $font-size-2,
