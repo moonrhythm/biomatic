@@ -1,21 +1,11 @@
-._fs-1 { font-size: 3rem !important; }
-._fs-2 { font-size: 2.5rem !important; }
-._fs-3 { font-size: 2rem !important; }
-._fs-4 { font-size: 1.5rem !important; }
-._fs-5 { font-size: 1.125rem !important; }
-._fs-6 { font-size: 1rem !important; }
-._fs-7 { font-size: 0.85rem !important; }
-._fs-8 { font-size: 0.70rem !important; }
+@each $key, $value in $font-sizes {
+	._fs-#{$key} { font-size: #{$value} !important; }
+};
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
-		._fs-1-#{$breakpoint} { font-size: 3rem !important; }
-		._fs-2-#{$breakpoint} { font-size: 2.5rem !important; }
-		._fs-3-#{$breakpoint} { font-size: 2rem !important; }
-		._fs-4-#{$breakpoint} { font-size: 1.5rem !important; }
-		._fs-5-#{$breakpoint} { font-size: 1.125rem !important; }
-		._fs-6-#{$breakpoint} { font-size: 1rem !important; }
-		._fs-7-#{$breakpoint} { font-size: 0.85rem !important; }
-		._fs-8-#{$breakpoint} { font-size: 0.70rem !important; }
+		@each $key, $value in $font-sizes {
+			._fs-#{$key}-#{$breakpoint} { font-size: #{$value} !important; }
+		};
 	};
 };

@@ -21,7 +21,7 @@ body, h1, h2, h3, h4, h4, h5, h6, ul, ol {
 }
 
 ul, ol {
-	list-style-type: none;
+	list-style-position: inside;
 }
 
 a {
@@ -36,13 +36,6 @@ b, strong {
 small {
 	font-size: 80%;
 }
-
-h1 { font-size: 3rem }
-h2 { font-size: 2.50rem }
-h3 { font-size: 2rem }
-h4 { font-size: 1.50rem }
-h5 { font-size: 1.25rem }
-h6 { font-size: 1rem }
 
 button, input, select, textarea {
 	font-size: 1rem;
