@@ -7,7 +7,7 @@
 		"content close";
 
 	color: $color-primary;
-	background-color: mix($color-primary, white, 20%);
+	background-color: mix($color-primary, white, 17%);
 	border-left: 4px solid $color-primary;
 
 	$arr: (
@@ -21,7 +21,7 @@
 	@each $key, $value in $arr {
 		&.-#{$key} {
 			color: $value;
-			background-color: mix($value, white, 20%);
+			background-color: mix($value, white, 17%);
 			border-left: 4px solid $value;
 		}
 	};

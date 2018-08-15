@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">Biomatic UI</h1>
-<p align="center">A Flexible Atomic-Focused CSS Framework</p>
+<p align="center">A Flexible Atomic-Focused CSS Toolkit</p>
 
 <div align="center">
 
