@@ -1,17 +1,15 @@
-$font-primary:
-	-apple-system,
-	system-ui,
-	BlinkMacSystemFont,
-	"Segoe UI",
-	Roboto,
-	"Helvetica Neue",
-	sans-serif;
+// Font stack variables
+$font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
 
-$font-secondary:
-	-apple-system,
-	system-ui,
-	BlinkMacSystemFont,
-	"Segoe UI",
-	Roboto,
-	"Helvetica Neue",
-	sans-serif;
+/* Map values
+ * ---
+ * Style: font-family
+ * Example:
+ *   _ffml-primary
+ *   _ffml-secondary
+ */
+$font-families: (
+	'primary': $font-primary,
+	'secondary': $font-secondary
+);

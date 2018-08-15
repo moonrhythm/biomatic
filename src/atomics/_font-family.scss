@@ -1,10 +1,11 @@
-._ffml-primary { font-family: $font-primary !important }
-._ffml-secondary { font-family: $font-secondary !important }
+@each $key, $value in $font-families {
+	._ffml-#{$key} { font-family: #{$value} !important; }
+};
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
-		._ffml-primary-#{$breakpoint} { font-family: $font-primary !important }
-		._ffml-secondary-#{$breakpoint} { font-family: $font-secondary !important }
+		@each $key, $value in $font-families {
+			._ffml-#{$key}-#{$breakpoint} { font-family: #{$value} !important; }
+		};
 	};
 };
-
