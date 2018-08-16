@@ -98,7 +98,8 @@
 		'negative': $color-negative,
 		'warning': $color-warning,
 		'info': $color-info,
-		'dark': $color-dark
+		'white': $color-white,
+		'dark': $color-dark,
 	);
 
 	@each $key, $value in $arr {
