@@ -363,14 +363,14 @@ $arr: (
 
 .bio-input,
 .bio-select:not(.-multiple){
-	height: 36px;
+	height: 40px;
 }
 
 .bio-field {
 	&.-big {
 		.bio-input,
 		.bio-select:not(.-multiple) {
-			height: 40px;
+			height: 46px;
 		}
 	}
 	&.-small {
@@ -381,7 +381,6 @@ $arr: (
 		.bio-input > input,
 		.bio-select:not(.-multiple) > select {
 			height: 100%;
-			font-size: 0.875rem;
 		}
 	}
 }

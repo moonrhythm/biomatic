@@ -1,7 +1,9 @@
 .bio-button {
 	position: relative;
 	width: 128px;
-	padding: 12px 16px;
+	height: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
 	border-radius: 3px;
 	color: $color-light;
 	background-color: $color-primary;
@@ -23,13 +25,12 @@
 
 	// Size
 	&.-small {
-		padding: 8px 16px;
+		height: 30px;
 		font-size: 0.875rem;
 	}
 
 	&.-big {
-		padding: 14px 16px;
-		font-size: 1.25rem;
+		height: 46px;
 	}
 
 	// Style
@@ -45,13 +46,6 @@
 		color: $color-primary;
 		background-color: transparent;
 		border: 1px solid $color-primary;
-		padding: 11px 15px;
-		&.-small {
-			padding: 7px 15px;
-		}
-		&.-big {
-			padding: 13px 15px;
-		}
 		&:hover {
 			background: transparentize($color-primary, 0.9);
 		}
