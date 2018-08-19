@@ -98,5 +98,19 @@ The CSS output will be in '/dist' directory.
 Other build command located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
 
 Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
+
+## Who using biomatic
+
+<div style="display: fles">
+  <a href="https://www.swapgap.com">
+    <img height="50"
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/swapgap.png">
+  </a>
+  <a href="https://fastwork.co">
+    <img height="50"
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/fastwork.png">
+  </a>
+</div>
+
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
