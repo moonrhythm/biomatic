@@ -63,6 +63,7 @@ yarn add biomatic
 Or use CDN (jsdelivr via NPM)
 ```html
 <link href="https://cdn.jsdelivr.net/npm/biomatic@0.2.12/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://unpkg.com/biomatic@0.2.12/dist/biomatic.full.min.css" rel="stylesheet">
 ```
 
 ## Configuration
@@ -95,7 +96,6 @@ npm run build
 The CSS output will be in '/dist' directory.
 Other build command located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
 
-Tip: work best with purgecss
-
+Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
