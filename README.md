@@ -8,14 +8,9 @@
 <p align="center">A Flexible Atomic-Focused CSS Toolkit</p>
 
 <div align="center">
-
   <a href="https://npmjs.org/package/biomatic">
     <img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square"
       alt="NPM version" />
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/gzip size-34.7kb-brightgreen.svg?style=flat-square"
-      alt="Gzip size" />
   </a>
   <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"
@@ -42,16 +37,16 @@
 - [License](#license)
 
 ## Features
-- __Atomic-Focus:__ craft anythings you need with very flexible atomic class
-- __Battery included:__ basic components included for rapid UI development
-- __Clean responsive grid:__ simple and clean grid layout using css grid
-- __Carefully naming:__ readable and predictable class name
-- __Configurable:__ config and build to match what you need
-- __Pure CSS:__ no javascript required
-- __Fun:__ yes, very fun to use
+- __Atomic-Focused:__ craft anything you wanted with the collection of atomic classes.
+- __Battery included:__ basic components included, for rapid UI development.
+- __Clean responsive grid:__ simple and clean grid systems.
+- __Carefully naming:__ readable and predictable class name.
+- __Configurable:__ config and build your own design systems.
+- __Pure CSS:__ no javascript required.
+- __Fun:__ very fun to use.
 
 ## Installation
-You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.1.2/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
+You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.2.12/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
 ```html
 <link href="/path/to/biomatic.full.min.css" rel="stylesheet">
 ```
@@ -67,13 +62,13 @@ yarn add biomatic
 
 Or use CDN (jsdelivr via NPM)
 ```html
-<link href="https://cdn.jsdelivr.net/npm/biomatic@0.1.4/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/biomatic@0.2.12/dist/biomatic.full.min.css" rel="stylesheet">
 ```
 
 ## Configuration
-You can configure things such as Color, Spacing, Breakpoint, or Add/Remove/Change Values to Atomic Class to match your design or branding.
+You can configure variables such as colors, spacings or breakpoints that using for generate atomic classes
 
-All configurations located in [config.scss](https://github.com/BioMaRu/biomatic/blob/master/src/config.scss)
+All configurations located in [/config](https://github.com/BioMaRu/biomatic/blob/master/src/config)
 
 To build Biomatic
 
@@ -96,7 +91,11 @@ yarn run build
 ```shell
 npm run build
 ```
+
 The CSS output will be in '/dist' directory.
 Other build command located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
+
+Tip: work best with purgecss
+
 ## License
 Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>

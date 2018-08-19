@@ -1,15 +1,19 @@
 ._od-0  { order: 0 !important; }
 ._od-1  { order: 1 !important; }
 ._od-2  { order: 2 !important; }
+._od-3  { order: 3 !important; }
 ._od--1 { order: -1 !important; }
 ._od--2 { order: -2 !important; }
+._od--3 { order: -3 !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
 		._od-0-#{$breakpoint}  { order: 0 !important; }
 		._od-1-#{$breakpoint}  { order: 1 !important; }
 		._od-2-#{$breakpoint}  { order: 2 !important; }
+		._od-3-#{$breakpoint}  { order: 3 !important; }
 		._od--1-#{$breakpoint} { order: -1 !important; }
 		._od--2-#{$breakpoint} { order: -2 !important; }
+		._od--3-#{$breakpoint} { order: -3 !important; }
 	};
 };
