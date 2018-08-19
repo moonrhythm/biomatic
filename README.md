@@ -110,6 +110,14 @@ Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
     <img height="50"
     style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/fastwork.png">
   </a>
+  <a href="https://chanto.io">
+    <img height="50"
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/chanto.png">
+  </a>
+  <a href="https://healthathome.in.th/">
+    <img height="50"
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/healthathome.png">
+  </a>
 </div>
 
 ## License
