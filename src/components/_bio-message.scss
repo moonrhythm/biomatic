@@ -1,53 +1,41 @@
 .bio-message {
-  display: grid;
-  padding: 16px;
-  border-radius: 2px;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    "content close";
+	display: grid;
+	padding: 16px;
+	border-radius: 2px;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"content close";
 
-  color: $color-primary;
-  background-color: lighten($color-primary, 37%);
-  border-left: 4px solid $color-primary;
-  &.-accent {
-    color: $color-accent;
-    background-color: lighten($color-accent, 30%);
-    border-left: 4px solid $color-accent;
-  }
-  &.-negative {
-    color: $color-negative;
-    background-color: lighten($color-negative, 30%);
-    border-left: 4px solid $color-negative;
-  }
-  &.-positive {
-    color: $color-positive;
-    background-color: lighten($color-positive, 45%);
-    border-left: 4px solid $color-positive;
-  }
-  &.-warning {
-    color: darken($color-warning, 14%);
-    background-color: lighten($color-warning, 33%);
-    border-left: 4px solid darken($color-warning, 14%);
-  }
-  &.-info {
-    color: $color-info;
-    background-color: lighten($color-info, 31%);
-    border-left: 4px solid $color-info;
-  }
-  &.-dark {
-    color: $color-dark;
-    background-color: lighten($color-dark, 68%);
-    border-left: 4px solid $color-dark;
-  }
-  >.bio-message-close {
-    grid-area: close;
-    user-select: none;
-    margin-left: 8px;
-    > * {
-      display: block;
-    }
-  }
-  >.bio-message-content {
-    grid-area: content;
-  }
+	color: $color-primary;
+	background-color: mix($color-primary, white, 17%);
+	border-left: 4px solid $color-primary;
+
+	$arr: (
+		'accent': $color-accent,
+		'positive': $color-positive,
+		'negative': $color-negative,
+		'warning': $color-warning,
+		'info': $color-info
+	);
+
+	@each $key, $value in $arr {
+		&.-#{$key} {
+			color: $value;
+			background-color: mix($value, white, 17%);
+			border-left: 4px solid $value;
+		}
+	};
+
+	>.bio-message-close {
+		grid-area: close;
+		user-select: none;
+		margin-left: 8px;
+		> * {
+			display: block;
+		}
+	}
+
+	>.bio-message-content {
+		grid-area: content;
+	}
 }

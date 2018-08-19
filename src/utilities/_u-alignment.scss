@@ -1,0 +1,35 @@
+.u-align-middle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.u-valign-center {
+	display: flex;
+	align-items: center;
+}
+
+.u-valign-top {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.u-halign-center {
+	display: flex;
+	justify-content: center;
+}
+
+.u-halign-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.u-halign-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.u-halign-split {
+	display: flex;
+	justify-content: space-between;
+}

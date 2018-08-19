@@ -1,0 +1,17 @@
+._jtfs-st  { justify-self: start !important; }
+._jtfs-e   { justify-self: end !important; }
+._jtfs-fst { justify-self: flex-start !important; }
+._jtfs-fe  { justify-self: flex-end !important; }
+._jtfs-ct  { justify-self: center !important; }
+._jtfs-str { justify-self: stretch !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._jtfs-st-#{$breakpoint}  { justify-self: start !important; }
+		._jtfs-e-#{$breakpoint}   { justify-self: end !important; }
+		._jtfs-fst-#{$breakpoint} { justify-self: flex-start !important; }
+		._jtfs-fe-#{$breakpoint}  { justify-self: flex-end !important; }
+		._jtfs-ct-#{$breakpoint}  { justify-self: center !important; }
+		._jtfs-str-#{$breakpoint} { justify-self: stretch !important; }
+	};
+};

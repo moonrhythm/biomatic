@@ -1,0 +1,13 @@
+._bgrp-rp  { background-repeat: repeat !important; }
+._bgrp-rpx { background-repeat: repeat-x !important; }
+._bgrp-rpy { background-repeat: repeat-y !important; }
+._bgrp-nrp { background-repeat: no-repeat !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._bgrp-rp-#{$breakpoint}  { background-repeat: repeat !important; }
+		._bgrp-rpx-#{$breakpoint} { background-repeat: repeat-x !important; }
+		._bgrp-rpy-#{$breakpoint} { background-repeat: repeat-y !important; }
+		._bgrp-nrp-#{$breakpoint} { background-repeat: no-repeat !important; }
+	};
+};

@@ -1,0 +1,17 @@
+/* for generate border-radius "_bdrd-*" class */
+$radiuses: (
+	'0px': 0px,
+	'1px': 1px,
+	'2px': 2px,
+	'4px': 4px,
+	'8px': 8px,
+	'12px': 12px,
+	'16px': 16px,
+	'24px': 24px,
+	'32px': 32px,
+	'48px': 48px,
+	'64px': 64px,
+	'50pct': 50%,
+	'max': 9999px,
+	'at': auto
+);

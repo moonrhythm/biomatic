@@ -1,0 +1,19 @@
+@each $key, $value in $colors {
+	._cl-#{$key} { color: #{$value} !important; }
+};
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $colors {
+			._cl-#{$key}-#{$breakpoint} { color: #{$value} !important; }
+		};
+	};
+};
+
+@each $key, $value in $colors {
+	._cl-#{$key}-hover {
+		&:hover {
+			color: #{$value} !important;
+		}
+	}
+};

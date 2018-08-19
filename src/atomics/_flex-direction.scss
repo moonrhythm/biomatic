@@ -1,0 +1,13 @@
+._fdrt-r { flex-direction: row !important; }
+._fdrt-cl { flex-direction: column !important; }
+._fdrt-rrw { flex-direction: row-reverse !important; }
+._fdrt-clrv { flex-direction: column-reverse !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._fdrt-r-#{$breakpoint} { flex-direction: row !important; }
+		._fdrt-cl-#{$breakpoint} { flex-direction: column !important; }
+		._fdrt-rrw-#{$breakpoint} { flex-direction: row-reverse !important; }
+		._fdrt-clrv-#{$breakpoint} { flex-direction: column-reverse !important; }
+	};
+};

@@ -1,0 +1,27 @@
+._opct-100 { opacity: 1 !important; }
+._opct-90  { opacity: .9 !important; }
+._opct-80  { opacity: .8 !important; }
+._opct-70  { opacity: .7 !important; }
+._opct-60  { opacity: .6 !important; }
+._opct-50  { opacity: .5 !important; }
+._opct-40  { opacity: .4 !important; }
+._opct-30  { opacity: .3 !important; }
+._opct-20  { opacity: .2 !important; }
+._opct-10  { opacity: .1 !important; }
+._opct-0   { opacity: 0 !important;  }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._opct-100-#{$breakpoint} { opacity: 1 !important; }
+		._opct-90-#{$breakpoint}  { opacity: .9 !important; }
+		._opct-80-#{$breakpoint}  { opacity: .8 !important; }
+		._opct-70-#{$breakpoint}  { opacity: .7 !important; }
+		._opct-60-#{$breakpoint}  { opacity: .6 !important; }
+		._opct-50-#{$breakpoint}  { opacity: .5 !important; }
+		._opct-40-#{$breakpoint}  { opacity: .4 !important; }
+		._opct-30-#{$breakpoint}  { opacity: .3 !important; }
+		._opct-20-#{$breakpoint}  { opacity: .2 !important; }
+		._opct-10-#{$breakpoint}  { opacity: .1 !important; }
+		._opct-0-#{$breakpoint}   { opacity: 0 !important;  }
+	};
+};

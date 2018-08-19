@@ -1,73 +1,77 @@
 .bio-accordion {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows:
-    auto
-    auto;
-  
-  grid-template-areas:
-    "label"
-    "content";
-  
-  >input {
-    display: none;
-    &:checked ~ {
-      .bio-accordion-content {
-        transform: scaleY(1);
-        max-height: initial;
-      }
-    }
-  }
-  >label {
-    grid-area: label;
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-    margin-bottom: 8px;
-  }
-  >.bio-accordion-content {
-    grid-area: content;
-    max-height: 0;
-    overflow: hidden;
-    transform-origin: top;
-    backface-visibility: hidden;
-    transform: scaleY(0);
-    will-change: transform;
-    transition: max-height 0.05s .2s ease-in-out, transform .2s ease-in-out;
-    padding-left: 8px;
-    padding-right: 8px;
-    > * {
-      display: block;
-    }
-  }
-  &.-has-icon {
-    >label {
-      padding-left: 18px;
-    }
-    >label {
-      &:before {
-        content: "";
-        border: 2px solid $color-dark;
-        border-right-width: 0px;
-        border-top-width: 0px;
-        border-color: $color-dark;
-        height: 8px;
-        width: 8px;
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        will-change: transform;
-        transition: transform .2s ease;
-        transform-origin: top center;
-        transform: rotate(-135deg) translate(0, calc(-50% - 2px));
-        z-index: 4;
-        pointer-events: none;
-      }
-    }
-    >input:checked {
-      ~ label:before {
-        transform: rotate(-45deg) translate(2px, calc(-50% - 0px));
-      }
-    }
-  }
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto auto;
+	grid-template-areas:
+		"label"
+		"content";
+
+	> input {
+		display: none;
+		&:checked ~ {
+			.bio-accordion-content {
+				transform: scaleY(1);
+				max-height: initial;
+			}
+		}
+	}
+
+	> label {
+		grid-area: label;
+		cursor: pointer;
+		position: relative;
+		user-select: none;
+	}
+
+	> .bio-accordion-content {
+		grid-area: content;
+		max-height: 0;
+		overflow: hidden;
+		transform-origin: top;
+		backface-visibility: hidden;
+		transform: scaleY(0);
+		will-change: transform;
+		transition: max-height 0.05s .2s ease-in-out, transform .2s ease-in-out;
+		> * {
+			display: block;
+		}
+	}
+
+	&.-has-chevron > label:after {
+		content: "";
+		border: 2px solid currentColor;
+		border-right-width: 0px;
+		border-top-width: 0px;
+		border-color: currentColor;
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		top: 50%;
+		will-change: transform;
+		transition: transform .2s ease;
+		transform-origin: top center;
+		transform: rotate(-135deg) translate(0, calc(-50% - 2px));
+		pointer-events: none;
+	}
+
+	&.-has-chevron >input:checked {
+		~ label:after {
+			transform: rotate(-45deg) translate(2px, calc(-50% - 0px));
+		}
+	}
+
+	&.-has-chevron:not(.-left) {
+		> label:after {
+			right: 0px;
+		}
+	}
+
+	&.-has-chevron.-left {
+		> label {
+			padding-left: 18px;
+		}
+		> label:after {
+			left: 0px;
+		}
+	}
 }

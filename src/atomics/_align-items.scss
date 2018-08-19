@@ -1,0 +1,17 @@
+._alit-st  { align-items: start !important; }
+._alit-e   { align-items: end !important; }
+._alit-ct  { align-items: center !important; }
+._alit-str { align-items: stretch !important; }
+._alit-fst { align-items: flex-start !important; }
+._alit-fe  { align-items: flex-end !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._alit-st-#{$breakpoint}  { align-items: start !important; }
+		._alit-e-#{$breakpoint}   { align-items: end !important; }
+		._alit-ct-#{$breakpoint}  { align-items: center !important; }
+		._alit-str-#{$breakpoint} { align-items: stretch !important; }
+		._alit-fst-#{$breakpoint} { align-items: flex-start !important; }
+		._alit-fe-#{$breakpoint}  { align-items: flex-end !important; }
+	};
+};

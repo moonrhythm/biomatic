@@ -1,0 +1,11 @@
+._fw-nw { flex-wrap: nowrap; }
+._fw-w { flex-wrap: wrap; }
+._fw-wrv { flex-wrap: wrap-reverse; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._fw-nw-#{$breakpoint} { flex-wrap: nowrap !important; }
+		._fw-w-#{$breakpoint} { flex-wrap: wrap !important; }
+		._fw-wrv-#{$breakpoint} { flex-wrap: wrap-reverse !important; }
+	};
+};

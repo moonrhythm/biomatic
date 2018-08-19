@@ -1,47 +1,29 @@
-progress.bio-progress[value] {
-  appearance: none;
-  border: 0px solid $color-dark;
-  width: 100%;
-  border-radius: 3px;
-  overflow: hidden;
-  &::-webkit-progress-bar {
-    background-color: $color-gray;
-  }
-  &::-webkit-progress-value { background-color: $color-primary }
-  &::-moz-progress-bar { background-color: $color-primary; }
-  
-  &.-accent {
-    &::-webkit-progress-value { background-color: $color-accent }
-    &::-moz-progress-bar { background-color: $color-accent; }
-  }
+progress.bio-progress {
+	appearance: none;
+	border: 0px solid $color-dark;
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
 
-  &.-positive {
-    &::-webkit-progress-value { background-color: $color-positive }
-    &::-moz-progress-bar { background-color: $color-positive; }
-  }
+	&::-webkit-progress-bar {
+		background-color: $color-gray;
+	}
 
-  &.-negative {
-    &::-webkit-progress-value { background-color: $color-negative }
-    &::-moz-progress-bar { background-color: $color-negative; }
-  }
+	&::-webkit-progress-value { background-color: $color-primary }
+	&::-moz-progress-bar { background-color: $color-primary; }
 
-  &.-warning {
-    &::-webkit-progress-value { background-color: $color-warning }
-    &::-moz-progress-bar { background-color: $color-warning; }
-  }
+	$arr: (
+		'accent': $color-accent,
+		'positive': $color-positive,
+		'negative': $color-negative,
+		'warning': $color-warning,
+		'info': $color-info
+	);
 
-  &.-info {
-    &::-webkit-progress-value { background-color: $color-info }
-    &::-moz-progress-bar { background-color: $color-info; }
-  }
-
-  &.-dark {
-    &::-webkit-progress-value { background-color: $color-dark }
-    &::-moz-progress-bar { background-color: $color-dark; }
-  }
-
-  &.-black {
-    &::-webkit-progress-value { background-color: $color-black }
-    &::-moz-progress-bar { background-color: $color-black; }
-  }
+	@each $key, $value in $arr {
+		&.-#{$key} {
+			&::-webkit-progress-value { background-color: $value }
+			&::-moz-progress-bar { background-color: $value; }
+		}
+	};
 }

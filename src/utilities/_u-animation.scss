@@ -1,35 +1,70 @@
-.u-animation-pulse {
-  animation: pulse .35s infinite alternate;
+// Spin
+.u-animation-spin-1 {
+	animation: spin 0.5s infinite linear;
 }
 
-.u-animation-pulse-hover { 
-  &:hover {
-    animation: pulse .35s infinite alternate;
-  }
-};
-
-.u-animation-spin {
-  animation: spin 1s infinite linear;
+.u-animation-spin-2 {
+	animation: spin 2.5s infinite linear;
 }
 
-.u-animation-spin-hover { 
-  &:hover {
-    animation: spin 1s infinite linear;
-  }
-};
+.u-animation-spin-3 {
+	animation: spin 5s infinite linear;
+}
 
+.u-animation-spin-1-hover:hover {
+	animation: spin 0.5s infinite linear;
+}
 
-@keyframes pulse {
-  100% {
-    transform: scale(1.1);
-  }
+.u-animation-spin-2-hover:hover {
+	animation: spin 2.5s infinite linear;
+}
+
+.u-animation-spin-3-hover:hover {
+	animation: spin 5s infinite linear;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// Float
+.u-animation-float-1 {
+	animation: float 0.5s ease-in-out infinite;
+}
+
+.u-animation-float-2 {
+	animation: float 2.5s ease-in-out infinite;
+}
+
+.u-animation-float-3 {
+	animation: float 5s ease-in-out infinite;
+}
+
+.u-animation-float-1-hover:hover {
+	animation: float 0.5s ease-in-out infinite;
+}
+
+.u-animation-float-2-hover:hover {
+	animation: float 2.5s ease-in-out infinite;
+}
+
+.u-animation-float-3-hover:hover {
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-25px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

@@ -1,0 +1,11 @@
+@each $key, $value in $spacings {
+	._w-#{$key} { width: #{$value} !important; }
+};
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._w-#{$key}-#{$breakpoint} { width: #{$value} !important; }
+		};
+	};
+};

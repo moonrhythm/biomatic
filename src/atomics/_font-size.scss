@@ -1,0 +1,11 @@
+@each $key, $value in $font-sizes {
+	._fs-#{$key} { font-size: #{$value} !important; }
+};
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $font-sizes {
+			._fs-#{$key}-#{$breakpoint} { font-size: #{$value} !important; }
+		};
+	};
+};

@@ -1,0 +1,13 @@
+._ttf-cptl { text-transform: capitalize !important; }
+._ttf-lwc  { text-transform: lowercase !important; }
+._ttf-upc  { text-transform: uppercase !important; }
+._ttf-n    { text-transform: none !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ttf-cptl-#{$breakpoint} { text-transform: capitalize !important; }
+		._ttf-lwc-#{$breakpoint}  { text-transform: lowercase !important; }
+		._ttf-upc-#{$breakpoint}  { text-transform: uppercase !important; }
+		._ttf-n-#{$breakpoint}    { text-transform: none !important; }
+	};
+};

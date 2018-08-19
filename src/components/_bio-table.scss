@@ -1,18 +1,40 @@
+.bio-table,
+.bio-table.-has-border {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+	th {
+		padding: 16px;
+		border: 1px solid $color-gray;
+	}
+	td {
+		vertical-align: top;
+		padding: 16px;
+		border: 1px solid $color-gray;
+	}
+	tbody tr:nth-child(even) {
+		background-color: hsl(0, 0%, 98%);
+	}
+}
+
 .bio-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 16px;
-  th {
-    padding: 16px;
-    border: 1px solid $color-dark;
-    border-color: $color-neutral-500;
-  }
-  td {
-    vertical-align: top;
-    padding: 16px;
-    border: 1px solid $color-dark;
-    border-color: $color-neutral-500;
-  }
+	th, td {
+		border: 0px;
+		vertical-align: middle;
+		padding: 12px 12px;
+	}
+	th {
+		border-bottom: 2px solid var(--color-gray);
+		text-align: left;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	td {
+		border-bottom: 1px solid var(--color-gray);
+	}
+	tbody tr, td {
+		height: 48px;
+	}
 }

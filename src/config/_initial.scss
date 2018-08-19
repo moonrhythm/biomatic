@@ -1,0 +1,21 @@
+html {
+	color: $color-dark;
+	font-family: $font-primary;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+h1 { font-size: $h1; }
+h2 { font-size: $h2; }
+h3 { font-size: $h3; }
+h4 { font-size: $h4; }
+h5 { font-size: $h5; }
+h6 { font-size: $h6; }
+
+hr {
+	height: 0;
+	width: 100%;
+	border: 0px;
+	border-bottom: 1px solid $color-gray;
+}

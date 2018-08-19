@@ -1,0 +1,13 @@
+._tdcrt-udl { text-decoration: underline !important; }
+._tdcrt-ovl { text-decoration: overline !important; }
+._tdcrt-lt  { text-decoration: line-through !important; }
+._tdcrt-n   { text-decoration: none !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._tdcrt-udl-#{$breakpoint} { text-decoration: underline !important; }
+		._tdcrt-ovl-#{$breakpoint} { text-decoration: overline !important; }
+		._tdcrt-lt-#{$breakpoint}  { text-decoration: line-through !important; }
+		._tdcrt-n-#{$breakpoint}   { text-decoration: none !important; }
+	};
+};

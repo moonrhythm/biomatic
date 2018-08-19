@@ -1,0 +1,13 @@
+._pst-stt { position: static !important; }
+._pst-rlt { position: relative !important; }
+._pst-asl { position: absolute !important; }
+._pst-f   { position: fixed !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._pst-stt-#{$breakpoint} { position: static !important; }
+		._pst-rlt-#{$breakpoint} { position: relative !important; }
+		._pst-asl-#{$breakpoint} { position: absolute !important; }
+		._pst-f-#{$breakpoint}   { position: fixed !important; }
+	};
+};

@@ -1,0 +1,13 @@
+._mbm-nm  { mix-blend-mode: normal !important; }
+._mbm-mtp { mix-blend-mode: multiply !important; }
+._mbm-sc  { mix-blend-mode: screen !important; }
+._mbm-ovl { mix-blend-mode: overlay !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._mbm-nm-#{$breakpoint}  { mix-blend-mode: normal !important; }
+		._mbm-mtp-#{$breakpoint} { mix-blend-mode: multiply !important; }
+		._mbm-sc-#{$breakpoint}  { mix-blend-mode: screen !important; }
+		._mbm-ovl-#{$breakpoint} { mix-blend-mode: overlay !important; }
+	};
+};

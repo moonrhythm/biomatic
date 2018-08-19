@@ -1,41 +1,41 @@
 {
-  "name": "biomatic",
-  "version": "0.1.18",
-  "description": "A Flexible Atomic-Focused CSS Toolkit",
-  "main": "index.js",
-  "directories": {
-    "src": "src"
-  },
-  "scripts": {
-    "build-full": "gulp build-full",
-    "build-atomic": "gulp build-atomic",
-    "build-component": "gulp build-component",
-    "build-layout": "gulp build-layout",
-    "build-utility": "gulp build-utility",
-    "build": "npm run build-full && npm run build-atomic && npm run build-component && npm run build-layout && npm run build-utility"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BioMaRu/biomatic.git"
-  },
-  "keywords": [
-    "css",
-    "scss",
-    "framework",
-    "atomic",
-    "responsive",
-    "component"
-  ],
-  "author": "BioMaRu <Bio.Color.Palette@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BioMaRu/biomatic/issues"
-  },
-  "homepage": "https://bimatic-ui.com",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
-  }
+	"name": "biomatic",
+	"version": "0.2.12",
+	"description": "A Flexible Atomic-Focused CSS Toolkit",
+	"main": "index.js",
+	"directories": {
+		"src": "src"
+	},
+	"scripts": {
+		"build-full": "gulp build-full",
+		"build-atomic": "gulp build-atomic",
+		"build-component": "gulp build-component",
+		"build-layout": "gulp build-layout",
+		"build-utility": "gulp build-utility",
+		"build": "npm run build-full && npm run build-atomic && npm run build-component && npm run build-layout && npm run build-utility"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BioMaRu/biomatic.git"
+	},
+	"keywords": [
+		"css",
+		"scss",
+		"framework",
+		"atomic",
+		"responsive",
+		"component"
+	],
+	"author": "BioMaRu <Bio.Color.Palette@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BioMaRu/biomatic/issues"
+	},
+	"homepage": "https://bimatic-ui.com",
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^3.1.0"
+	}
 }

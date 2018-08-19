@@ -1,0 +1,23 @@
+._bgpst-t   { background-position: top !important; }
+._bgpst-tr  { background-position: top right !important; }
+._bgpst-tl  { background-position: top left !important; }
+._bgpst-bt  { background-position: bottom !important; }
+._bgpst-btr { background-position: bottom right !important; }
+._bgpst-btl { background-position: bottom left !important; }
+._bgpst-ct  { background-position: center !important; }
+._bgpst-ctr { background-position: center right !important; }
+._bgpst-ctl { background-position: center left!important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._bgpst-t-#{$breakpoint}   { background-position: top !important; }
+		._bgpst-tr-#{$breakpoint}  { background-position: top right !important; }
+		._bgpst-tl-#{$breakpoint}  { background-position: top left !important; }
+		._bgpst-bt-#{$breakpoint}  { background-position: bottom !important; }
+		._bgpst-btr-#{$breakpoint} { background-position: bottom right !important; }
+		._bgpst-btl-#{$breakpoint} { background-position: bottom left !important; }
+		._bgpst-ct-#{$breakpoint}  { background-position: center !important; }
+		._bgpst-ctr-#{$breakpoint} { background-position: center right !important; }
+		._bgpst-ctl-#{$breakpoint} { background-position: center left!important; }
+	};
+};

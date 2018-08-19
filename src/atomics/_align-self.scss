@@ -1,0 +1,17 @@
+._als-st  { align-self: start !important; }
+._als-e   { align-self: end !important; }
+._als-fst { align-self: flex-start !important; }
+._als-fe  { align-self: flex-end !important; }
+._als-ct  { align-self: center !important; }
+._als-str { align-self: stretch !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._als-st-#{$breakpoint}  { align-self: start !important; }
+		._als-e-#{$breakpoint}   { align-self: end !important; }
+		._als-fst-#{$breakpoint} { align-self: flex-start !important; }
+		._als-fe-#{$breakpoint}  { align-self: flex-end !important; }
+		._als-ct-#{$breakpoint}  { align-self: center !important; }
+		._als-str-#{$breakpoint} { align-self: stretch !important; }
+	};
+};

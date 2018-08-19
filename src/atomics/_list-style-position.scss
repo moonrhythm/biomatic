@@ -1,0 +1,9 @@
+._lstpst-is { list-style-position: inside !important }
+._lstpst-os { list-style-position: outside !important }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._lstpst-is-#{$breakpoint} { list-style-position: inside !important }
+		._lstpst-os-#{$breakpoint} { list-style-position: outside !important }
+	};
+};

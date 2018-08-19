@@ -1,0 +1,9 @@
+._f-crcl   { fill: currentColor !important; }
+._st-crcl   { stroke: currentColor !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._f-crcl-#{$breakpoint}   { fill: currentColor !important; }
+		._st-crcl-#{$breakpoint}   { stroke: currentColor !important; }
+	};
+};

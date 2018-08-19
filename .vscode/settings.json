@@ -1,0 +1,15 @@
+{
+  "editor.insertSpaces": false,
+  "editor.tabSize": 4,
+  "editor.rulers": [140],
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+      "*.tmpl": "html"
+  },
+  "html.format.endWithNewline": false,
+  "html.format.wrapLineLength": 140,
+  "html.suggest.angular1": false,
+  "html.suggest.ionic": false,
+  "html.validate.scripts": true,
+  "html.validate.styles": true
+}

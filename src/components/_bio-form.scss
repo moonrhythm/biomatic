@@ -1,446 +1,490 @@
-// Cleanup
-input[type="submit"],
-input[type="submit"]:focus {
-  border: none;
-  outline: none;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-}
-
 // Placeholder Color
 ::-webkit-input-placeholder {
-  color: darken($color-gray, 16%);
+	color: darken($color-gray, 16%);
 }
 
 ::-moz-placeholder {
-  color: darken($color-gray, 40%);
+	color: darken($color-gray, 40%);
 }
 
-// Label
+// Field
 .bio-field {
-  > label {
-    display: inline-block;
-    margin-bottom: 8px;
-  }
+	label {
+		font-weight: 600;
+		display: inline-block;
+		margin-bottom: 4px;
+	}
+}
+
+// Input
+.bio-input,
+.bio-textarea,
+.bio-select {
+	border-radius: 4px;
+}
+
+.bio-input > input,
+.bio-textarea > textarea,
+.bio-select > select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: $color-dark;
+	background-color: $color-white;
+	border-radius: inherit;
+	border: 1px solid hsla(228, 10%, 90%, 0.96);
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	padding-left: 12px;
+	padding-right: 12px;
+	box-shadow: inset 0 1px 2px hsla(0, 0, 64, 0.30);
+	outline: none;
+
+	&:hover {
+		border-color: hsla(228, 10%, 82%, 0.96);
+	}
+
+	&:focus, :active {
+		border-color: $color-primary;
+		box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
+	}
 }
 
 // Checkbox
 .bio-checkbox:not(.-switch) {
-  > input[type="checkbox"] {
-    opacity: 0;
-    cursor: pointer;
-    pointer-events: none;
-    &:checked {
-      + label::after {
-        content: "";
-      }
-    }
-    &:focus {
-      + label::before {
-        box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
-      }
-    }
-  }
-  > label {
-    position: relative;
-    display: inline-block;
-    padding-left: 28px;
-    margin-left: -19px;
-    line-height: 19px;
-    cursor: pointer;
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      display: inline-block;
-    }
-    &:before {
-      width: 20px;
-      height: 20px;
-      left: 0px;
-      background-color: $color-white;
-      border: 2px solid $color-primary;
-      border-radius: 2px;
-      box-sizing: border-box;
-    }
-    &:after {
-      content: none;
-      height: 4px;
-      width: 9px;
-      top: 5px;
-      left: 4px;
-      border-left-width: 3px;
-      border-bottom-width: 3px;
-      border-left-style: solid;
-      border-bottom-style: solid;
-      border-color: $color-primary;
-      transform: rotate(-45deg);
-    }
-  }
-}
-
-// Radio
-.bio-radio {
-  > input[type="radio"] {
-    opacity: 0;
-    cursor: pointer;
-    pointer-events: none;
-    &:checked {
-      + label::after {
-        content: "";
-      }
-    }
-    &:focus {
-      + label::before {
-        box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
-      }
-    }
-  }
-  > label {
-    position: relative;
-    display: inline-block;
-    padding-left: 28px;
-    margin-left: -19px;
-    line-height: 21px;
-    cursor: pointer;
-    &:before, &:after {
-      content: "";
-      position: absolute;
-      display: inline-block;
-    }
-    &:before {
-      box-sizing: border-box;
-      width: 22px;
-      height: 22px;
-      left: 0px;
-      border: 2px solid $color-dark;
-      border-color: $color-primary;
-      border-radius: 50%;
-      background-color: $color-white;
-    }
-    &:after {
-      content: none;
-      height: 12px;
-      width: 12px;
-      top: 5px;
-      left: 5px;
-      background-color: $color-primary;
-      border-color: $color-primary;
-      border-radius: 50%;
-    }
-  }
-}
-
-.bio-checkbox > input[type="radio"]:checked + label::after {
-  content: "";
-}
-
-.bio-checkbox > input[type="radio"]:focus + label::before {
-  box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
+	> input[type="checkbox"] {
+		opacity: 0;
+		cursor: pointer;
+		pointer-events: none;
+		&:checked {
+			+ label::after {
+				content: "";
+			}
+		}
+		&:focus {
+			+ label::before {
+				box-shadow: 0 0 0 2px transparentize($color-primary, 0.8);
+			}
+		}
+	}
+	> label {
+		position: relative;
+		display: inline-block;
+		padding-left: 28px;
+		margin-left: -19px;
+		line-height: 19px;
+		cursor: pointer;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+		}
+		&:before {
+			width: 20px;
+			height: 20px;
+			left: 0px;
+			background-color: $color-white;
+			border: 2px solid $color-primary;
+			border-radius: 2px;
+			box-sizing: border-box;
+		}
+		&:after {
+			content: none;
+			height: 7px;
+			width: 12px;
+			top: 5px;
+			left: 4px;
+			border-left-width: 2px;
+			border-bottom-width: 2px;
+			border-left-style: solid;
+			border-bottom-style: solid;
+			border-color: $color-primary;
+			transform: rotate(-45deg);
+		}
+	}
 }
 
 // Switch
 .bio-checkbox.-switch {
-  > input[type="checkbox"] {
-    position: relative;
-    background-color: $color-gray;
-    cursor: pointer;
-    border-radius: 128px;
-    -webkit-appearance: none;
-      -moz-appearance: none;
-            appearance: none;
-    width: 56px;
-    height: 26px;
-    transition: all .2s ease-in-out;
-    outline: none;
-    &:checked {
-      background-color: $color-primary;
-    }
-    &:after {
-      content: " ";
-      position: absolute;
-      border-radius: 50%;
-      background-color: $color-white;
-      height: 32px;
-      width: 32px;
-      left: -2px;
-      top: -3px;
-      box-shadow: 0 0 7px rgba(0,0,0,.5);
-      transform: scale(.64);
-      transition: all .2s ease-in-out;
-    }
-    &:checked:after{
-      left: calc(100% - 30px);
-    }
-  }
+	display: flex;
+	align-items: center;
+	> input[type="checkbox"] {
+		position: relative;
+		background-color: $color-gray;
+		cursor: pointer;
+		border-radius: 128px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		width: 56px;
+		height: 26px;
+		transition: all .16s ease-in-out;
+		outline: none;
+		&:checked {
+			background-color: $color-primary;
+		}
+		&:after {
+			content: " ";
+			position: absolute;
+			border-radius: 50%;
+			background-color: $color-white;
+			height: 32px;
+			width: 32px;
+			left: -2px;
+			top: -3px;
+			box-shadow: 0 0 7px rgba(0,0,0,.5);
+			transform: scale(.64);
+			transition: all .2s ease-in-out;
+		}
+		&:checked:after{
+			left: calc(100% - 30px);
+		}
+	}
+	> label {
+		margin-left: 8px;
+	}
+}
+
+// Radio
+.bio-radio {
+	> input[type="radio"] {
+		opacity: 0;
+		cursor: pointer;
+		pointer-events: none;
+		&:checked {
+			+ label::after {
+				content: "";
+			}
+		}
+		&:focus {
+			+ label::before {
+				box-shadow: 0 0 0 2px transparentize($color-primary, 0.8);
+			}
+		}
+	}
+	> label {
+		position: relative;
+		display: inline-block;
+		padding-left: 28px;
+		margin-left: -19px;
+		line-height: 21px;
+		cursor: pointer;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			display: inline-block;
+		}
+		&:before {
+			box-sizing: border-box;
+			width: 22px;
+			height: 22px;
+			left: 0px;
+			border: 2px solid $color-dark;
+			border-color: $color-primary;
+			border-radius: 50%;
+			background-color: $color-white;
+		}
+		&:after {
+			content: none;
+			height: 12px;
+			width: 12px;
+			top: 5px;
+			left: 5px;
+			background-color: $color-primary;
+			border-color: $color-primary;
+			border-radius: 50%;
+		}
+	}
 }
 
 // File
 .bio-file {
-  position: relative;
-  cursor: pointer;
-  > input[type="file"] {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-  }
-  > input[type="file"] + * {
-    display: block;
-    border: 1px solid $color-dark;
-    background-color: $color-white;
-    color: $color-dark;
-    border-color: $color-gray;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 10px 16px;
-    user-select: none;
-    &:before {
-      content: " ";
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Upload</title><path fill="%231f9eff" d="M11.25 16.5h-11.25v6h22.5v-6h-11.25zM21 19.5h-3v-1.5h3v1.5zM5.25 7.5l6-6 6 6h-3.75v7.5h-4.5v-7.5z"></path></svg>');
-      background-size: contain;
-      vertical-align: bottom;
-      margin-right: 12px;
-    }
-    &:hover {
-      background-color: lighten($color-gray, 30%);
-      border-color: lighten($color-dark, 50%);
-    }
-  }
-}
-
-// Input
-.bio-input > input,
-.bio-textarea > textarea,
-.bio-select > select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: $color-white;
-  border-radius: 4px;
-  border: 1px solid $color-dark;
-  border-color: $color-gray;
-  color: $color-dark;
-  width: 100%;
-  // @extend ._fw-500;
-  vertical-align: top;
-  padding-left: 12px;
-  padding-right: 12px;
-  box-shadow: inset 0 1px 1px hsla(0, 0, 64, 0.24);
-  outline: none;
-  transition: border-color .2s cubic-bezier(.645,.045,.355,1);
-
-  &:hover {
-    border-color: darken($color-gray, 10%);
-  }
-
-  &:focus, :active {
-    border-color: $color-primary;
-    box-shadow: 0 0 0 2px transparentize($color-primary, 0.7);
-  }
-}
-
-.bio-field {
-  &.-accent {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        border-color: $color-accent;
-        &:focus, :active {
-          box-shadow: 0 0 0 2px transparentize($color-accent, 0.7);
-        }
-      }
-      + * {
-        color: $color-accent;
-      }
-    }
-  }
-  &.-positive {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        border-color: $color-positive;
-        &:focus, :active {
-          box-shadow: 0 0 0 2px transparentize($color-positive, 0.7);
-        }
-      }
-      + * {
-        color: $color-positive;
-      }
-    }
-  }
-  &.-negative {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        border-color: $color-negative;
-        &:focus, :active {
-          box-shadow: 0 0 0 2px transparentize($color-negative, 0.7);
-        }
-      }
-      + * {
-        color: $color-negative;
-      }
-    }
-  }
-  &.-info {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        border-color: $color-info;
-        &:focus, :active {
-          box-shadow: 0 0 0 2px transparentize($color-info, 0.7);
-        }
-      }
-      + * {
-        color: $color-info;
-      }
-    }
-  }
-  &.-warning {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        border-color: $color-warning;
-        &:focus, :active {
-          box-shadow: 0 0 0 2px transparentize($color-warning, 0.7);
-        }
-      }
-      + * {
-        color: $color-warning;
-      }
-    }
-  }
-  &.-disabled {
-    > .bio-input,
-    > .bio-textarea,
-    > .bio-select {
-      > input,
-      > textarea,
-      > select {
-        cursor: not-allowed;
-        background-color: lighten($color-gray, 5%);
-        border-color: $color-gray;
-      }
-      + * {
-        color: $color-dark;
-      }
-    }
-    .bio-checkbox:not(.-switch) {
-      opacity: .5;
-      > input[type="checkbox"],
-      > label {
-        cursor: not-allowed;
-        &:before {
-          opacity: .5;
-          border-color: $color-dark;
-        }
-        &:after {
-          opacity: .5;
-          border-color: $color-dark;
-        }
-      }
-    }
-    .bio-checkbox.-switch {
-      opacity: .5;
-      > input[type="checkbox"],
-      > label {
-        cursor: not-allowed;
-      }
-    }
-    .bio-radio {
-      opacity: .5;
-      > input[type="radio"],
-      > label {
-        cursor: not-allowed;
-        &:before {
-          border-color: transparentize($color-dark, .5);
-        }
-        &:after {
-          background-color: transparentize($color-dark, .5);
-          border-color: transparentize($color-dark, .5);
-        }
-      }
-    }
-    .bio-file {
-      opacity: .5;
-      > input[type="file"],
-      > label {
-        cursor: not-allowed;
-      }
-    }
-  }
+	position: relative;
+	cursor: pointer;
+	> input[type="file"] {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		opacity: 0;
+		pointer-events: none;
+	}
+	> input[type="file"] + * {
+		display: block;
+		border: 1px solid $color-dark;
+		background-color: $color-white;
+		color: $color-dark;
+		border-color: $color-gray;
+		border-radius: 2px;
+		cursor: pointer;
+		padding: 10px 16px;
+		user-select: none;
+		&:before {
+			content: " ";
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Upload</title><path fill="%231f9eff" d="M11.25 16.5h-11.25v6h22.5v-6h-11.25zM21 19.5h-3v-1.5h3v1.5zM5.25 7.5l6-6 6 6h-3.75v7.5h-4.5v-7.5z"></path></svg>');
+			background-size: contain;
+			vertical-align: bottom;
+			margin-right: 12px;
+		}
+		&:hover {
+			background-color: lighten($color-gray, 30%);
+			border-color: lighten($color-dark, 50%);
+		}
+	}
 }
 
 // Multiple Select
 .bio-select.-multiple {
-  > select {
-    overflow: auto;
-    padding: 0px;
-    > option {
-      padding: 8px;
-      box-shadow: none;
-      &:checked {
-        background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
-      }
-    }
-  }
+	> select {
+		overflow: auto;
+		padding: 0px;
+		> option {
+			padding: 8px;
+			box-shadow: none;
+			&:checked {
+				background: linear-gradient(darken($color-primary, 5%), $color-primary, 5%);
+			}
+		}
+	}
 }
 
 // Single Select
 .bio-select:not(.-multiple) {
-  position: relative;
-  > select {
-    padding-right: 32px;;
-  }
-  &:after {
-    content: " ";
-    border: 2px solid $color-dark;
-    border-right-width: 0px;
-    border-top-width: 0px;
-    height: 8px;
-    width: 8px;
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    border-color: darken( $color-gray, 5%);
-    transform: rotate(-45deg) translate(0, calc(-50% - 4px));
-    pointer-events: none;
-  }
+	position: relative;
+	> select {
+		padding-right: 32px;;
+	}
+	&:after {
+		content: " ";
+		border: 2px solid $color-dark;
+		border-right-width: 0px;
+		border-top-width: 0px;
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		right: 8px;
+		top: 50%;
+		border-color: darken( $color-gray, 15%);
+		transform: rotate(-45deg) translate(0, calc(-50% - 4px));
+		pointer-events: none;
+	}
+}
+
+$arr: (
+	'accent': $color-accent,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning': $color-warning,
+	'info': $color-info
+);
+
+.bio-field {
+	@each $key, $value in $arr {
+		&.-#{$key} {
+			.bio-input > input,
+			.bio-textarea > textarea,
+			.bio-select > select {
+				border-color: $value;
+				&:focus, :active {
+					box-shadow: 0 0 0 2px transparentize($value, 0.8);
+				}
+			}
+			small, i {
+				color: $value;
+			}
+		}
+	};
+
+	&.-disabled {
+		.bio-input > input,
+		.bio-textarea > textarea,
+		.bio-select > select {
+			cursor: not-allowed;
+			background-color: hsla(0, 0%, 97%, 0.92);
+			border-color: hsla(0, 0%, 97%, 0.92);
+		}
+		small {
+			color: $color-dark
+		}
+		.bio-checkbox:not(.-switch) {
+			opacity: .5;
+			> input[type="checkbox"],
+			> label {
+				cursor: not-allowed;
+				&:before {
+					opacity: .5;
+					border-color: $color-dark;
+				}
+				&:after {
+					opacity: .5;
+					border-color: $color-dark;
+				}
+			}
+		}
+		.bio-checkbox.-switch {
+			opacity: .5;
+			> input[type="checkbox"],
+			> label {
+				cursor: not-allowed;
+			}
+		}
+		.bio-radio {
+			opacity: .5;
+			> input[type="radio"],
+			> label {
+				cursor: not-allowed;
+				&:before {
+					border-color: hsl(0, 0%, 65%);
+				}
+				&:after {
+					background-color: hsl(0, 0%, 65%);
+					border-color: hsl(0, 0%, 65%);
+				}
+			}
+		}
+		.bio-file {
+			opacity: .5;
+			> input[type="file"],
+			> label {
+				cursor: not-allowed;
+			}
+		}
+	}
 }
 
 .bio-textarea > textarea {
-  padding: 8px;
+	padding: 8px;
 }
 
-.bio-input > input,
-.bio-select:not(.-multiple) > select {
-  height: 36px;
+.bio-input,
+.bio-select:not(.-multiple){
+	height: 40px;
 }
-/* TODO (Consider)
-* - Size
-* - Icon left / right
-* - Loading state
-*/
+
+.bio-field {
+	&.-big {
+		.bio-input,
+		.bio-select:not(.-multiple) {
+			height: 46px;
+		}
+	}
+	&.-small {
+		.bio-input,
+		.bio-select:not(.-multiple) {
+			height: 30px;
+		}
+		.bio-input > input,
+		.bio-select:not(.-multiple) > select {
+			height: 100%;
+		}
+	}
+}
+
+
+// input icon
+.bio-input.-has-icon-left,
+.bio-select.-has-icon-left,
+.bio-input.-has-icon-right {
+	position: relative;
+	> i {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0px;
+		width: 42px;
+		height: 100%;
+	}
+}
+
+.bio-input.-has-icon-left {
+	> input {
+		padding-left: 42px;
+	}
+	> i {
+		left: 0px;
+	}
+}
+
+.bio-select.-has-icon-left {
+	> select {
+		padding-left: 42px;
+	}
+	> i {
+		left: 0px;
+	}
+}
+
+.bio-input.-has-icon-right {
+	> input {
+		padding-right: 42px;
+	}
+	> i {
+		right: 0px;
+	}
+}
+
+.bio-field.-small {
+	.bio-input.-has-icon-right {
+		> input {
+			padding-right: 40px;
+		}
+		> i {
+			width: 40px;
+			right: 0px;
+		}
+	}
+	.bio-input.-has-icon-left {
+		> input {
+			padding-left: 40px;
+		}
+		> i {
+			width: 40px;
+			left: 0px;
+		}
+	}
+	.bio-select.-has-icon-left {
+		> select {
+			padding-left: 40px;
+		}
+		> i {
+			width: 40px;
+			left: 0px;
+		}
+	}
+}
+
+.bio-field.-big {
+	.bio-input.-has-icon-right {
+		> input {
+			padding-right: 44px;
+		}
+		> i {
+			width: 44px;
+			right: 0px;
+		}
+	}
+	.bio-input.-has-icon-left {
+		> input {
+			padding-left: 44px;
+		}
+		> i {
+			width: 44px;
+			left: 0px;
+		}
+	}
+	.bio-select.-has-icon-left {
+		> select {
+			padding-left: 44px;
+		}
+		> i {
+			width: 44px;
+			left: 0px;
+		}
+	}
+}

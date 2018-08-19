@@ -1,0 +1,13 @@
+._ojf-cv { object-fit: cover !important; }
+._ojf-ct { object-fit: contain !important; }
+._ojf-f  { object-fit: fill !important; }
+._ojf-n  { object-fit: none !important; }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._ojf-cv-#{$breakpoint} { object-fit: cover !important; }
+		._ojf-ct-#{$breakpoint} { object-fit: contain !important; }
+		._ojf-f-#{$breakpoint}  { object-fit: fill !important; }
+		._ojf-n-#{$breakpoint}  { object-fit: none !important; }
+	};
+};

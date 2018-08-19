@@ -1,0 +1,15 @@
+._lst-n { list-style: none !important }
+._lst-d { list-style: disc !important }
+._lst-dcm { list-style: decimal !important }
+._lst-lwap { list-style: lower-alpha !important }
+._lst-apap { list-style: upper-alpha !important }
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		._lst-n-#{$breakpoint} { list-style: none !important }
+		._lst-d-#{$breakpoint} { list-style: disc !important }
+		._lst-dcm-#{$breakpoint} { list-style: decimal !important }
+		._lst-lwap-#{$breakpoint} { list-style: lower-alpha !important }
+		._lst-apap-#{$breakpoint} { list-style: upper-alpha !important }
+	};
+};

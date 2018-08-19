@@ -1,0 +1,11 @@
+@each $key, $value in $spacings {
+	._h-#{$key} { height: #{$value} !important; }
+};
+
+@each $breakpoint, $mediaQuery in $breakpoints {
+	@include minimum-screen-size ($mediaQuery) {
+		@each $key, $value in $spacings {
+			._h-#{$key}-#{$breakpoint} { height: #{$value} !important; }
+		};
+	};
+};
