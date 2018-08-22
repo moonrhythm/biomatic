@@ -1,13 +1,13 @@
-._jtfit-s  { justify-items: start !important; }
+._jtfit-st  { justify-items: start !important; }
 ._jtfit-e  { justify-items: end !important; }
 ._jtfit-ct { justify-items: center !important; }
-._jtfit-st { justify-items: stretch !important; }
+._jtfit-str { justify-items: stretch !important; }
 
 @each $breakpoint, $mediaQuery in $breakpoints {
 	@include minimum-screen-size ($mediaQuery) {
-		._jtfit-s-#{$breakpoint}  { justify-items: start !important; }
+		._jtfit-st-#{$breakpoint}  { justify-items: start !important; }
 		._jtfit-e-#{$breakpoint}  { justify-items: end !important; }
 		._jtfit-ct-#{$breakpoint} { justify-items: center !important; }
-		._jtfit-st-#{$breakpoint} { justify-items: stretch !important; }
+		._jtfit-str-#{$breakpoint} { justify-items: stretch !important; }
 	};
 };
