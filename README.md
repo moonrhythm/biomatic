@@ -118,6 +118,10 @@ Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
     <img height="50"
     style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/healthathome.png">
   </a>
+  <a href="https://rushh.co/">
+    <img height="50"
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/rushh.png">
+  </a>
 </div>
 
 ## License
