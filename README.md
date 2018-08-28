@@ -99,7 +99,7 @@ Other build command located in [package.json](https://github.com/BioMaRu/biomati
 
 Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
 
-## Who using biomatic
+## Sites using biomatic
 
 <div style="display: fles">
   <a href="https://www.swapgap.com">
