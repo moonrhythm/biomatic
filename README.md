@@ -104,7 +104,7 @@ Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
 <div style="display: fles">
   <a href="https://www.swapgap.com">
     <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/swapgap.png">
+    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/swapgap.png?v=2">
   </a>
   <a href="https://fastwork.co">
     <img height="50"
