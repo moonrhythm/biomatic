@@ -1,147 +1,39 @@
-.lo-1,
-.lo-2,
-.lo-3,
-.lo-4,
-.lo-6,
-.lo-12,
+.lo-1-11 { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 11fr; }
+.lo-2-10 { display: grid; min-width: 0; min-height: 0; grid-template-columns: 2fr 10fr; }
+.lo-3-9  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 3fr 9fr; }
+.lo-4-8  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 4fr 8fr; }
+.lo-5-7  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 5fr 7fr; }
+.lo-7-5  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 7fr 5fr; }
+.lo-8-4  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 8fr 4fr; }
+.lo-9-3  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 9fr 3fr; }
+.lo-10-2 { display: grid; min-width: 0; min-height: 0; grid-template-columns: 10fr 2fr; }
+.lo-11-1 { display: grid; min-width: 0; min-height: 0; grid-template-columns: 11fr 1fr; }
 
-.lo-1-11,
-.lo-2-10,
-.lo-3-9,
-.lo-4-8,
-.lo-5-7,
-.lo-7-5,
-.lo-8-4,
-.lo-9-3,
-.lo-10-2,
-.lo-11-1,
+.lo-1  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+.lo-2  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+.lo-3  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr; }
+.lo-4  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr; }
+.lo-6  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr; }
+.lo-12 { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr; }
 
-.lo-1-sm,
-.lo-2-sm,
-.lo-3-sm,
-.lo-4-sm,
-.lo-6-sm,
-.lo-12-sm,
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		.lo-1-11-#{$breakpointName} { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 11fr; }
+		.lo-2-10-#{$breakpointName} { display: grid; min-width: 0; min-height: 0; grid-template-columns: 2fr 10fr; }
+		.lo-3-9-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 3fr 9fr; }
+		.lo-4-8-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 4fr 8fr; }
+		.lo-5-7-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 5fr 7fr; }
+		.lo-7-5-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 7fr 5fr; }
+		.lo-8-4-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 8fr 4fr; }
+		.lo-9-3-#{$breakpointName}  { display: grid; min-width: 0; min-height: 0; grid-template-columns: 9fr 3fr; }
+		.lo-10-2-#{$breakpointName} { display: grid; min-width: 0; min-height: 0; grid-template-columns: 10fr 2fr; }
+		.lo-11-1-#{$breakpointName} { display: grid; min-width: 0; min-height: 0; grid-template-columns: 11fr 1fr; }
 
-.lo-1-11-sm,
-.lo-2-10-sm,
-.lo-3-9-sm,
-.lo-4-8-sm,
-.lo-5-7-sm,
-.lo-7-5-sm,
-.lo-8-4-sm,
-.lo-9-3-sm,
-.lo-10-2-sm,
-.lo-11-1-sm,
-
-.lo-1-md,
-.lo-2-md,
-.lo-3-md,
-.lo-4-md,
-.lo-6-md,
-.lo-12-md,
-
-.lo-1-11-md,
-.lo-2-10-md,
-.lo-3-9-md,
-.lo-4-8-md,
-.lo-5-7-md,
-.lo-7-5-md,
-.lo-8-4-md,
-.lo-9-3-md,
-.lo-10-2-md,
-.lo-11-1-md,
-
-.lo-1-lg,
-.lo-2-lg,
-.lo-3-lg,
-.lo-4-lg,
-.lo-6-lg,
-.lo-12-lg,
-
-.lo-1-11-lg,
-.lo-2-10-lg,
-.lo-3-9-lg,
-.lo-4-8-lg,
-.lo-5-7-lg,
-.lo-7-5-lg,
-.lo-8-4-lg,
-.lo-9-3-lg,
-.lo-10-2-lg,
-.lo-11-1-lg {
-	display: grid;
-	min-height: 0;
-	min-width: 0;
-}
-
-.lo-1-11 { grid-template-columns: 1fr 11fr; }
-.lo-2-10 { grid-template-columns: 2fr 10fr; }
-.lo-3-9  { grid-template-columns: 3fr 9fr; }
-.lo-4-8  { grid-template-columns: 4fr 8fr; }
-.lo-5-7  { grid-template-columns: 5fr 7fr; }
-.lo-7-5  { grid-template-columns: 7fr 5fr; }
-.lo-8-4  { grid-template-columns: 8fr 4fr; }
-.lo-9-3  { grid-template-columns: 9fr 3fr; }
-.lo-10-2 { grid-template-columns: 10fr 2fr; }
-.lo-11-1 { grid-template-columns: 11fr 1fr; }
-
-.lo-1  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-.lo-2  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
-.lo-3  { grid-template-columns: 1fr 1fr 1fr 1fr; }
-.lo-4  { grid-template-columns: 1fr 1fr 1fr; }
-.lo-6  { grid-template-columns: 1fr 1fr; }
-.lo-12 { grid-template-columns: 1fr; }
-
-.lo-1-11-sm { @include sm-upper { grid-template-columns: 1fr 11fr; } }
-.lo-2-10-sm { @include sm-upper { grid-template-columns: 2fr 10fr; } }
-.lo-3-9-sm  { @include sm-upper { grid-template-columns: 3fr 9fr; } }
-.lo-4-8-sm  { @include sm-upper { grid-template-columns: 4fr 8fr; } }
-.lo-5-7-sm  { @include sm-upper { grid-template-columns: 5fr 7fr; } }
-.lo-7-5-sm  { @include sm-upper { grid-template-columns: 7fr 5fr; } }
-.lo-8-4-sm  { @include sm-upper { grid-template-columns: 8fr 4fr; } }
-.lo-9-3-sm  { @include sm-upper { grid-template-columns: 9fr 3fr; } }
-.lo-10-2-sm { @include sm-upper { grid-template-columns: 10fr 2fr; } }
-.lo-11-1-sm { @include sm-upper { grid-template-columns: 11fr 1fr; } }
-
-.lo-1-sm  { @include sm-upper  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-2-sm  { @include sm-upper  { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-3-sm  { @include sm-upper  { grid-template-columns: 1fr 1fr 1fr 1fr; } }
-.lo-4-sm  { @include sm-upper  { grid-template-columns: 1fr 1fr 1fr; } }
-.lo-6-sm  { @include sm-upper  { grid-template-columns: 1fr 1fr; } }
-.lo-12-sm { @include sm-upper  { grid-template-columns: 1fr; } }
-
-.lo-1-md  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-2-md  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-3-md  { @include md-upper { grid-template-columns: 1fr 1fr 1fr 1fr; } }
-.lo-4-md  { @include md-upper { grid-template-columns: 1fr 1fr 1fr; } }
-.lo-6-md  { @include md-upper { grid-template-columns: 1fr 1fr; } }
-.lo-12-md { @include md-upper { grid-template-columns: 1fr; } }
-
-.lo-1-11-md { @include md-upper { grid-template-columns: 1fr 11fr; } }
-.lo-2-10-md { @include md-upper { grid-template-columns: 2fr 10fr; } }
-.lo-3-9-md  { @include md-upper { grid-template-columns: 3fr 9fr; } }
-.lo-4-8-md  { @include md-upper { grid-template-columns: 4fr 8fr; } }
-.lo-5-7-md  { @include md-upper { grid-template-columns: 5fr 7fr; } }
-.lo-7-5-md  { @include md-upper { grid-template-columns: 7fr 5fr; } }
-.lo-8-4-md  { @include md-upper { grid-template-columns: 8fr 4fr; } }
-.lo-9-3-md  { @include md-upper { grid-template-columns: 9fr 3fr; } }
-.lo-10-2-md { @include md-upper { grid-template-columns: 10fr 2fr; } }
-.lo-11-1-md { @include md-upper { grid-template-columns: 11fr 1fr; } }
-
-.lo-1-lg  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-2-lg  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; } }
-.lo-3-lg  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr 1fr; } }
-.lo-4-lg  { @include lg-upper { grid-template-columns: 1fr 1fr 1fr; } }
-.lo-6-lg  { @include lg-upper { grid-template-columns: 1fr 1fr; } }
-.lo-12-lg { @include lg-upper { grid-template-columns: 1fr; } }
-
-.lo-1-11-lg { @include lg-upper { grid-template-columns: 1fr 11fr; } }
-.lo-2-10-lg { @include lg-upper { grid-template-columns: 2fr 10fr; } }
-.lo-3-9-lg  { @include lg-upper { grid-template-columns: 3fr 9fr; } }
-.lo-4-8-lg  { @include lg-upper { grid-template-columns: 4fr 8fr; } }
-.lo-5-7-lg  { @include lg-upper { grid-template-columns: 5fr 7fr; } }
-.lo-7-5-lg  { @include lg-upper { grid-template-columns: 7fr 5fr; } }
-.lo-8-4-lg  { @include lg-upper { grid-template-columns: 8fr 4fr; } }
-.lo-9-3-lg  { @include lg-upper { grid-template-columns: 9fr 3fr; } }
-.lo-10-2-lg { @include lg-upper { grid-template-columns: 10fr 2fr; } }
-.lo-11-1-lg { @include lg-upper { grid-template-columns: 11fr 1fr; } }
+		.lo-1-#{$breakpointName}    { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+		.lo-2-#{$breakpointName}    { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+		.lo-3-#{$breakpointName}    { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr 1fr; }
+		.lo-4-#{$breakpointName}    { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr 1fr; }
+		.lo-6-#{$breakpointName}    { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr 1fr; }
+		.lo-12-#{$breakpointName}   { display: grid; min-width: 0; min-height: 0; grid-template-columns: 1fr; }
+	}
+};

@@ -1,11 +1,8 @@
 /**
  * SCSS variable of the breakpoint that will be used
- * as the main breakpoint in Design Systems.
+ * as the main breakpoints in Design Systems.
  *
- * variables $sm, $md and $lg are REQUIRED for lo-container class
- * please don't remove them
- *
- * you can change their value as you need
+ * you can change their or add/remove breakpoints as you need.
  *
  */
 
@@ -19,11 +16,4 @@ $breakpoints: (
 	'sm': $sm,
 	'md': $md,
 	'lg': $lg
-);
-
-$breakpoint-rules: (
-	'xs': '(min-width: 500px)',
-	'sm': '(min-width: 770px)',
-	'md': '(min-width: 900px)',
-	'lg': '(min-width: 1200px)'
 );
