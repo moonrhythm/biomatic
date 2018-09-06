@@ -1,10 +1,10 @@
 // Placeholder Color
 ::-webkit-input-placeholder {
-	color: darken($color-gray, 16%);
+	color: hsl(0, 0%, 78%);
 }
 
 ::-moz-placeholder {
-	color: darken($color-gray, 40%);
+	color: hsl(0, 0%, 78%);
 }
 
 // Field
@@ -111,7 +111,7 @@
 	align-items: center;
 	> input[type="checkbox"] {
 		position: relative;
-		background-color: $color-gray;
+		background-color: hsl(0, 0%, 93%);
 		cursor: pointer;
 		border-radius: 128px;
 		-webkit-appearance: none;
@@ -216,7 +216,7 @@
 		border: 1px solid $color-dark;
 		background-color: $color-white;
 		color: $color-dark;
-		border-color: $color-gray;
+		border-color: hsl(0, 0%, 93%);
 		border-radius: 2px;
 		cursor: pointer;
 		padding: 10px 16px;
@@ -232,8 +232,8 @@
 			margin-right: 12px;
 		}
 		&:hover {
-			background-color: lighten($color-gray, 30%);
-			border-color: lighten($color-dark, 50%);
+			background-color: lighten(hsl(0, 0%, 93%), 30%);
+			border-color: lighten(hsl(0, 0%, 93%), 50%);
 		}
 	}
 }
@@ -269,7 +269,7 @@
 		position: absolute;
 		right: 8px;
 		top: 50%;
-		border-color: darken( $color-gray, 15%);
+		border-color: darken(hsl(0, 0%, 93%), 15%);
 		transform: rotate(-45deg) translate(0, calc(-50% - 4px));
 		pointer-events: none;
 	}

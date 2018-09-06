@@ -6,7 +6,7 @@ progress.bio-progress {
 	overflow: hidden;
 
 	&::-webkit-progress-bar {
-		background-color: $color-gray;
+		background-color: hsl(210, 10%, 91%);
 	}
 
 	&::-webkit-progress-value { background-color: $color-primary }
