@@ -1,11 +1,10 @@
 /**
- * SCSS variable of the colors that will be used
- * as the color in Design Systems.
+ * SCSS variable of the colors.
+ * You can change their value or add/remove variables as you need.
  *
- * The name can be anything but we suggest "color-" prefix
+ * The name can be anything you want, but we suggest "color-" prefix
  * for better maintainability.
  */
-
 $color-primary: hsl(206, 100%, 56%);
 $color-accent: hsl(350, 100%, 60%);
 
@@ -19,25 +18,23 @@ $color-gray-300: hsl(210, 10%, 83%);
 $color-gray-200: hsl(210, 10%, 91%);
 $color-gray-100: hsl(210, 10%, 97%);
 
-/* Semantic Color */
 $color-positive: hsl(150, 80%, 45%);
 $color-warning: hsl(40, 90%, 60%);
 $color-info: hsl(200, 100%, 65%);
 $color-negative: hsl(0, 100%, 65%);
 
-/* Gray Scale Color */
 $color-white: hsl(0, 255%, 100%);
 $color-light: hsla(0, 255%, 100%, 0.92);
-$color-dark: hsla(231, 10%, 25%, 0.94);
+$color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default text color */
 $color-black: hsl(0, 0%, 0%);
 
 /**
- * The list of 'name' and 'SCSS variable'
+ * The list of "name" and "SCSS variable"
  * that used for generating color related Atomic class.
  *
  * For example
- * 'primary': $color-primary will use to create classes _cl-primary, _bgcl-primary
- * 'tpr': transparent will use to create classes _cl-tpr, _bgcl-tpr
+ * 'primary': $color-primary will use to create classes "_cl-primary", "_bgcl-primary"
+ * 'tpr': transparent will use to create classes "_cl-tpr", "_bgcl-tpr"
  */
 $colors: (
 	'primary': $color-primary,
@@ -59,7 +56,7 @@ $colors: (
 
 	'white': $color-white,
 	'light': $color-light,
-	'dark': $color-dark,
+	'dark': $color-dark, /* REQUIRED, default text color */
 	'black': $color-black,
 
 	'crcl': currentColor,
@@ -67,9 +64,7 @@ $colors: (
 );
 
 /**
- * The list of 'CSS variable' and 'SCSS variable'
- * for utility use
- *
+ * OPTIONAL: CSS variables for using outside SCSS when needed
  */
 :root {
 	--color-primary: hsl(206, 100%, 56%);

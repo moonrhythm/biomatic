@@ -1,18 +1,22 @@
 /**
- * SCSS variable of the breakpoint that will be used
- * as the main breakpoints in Design Systems.
+ * SCSS variable of the breakpoints.
+ * You can change their value or add/remove variables as you need.
  *
- * you can change their or add/remove breakpoints as you need.
- *
+ * For example
+ * You can add "$xs: 480px"
  */
-
-$xs: 500px;
 $sm: 770px;
 $md: 900px;
 $lg: 1200px;
 
+/**
+ * The list of "name" and "SCSS variable" that will be used
+ * for calculating value in layout related classes (lo-*)
+ * and used as responsive modifiler for atomic classes
+ *
+ * For example: "_cl-primary-sm" "_mg-16px-md"
+ */
 $breakpoints: (
-	'xs': $xs,
 	'sm': $sm,
 	'md': $md,
 	'lg': $lg
