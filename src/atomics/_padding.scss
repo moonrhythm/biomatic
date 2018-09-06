@@ -8,16 +8,16 @@
 	._pdh-#{$key} { padding-left: #{$value} !important; padding-right: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $spacings {
-			._pd-#{$key}-#{$breakpoint}   { padding: #{$value} !important; }
-			._pdl-#{$key}-#{$breakpoint}  { padding-left: #{$value} !important; }
-			._pdr-#{$key}-#{$breakpoint}  { padding-right: #{$value} !important; }
-			._pdt-#{$key}-#{$breakpoint}  { padding-top: #{$value} !important; }
-			._pdbt-#{$key}-#{$breakpoint} { padding-bottom: #{$value} !important; }
-			._pdv-#{$key}-#{$breakpoint}  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
-			._pdh-#{$key}-#{$breakpoint}  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
+			._pd-#{$key}-#{$breakpointName}   { padding: #{$value} !important; }
+			._pdl-#{$key}-#{$breakpointName}  { padding-left: #{$value} !important; }
+			._pdr-#{$key}-#{$breakpointName}  { padding-right: #{$value} !important; }
+			._pdt-#{$key}-#{$breakpointName}  { padding-top: #{$value} !important; }
+			._pdbt-#{$key}-#{$breakpointName} { padding-bottom: #{$value} !important; }
+			._pdv-#{$key}-#{$breakpointName}  { padding-top: #{$value} !important; padding-bottom: #{$value} !important; }
+			._pdh-#{$key}-#{$breakpointName}  { padding-left: #{$value} !important; padding-right: #{$value} !important; }
 		};
 	};
 };

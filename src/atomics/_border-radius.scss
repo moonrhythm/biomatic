@@ -6,14 +6,14 @@
 	._bdbtrrd-#{$key} { border-bottom-right-radius: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $radiuses {
-			._bdrd-#{$key}-#{$breakpoint}    { border-radius: #{$value} !important; }
-			._bdtlrd-#{$key}-#{$breakpoint}  { border-top-left-radius: #{$value} !important; }
-			._bdtrrd-#{$key}-#{$breakpoint}  { border-top-right-radius: #{$value} !important; }
-			._bdbtlrd-#{$key}-#{$breakpoint} { border-bottom-left-radius: #{$value} !important; }
-			._bdbtrrd-#{$key}-#{$breakpoint} { border-bottom-right-radius: #{$value} !important; }
+			._bdrd-#{$key}-#{$breakpointName}    { border-radius: #{$value} !important; }
+			._bdtlrd-#{$key}-#{$breakpointName}  { border-top-left-radius: #{$value} !important; }
+			._bdtrrd-#{$key}-#{$breakpointName}  { border-top-right-radius: #{$value} !important; }
+			._bdbtlrd-#{$key}-#{$breakpointName} { border-bottom-left-radius: #{$value} !important; }
+			._bdbtrrd-#{$key}-#{$breakpointName} { border-bottom-right-radius: #{$value} !important; }
 		};
 	};
 };

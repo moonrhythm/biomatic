@@ -8,16 +8,16 @@
 ._dp-tbc { display: table-cell !important; }
 ._dp-n   { display: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._dp-b-#{$breakpoint}   { display: block !important; }
-		._dp-f-#{$breakpoint}   { display: flex !important; }
-		._dp-g-#{$breakpoint}   { display: grid !important; }
-		._dp-il-#{$breakpoint}  { display: inline !important; }
-		._dp-ilb-#{$breakpoint} { display: inline-block !important; }
-		._dp-ilf-#{$breakpoint} { display: inline-flex !important; }
-		._dp-tb-#{$breakpoint}  { display: table !important; }
-		._dp-tbc-#{$breakpoint} { display: table-cell !important; }
-		._dp-n-#{$breakpoint}   { display: none !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._dp-b-#{$breakpointName}   { display: block !important; }
+		._dp-f-#{$breakpointName}   { display: flex !important; }
+		._dp-g-#{$breakpointName}   { display: grid !important; }
+		._dp-il-#{$breakpointName}  { display: inline !important; }
+		._dp-ilb-#{$breakpointName} { display: inline-block !important; }
+		._dp-ilf-#{$breakpointName} { display: inline-flex !important; }
+		._dp-tb-#{$breakpointName}  { display: table !important; }
+		._dp-tbc-#{$breakpointName} { display: table-cell !important; }
+		._dp-n-#{$breakpointName}   { display: none !important; }
 	};
 };

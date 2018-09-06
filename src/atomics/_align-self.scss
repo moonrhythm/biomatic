@@ -5,13 +5,13 @@
 ._als-ct  { align-self: center !important; }
 ._als-str { align-self: stretch !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._als-st-#{$breakpoint}  { align-self: start !important; }
-		._als-e-#{$breakpoint}   { align-self: end !important; }
-		._als-fst-#{$breakpoint} { align-self: flex-start !important; }
-		._als-fe-#{$breakpoint}  { align-self: flex-end !important; }
-		._als-ct-#{$breakpoint}  { align-self: center !important; }
-		._als-str-#{$breakpoint} { align-self: stretch !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._als-st-#{$breakpointName}  { align-self: start !important; }
+		._als-e-#{$breakpointName}   { align-self: end !important; }
+		._als-fst-#{$breakpointName} { align-self: flex-start !important; }
+		._als-fe-#{$breakpointName}  { align-self: flex-end !important; }
+		._als-ct-#{$breakpointName}  { align-self: center !important; }
+		._als-str-#{$breakpointName} { align-self: stretch !important; }
 	};
 };

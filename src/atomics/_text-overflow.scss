@@ -1,9 +1,9 @@
 ._tovf-c   { text-overflow: clip !important; }
 ._tovf-els { text-overflow: ellipsis !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._tovf-c-#{$breakpoint}   { text-overflow: clip !important; }
-		._tovf-els-#{$breakpoint} { text-overflow: ellipsis !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._tovf-c-#{$breakpointName}   { text-overflow: clip !important; }
+		._tovf-els-#{$breakpointName} { text-overflow: ellipsis !important; }
 	};
 };

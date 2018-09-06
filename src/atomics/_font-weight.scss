@@ -8,16 +8,16 @@
 ._fw-800 { font-weight: 800 !important; }
 ._fw-900 { font-weight: 900 !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._fw-100-#{$breakpoint} { font-weight: 100 !important; }
-		._fw-200-#{$breakpoint} { font-weight: 200 !important; }
-		._fw-300-#{$breakpoint} { font-weight: 300 !important; }
-		._fw-400-#{$breakpoint} { font-weight: 400 !important; }
-		._fw-500-#{$breakpoint} { font-weight: 500 !important; }
-		._fw-600-#{$breakpoint} { font-weight: 600 !important; }
-		._fw-700-#{$breakpoint} { font-weight: 700 !important; }
-		._fw-800-#{$breakpoint} { font-weight: 800 !important; }
-		._fw-900-#{$breakpoint} { font-weight: 900 !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._fw-100-#{$breakpointName} { font-weight: 100 !important; }
+		._fw-200-#{$breakpointName} { font-weight: 200 !important; }
+		._fw-300-#{$breakpointName} { font-weight: 300 !important; }
+		._fw-400-#{$breakpointName} { font-weight: 400 !important; }
+		._fw-500-#{$breakpointName} { font-weight: 500 !important; }
+		._fw-600-#{$breakpointName} { font-weight: 600 !important; }
+		._fw-700-#{$breakpointName} { font-weight: 700 !important; }
+		._fw-800-#{$breakpointName} { font-weight: 800 !important; }
+		._fw-900-#{$breakpointName} { font-weight: 900 !important; }
 	};
 };

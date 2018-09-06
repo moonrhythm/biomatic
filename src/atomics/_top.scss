@@ -2,10 +2,10 @@
 	._t-#{$key} { top: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $spacings {
-			._t-#{$key}-#{$breakpoint} { top: #{$value} !important; }
+			._t-#{$key}-#{$breakpointName} { top: #{$value} !important; }
 		};
 	};
 };

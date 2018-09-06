@@ -1,9 +1,9 @@
 ._bgs-cv { background-size: cover !important; }
 ._bgs-ct { background-size: contain !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._bgs-cv-#{$breakpoint} { background-size: cover !important; }
-		._bgs-ct-#{$breakpoint} { background-size: contain !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._bgs-cv-#{$breakpointName} { background-size: cover !important; }
+		._bgs-ct-#{$breakpointName} { background-size: contain !important; }
 	};
 };

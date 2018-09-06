@@ -1,7 +1,7 @@
 ._bsd-n { box-shadow: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._bsd-n-#{$breakpoint} { box-shadow: none !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._bsd-n-#{$breakpointName} { box-shadow: none !important; }
 	};
 };

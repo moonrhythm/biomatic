@@ -2,10 +2,10 @@
 ._gatf-cl { grid-auto-flow: column !important }
 ._gatf-d { grid-auto-flow: dense !important }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._gatf-r-#{$breakpoint} { grid-auto-flow: row !important }
-		._gatf-cl-#{$breakpoint} { grid-auto-flow: column !important }
-		._gatf-d-#{$breakpoint} { grid-auto-flow: dense !important }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._gatf-r-#{$breakpointName} { grid-auto-flow: row !important }
+		._gatf-cl-#{$breakpointName} { grid-auto-flow: column !important }
+		._gatf-d-#{$breakpointName} { grid-auto-flow: dense !important }
 	};
 };

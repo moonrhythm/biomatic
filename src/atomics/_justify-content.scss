@@ -8,16 +8,16 @@
 ._jtfct-spar  { justify-content: space-around !important; }
 ._jtfct-spevl { justify-content: space-evenly !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._jtfct-st-#{$breakpoint}    { justify-content: start !important; }
-		._jtfct-e-#{$breakpoint}     { justify-content: end !important; }
-		._jtfct-ct-#{$breakpoint}    { justify-content: center !important; }
-		._jtfct-str-#{$breakpoint}   { justify-content: stretch !important; }
-		._jtfct-fst-#{$breakpoint}   { justify-content: flex-start !important; }
-		._jtfct-fe-#{$breakpoint}    { justify-content: flex-end !important; }
-		._jtfct-spbtw-#{$breakpoint} { justify-content: space-between !important; }
-		._jtfct-spar-#{$breakpoint}  { justify-content: space-around !important; }
-		._jtfct-spevl-#{$breakpoint} { justify-content: space-evenly !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._jtfct-st-#{$breakpointName}    { justify-content: start !important; }
+		._jtfct-e-#{$breakpointName}     { justify-content: end !important; }
+		._jtfct-ct-#{$breakpointName}    { justify-content: center !important; }
+		._jtfct-str-#{$breakpointName}   { justify-content: stretch !important; }
+		._jtfct-fst-#{$breakpointName}   { justify-content: flex-start !important; }
+		._jtfct-fe-#{$breakpointName}    { justify-content: flex-end !important; }
+		._jtfct-spbtw-#{$breakpointName} { justify-content: space-between !important; }
+		._jtfct-spar-#{$breakpointName}  { justify-content: space-around !important; }
+		._jtfct-spevl-#{$breakpointName} { justify-content: space-evenly !important; }
 	};
 };

@@ -3,11 +3,11 @@
 ._ttf-upc  { text-transform: uppercase !important; }
 ._ttf-n    { text-transform: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._ttf-cptl-#{$breakpoint} { text-transform: capitalize !important; }
-		._ttf-lwc-#{$breakpoint}  { text-transform: lowercase !important; }
-		._ttf-upc-#{$breakpoint}  { text-transform: uppercase !important; }
-		._ttf-n-#{$breakpoint}    { text-transform: none !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._ttf-cptl-#{$breakpointName} { text-transform: capitalize !important; }
+		._ttf-lwc-#{$breakpointName}  { text-transform: lowercase !important; }
+		._ttf-upc-#{$breakpointName}  { text-transform: uppercase !important; }
+		._ttf-n-#{$breakpointName}    { text-transform: none !important; }
 	};
 };

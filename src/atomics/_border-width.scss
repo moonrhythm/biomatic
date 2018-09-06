@@ -8,16 +8,16 @@
 	._bdhw-#{$key} { border-left-width: #{$value} !important; border-right-width: #{$value} !important; border-right-style: solid; border-left-style: solid; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $radiuses {
-			._bdw-#{$key}-#{$breakpoint} { border-width: #{$value} !important; border-style: solid; }
-			._bdlw-#{$key}-#{$breakpoint} { border-left-width: #{$value} !important; border-left-style: solid; }
-			._bdrw-#{$key}-#{$breakpoint} { border-right-width: #{$value} !important; border-right-style: solid; }
-			._bdtw-#{$key}-#{$breakpoint} { border-top-width: #{$value} !important; border-top-style: solid; }
-			._bdbtw-#{$key}-#{$breakpoint} { border-bottom-width: #{$value} !important; border-bottom-style: solid; }
-			._bdvw-#{$key}-#{$breakpoint} { border-top-width: #{$value} !important; border-bottom-width: #{$value} !important; border-top-style: solid; border-bottom-style: solid; }
-			._bdhw-#{$key}-#{$breakpoint} { border-left-width: #{$value} !important; border-right-width: #{$value} !important; border-right-style: solid; border-left-style: solid; }
+			._bdw-#{$key}-#{$breakpointName} { border-width: #{$value} !important; border-style: solid; }
+			._bdlw-#{$key}-#{$breakpointName} { border-left-width: #{$value} !important; border-left-style: solid; }
+			._bdrw-#{$key}-#{$breakpointName} { border-right-width: #{$value} !important; border-right-style: solid; }
+			._bdtw-#{$key}-#{$breakpointName} { border-top-width: #{$value} !important; border-top-style: solid; }
+			._bdbtw-#{$key}-#{$breakpointName} { border-bottom-width: #{$value} !important; border-bottom-style: solid; }
+			._bdvw-#{$key}-#{$breakpointName} { border-top-width: #{$value} !important; border-bottom-width: #{$value} !important; border-top-style: solid; border-bottom-style: solid; }
+			._bdhw-#{$key}-#{$breakpointName} { border-left-width: #{$value} !important; border-right-width: #{$value} !important; border-right-style: solid; border-left-style: solid; }
 		};
 	};
 };

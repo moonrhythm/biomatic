@@ -2,10 +2,10 @@
 ._wb-ba   { word-break: break-all !important; }
 ._wb-ka   { word-break: keep-all !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._wb-nm-#{$breakpoint}   { word-break: normal !important; }
-		._wb-ba-#{$breakpoint}   { word-break: break-all !important; }
-		._wb-ka-#{$breakpoint}   { word-break: keep-all !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._wb-nm-#{$breakpointName}   { word-break: normal !important; }
+		._wb-ba-#{$breakpointName}   { word-break: break-all !important; }
+		._wb-ka-#{$breakpointName}   { word-break: keep-all !important; }
 	};
 };

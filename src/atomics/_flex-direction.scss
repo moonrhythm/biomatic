@@ -3,11 +3,11 @@
 ._fdrt-rrw { flex-direction: row-reverse !important; }
 ._fdrt-clrv { flex-direction: column-reverse !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._fdrt-r-#{$breakpoint} { flex-direction: row !important; }
-		._fdrt-cl-#{$breakpoint} { flex-direction: column !important; }
-		._fdrt-rrw-#{$breakpoint} { flex-direction: row-reverse !important; }
-		._fdrt-clrv-#{$breakpoint} { flex-direction: column-reverse !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._fdrt-r-#{$breakpointName} { flex-direction: row !important; }
+		._fdrt-cl-#{$breakpointName} { flex-direction: column !important; }
+		._fdrt-rrw-#{$breakpointName} { flex-direction: row-reverse !important; }
+		._fdrt-clrv-#{$breakpointName} { flex-direction: column-reverse !important; }
 	};
 };

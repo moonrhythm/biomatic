@@ -4,12 +4,12 @@
 ._zid--1 { z-index: -1 !important; }
 ._zid-at { z-index: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._zid-0-#{$breakpoint} { z-index: 0 !important; }
-		._zid-1-#{$breakpoint} { z-index: 1 !important; }
-		._zid-2-#{$breakpoint} { z-index: 2 !important; }
-		._zid--1-#{$breakpoint} { z-index: -1 !important; }
-		._zid-at-#{$breakpoint} { z-index: auto !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._zid-0-#{$breakpointName} { z-index: 0 !important; }
+		._zid-1-#{$breakpointName} { z-index: 1 !important; }
+		._zid-2-#{$breakpointName} { z-index: 2 !important; }
+		._zid--1-#{$breakpointName} { z-index: -1 !important; }
+		._zid-at-#{$breakpointName} { z-index: auto !important; }
 	};
 };

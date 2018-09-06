@@ -1,9 +1,9 @@
 ._lstpst-is { list-style-position: inside !important }
 ._lstpst-os { list-style-position: outside !important }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._lstpst-is-#{$breakpoint} { list-style-position: inside !important }
-		._lstpst-os-#{$breakpoint} { list-style-position: outside !important }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._lstpst-is-#{$breakpointName} { list-style-position: inside !important }
+		._lstpst-os-#{$breakpointName} { list-style-position: outside !important }
 	};
 };

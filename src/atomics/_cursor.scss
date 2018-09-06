@@ -5,13 +5,13 @@
 ._cs-w   { cursor: wait !important; }
 ._cs-at  { cursor: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._cs-pt-#{$breakpoint}  { cursor: pointer !important; }
-		._cs-h-#{$breakpoint}   { cursor: help !important; }
-		._cs-nal-#{$breakpoint} { cursor: not-allowed !important; }
-		._cs-m-#{$breakpoint}   { cursor: move !important; }
-		._cs-w-#{$breakpoint}   { cursor: wait !important; }
-		._cs-at-#{$breakpoint}  { cursor: auto !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._cs-pt-#{$breakpointName}  { cursor: pointer !important; }
+		._cs-h-#{$breakpointName}   { cursor: help !important; }
+		._cs-nal-#{$breakpointName} { cursor: not-allowed !important; }
+		._cs-m-#{$breakpointName}   { cursor: move !important; }
+		._cs-w-#{$breakpointName}   { cursor: wait !important; }
+		._cs-at-#{$breakpointName}  { cursor: auto !important; }
 	};
 };

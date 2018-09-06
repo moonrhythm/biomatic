@@ -3,11 +3,11 @@
 ._bgbm-sc  { background-blend-mode: screen !important; }
 ._bgbm-ovl { background-blend-mode: overlay !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoint-rules {
-	@include minimum-screen-size ($mediaQuery) {
-		._bgbm-nm-#{$breakpoint}  { background-blend-mode: normal !important; }
-		._bgbm-mtp-#{$breakpoint} { background-blend-mode: multiply !important; }
-		._bgbm-sc-#{$breakpoint}  { background-blend-mode: screen !important; }
-		._bgbm-ovl-#{$breakpoint} { background-blend-mode: overlay !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._bgbm-nm-#{$breakpointName}  { background-blend-mode: normal !important; }
+		._bgbm-mtp-#{$breakpointName} { background-blend-mode: multiply !important; }
+		._bgbm-sc-#{$breakpointName}  { background-blend-mode: screen !important; }
+		._bgbm-ovl-#{$breakpointName} { background-blend-mode: overlay !important; }
 	};
 };
