@@ -12,9 +12,10 @@ $lg: 1200px;
 /**
  * The list of "name" and "SCSS variable" that will be used
  * for calculating value in layout related classes (lo-*)
- * and used as responsive modifiler for atomic classes
+ * and used for generating responsive modifiler for atomic classes
  *
- * For example: "_cl-primary-sm" "_mg-16px-md"
+ * For example:
+ * "_mg-16px" will have "_mg-16px-sm", "_mg-16px-md" and "_mg-16px-lg" classes generated
  */
 $breakpoints: (
 	'sm': $sm,

@@ -1,4 +1,16 @@
-/* for generate border-radius "_bdrd-*" class */
+/**
+ * The list of "name" and "SCSS variable"
+ * that used for generating border-radius Atomic class.
+ *
+ * For example:
+ * '2px': 2px will use to create classes "_bdrd-2px" (border-radius: 2px)
+ *
+ * You can change their value or add/remove item as you need.
+ *
+ * For example:
+ * You can add '1r': 1rem
+ * it will generate "_bdrd-1r" class (border-radius: 1rem)
+ */
 $radiuses: (
 	'0px': 0px,
 	'1px': 1px,
