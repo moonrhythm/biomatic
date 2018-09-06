@@ -20,7 +20,7 @@
 .bio-input,
 .bio-textarea,
 .bio-select {
-	border-radius: 4px;
+	border-radius: 3px;
 }
 
 .bio-input > input,
@@ -363,23 +363,29 @@ $arr: (
 
 .bio-input,
 .bio-select:not(.-multiple){
-	height: 40px;
+	height: 2.5em;
 }
 
 .bio-field {
 	&.-big {
 		.bio-input,
 		.bio-select:not(.-multiple) {
-			height: 46px;
+			height: 2.875em;
+		}
+		.bio-input > input,
+		.bio-select:not(.-multiple) > select {
+			font-size: 1.25rem;
+			height: 100%;
 		}
 	}
 	&.-small {
 		.bio-input,
 		.bio-select:not(.-multiple) {
-			height: 30px;
+			height: 1.875em;
 		}
 		.bio-input > input,
 		.bio-select:not(.-multiple) > select {
+			font-size: 0.75rem;
 			height: 100%;
 		}
 	}
