@@ -2,7 +2,7 @@
 ._f-n { flex: none !important; }
 ._f-at { flex: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._f-1-#{$breakpoint} { flex: 1 !important; }
 		._f-n-#{$breakpoint} { flex: none !important; }

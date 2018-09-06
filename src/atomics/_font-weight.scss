@@ -8,7 +8,7 @@
 ._fw-800 { font-weight: 800 !important; }
 ._fw-900 { font-weight: 900 !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._fw-100-#{$breakpoint} { font-weight: 100 !important; }
 		._fw-200-#{$breakpoint} { font-weight: 200 !important; }

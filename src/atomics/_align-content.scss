@@ -10,7 +10,7 @@
 ._alct-spar  { align-content: space-around !important; }
 ._alct-spevl { align-content: space-evenly !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._alct-st-#{$breakpoint}    { align-content: start !important; }
 		._alct-e-#{$breakpoint}     { align-content: end !important; }

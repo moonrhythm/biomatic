@@ -6,7 +6,7 @@
 	._bdbtrrd-#{$key} { border-bottom-right-radius: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $radiuses {
 			._bdrd-#{$key}-#{$breakpoint}    { border-radius: #{$value} !important; }

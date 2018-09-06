@@ -2,7 +2,7 @@
 	._bgcl-#{$key} { background-color: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $colors {
 			._bgcl-#{$key}-#{$breakpoint} { background-color: #{$value} !important; }

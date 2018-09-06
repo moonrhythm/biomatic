@@ -2,7 +2,7 @@
 	._tdcrtcl-#{$key} { text-decoration-color: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $colors {
 			._tdcrtcl-#{$key}-#{$breakpoint} { text-decoration-color: #{$value} !important; }

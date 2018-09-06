@@ -3,7 +3,7 @@
 ._fdrt-rrw { flex-direction: row-reverse !important; }
 ._fdrt-clrv { flex-direction: column-reverse !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._fdrt-r-#{$breakpoint} { flex-direction: row !important; }
 		._fdrt-cl-#{$breakpoint} { flex-direction: column !important; }

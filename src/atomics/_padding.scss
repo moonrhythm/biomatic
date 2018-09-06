@@ -8,7 +8,7 @@
 	._pdh-#{$key} { padding-left: #{$value} !important; padding-right: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $spacings {
 			._pd-#{$key}-#{$breakpoint}   { padding: #{$value} !important; }

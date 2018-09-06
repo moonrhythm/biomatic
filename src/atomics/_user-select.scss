@@ -1,7 +1,7 @@
 ._ussl-n { user-select: none !important; }
 ._ussl-t { user-select: text !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ussl-n-#{$breakpoint} { user-select: none !important; }
 		._ussl-t-#{$breakpoint} { user-select: text !important; }

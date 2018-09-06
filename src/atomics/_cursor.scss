@@ -5,7 +5,7 @@
 ._cs-w   { cursor: wait !important; }
 ._cs-at  { cursor: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._cs-pt-#{$breakpoint}  { cursor: pointer !important; }
 		._cs-h-#{$breakpoint}   { cursor: help !important; }

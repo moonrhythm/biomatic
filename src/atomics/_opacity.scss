@@ -10,7 +10,7 @@
 ._opct-10  { opacity: .1 !important; }
 ._opct-0   { opacity: 0 !important;  }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._opct-100-#{$breakpoint} { opacity: 1 !important; }
 		._opct-90-#{$breakpoint}  { opacity: .9 !important; }

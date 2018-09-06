@@ -2,7 +2,7 @@
 ._wb-ba   { word-break: break-all !important; }
 ._wb-ka   { word-break: keep-all !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._wb-nm-#{$breakpoint}   { word-break: normal !important; }
 		._wb-ba-#{$breakpoint}   { word-break: break-all !important; }

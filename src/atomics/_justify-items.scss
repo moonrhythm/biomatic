@@ -3,7 +3,7 @@
 ._jtfit-ct { justify-items: center !important; }
 ._jtfit-str { justify-items: stretch !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._jtfit-st-#{$breakpoint}  { justify-items: start !important; }
 		._jtfit-e-#{$breakpoint}  { justify-items: end !important; }

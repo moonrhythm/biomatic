@@ -4,7 +4,7 @@
 ._zid--1 { z-index: -1 !important; }
 ._zid-at { z-index: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._zid-0-#{$breakpoint} { z-index: 0 !important; }
 		._zid-1-#{$breakpoint} { z-index: 1 !important; }

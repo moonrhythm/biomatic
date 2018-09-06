@@ -3,7 +3,7 @@
 ._tdcrt-lt  { text-decoration: line-through !important; }
 ._tdcrt-n   { text-decoration: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._tdcrt-udl-#{$breakpoint} { text-decoration: underline !important; }
 		._tdcrt-ovl-#{$breakpoint} { text-decoration: overline !important; }

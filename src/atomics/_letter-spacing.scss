@@ -6,7 +6,7 @@
 ._ltspc-24px { letter-spacing: 24px !important; }
 ._ltspc-32px { letter-spacing: 32px !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ltspc-1px-#{$breakpoint}  { letter-spacing: 1px !important; }
 		._ltspc-2px-#{$breakpoint}  { letter-spacing: 2px !important; }

@@ -1,7 +1,7 @@
 ._islt-at  { isolation: auto !important; }
 ._islt-isl { isolation: isolate !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._islt-at-#{$breakpoint}  { isolation: auto !important; }
 		._islt-isl-#{$breakpoint} { isolation: isolate !important; }

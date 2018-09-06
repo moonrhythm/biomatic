@@ -1,7 +1,7 @@
 ._bfvsblt-hd   { backface-visibility: hidden !important; }
 ._bfvsblt-vsb  { backface-visibility: visible !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._bfvsblt-hd-#{$breakpoint}   { backface-visibility: hidden !important; }
 		._bfvsblt-vsb-#{$breakpoint}  { backface-visibility: visible !important; }

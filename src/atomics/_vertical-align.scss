@@ -3,7 +3,7 @@
 ._vtcal-bl { vertical-align: baseline !important; }
 ._vtcal-md { vertical-align: middle !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._vtcal-t-#{$breakpoint} { vertical-align: top !important; }
 		._vtcal-bt-#{$breakpoint} { vertical-align: bottom !important; }

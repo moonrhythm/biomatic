@@ -8,7 +8,7 @@
 ._jtfct-spar  { justify-content: space-around !important; }
 ._jtfct-spevl { justify-content: space-evenly !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._jtfct-st-#{$breakpoint}    { justify-content: start !important; }
 		._jtfct-e-#{$breakpoint}     { justify-content: end !important; }

@@ -3,7 +3,7 @@
 ._mbm-sc  { mix-blend-mode: screen !important; }
 ._mbm-ovl { mix-blend-mode: overlay !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._mbm-nm-#{$breakpoint}  { mix-blend-mode: normal !important; }
 		._mbm-mtp-#{$breakpoint} { mix-blend-mode: multiply !important; }

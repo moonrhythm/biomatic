@@ -11,7 +11,7 @@
 ._ovfy-hd  { overflow-y: hidden !important; }
 ._ovfy-sc  { overflow-y: scroll !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ovf-vsb-#{$breakpoint}  { overflow: visible !important; }
 		._ovf-at-#{$breakpoint}   { overflow: auto !important; }

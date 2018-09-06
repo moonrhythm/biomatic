@@ -1,7 +1,7 @@
 ._ptev-at { pointer-events: auto !important; }
 ._ptev-n { pointer-events: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ptev-at-#{$breakpoint} { pointer-events: auto !important; }
 		._ptev-n-#{$breakpoint} { pointer-events: none !important; }

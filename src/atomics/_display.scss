@@ -8,7 +8,7 @@
 ._dp-tbc { display: table-cell !important; }
 ._dp-n   { display: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._dp-b-#{$breakpoint}   { display: block !important; }
 		._dp-f-#{$breakpoint}   { display: flex !important; }

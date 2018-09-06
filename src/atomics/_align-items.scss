@@ -5,7 +5,7 @@
 ._alit-fst { align-items: flex-start !important; }
 ._alit-fe  { align-items: flex-end !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._alit-st-#{$breakpoint}  { align-items: start !important; }
 		._alit-e-#{$breakpoint}   { align-items: end !important; }

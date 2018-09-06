@@ -2,7 +2,7 @@
 ._bgatm-f { background-attachment: fixed !important; }
 ._bgatm-lc { background-attachment: local !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._bgatm-sc-#{$breakpoint} { background-attachment: scroll !important; }
 		._bgatm-f-#{$breakpoint} { background-attachment: fixed !important; }

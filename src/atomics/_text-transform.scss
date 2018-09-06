@@ -3,7 +3,7 @@
 ._ttf-upc  { text-transform: uppercase !important; }
 ._ttf-n    { text-transform: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ttf-cptl-#{$breakpoint} { text-transform: capitalize !important; }
 		._ttf-lwc-#{$breakpoint}  { text-transform: lowercase !important; }

@@ -2,7 +2,7 @@
 	._ffml-#{$key} { font-family: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $font-families {
 			._ffml-#{$key}-#{$breakpoint} { font-family: #{$value} !important; }

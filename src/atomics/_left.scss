@@ -2,7 +2,7 @@
 	._l-#{$key} { left: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $spacings {
 			._l-#{$key}-#{$breakpoint} { left: #{$value} !important; }

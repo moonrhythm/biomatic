@@ -1,7 +1,7 @@
 ._ovfw-nm  { overflow-wrap: normal !important; }
 ._ovfw-bw  { overflow-wrap: break-word !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._ovfw-nm-#{$breakpoint}  { overflow-wrap: visible !important; }
 		._ovfw-bw-#{$breakpoint}  { overflow-wrap: break-word !important; }

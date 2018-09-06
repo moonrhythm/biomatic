@@ -2,7 +2,7 @@
 ._f-r { float: right !important; }
 ._f-n { float: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._f-l-#{$breakpoint} { float: left !important; }
 		._f-r-#{$breakpoint} { float: right !important; }

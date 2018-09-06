@@ -8,7 +8,7 @@
 ._bgpst-ctr { background-position: center right !important; }
 ._bgpst-ctl { background-position: center left!important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._bgpst-t-#{$breakpoint}   { background-position: top !important; }
 		._bgpst-tr-#{$breakpoint}  { background-position: top right !important; }

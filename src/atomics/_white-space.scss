@@ -4,7 +4,7 @@
 ._wsp-pl { white-space: pre-line !important; }
 ._wsp-pw { white-space: pre-wrap !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._wsp-nm-#{$breakpoint} { white-space: normal !important; }
 		._wsp-nw-#{$breakpoint} { white-space: nowrap !important; }

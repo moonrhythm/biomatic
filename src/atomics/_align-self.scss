@@ -5,7 +5,7 @@
 ._als-ct  { align-self: center !important; }
 ._als-str { align-self: stretch !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		._als-st-#{$breakpoint}  { align-self: start !important; }
 		._als-e-#{$breakpoint}   { align-self: end !important; }

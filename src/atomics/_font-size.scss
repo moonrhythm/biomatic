@@ -2,7 +2,7 @@
 	._fs-#{$key} { font-size: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
+@each $breakpoint, $mediaQuery in $breakpoint-rules {
 	@include minimum-screen-size ($mediaQuery) {
 		@each $key, $value in $font-sizes {
 			._fs-#{$key}-#{$breakpoint} { font-size: #{$value} !important; }
