@@ -1,9 +1,6 @@
 /**
- * SCSS variable of the colors.
- * You can change their value or add/remove variables as you need.
- *
- * The name can be anything you want, but we suggest "color-" prefix
- * for better maintainability.
+ * SCSS variable for Colors.
+ * You can change value or add/remove variables as you need.
  */
 $color-primary: hsl(206, 100%, 56%);
 $color-accent: hsl(350, 100%, 60%);
@@ -29,12 +26,12 @@ $color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default text color */
 $color-black: hsl(0, 0%, 0%);
 
 /**
- * The list of "name" and "SCSS variable"
- * that used for generating color related Atomic class.
+ * Map "name" and "SCSS variable"
+ * for automatically generating color related Atomic class.
  *
- * For example
- * 'primary': $color-primary will use to create classes "_cl-primary", "_bgcl-primary"
- * 'tpr': transparent will use to create classes "_cl-tpr", "_bgcl-tpr"
+ * For example:
+ * - ('primary': $color-primary) will be used to create "_cl-primary", "_bgcl-primary" ... classes
+ * - ('tpr': transparent) will be used to create "_cl-tpr", "_bgcl-tpr" ... classes
  */
 $colors: (
 	'primary': $color-primary,
@@ -64,7 +61,9 @@ $colors: (
 );
 
 /**
- * OPTIONAL: CSS variables for using outside SCSS when needed
+ * [OPTIONAL]:
+ * CSS custom variables for easy access anywhere outside the SCSS systems
+ * For example: in your normal css file you can use "color: var(--color-primary)"
  */
 :root {
 	--color-primary: hsl(206, 100%, 56%);
