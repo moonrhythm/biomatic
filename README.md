@@ -47,7 +47,7 @@
 - __Fun:__ very fun to use.
 
 ## Installation
-You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.2.15/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
+You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.3.1/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
 ```html
 <link href="/path/to/biomatic.full.min.css" rel="stylesheet">
 ```
@@ -63,8 +63,8 @@ yarn add biomatic
 
 Or use CDN (jsdelivr via NPM)
 ```html
-<link href="https://cdn.jsdelivr.net/npm/biomatic@0.2.15/dist/biomatic.full.min.css" rel="stylesheet">
-<link href="https://unpkg.com/biomatic@0.2.15/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/biomatic@0.3.1/dist/biomatic.full.min.css" rel="stylesheet">
+<link href="https://unpkg.com/biomatic@0.3.1/dist/biomatic.full.min.css" rel="stylesheet">
 ```
 
 ## Configuration
