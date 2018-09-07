@@ -1,6 +1,6 @@
 /**
- * SCSS variable for Colors.
- * You can change value or add/remove variables as you need.
+ * SCSS variables for Color.
+ * You can change the value or add/remove variables here.
  */
 $color-primary: hsl(206, 100%, 56%);
 $color-accent: hsl(350, 100%, 60%);
@@ -26,12 +26,12 @@ $color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default text color */
 $color-black: hsl(0, 0%, 0%);
 
 /**
- * Map "name" and "SCSS variable"
- * for automatically generating color related Atomic class.
+ * The list of "name" and "value" of each color
+ * - use for generating color related Atomic classed Ex. "_cl-*", "_bgcl-*"
  *
  * For example:
- * - ('primary': $color-primary) will be used to create "_cl-primary", "_bgcl-primary" ... classes
- * - ('tpr': transparent) will be used to create "_cl-tpr", "_bgcl-tpr" ... classes
+ * - ('primary': $color-primary) will create "_cl-primary", "_bgcl-primary" ... classes
+ * - ('tpr': transparent) will create "_cl-tpr", "_bgcl-tpr" ... classes
  */
 $colors: (
 	'primary': $color-primary,
@@ -62,8 +62,11 @@ $colors: (
 
 /**
  * [OPTIONAL]:
- * CSS custom variables for easy access anywhere outside the SCSS systems
- * For example: in your normal css file you can use "color: var(--color-primary)"
+ * CSS custom variables for easy access anywhere outside biomatic.
+ * This variable will not be used in biomatic
+ *
+ * For example:
+ * In your CSS file you can use "color: var(--color-primary)".
  */
 :root {
 	--color-primary: hsl(206, 100%, 56%);
