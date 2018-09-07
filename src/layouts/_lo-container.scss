@@ -3,9 +3,11 @@
 	width: 100%;
 	grid-template-columns: 12px minmax(0px, auto) 12px;
 	grid-template-rows: auto;
-	@include sm-upper { grid-template-columns: 1fr $sm - 40px 1fr; }
-	@include md-upper { grid-template-columns: 1fr $md - 40px 1fr; }
-	@include lg-upper { grid-template-columns: 1fr $lg - 40px 1fr; }
+	@each $breakpointName, $breakpointSize in $breakpoints {
+		@media (min-width: $breakpointSize) {
+			grid-template-columns: 1fr $breakpointSize - 40px 1fr;
+		}
+	};
 	>* {
 		grid-column: 2 / 3;
 	}

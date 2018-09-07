@@ -3,11 +3,11 @@
 ._pst-asl { position: absolute !important; }
 ._pst-f   { position: fixed !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._pst-stt-#{$breakpoint} { position: static !important; }
-		._pst-rlt-#{$breakpoint} { position: relative !important; }
-		._pst-asl-#{$breakpoint} { position: absolute !important; }
-		._pst-f-#{$breakpoint}   { position: fixed !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._pst-stt-#{$breakpointName} { position: static !important; }
+		._pst-rlt-#{$breakpointName} { position: relative !important; }
+		._pst-asl-#{$breakpointName} { position: absolute !important; }
+		._pst-f-#{$breakpointName}   { position: fixed !important; }
 	};
 };

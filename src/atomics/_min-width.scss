@@ -2,10 +2,10 @@
 	._mnw-#{$key} { min-width: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $spacings {
-			._mnw-#{$key}-#{$breakpoint} { min-width: #{$value} !important; }
+			._mnw-#{$key}-#{$breakpointName} { min-width: #{$value} !important; }
 		};
 	};
 };

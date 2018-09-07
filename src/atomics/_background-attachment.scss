@@ -2,10 +2,10 @@
 ._bgatm-f { background-attachment: fixed !important; }
 ._bgatm-lc { background-attachment: local !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._bgatm-sc-#{$breakpoint} { background-attachment: scroll !important; }
-		._bgatm-f-#{$breakpoint} { background-attachment: fixed !important; }
-		._bgatm-lc-#{$breakpoint} { background-attachment: local !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._bgatm-sc-#{$breakpointName} { background-attachment: scroll !important; }
+		._bgatm-f-#{$breakpointName} { background-attachment: fixed !important; }
+		._bgatm-lc-#{$breakpointName} { background-attachment: local !important; }
 	};
 };

@@ -5,13 +5,13 @@
 ._jtfs-ct  { justify-self: center !important; }
 ._jtfs-str { justify-self: stretch !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._jtfs-st-#{$breakpoint}  { justify-self: start !important; }
-		._jtfs-e-#{$breakpoint}   { justify-self: end !important; }
-		._jtfs-fst-#{$breakpoint} { justify-self: flex-start !important; }
-		._jtfs-fe-#{$breakpoint}  { justify-self: flex-end !important; }
-		._jtfs-ct-#{$breakpoint}  { justify-self: center !important; }
-		._jtfs-str-#{$breakpoint} { justify-self: stretch !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._jtfs-st-#{$breakpointName}  { justify-self: start !important; }
+		._jtfs-e-#{$breakpointName}   { justify-self: end !important; }
+		._jtfs-fst-#{$breakpointName} { justify-self: flex-start !important; }
+		._jtfs-fe-#{$breakpointName}  { justify-self: flex-end !important; }
+		._jtfs-ct-#{$breakpointName}  { justify-self: center !important; }
+		._jtfs-str-#{$breakpointName} { justify-self: stretch !important; }
 	};
 };

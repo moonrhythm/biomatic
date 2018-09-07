@@ -2,10 +2,10 @@
 	._bgcl-#{$key} { background-color: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $colors {
-			._bgcl-#{$key}-#{$breakpoint} { background-color: #{$value} !important; }
+			._bgcl-#{$key}-#{$breakpointName} { background-color: #{$value} !important; }
 		};
 	};
 };

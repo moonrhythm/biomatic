@@ -4,12 +4,12 @@
 	._gclg-#{$key} { grid-column-gap: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $spacings {
-			._gg-#{$key}-#{$breakpoint} { grid-gap: #{$value} !important; }
-			._grg-#{$key}-#{$breakpoint} { grid-row-gap: #{$value} !important; }
-			._gclg-#{$key}-#{$breakpoint} { grid-column-gap: #{$value} !important; }
+			._gg-#{$key}-#{$breakpointName} { grid-gap: #{$value} !important; }
+			._grg-#{$key}-#{$breakpointName} { grid-row-gap: #{$value} !important; }
+			._gclg-#{$key}-#{$breakpointName} { grid-column-gap: #{$value} !important; }
 		};
 	};
 };

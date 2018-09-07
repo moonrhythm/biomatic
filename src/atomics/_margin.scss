@@ -8,16 +8,16 @@
 	._mgh-#{$key}  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $spacings {
-			._mg-#{$key}-#{$breakpoint}   { margin: #{$value} !important; }
-			._mgl-#{$key}-#{$breakpoint}  { margin-left: #{$value} !important; }
-			._mgr-#{$key}-#{$breakpoint}  { margin-right: #{$value} !important; }
-			._mgt-#{$key}-#{$breakpoint}  { margin-top: #{$value} !important; }
-			._mgbt-#{$key}-#{$breakpoint} { margin-bottom: #{$value} !important; }
-			._mgv-#{$key}-#{$breakpoint}  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
-			._mgh-#{$key}-#{$breakpoint}  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
+			._mg-#{$key}-#{$breakpointName}   { margin: #{$value} !important; }
+			._mgl-#{$key}-#{$breakpointName}  { margin-left: #{$value} !important; }
+			._mgr-#{$key}-#{$breakpointName}  { margin-right: #{$value} !important; }
+			._mgt-#{$key}-#{$breakpointName}  { margin-top: #{$value} !important; }
+			._mgbt-#{$key}-#{$breakpointName} { margin-bottom: #{$value} !important; }
+			._mgv-#{$key}-#{$breakpointName}  { margin-top: #{$value} !important; margin-bottom: #{$value} !important; }
+			._mgh-#{$key}-#{$breakpointName}  { margin-left: #{$value} !important; margin-right: #{$value} !important; }
 		};
 	};
 };

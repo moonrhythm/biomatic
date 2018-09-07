@@ -1,9 +1,17 @@
-$sm: 770px;
-$md: 900px;
-$lg: 1200px;
-
+/**
+ * [LAYOUTS] [ATOMICS]
+ *
+ * Use for calculating the value in layout related classes Ex. "lo-container".
+ * Use for generating layout related classes Ex. "lo-6-sm", "lo-4-md".
+ * Use for generating responsive modifiler for atomic classes Ex. "_mg-16px-sm", "_cl-white-md".
+ *
+ * You can change the value or add/remove variables here.
+ *
+ * For example:
+ * - You can add 'xs': 480px
+ */
 $breakpoints: (
-	'sm': '(min-width: 770px)',
-	'md': '(min-width: 900px)',
-	'lg': '(min-width: 1200px)'
+	'sm': 770px,
+	'md': 900px,
+	'lg': 1200px
 );

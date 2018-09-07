@@ -1,4 +1,14 @@
-/* for generate border-radius "_bdrd-*" class */
+/**
+ * [ATOMICS]
+ *
+ * Use for generating border-radius classes Ex. "_bdrd-*", "_bdlrd-*"
+ *
+ * You can change the value or add/remove variables here.
+ *
+ * For example:
+ * - "'2px': 2px" will create "_bdrd-2px" (border-radius: 2px) class
+ * - add "'4r': 4rem" will create new "_bdrd-4r" (border-radius: 4rem) class
+ */
 $radiuses: (
 	'0px': 0px,
 	'1px': 1px,

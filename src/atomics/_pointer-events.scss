@@ -1,9 +1,9 @@
 ._ptev-at { pointer-events: auto !important; }
 ._ptev-n { pointer-events: none !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._ptev-at-#{$breakpoint} { pointer-events: auto !important; }
-		._ptev-n-#{$breakpoint} { pointer-events: none !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._ptev-at-#{$breakpointName} { pointer-events: auto !important; }
+		._ptev-n-#{$breakpointName} { pointer-events: none !important; }
 	};
 };

@@ -2,10 +2,10 @@
 ._f-n { flex: none !important; }
 ._f-at { flex: auto !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._f-1-#{$breakpoint} { flex: 1 !important; }
-		._f-n-#{$breakpoint} { flex: none !important; }
-		._f-at-#{$breakpoint} { flex: auto !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._f-1-#{$breakpointName} { flex: 1 !important; }
+		._f-n-#{$breakpointName} { flex: none !important; }
+		._f-at-#{$breakpointName} { flex: auto !important; }
 	};
 };

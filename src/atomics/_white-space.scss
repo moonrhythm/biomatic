@@ -4,12 +4,12 @@
 ._wsp-pl { white-space: pre-line !important; }
 ._wsp-pw { white-space: pre-wrap !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._wsp-nm-#{$breakpoint} { white-space: normal !important; }
-		._wsp-nw-#{$breakpoint} { white-space: nowrap !important; }
-		._wsp-p-#{$breakpoint}  { white-space: pre !important; }
-		._wsp-pl-#{$breakpoint} { white-space: pre-line !important; }
-		._wsp-pw-#{$breakpoint} { white-space: pre-wrap !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._wsp-nm-#{$breakpointName} { white-space: normal !important; }
+		._wsp-nw-#{$breakpointName} { white-space: nowrap !important; }
+		._wsp-p-#{$breakpointName}  { white-space: pre !important; }
+		._wsp-pl-#{$breakpointName} { white-space: pre-line !important; }
+		._wsp-pw-#{$breakpointName} { white-space: pre-wrap !important; }
 	};
 };

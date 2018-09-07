@@ -2,10 +2,10 @@
 	._ffml-#{$key} { font-family: #{$value} !important; }
 };
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
 		@each $key, $value in $font-families {
-			._ffml-#{$key}-#{$breakpoint} { font-family: #{$value} !important; }
+			._ffml-#{$key}-#{$breakpointName} { font-family: #{$value} !important; }
 		};
 	};
 };

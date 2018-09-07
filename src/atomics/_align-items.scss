@@ -5,13 +5,13 @@
 ._alit-fst { align-items: flex-start !important; }
 ._alit-fe  { align-items: flex-end !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._alit-st-#{$breakpoint}  { align-items: start !important; }
-		._alit-e-#{$breakpoint}   { align-items: end !important; }
-		._alit-ct-#{$breakpoint}  { align-items: center !important; }
-		._alit-str-#{$breakpoint} { align-items: stretch !important; }
-		._alit-fst-#{$breakpoint} { align-items: flex-start !important; }
-		._alit-fe-#{$breakpoint}  { align-items: flex-end !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._alit-st-#{$breakpointName}  { align-items: start !important; }
+		._alit-e-#{$breakpointName}   { align-items: end !important; }
+		._alit-ct-#{$breakpointName}  { align-items: center !important; }
+		._alit-str-#{$breakpointName} { align-items: stretch !important; }
+		._alit-fst-#{$breakpointName} { align-items: flex-start !important; }
+		._alit-fe-#{$breakpointName}  { align-items: flex-end !important; }
 	};
 };

@@ -3,11 +3,11 @@
 ._vtcal-bl { vertical-align: baseline !important; }
 ._vtcal-md { vertical-align: middle !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._vtcal-t-#{$breakpoint} { vertical-align: top !important; }
-		._vtcal-bt-#{$breakpoint} { vertical-align: bottom !important; }
-		._vtcal-bl-#{$breakpoint} { vertical-align: baseline !important; }
-		._vtcal-md-#{$breakpoint} { vertical-align: middle !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._vtcal-t-#{$breakpointName} { vertical-align: top !important; }
+		._vtcal-bt-#{$breakpointName} { vertical-align: bottom !important; }
+		._vtcal-bl-#{$breakpointName} { vertical-align: baseline !important; }
+		._vtcal-md-#{$breakpointName} { vertical-align: middle !important; }
 	};
 };

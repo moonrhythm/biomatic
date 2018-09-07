@@ -1,43 +1,55 @@
-/* Main Color */
-$color-primary: hsl(206, 100%, 56%);
+/**
+ * [VARIABLES]
+ *
+ * SCSS variables for Color. use in biomatic
+ * You can change the value or add/remove variables here.
+ */
+$color-primary: hsl(206, 100%, 56%); /* REQUIRED, default components theme */
 $color-accent: hsl(350, 100%, 60%);
 
-$color-neutral-900: hsl(210, 29%, 14%);
-$color-neutral-800: hsl(212, 28%, 24%);
-$color-neutral-700: hsl(212, 28%, 34%);
-$color-neutral-600: hsl(212, 28%, 44%);
-$color-neutral-500: hsl(212, 28%, 54%);
-$color-neutral-400: hsl(212, 28%, 64%);
-$color-neutral-300: hsl(212, 28%, 74%);
-$color-neutral-200: hsl(212, 28%, 84%);
-$color-neutral-100: hsl(212, 30%, 94%);
+$color-gray-900: hsl(210, 10%, 15%);
+$color-gray-800: hsl(210, 10%, 23%);
+$color-gray-700: hsl(210, 10%, 36%);
+$color-gray-600: hsl(210, 10%, 52%);
+$color-gray-500: hsl(210, 10%, 63%);
+$color-gray-400: hsl(210, 10%, 73%);
+$color-gray-300: hsl(210, 10%, 83%);
+$color-gray-200: hsl(210, 10%, 91%);
+$color-gray-100: hsl(210, 10%, 97%);
 
-/* Semantic Color */
 $color-positive: hsl(150, 80%, 45%);
 $color-warning: hsl(40, 90%, 60%);
 $color-info: hsl(200, 100%, 65%);
 $color-negative: hsl(0, 100%, 65%);
 
-/* Gray Scale Color */
 $color-white: hsl(0, 255%, 100%);
 $color-light: hsla(0, 255%, 100%, 0.92);
-$color-gray: hsla(0, 0%, 92%, 0.92);
-$color-dark: hsla(231, 10%, 25%, 0.94);
+$color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default font color */
 $color-black: hsl(0, 0%, 0%);
 
-/* for generate color related class such as color, background-color */
+/**
+ * [ATOMICS]
+ *
+ * Use for generating color related atomic classed Ex. "_cl-*", "_bgcl-*"
+ *
+ * You can change the value or add/remove variables here.
+ *
+ * For example:
+ * - "'primary': $color-primary" will create "_cl-primary", "_bgcl-primary" ... classes
+ * - "'tpr': transparent" will create "_cl-tpr", "_bgcl-tpr" ... classes
+ */
 $colors: (
-	'primary': $color-primary,
+	'primary': $color-primary, /* REQUIRED, default components theme */
 	'accent': $color-accent,
-	'neutral-900': $color-neutral-900,
-	'neutral-800': $color-neutral-800,
-	'neutral-700': $color-neutral-700,
-	'neutral-600': $color-neutral-600,
-	'neutral-500': $color-neutral-500,
-	'neutral-400': $color-neutral-400,
-	'neutral-300': $color-neutral-300,
-	'neutral-200': $color-neutral-200,
-	'neutral-100': $color-neutral-100,
+	'gray-900': $color-gray-900,
+	'gray-800': $color-gray-800,
+	'gray-700': $color-gray-700,
+	'gray-600': $color-gray-600,
+	'gray-500': $color-gray-500,
+	'gray-400': $color-gray-400,
+	'gray-300': $color-gray-300,
+	'gray-200': $color-gray-200,
+	'gray-100': $color-gray-100,
 
 	'positive': $color-positive,
 	'warning': $color-warning,
@@ -46,36 +58,61 @@ $colors: (
 
 	'white': $color-white,
 	'light': $color-light,
-	'gray': $color-gray,
-	'dark': $color-dark,
+	'dark': $color-dark, /* REQUIRED, default font color */
 	'black': $color-black,
 
 	'crcl': currentColor,
 	'tpr': transparent
 );
 
-/* CSS var */
+/**
+ * [COMPONENTS]
+ *
+ * Use for generating components classes's color variants.
+ * Default color for component will use "primary" color,
+ * so no need to declare at it in $components-colors
+ *
+ * For example:
+ * - "'accent': $color-accent" will make "bio-*" to have "bio-* -accent" variant Ex. "bio-button -accent"
+ * - "'positive': $color-positive" will make "bio-*" to have "bio-* -positive" variant Ex. "bio-message -positive"
+ */
+$components-colors: (
+	'accent': $color-accent,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning': $color-warning,
+	'info': $color-info,
+	'white': $color-white,
+	'dark': $color-dark,
+);
+
+/**
+ * [CSS VAR] [OPTIONAL]
+ *
+ * CSS custom variables for easy access anywhere outside biomatic.
+ * This variable will not be used in biomatic
+ *
+ * For example:
+ * In your CSS file you can use "color: var(--color-primary)".
+ */
 :root {
 	--color-primary: hsl(206, 100%, 56%);
 	--color-accent: hsl(350, 100%, 60%);
-	--color-neutral-900: hsl(210, 29%, 14%);
-	--color-neutral-800: hsl(212, 28%, 24%);
-	--color-neutral-700: hsl(212, 28%, 34%);
-	--color-neutral-600: hsl(212, 28%, 44%);
-	--color-neutral-500: hsl(212, 28%, 54%);
-	--color-neutral-400: hsl(212, 28%, 64%);
-	--color-neutral-300: hsl(212, 28%, 74%);
-	--color-neutral-200: hsl(212, 28%, 84%);
-	--color-neutral-100: hsl(212, 30%, 94%);
-
+	--color-gray-900: hsl(210, 10%, 15%);
+	--color-gray-800: hsl(210, 10%, 23%);
+	--color-gray-700: hsl(210, 10%, 36%);
+	--color-gray-600: hsl(210, 10%, 52%);
+	--color-gray-500: hsl(210, 10%, 63%);
+	--color-gray-400: hsl(210, 10%, 73%);
+	--color-gray-300: hsl(210, 10%, 83%);
+	--color-gray-200: hsl(210, 10%, 91%);
+	--color-gray-100: hsl(210, 10%, 97%);
 	--color-positive: hsl(150, 81%, 45%);
 	--color-warning: hsl(40, 90%, 60%);
 	--color-info: hsl(200, 100%, 65%);
 	--color-negative: hsl(0, 100%, 65%);
-
 	--color-white: hsl(0, 255%, 100%);
 	--color-light: hsla(0, 255%, 100%, 0.92);
-	--color-gray: hsla(0, 0%, 92%, 0.92);
 	--color-dark: hsla(231, 10%, 25%, 0.94);
 	--color-black: hsl(0, 0%, 0%);
 }

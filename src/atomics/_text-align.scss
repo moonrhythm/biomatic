@@ -3,11 +3,11 @@
 ._tal-ct  { text-align: center !important; }
 ._tal-jtf { text-align: justify !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._tal-l-#{$breakpoint}   { text-align: left !important; }
-		._tal-r-#{$breakpoint}   { text-align: right !important; }
-		._tal-ct-#{$breakpoint}  { text-align: center !important; }
-		._tal-jtf-#{$breakpoint} { text-align: justify !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._tal-l-#{$breakpointName}   { text-align: left !important; }
+		._tal-r-#{$breakpointName}   { text-align: right !important; }
+		._tal-ct-#{$breakpointName}  { text-align: center !important; }
+		._tal-jtf-#{$breakpointName} { text-align: justify !important; }
 	};
 };

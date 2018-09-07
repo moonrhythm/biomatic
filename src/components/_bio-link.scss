@@ -28,17 +28,7 @@
 		}
 	}
 
-	$arr: (
-		'accent': $color-accent,
-		'positive': $color-positive,
-		'negative': $color-negative,
-		'warning': $color-warning,
-		'info': $color-info,
-		'white': $color-white,
-		'dark': $color-dark
-	);
-
-	@each $key, $value in $arr {
+	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			color: $value;
 			&:hover, &:focus, &.-active {

@@ -6,14 +6,14 @@
 ._od--2 { order: -2 !important; }
 ._od--3 { order: -3 !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._od-0-#{$breakpoint}  { order: 0 !important; }
-		._od-1-#{$breakpoint}  { order: 1 !important; }
-		._od-2-#{$breakpoint}  { order: 2 !important; }
-		._od-3-#{$breakpoint}  { order: 3 !important; }
-		._od--1-#{$breakpoint} { order: -1 !important; }
-		._od--2-#{$breakpoint} { order: -2 !important; }
-		._od--3-#{$breakpoint} { order: -3 !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._od-0-#{$breakpointName}  { order: 0 !important; }
+		._od-1-#{$breakpointName}  { order: 1 !important; }
+		._od-2-#{$breakpointName}  { order: 2 !important; }
+		._od-3-#{$breakpointName}  { order: 3 !important; }
+		._od--1-#{$breakpointName} { order: -1 !important; }
+		._od--2-#{$breakpointName} { order: -2 !important; }
+		._od--3-#{$breakpointName} { order: -3 !important; }
 	};
 };

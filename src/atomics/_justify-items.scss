@@ -3,11 +3,11 @@
 ._jtfit-ct { justify-items: center !important; }
 ._jtfit-str { justify-items: stretch !important; }
 
-@each $breakpoint, $mediaQuery in $breakpoints {
-	@include minimum-screen-size ($mediaQuery) {
-		._jtfit-st-#{$breakpoint}  { justify-items: start !important; }
-		._jtfit-e-#{$breakpoint}  { justify-items: end !important; }
-		._jtfit-ct-#{$breakpoint} { justify-items: center !important; }
-		._jtfit-str-#{$breakpoint} { justify-items: stretch !important; }
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		._jtfit-st-#{$breakpointName}  { justify-items: start !important; }
+		._jtfit-e-#{$breakpointName}  { justify-items: end !important; }
+		._jtfit-ct-#{$breakpointName} { justify-items: center !important; }
+		._jtfit-str-#{$breakpointName} { justify-items: stretch !important; }
 	};
 };

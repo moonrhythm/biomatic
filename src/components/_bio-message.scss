@@ -10,15 +10,7 @@
 	background-color: mix($color-primary, white, 17%);
 	border-left: 4px solid $color-primary;
 
-	$arr: (
-		'accent': $color-accent,
-		'positive': $color-positive,
-		'negative': $color-negative,
-		'warning': $color-warning,
-		'info': $color-info
-	);
-
-	@each $key, $value in $arr {
+	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			color: $value;
 			background-color: mix($value, white, 17%);

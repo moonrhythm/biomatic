@@ -1,4 +1,15 @@
-/* for generate spacing related class such as margin, width, top, left */
+/**
+ * [ATOMICS]
+ *
+ * The list of "name" and "value" of spacing value
+ * - use for generating spacing related classes Ex. "_l-*", "_mg-*", "_h-*"
+ *
+ * You can change the value or add/remove variables here.
+ *
+ * For example:
+ * - "'8px': 8px" will create "_mg-8px" (margin: 8px) class
+ * - add "'4': 4em" will create new "_bdrd-4" (border-radius: 4em) class
+ */
 $spacings: (
 	'0px': 0px,
 	'1px': 1px,
