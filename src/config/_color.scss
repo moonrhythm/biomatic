@@ -1,8 +1,10 @@
 /**
- * SCSS variables for Color.
+ * [VARIABLES]
+ *
+ * SCSS variables for Color. use in biomatic
  * You can change the value or add/remove variables here.
  */
-$color-primary: hsl(206, 100%, 56%);
+$color-primary: hsl(206, 100%, 56%); /* REQUIRED, default components theme */
 $color-accent: hsl(350, 100%, 60%);
 
 $color-gray-900: hsl(210, 10%, 15%);
@@ -22,19 +24,22 @@ $color-negative: hsl(0, 100%, 65%);
 
 $color-white: hsl(0, 255%, 100%);
 $color-light: hsla(0, 255%, 100%, 0.92);
-$color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default text color */
+$color-dark: hsla(231, 10%, 25%, 0.94); /* REQUIRED, default font color */
 $color-black: hsl(0, 0%, 0%);
 
 /**
- * The list of "name" and "value" of each color
- * - use for generating color related Atomic classed Ex. "_cl-*", "_bgcl-*"
+ * [ATOMICS]
+ *
+ * Use for generating color related atomic classed Ex. "_cl-*", "_bgcl-*"
+ *
+ * You can change the value or add/remove variables here.
  *
  * For example:
- * - ('primary': $color-primary) will create "_cl-primary", "_bgcl-primary" ... classes
- * - ('tpr': transparent) will create "_cl-tpr", "_bgcl-tpr" ... classes
+ * - "'primary': $color-primary" will create "_cl-primary", "_bgcl-primary" ... classes
+ * - "'tpr': transparent" will create "_cl-tpr", "_bgcl-tpr" ... classes
  */
 $colors: (
-	'primary': $color-primary,
+	'primary': $color-primary, /* REQUIRED, default components theme */
 	'accent': $color-accent,
 	'gray-900': $color-gray-900,
 	'gray-800': $color-gray-800,
@@ -53,7 +58,7 @@ $colors: (
 
 	'white': $color-white,
 	'light': $color-light,
-	'dark': $color-dark, /* REQUIRED, default text color */
+	'dark': $color-dark, /* REQUIRED, default font color */
 	'black': $color-black,
 
 	'crcl': currentColor,
@@ -61,7 +66,29 @@ $colors: (
 );
 
 /**
- * [OPTIONAL]:
+ * [COMPONENTS]
+ *
+ * Use for generating components classes's color variants.
+ * Default color for component will use "primary" color,
+ * so no need to declare at it in $components-colors
+ *
+ * For example:
+ * - "'accent': $color-accent" will make "bio-*" to have "bio-* -accent" variant Ex. "bio-button -accent"
+ * - "'positive': $color-positive" will make "bio-*" to have "bio-* -positive" variant Ex. "bio-message -positive"
+ */
+$components-colors: (
+	'accent': $color-accent,
+	'positive': $color-positive,
+	'negative': $color-negative,
+	'warning': $color-warning,
+	'info': $color-info,
+	'white': $color-white,
+	'dark': $color-dark,
+);
+
+/**
+ * [CSS VAR] [OPTIONAL]
+ *
  * CSS custom variables for easy access anywhere outside biomatic.
  * This variable will not be used in biomatic
  *

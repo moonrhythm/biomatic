@@ -12,15 +12,7 @@ progress.bio-progress {
 	&::-webkit-progress-value { background-color: $color-primary }
 	&::-moz-progress-bar { background-color: $color-primary; }
 
-	$arr: (
-		'accent': $color-accent,
-		'positive': $color-positive,
-		'negative': $color-negative,
-		'warning': $color-warning,
-		'info': $color-info
-	);
-
-	@each $key, $value in $arr {
+	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			&::-webkit-progress-value { background-color: $value }
 			&::-moz-progress-bar { background-color: $value; }

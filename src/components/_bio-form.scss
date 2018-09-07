@@ -275,16 +275,8 @@
 	}
 }
 
-$arr: (
-	'accent': $color-accent,
-	'positive': $color-positive,
-	'negative': $color-negative,
-	'warning': $color-warning,
-	'info': $color-info
-);
-
 .bio-field {
-	@each $key, $value in $arr {
+	@each $key, $value in $components-colors {
 		&.-#{$key} {
 			.bio-input > input,
 			.bio-textarea > textarea,

@@ -1,38 +1,61 @@
-/* Font stack variables */
-$font-primary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+/**
+ * [VARIABLES]
+ *
+ * SCSS variables for font. use in biomatic
+ * You can change the value or add/remove variables here.
+ *
+ * - $font-primary is REQUIRED for set html font-family
+ * - $font-secondary is REQUIRED for set header font-family
+ */
+$font-primary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+$font-secondary: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 
-/* for generate "_ffml-*" classes */
+/**
+ * [ATOMICS]
+ *
+ * Use for generating font-family atomic class Ex. "_ffml-*"
+ *
+ * You can change the value or add variables here,
+ * BUT you can't remove 'primary', 'secondary' font, it REQUIRED.
+ *
+ * For example:
+ * - add "'tertiary': 'Helvetica'" will create new "_ffml-tertiary" (font-family: 'Helvetica') class
+ */
 $font-families: (
-	'primary': $font-primary,
-	'secondary': $font-secondary
+	'primary': $font-primary, /* REQUIRED */
+	'secondary': $font-secondary /* REQUIRED */
 );
 
-/* Font size */
-$h1: 3rem;
-$h2: 2.5rem;
-$h3: 2rem;
-$h4: 1.5rem;
-$h5: 1.125rem;
-$h6: 1rem;
-
-$font-size-1: 3rem;
-$font-size-2: 2.5rem;
-$font-size-3: 2rem;
-$font-size-4: 1.5rem;
-$font-size-5: 1.125rem;
-$font-size-6: 1rem;
-$font-size-7: 0.85rem;
-$font-size-8: 0.70rem;
-
-/* for generate "_fs-*" classes */
+/**
+ * [ATOMICS]
+ *
+ * Use for generating font-size atomic class Ex. "_fs-*"
+ *
+ * You can change the value or add/remove variables here.
+ *
+ * For example:
+ * - add "'9': 0.5rem" will create new "_fs-9" (font-size: 0.5rem) class
+ */
 $font-sizes: (
-	'1': $font-size-1,
-	'2': $font-size-2,
-	'3': $font-size-3,
-	'4': $font-size-4,
-	'5': $font-size-5,
-	'6': $font-size-6,
-	'7': $font-size-7,
-	'8': $font-size-8
+	'1': 3rem,
+	'2': 2.5rem,
+	'3': 2rem,
+	'4': 1.5rem,
+	'5': 1.125rem,
+	'6': 1rem,
+	'7': 0.85rem,
+	'8': 0.70rem
 );
+
+/**
+ * [REQUIRED]
+ *
+ * Use to set h1, h2, h3, h4, h5, h6 font-size in biomatic.
+ * You can change the value but can't remove the variables.
+ */
+ $h1: 3rem;
+ $h2: 2.5rem;
+ $h3: 2rem;
+ $h4: 1.5rem;
+ $h5: 1.125rem;
+ $h6: 1rem;
