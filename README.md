@@ -71,7 +71,7 @@ or using CDN
 ## Configuration
 You can configure variables such as colors, spacings or breakpoints that using for generate atomic classes
 
-All configurations located in [/config](https://github.com/BioMaRu/biomatic/blob/master/src/config)
+All configurations located in [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config)
 
 To build Biomatic
 
