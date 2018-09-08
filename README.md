@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">Biomatic UI</h1>
-<p align="center">A Flexible Atomic-Focused CSS Toolkit</p>
+<p align="center">A flexible atomic-focused CSS toolkit</p>
 
 <div align="center">
   <a href="https://npmjs.org/package/biomatic">
@@ -28,6 +28,7 @@
       Document
     </a>
   </h3>
+  <h5>Biomatic is now part of Moon Rhythm opensource</h5>
   <div>Document is currently still in v0.1.x versions</div>
 </div>
 
@@ -47,9 +48,9 @@
 - __Fun:__ very fun to use.
 
 ## Installation
-You can [download](https://github.com/BioMaRu/biomatic/releases/download/v0.3.1/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
+You can [download](https://github.com/moonrhythm/biomatic/releases/download/v0.3.1/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
 ```html
-<link href="/path/to/biomatic.full.min.css" rel="stylesheet">
+<link href="/path/to/biomatic.min.css" rel="stylesheet">
 ```
 
 Or install using NPM or Yarn
