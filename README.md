@@ -1,129 +1,120 @@
-<p align="center">
-  <a href="https://biomatic-ui.com">
-  	<img width=15% src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/logo.png">
-  </a>
-</p>
+<div align="center">
+	<img src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/logo.png" alt="biomatic" height="120">
+</div>
 
-<h1 align="center">Biomatic UI</h1>
+<h1 align="center">Biomatic CSS</h1>
 <p align="center">A flexible atomic-focused CSS toolkit</p>
 
 <div align="center">
-  <a href="https://npmjs.org/package/biomatic">
-    <img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square"
-      alt="NPM version" />
-  </a>
-  <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square"
-      alt="License" />
-  </a>
+	<a href="https://npmjs.org/package/biomatic">
+		<img src="https://img.shields.io/npm/v/biomatic.svg?style=flat-square" alt="NPM version">
+	</a>
+	<a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">
+		<img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License">
+	</a>
 </div>
 
-<div align="center">
-  <h3>
-    <a href="https://biomatic-ui.com">
-      Website
-    </a>
-    <span> &nbsp;|&nbsp; </span>
-    <a href="https://biomatic-ui.com/document/introduction">
-      Document
-    </a>
-  </h3>
-  <h5>Biomatic is now part of Moon Rhythm opensource</h5>
-  <div>Document is currently still in v0.1.x versions</div>
-</div>
+<br>
+**Biomatic CSS** is an atomic-focused CSS library with utilities, layout, and basic components classes for faster development.
 
-## Table of Content
-- [Features](#features)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [License](#license)
+Biomatic's goal is to be a foundation to create and extend a maintainable CSS for your design systems (You can still easily use the complied css file).
 
-## Features
-- __Atomic-Focused:__ craft anything you wanted with the collection of atomic classes.
-- __Battery included:__ basic components included, for rapid UI development.
-- __Clean responsive grid:__ simple and clean grid systems.
-- __Carefully naming:__ readable and predictable class name.
-- __Configurable:__ config and build your own design systems.
-- __Pure CSS:__ no javascript required.
-- __Fun:__ very fun to use.
+**Biomatic** is unopiniated. You can configure colors, font, spacings, and more from simple SCSS configuration file and use them across your project.
 
-## Installation
-You can [download](https://github.com/moonrhythm/biomatic/releases/download/v0.3.4/biomatic.full.min.css.zip) the latest complied version of Biomatic and link to your project using
+# Features
+
+- **Atomic-focused:** craft anything you wanted with the collection of atomic classes.
+- **Battery included:** basic components, layouts and utilities included, for rapid UI development and easy to extend.
+- **Clean responsive grid:** simple and clean grid systems.
+- **Carefully naming:** readable and predictable class name.
+- **Configurable:** configure and create your own design systems.
+- **Pure CSS:** no javascript required.
+- **Fun:** very fun to use.
+
+# Installation
+
+### Install manually
+Download the compiled and minified of [biomatic](https://github.com/moonrhythm/biomatic/releases/download/v0.3.4/biomatic.full.min.css.zip).
+
+Unzip and include ``biomatic.min.css`` in your website.
 ```html
 <link href="/path/to/biomatic.min.css" rel="stylesheet">
 ```
 
-Or install using NPM or Yarn
-```shell
-npm install biomatic
+### Install from CDN
+Alternatively, you can use the unpkg or jsdelivr CDN to load latest compiled Biomatic
+```html
+<link href="https://unpkg.com/biomatic/dist/biomatic.min.css" rel="stylesheet">
+```
+```html
+<link href="https://cdn.jsdelivr.net/npm/biomatic/dist/biomatic.min.css" rel="stylesheet">
 ```
 
+### install using NPM or Yarn
+```shell
+npm install biomatic --save
+```
 ```shell
 yarn add biomatic
 ```
 
-or using CDN
-```html
-<link href="https://cdn.jsdelivr.net/npm/biomatic@0.3.4/dist/biomatic.min.css" rel="stylesheet">
-<link href="https://unpkg.com/biomatic@0.3.4/dist/biomatic.min.css" rel="stylesheet">
-```
+# Configuration and Build
 
-## Configuration
-You can configure variables such as colors, spacings or breakpoints that using for generate atomic classes
+If you want to use Biomatic as a foundation and extend it to create your design system. you can either
+- Clone biomatic, configure files in [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config), and then rebuild it.
+- Install Biomatic from npm, create your own [main.scss](https://github.com/moonrhythm/biomatic/blob/master/src/main.scss) that import biomatic file from node_module but import [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config) from your project instead, then rebuild that main.scss
 
-All configurations located in [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config)
+## Clone and Build
 
-To build Biomatic
-
-__First, install devDependencies using yarn or NPM.__
+**Clone biomatic**
 ```shell
-yarn
+git clone https://github.com/moonrhythm/biomatic.git
+```
+```shell
+cd biomatic
 ```
 
+**Install dependencies with npm or yarn**
 ```shell
 npm install
 ```
+```shell
+yarn
+```
 This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass.
 
-
-__Then use yarn or NPM run build script to build.__
+**Build**
 ```shell
 yarn run build
 ```
-
 ```shell
 npm run build
 ```
+The CSS output located in '/dist' directory
 
-The CSS output will be in '/dist' directory.
-Other build command located in [package.json](https://github.com/BioMaRu/biomatic/blob/master/package.json)
-
-Tip: work best with [purgecss](https://github.com/FullHuman/purgecss)
-
-## Sites using biomatic
-
-<div style="display: fles">
-  <a href="https://www.swapgap.com">
-    <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/swapgap.png?v=2">
-  </a>
-  <a href="https://fastwork.co">
-    <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/fastwork.png">
-  </a>
-  <a href="https://chanto.io">
-    <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/chanto.png">
-  </a>
-  <a href="https://healthathome.in.th/">
-    <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/healthathome.png">
-  </a>
-  <a href="https://rushh.co/">
-    <img height="50"
-    style="margin: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/rushh.png">
-  </a>
+# Sites using Biomatic
+<div style="display: flex">
+	<a href="https://www.swapgap.com">
+		<img height="50"
+		style="margin-right: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/swapgap.png?v=2">
+	</a>
+	<a href="https://fastwork.co">
+		<img height="50"
+		style="margin-right: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/fastwork.png">
+	</a>
+	<a href="https://chanto.io">
+		<img height="50"
+		style="margin-right: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/chanto.png">
+	</a>
+	<a href="https://healthathome.in.th/">
+		<img height="50"
+		style="margin-right: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/healthathome.png">
+	</a>
+	<a href="https://rushh.co/">
+		<img height="50"
+		style="margin-right: 16px" src="https://raw.githubusercontent.com/BioMaRu/biomatic/readme-resource/readme-images/rushh.png">
+	</a>
 </div>
 
-## License
-Code copyright 2017 Theerapong Laowrungrat. Code released under the <a href="https://github.com/BioMaRu/biomatic/blob/master/LICENSE">MIT license.</a>
+# License
+Code copyright 2017 Theerapong Laowrungrat, 2018 Moon Rhythm. Code released under the <a href="https://github.com/moonrhythm/biomatic/blob/master/LICENSE">MIT license.</a>
