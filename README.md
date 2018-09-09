@@ -18,9 +18,9 @@
 
 **Biomatic CSS** is an atomic-focused CSS library with utilities, layout, and basic components classes for faster development.
 
-Biomatic's goal is to be a foundation to create and extend a maintainable CSS for your design systems (You can still easily use the complied css file).
+Biomatic's goal is to be a foundation to create and extend a maintainable CSS for your design systems (You can still easily use the complied css file in ``/dist``).
 
-**Biomatic** is unopiniated. You can configure colors, font, spacings, and more from simple SCSS configuration file and use them across your project.
+**Biomatic** is unopiniated. You can customize atomic classes, colors, font, spacings, and more from the simple SCSS configuration files and use them across your project.
 
 # Features
 
@@ -28,7 +28,7 @@ Biomatic's goal is to be a foundation to create and extend a maintainable CSS fo
 - **Battery included:** basic components, layouts and utilities included, for rapid UI development and easy to extend.
 - **Clean responsive grid:** simple and clean grid systems.
 - **Carefully naming:** readable and predictable class name.
-- **Configurable:** configure and create your own design systems.
+- **Customizable:** customize and create your own design systems.
 - **Pure CSS:** no javascript required.
 - **Fun:** very fun to use.
 
@@ -43,7 +43,7 @@ Unzip and include ``biomatic.min.css`` in your website.
 ```
 
 ### Install from CDN
-Alternatively, you can use the unpkg or jsdelivr CDN to load latest compiled Biomatic
+Alternatively, you can use the unpkg or jsdelivr CDN to load latest compiled of Biomatic
 ```html
 <link href="https://unpkg.com/biomatic/dist/biomatic.min.css" rel="stylesheet">
 ```
@@ -59,39 +59,63 @@ npm install biomatic --save
 yarn add biomatic
 ```
 
-# Configuration and Build
+# Customize and Build
 
-If you want to use Biomatic as a foundation and extend it to create your design system. you can either
-- Clone biomatic, configure files in [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config), and then rebuild it.
-- Install Biomatic from npm, create your own [main.scss](https://github.com/moonrhythm/biomatic/blob/master/src/main.scss) that import biomatic file from node_module but import [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config) from your project instead, then rebuild that main.scss
+To use Biomatic as a foundation and extend it to create your design system. you can either
+- __Clone Biomatic__
+- __Import Biomatic__
 
-## Clone and Build
+## Clone and build Biomatic
 
 **Clone biomatic**
 ```shell
 git clone https://github.com/moonrhythm/biomatic.git
-```
-```shell
 cd biomatic
 ```
 
-**Install dependencies with npm or yarn**
+**Install dependencies**
 ```shell
 npm install
 ```
 ```shell
 yarn
 ```
-This will install gulp, gulp-autoprefixer, gulp-rename, and gulp-sass.
+Biomatic uses ``Gulp`` for compiling CSS.
+This will install ``Gulp`` and it dependencies.
 
-**Build**
+Then you can play around with the files in [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config)
+
+**Build th new CSS**
+
+simply run
 ```shell
-yarn run build
+gulp build
 ```
-```shell
-npm run build
+The CSS output located in ``/dist`` directory.
+
+## Import Biomatic
+
+It is recommended importing Biomatic SCSS source files to your projects from ``node_module`` and then customize it from your project.
+
+In this way, you can keep Biomatic up to date without conflicts, because Biomatic main source and configure files are separated.
+
+1. Install Biomatic using npm.
+2. Create your ``main.scss`` file.
+3. Import Biomatic's source file from ``node_module`` but copy [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config) to your project and import [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config) from your project instead.
+4. Customize [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config).
+5. Build ``main.scss``.
+
+Example of main.scss
+```js
+/* import config from your project*/
+@import 'config/config';
+/* import Biomatic's files from node_module */
+@import 'biomatic/src/mixins/mixins';
+@import 'biomatic/src/layouts/layout';
+@import 'biomatic/src/components/components';
+@import 'biomatic/src/utilities/utilities';
+@import 'biomatic/src/atomics/atomics';
 ```
-The CSS output located in '/dist' directory
 
 # Sites using Biomatic
 <div style="display: flex">
