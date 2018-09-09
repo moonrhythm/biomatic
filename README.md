@@ -105,7 +105,7 @@ In this way, you can keep Biomatic up to date without conflicts, because Biomati
 4. Customize [/config](https://github.com/moonrhythm/biomatic/blob/master/src/config).
 5. Build ``main.scss``.
 
-Example of main.scss
+Example of ``main.scss``
 ```js
 /* import config from your project*/
 @import 'config/config';
@@ -115,6 +115,20 @@ Example of main.scss
 @import 'biomatic/src/components/components';
 @import 'biomatic/src/utilities/utilities';
 @import 'biomatic/src/atomics/atomics';
+```
+
+files in ``/config``
+
+```
+config/
+├── _breakpoint.scss
+├── _color.scss
+├── _initial.scss
+├── _radius.scss
+├── _reset.scss
+├── _pacing.scss
+├── _typography.scss
+└── config.scss
 ```
 
 # Sites using Biomatic
