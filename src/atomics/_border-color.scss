@@ -1,11 +1,19 @@
 @each $key, $value in $colors {
 	._bdcl-#{$key} { border-color: #{$value} !important; }
+	._bdtcl-#{$key} { border-top-color: #{$value} !important; }
+	._bdbtcl-#{$key} { border-bottom-color: #{$value} !important; }
+	._bdlcl-#{$key} { border-left-color: #{$value} !important; }
+	._bdrcl-#{$key} { border-right-color: #{$value} !important; }
 };
 
 @each $breakpointName, $breakpointSize in $breakpoints {
 	@media (min-width: $breakpointSize) {
 		@each $key, $value in $colors {
 			._bdcl-#{$key}-#{$breakpointName} { border-color: #{$value} !important; }
+			._bdtcl-#{$key}-#{$breakpointName} { border-top-color: #{$value} !important; }
+			._bdbtcl-#{$key}-#{$breakpointName} { border-bottom-color: #{$value} !important; }
+			._bdlcl-#{$key}-#{$breakpointName} { border-left-color: #{$value} !important; }
+			._bdrcl-#{$key}-#{$breakpointName} { border-right-color: #{$value} !important; }
 		};
 	};
 };
@@ -14,6 +22,26 @@
 	._bdcl-#{$key}-hover {
 		&:hover {
 			border-color: #{$value} !important;
+		}
+	}
+	._bdtcl-#{$key}-hover {
+		&:hover {
+			border-top-color: #{$value} !important;
+		}
+	}
+	._bdbtcl-#{$key}-hover {
+		&:hover {
+			border-bottom-color: #{$value} !important;
+		}
+	}
+	._bdlcl-#{$key}-hover {
+		&:hover {
+			border-left-color: #{$value} !important;
+		}
+	}
+	._bdrcl-#{$key}-hover {
+		&:hover {
+			border-right-color: #{$value} !important;
 		}
 	}
 };
