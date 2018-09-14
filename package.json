@@ -1,6 +1,6 @@
 {
 	"name": "biomatic",
-	"version": "0.3.5",
+	"version": "0.3.6",
 	"description": "A Flexible Atomic-Focused CSS Toolkit",
 	"main": "index.js",
 	"directories": {
