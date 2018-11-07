@@ -5,50 +5,29 @@ const rename = require('gulp-rename')
 
 gulp.task('build-full', function() {
   const outputConfigs = {
-    src: './src/build-full.scss',
-    prefix: 'biomatic.',
-    basename: 'full'
+    src: './src/main.scss',
+    basename: 'biomatic'
+  }
+  generateCSS(outputConfigs)
+})
+
+gulp.task('build-lite', function() {
+  const outputConfigs = {
+    src: './src/main.lite.scss',
+    basename: 'biomatic.lite'
   }
   generateCSS(outputConfigs)
 })
 
 gulp.task('build-atomic', function() {
   const outputConfigs = {
-    src: './src/build-atomic.scss',
-    prefix: 'biomatic.',
-    basename: 'atomic'
+    src: './src/main.atomic.scss',
+    basename: 'biomatic.atomic'
   }
   generateCSS(outputConfigs)
 })
 
-gulp.task('build-component', function() {
-  const outputConfigs = {
-    src: './src/build-component.scss',
-    prefix: 'biomatic.',
-    basename: 'component'
-  }
-  generateCSS(outputConfigs)
-})
-
-gulp.task('build-layout', function() {
-  const outputConfigs = {
-    src: './src/build-layout.scss',
-    prefix: 'biomatic.',
-    basename: 'layout'
-  }
-  generateCSS(outputConfigs)
-})
-
-gulp.task('build-utility', function() {
-  const outputConfigs = {
-    src: './src/build-utility.scss',
-    prefix: 'biomatic.',
-    basename: 'utility'
-  }
-  generateCSS(outputConfigs)
-})
-
-function generateCSS({ src = '', prefix = '', basename = '' }) {
+function generateCSS({ src = '', basename = '' }) {
   gulp
     .src(src)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -56,7 +35,6 @@ function generateCSS({ src = '', prefix = '', basename = '' }) {
     .pipe(
       rename({
         basename,
-        prefix,
         suffix: '.min',
         extname: '.css'
       })
