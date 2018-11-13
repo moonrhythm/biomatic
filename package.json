@@ -1,6 +1,6 @@
 {
 	"name": "biomatic",
-	"version": "0.3.7",
+	"version": "0.3.8",
 	"description": "A Flexible Atomic-Focused CSS Toolkit",
 	"main": "index.js",
 	"directories": {
@@ -10,7 +10,8 @@
 		"build-full": "gulp build-full",
 		"build-lite": "gulp build-lite",
 		"build-atomic": "gulp build-atomic",
-		"build": "npm run build-full && npm run build-lite && npm run build-atomic"
+		"build-layout": "gulp build-layout",
+		"build": "npm run build-full && npm run build-lite && npm run build-atomic &&  npm run build-layout"
 	},
 	"repository": {
 		"type": "git",

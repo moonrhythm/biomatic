@@ -27,6 +27,14 @@ gulp.task('build-atomic', function() {
   generateCSS(outputConfigs)
 })
 
+gulp.task('build-layout', function() {
+  const outputConfigs = {
+    src: './src/main.layout.scss',
+    basename: 'biomatic.layout'
+  }
+  generateCSS(outputConfigs)
+})
+
 function generateCSS({ src = '', basename = '' }) {
   gulp
     .src(src)
