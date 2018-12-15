@@ -1,11 +1,13 @@
 ._wb-nm   { word-break: normal !important; }
 ._wb-ba   { word-break: break-all !important; }
+._wb-bw   { word-break: break-word !important; }
 ._wb-ka   { word-break: keep-all !important; }
 
 @each $breakpointName, $breakpointSize in $breakpoints {
 	@media (min-width: $breakpointSize) {
 		._wb-nm-#{$breakpointName}   { word-break: normal !important; }
 		._wb-ba-#{$breakpointName}   { word-break: break-all !important; }
+		._wb-bw-#{$breakpointName}   { word-break: break-word !important; }
 		._wb-ka-#{$breakpointName}   { word-break: keep-all !important; }
 	};
 };
