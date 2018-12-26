@@ -1,0 +1,11 @@
+@each $key, $value in $spacings {
+	._mxh-#{$key} { max-height: #{$value} !important; }
+};
+
+@each $breakpointName, $breakpointSize in $breakpoints {
+	@media (min-width: $breakpointSize) {
+		@each $key, $value in $spacings {
+			._mxh-#{$key}-#{$breakpointName} { max-height: #{$value} !important; }
+		};
+	};
+};
