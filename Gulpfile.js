@@ -1,5 +1,5 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass')
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer')
 const rename = require('gulp-rename')
 
@@ -8,7 +8,7 @@ gulp.task('build-full', function() {
     src: './src/main.scss',
     basename: 'biomatic'
   }
-  generateCSS(outputConfigs)
+  return generateCSS(outputConfigs)
 })
 
 gulp.task('build-lite', function() {
@@ -16,7 +16,7 @@ gulp.task('build-lite', function() {
     src: './src/main.lite.scss',
     basename: 'biomatic.lite'
   }
-  generateCSS(outputConfigs)
+  return generateCSS(outputConfigs)
 })
 
 gulp.task('build-atomic', function() {
@@ -24,7 +24,7 @@ gulp.task('build-atomic', function() {
     src: './src/main.atomic.scss',
     basename: 'biomatic.atomic'
   }
-  generateCSS(outputConfigs)
+  return generateCSS(outputConfigs)
 })
 
 gulp.task('build-layout', function() {
@@ -32,14 +32,14 @@ gulp.task('build-layout', function() {
     src: './src/main.layout.scss',
     basename: 'biomatic.layout'
   }
-  generateCSS(outputConfigs)
+  return generateCSS(outputConfigs)
 })
 
 function generateCSS({ src = '', basename = '' }) {
-  gulp
+  return gulp
     .src(src)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(autoprefixer({browsers: ['last 2 versions']}))
+    .pipe(autoprefixer())
     .pipe(
       rename({
         basename,
