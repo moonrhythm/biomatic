@@ -15,3 +15,5 @@ database\.rules\.json
 README\.html
 
 firebase-debug\.log
+
+.idea/
